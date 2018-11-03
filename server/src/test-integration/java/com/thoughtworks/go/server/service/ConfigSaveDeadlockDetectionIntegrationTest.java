@@ -27,7 +27,6 @@ import com.thoughtworks.go.config.update.FullConfigUpdateCommand;
 import com.thoughtworks.go.helper.ConfigFileFixture;
 import com.thoughtworks.go.helper.GoConfigMother;
 import com.thoughtworks.go.helper.PartialConfigMother;
-import com.thoughtworks.go.security.CryptoException;
 import com.thoughtworks.go.server.domain.Username;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import com.thoughtworks.go.server.service.support.ServerStatusService;

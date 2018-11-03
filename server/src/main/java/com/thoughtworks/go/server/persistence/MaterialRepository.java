@@ -36,10 +36,10 @@ import com.thoughtworks.go.server.util.CollectionUtil;
 import com.thoughtworks.go.server.util.Pagination;
 import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.collections4.CollectionUtils;
-import org.hibernate.*;
-import org.hibernate.criterion.*;
-import org.hibernate.type.LongType;
-import org.hibernate.type.StringType;
+//import org.hibernate.*;
+//import org.hibernate.criterion.*;
+//import org.hibernate.type.LongType;
+//import org.hibernate.type.StringType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.orm.hibernate3.HibernateCallback;
@@ -48,12 +48,12 @@ import org.springframework.transaction.support.TransactionSynchronizationAdapter
 
 import java.io.File;
 import java.math.BigInteger;
-import java.sql.SQLException;
+//import java.sql.SQLException;
 import java.util.*;
 
 import static com.thoughtworks.go.util.ExceptionUtils.bomb;
-import static org.hibernate.criterion.Restrictions.eq;
-import static org.hibernate.criterion.Restrictions.isNull;
+//import static org.hibernate.criterion.Restrictions.eq;
+//import static org.hibernate.criterion.Restrictions.isNull;
 
 /**
  * @understands how to store and retrieve Materials from the database

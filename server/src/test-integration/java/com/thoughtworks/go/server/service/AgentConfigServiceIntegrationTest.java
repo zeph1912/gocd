@@ -20,7 +20,6 @@ import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.domain.AgentInstance;
 import com.thoughtworks.go.helper.AgentInstanceMother;
 import com.thoughtworks.go.helper.AgentMother;
-import com.thoughtworks.go.i18n.LocalizedMessage;
 import com.thoughtworks.go.listener.AgentStatusChangeListener;
 import com.thoughtworks.go.server.domain.AgentInstances;
 import com.thoughtworks.go.server.domain.Username;

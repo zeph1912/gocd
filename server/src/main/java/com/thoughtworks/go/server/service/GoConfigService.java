@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.rits.cloning.Cloner;
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.commands.EntityConfigUpdateCommand;
 import com.thoughtworks.go.config.elastic.ElasticConfig;

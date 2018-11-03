@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.util;
 
-import com.rits.cloning.Cloner;
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.exceptions.NoSuchEnvironmentException;
 import com.thoughtworks.go.config.materials.Filter;

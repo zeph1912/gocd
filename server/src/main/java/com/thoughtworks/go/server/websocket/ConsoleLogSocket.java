@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.websocket;
 
 import com.google.gson.Gson;
-import com.thoughtworks.go.domain.JobIdentifier;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.utils.URLEncodedUtils;
 import org.eclipse.jetty.websocket.api.Session;

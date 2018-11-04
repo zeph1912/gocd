@@ -16,9 +16,8 @@
 
 package com.thoughtworks.go.server.dao;
 
-import com.thoughtworks.go.config.StageConfig;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.feed.stage.StageFeedEntry;
+import com.thoughtworks.go.config.*;
+import com.thoughtworks.go.config.feed.stage.StageFeedEntry;
 import com.thoughtworks.go.presentation.pipelinehistory.StageHistoryPage;
 import com.thoughtworks.go.presentation.pipelinehistory.StageInstanceModels;
 import com.thoughtworks.go.server.domain.JobDurationStrategy;

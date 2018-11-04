@@ -17,7 +17,6 @@
 package com.thoughtworks.go.config.serialization;
 
 import com.thoughtworks.go.config.*;
-import com.thoughtworks.go.domain.config.Admin;
 import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.util.ConfigElementImplementationRegistryMother;
 import com.thoughtworks.go.util.GoConstants;

@@ -19,10 +19,10 @@ package com.thoughtworks.go.server.service.materials;
 import java.io.File;
 import java.util.List;
 
-import com.thoughtworks.go.config.materials.SubprocessExecutionContext;
-import com.thoughtworks.go.config.materials.tfs.TfsMaterial;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.Revision;
+import com.thoughtworks.go.config.SubprocessExecutionContext;
+import com.thoughtworks.go.config.tfs.TfsMaterial;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.Revision;
 
 public class TfsPoller implements MaterialPoller<TfsMaterial> {
 

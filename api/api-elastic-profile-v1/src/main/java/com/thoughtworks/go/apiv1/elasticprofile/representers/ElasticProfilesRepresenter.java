@@ -17,7 +17,6 @@
 package com.thoughtworks.go.apiv1.elasticprofile.representers;
 
 import com.thoughtworks.go.api.base.OutputWriter;
-import com.thoughtworks.go.config.PluginProfiles;
 import com.thoughtworks.go.config.elastic.ElasticProfile;
 import com.thoughtworks.go.spark.Routes;
 

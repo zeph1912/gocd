@@ -33,10 +33,10 @@ import com.thoughtworks.go.domain.MaterialRevisions;
 import com.thoughtworks.go.domain.PipelinePauseInfo;
 import com.thoughtworks.go.domain.StageIdentifier;
 import com.thoughtworks.go.domain.StageResult;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.Material;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.ModifiedAction;
+import com.thoughtworks.go.config.buildcause.BuildCause;
+import com.thoughtworks.go.config.materials.Material;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.ModifiedAction;
 import com.thoughtworks.go.presentation.pipelinehistory.JobHistory;
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModel;
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModels;
@@ -47,7 +47,6 @@ import com.thoughtworks.go.server.domain.Username;
 import com.thoughtworks.go.server.service.InstanceFactory;
 import com.thoughtworks.go.server.service.MaterialConfigConverter;
 import com.thoughtworks.go.util.GoConstants;
-import com.thoughtworks.go.util.TimeProvider;
 
 public class PipelineHistoryMother {
     public static final String REVISION = "svn.100";

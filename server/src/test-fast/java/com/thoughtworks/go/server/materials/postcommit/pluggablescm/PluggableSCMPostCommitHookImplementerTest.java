@@ -16,9 +16,8 @@
 
 package com.thoughtworks.go.server.materials.postcommit.pluggablescm;
 
-import com.thoughtworks.go.config.materials.PluggableSCMMaterial;
-import com.thoughtworks.go.config.materials.svn.SvnMaterial;
-import com.thoughtworks.go.domain.materials.Material;
+import com.thoughtworks.go.config.svn.SvnMaterial;
+import com.thoughtworks.go.config.materials.Material;
 import com.thoughtworks.go.helper.MaterialConfigsMother;
 import org.junit.Before;
 import org.junit.Test;

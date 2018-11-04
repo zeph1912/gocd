@@ -17,7 +17,6 @@
 package com.thoughtworks.go.apiv6.shared.representers.configorigin;
 
 import com.thoughtworks.go.api.base.OutputWriter;
-import com.thoughtworks.go.config.remote.RepoConfigOrigin;
 import com.thoughtworks.go.spark.Routes;
 
 public class ConfigRepoOriginRepresenter {

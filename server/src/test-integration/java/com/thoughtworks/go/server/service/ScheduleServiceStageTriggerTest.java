@@ -16,11 +16,10 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.GoConfigDao;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.activity.AgentAssignment;
-import com.thoughtworks.go.domain.activity.JobStatusCache;
-import com.thoughtworks.go.domain.activity.StageStatusCache;
+import com.thoughtworks.go.config.*;
+import com.thoughtworks.go.config.activity.AgentAssignment;
+import com.thoughtworks.go.config.activity.JobStatusCache;
+import com.thoughtworks.go.config.activity.StageStatusCache;
 import com.thoughtworks.go.fixture.PipelineWithTwoStages;
 import com.thoughtworks.go.fixture.SchedulerFixture;
 import com.thoughtworks.go.plugin.infra.PluginManager;

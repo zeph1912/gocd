@@ -16,6 +16,7 @@
 
 package com.thoughtworks.go.server.domain;
 
+import com.thoughtworks.go.config.Username;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;

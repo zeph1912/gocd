@@ -18,15 +18,13 @@ package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.materials.MaterialConfigs;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
+import com.thoughtworks.go.config.materials.MaterialConfig;
 import com.thoughtworks.go.helper.*;
 import com.thoughtworks.go.presentation.PipelineStatusModel;
 import com.thoughtworks.go.presentation.pipelinehistory.*;
 import com.thoughtworks.go.server.dao.PipelineDao;
 import com.thoughtworks.go.server.domain.PipelineTimeline;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.domain.user.PipelineSelections;
 import com.thoughtworks.go.server.domain.user.PipelineSelectionsHelper;
 import com.thoughtworks.go.server.persistence.MaterialRepository;

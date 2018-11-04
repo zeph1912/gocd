@@ -40,7 +40,7 @@ describe Feed do
 
     before(:each) do
       @date = java_date_utc(2004, 12, 25, 12, 0, 0)
-      @job = com.thoughtworks.go.domain.feed.stage.StageFeedEntry.new(1, 99, com.thoughtworks.go.domain.StageIdentifier.new("cruise/1/stage/1"), 1, @date, StageResult::Cancelled)
+      @job = com.thoughtworks.go.config.feed.stage.StageFeedEntry.new(1, 99, com.thoughtworks.go.config.StageIdentifier.new("cruise/1/stage/1"), 1, @date, StageResult::Cancelled)
       @feed = Feed.new(Username::ANONYMOUS, double(:feed => FeedEntries.new([@job])), HttpLocalizedOperationResult.new)
     end
 
@@ -58,8 +58,8 @@ describe Feed do
 
     before(:each) do
       @date = java_date_utc(2004, 12, 25, 12, 0, 0)
-      @stage1 = com.thoughtworks.go.domain.feed.stage.StageFeedEntry.new(1, 99, com.thoughtworks.go.domain.StageIdentifier.new("cruise/1/stage/1"), 1, @date, StageResult::Cancelled)
-      @stage2 = com.thoughtworks.go.domain.feed.stage.StageFeedEntry.new(2, 99, com.thoughtworks.go.domain.StageIdentifier.new("cruise/1/stage/1"), 1, @date, StageResult::Cancelled)
+      @stage1 = com.thoughtworks.go.config.feed.stage.StageFeedEntry.new(1, 99, com.thoughtworks.go.config.StageIdentifier.new("cruise/1/stage/1"), 1, @date, StageResult::Cancelled)
+      @stage2 = com.thoughtworks.go.config.feed.stage.StageFeedEntry.new(2, 99, com.thoughtworks.go.config.StageIdentifier.new("cruise/1/stage/1"), 1, @date, StageResult::Cancelled)
       @jobInstanceService = double()
       @result = HttpLocalizedOperationResult.new
     end

@@ -27,7 +27,6 @@ import java.io.OutputStream;
 import java.util.zip.GZIPOutputStream;
 import java.util.UUID;
 
-import com.thoughtworks.go.domain.StageIdentifier;
 import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.studios.shine.ShineRuntimeException;
 import com.thoughtworks.studios.shine.cruise.GoOntology;

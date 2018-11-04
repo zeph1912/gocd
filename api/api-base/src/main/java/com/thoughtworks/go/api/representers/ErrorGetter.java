@@ -17,7 +17,6 @@
 package com.thoughtworks.go.api.representers;
 
 import com.thoughtworks.go.api.base.OutputWriter;
-import com.thoughtworks.go.config.Validatable;
 
 import java.util.Map;
 

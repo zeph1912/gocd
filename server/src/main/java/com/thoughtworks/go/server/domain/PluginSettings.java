@@ -16,13 +16,9 @@
 
 package com.thoughtworks.go.server.domain;
 
-import com.thoughtworks.go.config.ConfigSaveValidationContext;
-import com.thoughtworks.go.config.Validatable;
-import com.thoughtworks.go.config.ValidationContext;
 import com.thoughtworks.go.config.builder.ConfigurationPropertyBuilder;
-import com.thoughtworks.go.domain.ConfigErrors;
+import com.thoughtworks.go.config.ConfigErrors;
 import com.thoughtworks.go.domain.Plugin;
-import com.thoughtworks.go.domain.config.ConfigurationProperty;
 import com.thoughtworks.go.plugin.access.common.settings.PluginSettingsConfiguration;
 import com.thoughtworks.go.plugin.access.common.settings.PluginSettingsProperty;
 import com.thoughtworks.go.plugin.domain.common.PluginInfo;

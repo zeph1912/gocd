@@ -16,7 +16,7 @@
 
 package com.thoughtworks.go.spark.spa;
 
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.PipelineConfigService;
 import com.thoughtworks.go.server.service.SecurityService;
 import com.thoughtworks.go.server.service.support.toggle.Toggles;

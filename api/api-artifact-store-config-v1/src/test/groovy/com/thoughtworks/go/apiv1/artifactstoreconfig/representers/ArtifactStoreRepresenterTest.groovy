@@ -17,7 +17,7 @@
 package com.thoughtworks.go.apiv1.artifactstoreconfig.representers
 
 import com.thoughtworks.go.api.util.GsonTransformer
-import com.thoughtworks.go.config.ArtifactStore
+
 import com.thoughtworks.go.domain.packagerepository.ConfigurationPropertyMother
 import com.thoughtworks.go.plugin.access.artifact.ArtifactMetadataStore
 import com.thoughtworks.go.plugin.api.info.PluginDescriptor

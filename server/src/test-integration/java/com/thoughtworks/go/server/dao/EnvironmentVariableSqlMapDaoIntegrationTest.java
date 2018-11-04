@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.server.dao;
 
-import com.thoughtworks.go.domain.EnvironmentVariable;
-import com.thoughtworks.go.domain.EnvironmentVariables;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -26,7 +24,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import static com.thoughtworks.go.domain.EnvironmentVariableType.Job;
+import static com.thoughtworks.go.config.EnvironmentVariableType.Job;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 

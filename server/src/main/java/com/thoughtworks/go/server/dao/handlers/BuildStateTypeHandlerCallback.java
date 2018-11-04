@@ -16,7 +16,7 @@
 
 package com.thoughtworks.go.server.dao.handlers;
 
-import com.thoughtworks.go.domain.JobState;
+import com.thoughtworks.go.config.JobState;
 import org.apache.ibatis.type.EnumTypeHandler;
 
 import java.sql.CallableStatement;

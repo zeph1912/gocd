@@ -17,15 +17,8 @@
 package com.thoughtworks.go.server.service.tasks;
 
 import com.thoughtworks.go.ClearSingleton;
-import com.thoughtworks.go.config.AntTask;
-import com.thoughtworks.go.config.ExecTask;
-import com.thoughtworks.go.config.FetchPluggableArtifactTask;
-import com.thoughtworks.go.config.FetchTask;
 import com.thoughtworks.go.config.pluggabletask.PluggableTask;
-import com.thoughtworks.go.config.registry.ConfigElementImplementationRegistry;
-import com.thoughtworks.go.domain.Task;
-import com.thoughtworks.go.domain.config.Configuration;
-import com.thoughtworks.go.domain.config.PluginConfiguration;
+import com.thoughtworks.go.config.Task;
 import com.thoughtworks.go.plugin.access.pluggabletask.PluggableTaskConfigStore;
 import com.thoughtworks.go.plugin.access.pluggabletask.TaskPreference;
 import com.thoughtworks.go.plugin.api.config.Property;
@@ -47,7 +40,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static com.thoughtworks.go.domain.packagerepository.ConfigurationPropertyMother.create;
+import static com.thoughtworks.go.config.packagerepository.ConfigurationPropertyMother.create;
 import static com.thoughtworks.go.util.DataStructureUtils.s;
 import static java.util.Arrays.asList;
 import static junit.framework.TestCase.assertTrue;

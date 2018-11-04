@@ -91,7 +91,7 @@ describe ApiV1::Admin::MergedEnvironmentsController do
       @environment_config = BasicEnvironmentConfig.new(CaseInsensitiveString.new(@environment_name))
       @environment_config_service = double('environment-config-service')
       allow(controller).to receive(:environment_config_service).and_return(@environment_config_service)
-      environment_config_element = com.thoughtworks.go.domain.ConfigElementForEdit.new(@environment_config, "md5")
+      environment_config_element = com.thoughtworks.go.config.ConfigElementForEdit.new(@environment_config, "md5")
       allow(@environment_config_service).to receive(:getMergedEnvironmentforDisplay).and_return(environment_config_element)
       allow(@environment_config_service).to receive(:getEnvironmentForEdit).with(@environment_name).and_return(@environment_config)
     end

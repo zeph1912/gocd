@@ -19,8 +19,6 @@ package com.thoughtworks.go.apiv1.pipelineselection.representers;
 import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.PipelineConfigs;
 import com.thoughtworks.go.server.domain.user.Marshaling;
 
 import java.lang.reflect.Type;

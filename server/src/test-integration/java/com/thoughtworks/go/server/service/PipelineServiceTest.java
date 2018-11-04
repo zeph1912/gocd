@@ -16,17 +16,10 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.CruiseConfig;
-import com.thoughtworks.go.config.JobConfig;
-import com.thoughtworks.go.config.JobConfigs;
-import com.thoughtworks.go.domain.JobInstance;
-import com.thoughtworks.go.domain.MaterialRevisions;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.activity.JobStatusCache;
-import com.thoughtworks.go.domain.activity.StageStatusCache;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.Modification;
+import com.thoughtworks.go.MaterialConfigConverter;
+import com.thoughtworks.go.config.activity.JobStatusCache;
+import com.thoughtworks.go.config.activity.StageStatusCache;
+import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.helper.PipelineMother;
 import com.thoughtworks.go.helper.StageMother;

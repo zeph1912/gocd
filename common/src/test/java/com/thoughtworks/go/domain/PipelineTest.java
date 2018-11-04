@@ -18,7 +18,7 @@ package com.thoughtworks.go.domain;
 
 import java.sql.SQLException;
 
-import com.thoughtworks.go.domain.buildcause.BuildCause;
+import com.thoughtworks.go.config.buildcause.BuildCause;
 import com.thoughtworks.go.helper.ModificationsMother;
 import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.helper.StageMother;

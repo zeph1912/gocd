@@ -16,7 +16,7 @@
 
 package com.thoughtworks.go.validation;
 
-import com.thoughtworks.go.domain.materials.ValidationBean;
+import com.thoughtworks.go.config.materials.ValidationBean;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;

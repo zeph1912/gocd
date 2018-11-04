@@ -18,7 +18,6 @@ package com.thoughtworks.go.server.service.builders;
 
 import com.googlecode.junit.ext.JunitExtRunner;
 import com.googlecode.junit.ext.RunIf;
-import com.thoughtworks.go.config.RakeTask;
 import com.thoughtworks.go.domain.builder.CommandBuilder;
 import com.thoughtworks.go.junitext.EnhancedOSChecker;
 import com.thoughtworks.go.server.service.UpstreamPipelineResolver;

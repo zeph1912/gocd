@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.apiv1.pipelineselection.representers;
 
-import com.thoughtworks.go.config.PipelineConfigs;
-
 import java.util.List;
 
 public class PipelinesDataResponse {

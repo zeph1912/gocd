@@ -34,7 +34,6 @@ import spark.Request;
 import spark.Response;
 import spark.Spark;
 
-import java.io.IOException;
 import java.util.Collection;
 import java.util.Map;
 

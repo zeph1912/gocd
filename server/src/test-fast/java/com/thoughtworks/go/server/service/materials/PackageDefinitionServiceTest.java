@@ -17,8 +17,7 @@
 package com.thoughtworks.go.server.service.materials;
 
 import com.thoughtworks.go.ClearSingleton;
-import com.thoughtworks.go.domain.config.Configuration;
-import com.thoughtworks.go.domain.packagerepository.*;
+import com.thoughtworks.go.config.packagerepository.*;
 import com.thoughtworks.go.plugin.access.packagematerial.PackageConfiguration;
 import com.thoughtworks.go.plugin.access.packagematerial.PackageConfigurations;
 import com.thoughtworks.go.plugin.access.packagematerial.PackageMetadataStore;

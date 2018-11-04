@@ -18,8 +18,8 @@ package com.thoughtworks.go.server.dao;
 
 import java.util.List;
 
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterial;
-import com.thoughtworks.go.domain.materials.Modification;
+import com.thoughtworks.go.config.dependency.DependencyMaterial;
+import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.server.util.Pagination;
 
 public interface DependencyMaterialSourceDao {

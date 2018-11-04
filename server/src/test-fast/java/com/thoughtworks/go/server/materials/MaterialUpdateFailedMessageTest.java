@@ -16,7 +16,7 @@
 
 package com.thoughtworks.go.server.materials;
 
-import com.thoughtworks.go.config.materials.mercurial.HgMaterial;
+import com.thoughtworks.go.config.mercurial.HgMaterial;
 import com.thoughtworks.go.helper.MaterialsMother;
 import org.junit.Test;
 

@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.security;
 
-import com.thoughtworks.go.config.SecurityAuthConfig;
 import com.thoughtworks.go.domain.User;
 import com.thoughtworks.go.plugin.access.authorization.AuthorizationExtension;
 import com.thoughtworks.go.plugin.access.authorization.AuthorizationMetadataStore;

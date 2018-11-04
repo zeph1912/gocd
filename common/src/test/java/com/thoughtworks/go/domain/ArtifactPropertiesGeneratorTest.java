@@ -18,7 +18,7 @@ package com.thoughtworks.go.domain;
 
 import com.thoughtworks.go.config.ArtifactPropertiesConfig;
 import com.thoughtworks.go.config.ArtifactPropertyConfig;
-import com.thoughtworks.go.domain.exception.ArtifactPublishingException;
+import com.thoughtworks.go.config.exception.ArtifactPublishingException;
 import com.thoughtworks.go.publishers.GoArtifactsManipulator;
 import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.remote.work.ConsoleOutputTransmitter;

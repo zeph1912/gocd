@@ -16,8 +16,7 @@
 
 package com.thoughtworks.go.presentation;
 
-import com.thoughtworks.go.config.*;
-import com.thoughtworks.go.domain.config.Admin;
+import com.thoughtworks.go.config.config.Admin;
 import com.thoughtworks.go.util.comparator.AlphaAsciiComparator;
 
 import java.util.*;

@@ -16,11 +16,8 @@
 
 package com.thoughtworks.go.server.service.builders;
 
-import com.thoughtworks.go.domain.KillAllChildProcessTask;
 import com.thoughtworks.go.domain.builder.Builder;
 import com.thoughtworks.go.util.ProcessWrapper;
-import com.thoughtworks.go.util.command.CommandLine;
-import com.thoughtworks.go.util.command.EnvironmentVariableContext;
 import com.thoughtworks.go.util.command.ProcessOutputStreamConsumer;
 import com.thoughtworks.go.work.DefaultGoPublisher;
 import org.apache.commons.io.output.NullOutputStream;

@@ -17,12 +17,7 @@
 package com.thoughtworks.go.server.dao;
 
 import com.rits.cloning.Cloner;
-import com.thoughtworks.go.config.GoConfigDao;
 import com.thoughtworks.go.database.Database;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.PipelineState;
-import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.StageIdentifier;
 import com.thoughtworks.go.server.cache.CacheKeyGenerator;
 import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.domain.StageStatusListener;

@@ -16,16 +16,12 @@
 
 package com.thoughtworks.go.server.scheduling;
 
+import com.thoughtworks.go.InstanceFactory;
+import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.materials.Materials;
-import com.thoughtworks.go.domain.DefaultSchedulingContext;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.SchedulingContext;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.Material;
+import com.thoughtworks.go.config.materials.Material;
 import com.thoughtworks.go.helper.ScheduleCheckMatcher;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.materials.MaterialDatabaseUpdater;
 import com.thoughtworks.go.server.messaging.StubScheduleCheckCompletedListener;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
@@ -33,7 +29,6 @@ import com.thoughtworks.go.server.service.*;
 import com.thoughtworks.go.server.service.result.ServerHealthStateOperationResult;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import com.thoughtworks.go.serverhealth.ServerHealthState;
-import com.thoughtworks.go.util.TimeProvider;
 import com.thoughtworks.go.utils.Timeout;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

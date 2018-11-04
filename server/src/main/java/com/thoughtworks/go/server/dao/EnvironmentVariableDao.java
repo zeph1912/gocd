@@ -16,9 +16,7 @@
 
 package com.thoughtworks.go.server.dao;
 
-import com.thoughtworks.go.domain.EnvironmentVariable;
-import com.thoughtworks.go.domain.EnvironmentVariableType;
-import com.thoughtworks.go.domain.EnvironmentVariables;
+import com.thoughtworks.go.config.EnvironmentVariableType;
 
 import java.util.Collection;
 

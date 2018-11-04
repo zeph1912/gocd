@@ -18,7 +18,6 @@ package com.thoughtworks.go.server.messaging;
 
 import ch.qos.logback.classic.Level;
 import com.thoughtworks.go.server.messaging.MultiplexingQueueProcessor.Action;
-import com.thoughtworks.go.util.LogFixture;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InOrder;

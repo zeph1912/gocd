@@ -16,11 +16,7 @@
 
 package com.thoughtworks.go.server.ui;
 
-import com.thoughtworks.go.config.MingleConfig;
-import com.thoughtworks.go.config.TrackingTool;
-import com.thoughtworks.go.domain.PipelineIdentifier;
 import com.thoughtworks.go.domain.PipelinePauseInfo;
-import com.thoughtworks.go.domain.Stage;
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModel;
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineModel;
 import com.thoughtworks.go.presentation.pipelinehistory.StageInstanceModel;

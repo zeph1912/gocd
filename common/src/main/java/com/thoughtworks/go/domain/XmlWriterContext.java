@@ -16,7 +16,7 @@
 
 package com.thoughtworks.go.domain;
 
-import com.thoughtworks.go.domain.exception.IllegalArtifactLocationException;
+import com.thoughtworks.go.config.exception.IllegalArtifactLocationException;
 
 import static com.thoughtworks.go.util.ExceptionUtils.bomb;
 

@@ -17,7 +17,7 @@
 package com.thoughtworks.go.server.dao;
 
 import com.thoughtworks.go.domain.NotificationFilter;
-import com.thoughtworks.go.domain.StageEvent;
+import com.thoughtworks.go.config.StageEvent;
 import com.thoughtworks.go.domain.User;
 import com.thoughtworks.go.server.cache.GoCache;
 import org.hamcrest.Matchers;

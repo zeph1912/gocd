@@ -18,9 +18,8 @@ package com.thoughtworks.go.server.materials;
 
 import java.io.File;
 
-import com.thoughtworks.go.domain.MaterialInstance;
-import com.thoughtworks.go.domain.materials.Material;
-import com.thoughtworks.go.domain.materials.Modifications;
+import com.thoughtworks.go.config.materials.Material;
+import com.thoughtworks.go.config.materials.Modifications;
 
 interface MaterialUpdater {
     void insertLatestOrNewModifications(Material material, MaterialInstance materialInstance, File folder, Modifications list);

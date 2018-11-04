@@ -27,7 +27,7 @@ describe "admin/package_definitions/new_for_new_pipeline_wizard.html.erb" do
     p1 = ConfigurationProperty.new(ConfigurationKey.new("key1"), ConfigurationValue.new("value1"))
     p2 = ConfigurationProperty.new(ConfigurationKey.new("key2"), EncryptedConfigurationValue.new("value2"))
 
-    configuration = Configuration.new([p1, p2].to_java(com.thoughtworks.go.domain.config.ConfigurationProperty))
+    configuration = Configuration.new([p1, p2].to_java(com.thoughtworks.go.config.ConfigurationProperty))
     package_definition.setConfiguration(configuration)
     assign(:package_configuration, PackageViewModel.new(metadata, package_definition))
 

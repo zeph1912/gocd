@@ -18,7 +18,6 @@ package com.thoughtworks.go.server.ui.helper;
 
 import java.util.HashSet;
 
-import com.thoughtworks.go.config.ResourceConfig;
 import com.thoughtworks.go.domain.AgentInstance;
 import com.thoughtworks.go.helper.AgentInstanceMother;
 import com.thoughtworks.go.server.ui.AgentViewModel;

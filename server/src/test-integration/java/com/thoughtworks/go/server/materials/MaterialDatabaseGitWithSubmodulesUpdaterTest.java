@@ -16,9 +16,8 @@
 
 package com.thoughtworks.go.server.materials;
 
-import com.thoughtworks.go.config.materials.git.GitMaterial;
-import com.thoughtworks.go.domain.MaterialRevisions;
-import com.thoughtworks.go.domain.materials.Material;
+import com.thoughtworks.go.config.git.GitMaterial;
+import com.thoughtworks.go.config.materials.Material;
 import com.thoughtworks.go.helper.GitSubmoduleRepos;
 import com.thoughtworks.go.helper.TestRepo;
 import static org.hamcrest.core.Is.is;

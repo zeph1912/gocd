@@ -27,7 +27,7 @@
         WHERE buildId = #{instanceId} AND key = #{propertyName}
     </select>
 
-    <select id="getAllPropertiesByBuildInstanceId" parameterType="long" resultType="com.thoughtworks.go.domain.Property">
+    <select id="getAllPropertiesByBuildInstanceId" parameterType="long" resultType="com.thoughtworks.go.config.Property">
         SELECT key, value FROM properties
         WHERE buildId = #{value}
         ORDER BY key

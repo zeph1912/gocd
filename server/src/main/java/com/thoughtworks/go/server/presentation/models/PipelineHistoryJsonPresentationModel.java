@@ -16,11 +16,9 @@
 
 package com.thoughtworks.go.server.presentation.models;
 
-import com.thoughtworks.go.config.PipelineConfig;
 import com.thoughtworks.go.domain.BaseCollection;
-import com.thoughtworks.go.domain.CommentRenderer;
+import com.thoughtworks.go.config.CommentRenderer;
 import com.thoughtworks.go.domain.PipelinePauseInfo;
-import com.thoughtworks.go.domain.StageIdentifier;
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModel;
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModels;
 import com.thoughtworks.go.presentation.pipelinehistory.StageInstanceModel;

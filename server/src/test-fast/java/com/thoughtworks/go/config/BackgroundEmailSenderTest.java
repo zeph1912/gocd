@@ -16,7 +16,7 @@
 
 package com.thoughtworks.go.config;
 
-import com.thoughtworks.go.domain.materials.ValidationBean;
+import com.thoughtworks.go.config.materials.ValidationBean;
 import com.thoughtworks.go.server.messaging.SendEmailMessage;
 import org.junit.Before;
 import org.junit.Test;

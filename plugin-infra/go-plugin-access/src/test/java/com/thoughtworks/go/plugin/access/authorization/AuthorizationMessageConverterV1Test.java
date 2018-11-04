@@ -19,7 +19,7 @@ package com.thoughtworks.go.plugin.access.authorization;
 import com.thoughtworks.go.config.PluginRoleConfig;
 import org.junit.Test;
 
-import static com.thoughtworks.go.domain.packagerepository.ConfigurationPropertyMother.create;
+import static com.thoughtworks.go.config.packagerepository.ConfigurationPropertyMother.create;
 import static java.util.Collections.singletonList;
 import static net.javacrumbs.jsonunit.fluent.JsonFluentAssert.assertThatJson;
 

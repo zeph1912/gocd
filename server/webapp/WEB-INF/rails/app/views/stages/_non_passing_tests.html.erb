@@ -5,7 +5,7 @@
         <h3>
             <span class="message">There are tests configured in this stage but could not compute results.</span>
         </h3>
-    <% elsif @stage.getState().equals(com.thoughtworks.go.domain.StageState::Passed) %>
+    <% elsif @stage.getState().equals(com.thoughtworks.go.config.StageState::Passed) %>
         <h3>
             <div class="counts">
                 <span class="total">Tests Run: <%= @failing_tests.numberOfTests() -%></span>

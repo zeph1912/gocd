@@ -16,7 +16,7 @@
 
 package com.thoughtworks.go.helper;
 
-import com.thoughtworks.go.domain.materials.Material;
+import com.thoughtworks.go.config.materials.Material;
 import com.thoughtworks.go.server.materials.MaterialUpdateMessage;
 import org.mockito.ArgumentMatcher;
 

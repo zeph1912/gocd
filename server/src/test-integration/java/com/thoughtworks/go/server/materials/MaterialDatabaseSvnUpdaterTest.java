@@ -18,8 +18,8 @@ package com.thoughtworks.go.server.materials;
 
 import java.io.IOException;
 
-import com.thoughtworks.go.domain.materials.Material;
-import com.thoughtworks.go.config.materials.svn.SvnMaterial;
+import com.thoughtworks.go.config.materials.Material;
+import com.thoughtworks.go.config.svn.SvnMaterial;
 import com.thoughtworks.go.helper.SvnTestRepo;
 import com.thoughtworks.go.helper.TestRepo;
 

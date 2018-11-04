@@ -17,8 +17,6 @@
 package com.thoughtworks.go.server.service.builders;
 
 import com.thoughtworks.go.config.*;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
 import com.thoughtworks.go.domain.builder.Builder;
 import com.thoughtworks.go.domain.builder.FetchArtifactBuilder;
 import com.thoughtworks.go.domain.builder.FetchPluggableArtifactBuilder;
@@ -31,7 +29,6 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import com.thoughtworks.go.util.*;
 
 import static org.hamcrest.Matchers.instanceOf;
 import static org.junit.Assert.assertThat;

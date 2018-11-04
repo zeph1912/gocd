@@ -267,7 +267,7 @@ describe Admin::Materials::PluggableScmController do
   end
 
   def assert_material_is_initialized
-    scm = com.thoughtworks.go.domain.scm.SCM.new
+    scm = com.thoughtworks.go.config.scm.SCM.new
     scm.setPluginConfiguration(PluginConfiguration.new('plugin-id', nil))
     pluggable_scm = PluggableSCMMaterialConfig.new
     pluggable_scm.setSCMConfig(scm)
@@ -278,7 +278,7 @@ describe Admin::Materials::PluggableScmController do
     allow(controller).to receive(:populate_config_validity)
 
     @cruise_config = BasicCruiseConfig.new()
-    scms = com.thoughtworks.go.domain.scm.SCMs.new
+    scms = com.thoughtworks.go.config.scm.SCMs.new
     scms.add(@material.getSCMConfig())
     @cruise_config.setSCMs(scms)
 

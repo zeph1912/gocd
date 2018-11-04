@@ -17,8 +17,6 @@
 package com.thoughtworks.go.server.websocket;
 
 import com.thoughtworks.go.domain.ConsoleConsumer;
-import com.thoughtworks.go.domain.JobIdentifier;
-import com.thoughtworks.go.domain.exception.IllegalArtifactLocationException;
 import com.thoughtworks.go.server.dao.JobInstanceDao;
 import com.thoughtworks.go.server.service.ConsoleService;
 import com.thoughtworks.go.server.util.Retryable;

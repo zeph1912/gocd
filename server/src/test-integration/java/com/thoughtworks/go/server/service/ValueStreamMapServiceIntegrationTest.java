@@ -17,21 +17,18 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.GoConfigDao;
-import com.thoughtworks.go.config.materials.git.GitMaterial;
-import com.thoughtworks.go.domain.StageState;
-import com.thoughtworks.go.domain.valuestreammap.*;
+import com.thoughtworks.go.config.git.GitMaterial;
+import com.thoughtworks.go.config.StageState;
+import com.thoughtworks.go.config.valuestreammap.*;
 import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.materials.DependencyMaterialUpdateNotifier;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.presentation.models.ValueStreamMapPresentationModel;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import com.thoughtworks.go.util.GoConfigFileHelper;
-import com.thoughtworks.go.util.ReflectionUtil;
-import org.apache.commons.collections4.Transformer;
 import org.hamcrest.core.Is;
 import org.hamcrest.core.IsCollectionContaining;
 import org.hamcrest.core.IsNull;
@@ -46,8 +43,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.util.Collection;
 import java.util.List;
 
-import static com.thoughtworks.go.domain.valuestreammap.VSMTestHelper.assertInstances;
-import static com.thoughtworks.go.domain.valuestreammap.VSMTestHelper.assertStageDetails;
+import static com.thoughtworks.go.config.valuestreammap.VSMTestHelper.assertInstances;
+import static com.thoughtworks.go.config.valuestreammap.VSMTestHelper.assertStageDetails;
 import static javax.servlet.http.HttpServletResponse.SC_NOT_FOUND;
 import static javax.servlet.http.HttpServletResponse.SC_NOT_IMPLEMENTED;
 import static org.apache.commons.collections4.CollectionUtils.collect;

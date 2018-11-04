@@ -15,7 +15,7 @@
   -->
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Stage">
-    <resultMap id="select-stage-without-builds" type="com.thoughtworks.go.domain.Stage">
+    <resultMap id="select-stage-without-builds" type="com.thoughtworks.go.config.Stage">
         <id property="id" column="stageId"/>
         <result property="name" column="stageName"/>
         <result property="pipelineId" column="pipelineId"/>
@@ -51,16 +51,16 @@
         <result property="stageName" column="stageName"/>
     </resultMap>
 
-    <resultMap id="select-stage-build-map" type="com.thoughtworks.go.domain.Stage" extends="select-stage-without-builds">
+    <resultMap id="select-stage-build-map" type="com.thoughtworks.go.config.Stage" extends="select-stage-without-builds">
         <collection property="jobInstances" resultMap="BuildInstance.select-build-with-identifier-transitions"/>
         <collection property="identifier" resultMap="Stage.stageIdentifier"/>
     </resultMap>
 
-    <resultMap id="select-stage-with-identifier" type="com.thoughtworks.go.domain.Stage" extends="select-stage-without-builds">
+    <resultMap id="select-stage-with-identifier" type="com.thoughtworks.go.config.Stage" extends="select-stage-without-builds">
         <collection property="identifier" resultMap="Stage.stageIdentifier"/>
     </resultMap>
 
-    <resultMap id="select-stage-with-identifier-jobs" type="com.thoughtworks.go.domain.Stage" extends="select-stage-without-builds">
+    <resultMap id="select-stage-with-identifier-jobs" type="com.thoughtworks.go.config.Stage" extends="select-stage-without-builds">
         <collection property="jobInstances" resultMap="BuildInstance.join-build-map-with-identifier"/>
         <collection property="identifier" resultMap="Stage.stageIdentifier"/>
     </resultMap>
@@ -71,7 +71,7 @@
         <collection property="identifier" resultMap="Stage.stageIdentifier"/>
     </resultMap>
 
-    <resultMap id="stageIdentifier-without-id" type="com.thoughtworks.go.domain.StageIdentifier">
+    <resultMap id="stageIdentifier-without-id" type="com.thoughtworks.go.config.StageIdentifier">
         <result property="pipelineName" column="pipelineName"/>
         <result property="pipelineCounter" column="pipelineCounter"/>
         <result property="pipelineLabel" column="pipelineLabel"/>
@@ -79,7 +79,7 @@
         <result property="stageCounter" column="stageCounter"/>
     </resultMap>
 
-    <resultMap id="stageIdentifier" type="com.thoughtworks.go.domain.StageIdentifier" extends="stageIdentifier-without-id">
+    <resultMap id="stageIdentifier" type="com.thoughtworks.go.config.StageIdentifier" extends="stageIdentifier-without-id">
         <result property="id" column="stageId"/>
     </resultMap>
 
@@ -106,7 +106,7 @@
         <result property="scheduledDate" column="scheduledDate"/>
     </resultMap>
 
-    <parameterMap id="insert-stage-param" type="com.thoughtworks.go.domain.Stage">
+    <parameterMap id="insert-stage-param" type="com.thoughtworks.go.config.Stage">
         <parameter property="name"/>
         <parameter property="pipelineId"/>
         <parameter property="approvedBy"/>
@@ -239,7 +239,7 @@
         LEFT JOIN buildstatetransitions ON builds.id = buildstatetransitions.buildId
     </sql>
 
-    <resultMap id="stage-feed-entry" type="com.thoughtworks.go.domain.feed.stage.StageFeedEntry">
+    <resultMap id="stage-feed-entry" type="com.thoughtworks.go.config.feed.stage.StageFeedEntry">
         <result property="id" column="stageId"/>
         <result property="entryId" column="completedByTransitionId"/>
         <result property="updateDate" column="updateDate"/>

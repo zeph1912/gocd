@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.view.artifacts;
 
-import com.thoughtworks.go.domain.JobIdentifier;
 import com.thoughtworks.go.server.service.ArtifactsService;
 import com.thoughtworks.go.server.service.ConsoleService;
 import com.thoughtworks.go.server.web.ArtifactFolder;

@@ -16,9 +16,9 @@
 
 package com.thoughtworks.go.util;
 
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.ModifiedAction;
-import com.thoughtworks.go.domain.materials.ModifiedFile;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.ModifiedAction;
+import com.thoughtworks.go.config.materials.ModifiedFile;
 import org.apache.commons.io.IOUtils;
 import org.jdom2.input.SAXBuilder;
 import org.junit.Test;

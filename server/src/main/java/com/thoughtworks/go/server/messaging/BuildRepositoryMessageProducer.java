@@ -16,9 +16,8 @@
 
 package com.thoughtworks.go.server.messaging;
 
-import com.thoughtworks.go.domain.JobIdentifier;
-import com.thoughtworks.go.domain.JobResult;
-import com.thoughtworks.go.domain.JobState;
+import com.thoughtworks.go.config.JobResult;
+import com.thoughtworks.go.config.JobState;
 import com.thoughtworks.go.remote.AgentInstruction;
 import com.thoughtworks.go.remote.BuildRepositoryRemote;
 import com.thoughtworks.go.remote.BuildRepositoryRemoteImpl;

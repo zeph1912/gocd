@@ -16,13 +16,13 @@
 
 package com.thoughtworks.go.helper;
 
-import com.thoughtworks.go.config.materials.perforce.P4Material;
-import com.thoughtworks.go.config.materials.perforce.P4MaterialConfig;
-import com.thoughtworks.go.domain.materials.Material;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.TestSubprocessExecutionContext;
-import com.thoughtworks.go.domain.materials.perforce.P4Client;
-import com.thoughtworks.go.domain.materials.perforce.PerforceFixture;
+import com.thoughtworks.go.config.perforce.P4Material;
+import com.thoughtworks.go.config.perforce.P4MaterialConfig;
+import com.thoughtworks.go.config.materials.Material;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.TestSubprocessExecutionContext;
+import com.thoughtworks.go.config.materials.perforce.P4Client;
+import com.thoughtworks.go.config.materials.perforce.PerforceFixture;
 import com.thoughtworks.go.util.ProcessWrapper;
 import com.thoughtworks.go.util.ReflectionUtil;
 import com.thoughtworks.go.util.command.*;

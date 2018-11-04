@@ -16,11 +16,7 @@
 
 package com.thoughtworks.go.server.dao;
 
-import com.thoughtworks.go.config.GoConfigDao;
 import com.thoughtworks.go.database.Database;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.PipelineState;
-import com.thoughtworks.go.domain.StageIdentifier;
 import com.thoughtworks.go.helper.GoConfigMother;
 import com.thoughtworks.go.helper.PipelineMother;
 import com.thoughtworks.go.server.cache.GoCache;
@@ -46,7 +42,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import static com.thoughtworks.go.domain.PipelineState.NOT_LOCKED;
+import static com.thoughtworks.go.config.PipelineState.NOT_LOCKED;
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsNull.nullValue;
 import static org.junit.Assert.*;

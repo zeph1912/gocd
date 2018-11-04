@@ -97,7 +97,7 @@ describe Admin::ServerController do
       render_views
 
       before do
-        user = com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new("foo"))
+        user = com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new("foo"))
         allow(controller).to receive(:set_current_user) do
           controller.instance_variable_set :@user, user
         end

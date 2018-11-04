@@ -17,8 +17,6 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.PipelineConfigs;
-import com.thoughtworks.go.domain.PipelineGroupVisitor;
 
 public class SecurityFilter implements PipelineGroupVisitor {
     private final GoConfigService goConfigService;

@@ -18,9 +18,8 @@ package com.thoughtworks.go.server.service.materials.commands;
 
 import java.util.Map;
 
-import com.thoughtworks.go.config.CruiseConfig;
-import com.thoughtworks.go.domain.packagerepository.PackageDefinition;
-import com.thoughtworks.go.domain.packagerepository.PackageRepository;
+import com.thoughtworks.go.config.packagerepository.PackageDefinition;
+import com.thoughtworks.go.config.packagerepository.PackageRepository;
 import com.thoughtworks.go.server.service.materials.PackageDefinitionService;
 
 public class PackageDefinitionCreator {

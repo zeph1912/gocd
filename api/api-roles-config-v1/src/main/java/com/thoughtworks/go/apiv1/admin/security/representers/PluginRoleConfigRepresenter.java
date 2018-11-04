@@ -20,11 +20,6 @@ package com.thoughtworks.go.apiv1.admin.security.representers;
 import com.thoughtworks.go.api.base.OutputWriter;
 import com.thoughtworks.go.api.representers.ConfigurationPropertyRepresenter;
 import com.thoughtworks.go.api.representers.JsonReader;
-import com.thoughtworks.go.config.PluginRoleConfig;
-import com.thoughtworks.go.domain.config.ConfigurationProperty;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class PluginRoleConfigRepresenter {
 

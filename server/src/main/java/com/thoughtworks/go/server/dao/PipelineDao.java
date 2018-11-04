@@ -16,9 +16,7 @@
 
 package com.thoughtworks.go.server.dao;
 
-import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
+import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModel;
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModels;
 

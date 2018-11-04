@@ -21,11 +21,6 @@ import java.util.Set;
 import java.util.List;
 import java.util.UUID;
 
-import com.thoughtworks.go.domain.valuestreammap.DummyNode;
-import com.thoughtworks.go.domain.valuestreammap.Node;
-import com.thoughtworks.go.domain.valuestreammap.NodeLevelMap;
-import com.thoughtworks.go.domain.valuestreammap.ValueStreamMap;
-
 import static java.lang.Math.abs;
 
 public class DummyNodeCreation {

@@ -17,16 +17,10 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.CruiseConfig;
-import com.thoughtworks.go.config.GoConfigDao;
-import com.thoughtworks.go.config.UpdateConfigCommand;
-import com.thoughtworks.go.config.materials.git.GitMaterialConfig;
-import com.thoughtworks.go.config.remote.ConfigRepoConfig;
-import com.thoughtworks.go.config.remote.ConfigReposConfig;
-import com.thoughtworks.go.domain.config.Admin;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
+import com.thoughtworks.go.config.git.GitMaterialConfig;
+import com.thoughtworks.go.config.materials.MaterialConfig;
 import com.thoughtworks.go.presentation.TriStateSelection;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import com.thoughtworks.go.util.GoConfigFileHelper;
 import org.hamcrest.core.Is;
@@ -38,9 +32,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import java.io.IOException;
-
-import static java.util.Arrays.asList;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThat;

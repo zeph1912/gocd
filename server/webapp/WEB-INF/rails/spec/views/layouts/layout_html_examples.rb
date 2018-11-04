@@ -34,7 +34,7 @@ shared_examples :layout do
   end
 
   it "should display username and logout botton if a user is logged in" do
-    assign(:user, com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new("maulik suchak")))
+    assign(:user, com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new("maulik suchak")))
 
     render :inline => '<div>content</div>', :layout => @layout_name
     expect(response.body).to have_selector(".current_user a[href='#']", text: "maulik suchak")
@@ -45,7 +45,7 @@ shared_examples :layout do
   end
 
   it "should not display username and logout botton if anonymous user is logged in" do
-    assign(:user, com.thoughtworks.go.server.domain.Username::ANONYMOUS)
+    assign(:user, com.thoughtworks.go.config.Username::ANONYMOUS)
 
     render :inline => '<div>content</div>', :layout => @layout_name
 

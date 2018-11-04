@@ -20,7 +20,7 @@
   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping package="com.thoughtworks.go.domain" default-access="field" default-lazy="false">
-  <class name="com.thoughtworks.go.domain.JobAgentMetadata" table="jobagentmetadata">
+  <class name="com.thoughtworks.go.config.JobAgentMetadata" table="jobagentmetadata">
     <id name="id" column="id">
       <generator class="identity"/>
     </id>

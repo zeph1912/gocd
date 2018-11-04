@@ -16,9 +16,7 @@
 
 package com.thoughtworks.go.server.presentation.models;
 
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.StageState;
+import com.thoughtworks.go.config.StageState;
 import com.thoughtworks.go.helper.PipelineMother;
 import com.thoughtworks.go.helper.StageMother;
 import com.thoughtworks.go.util.DateUtils;

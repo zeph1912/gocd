@@ -16,7 +16,7 @@
 
 package com.thoughtworks.go.server.materials;
 
-import com.thoughtworks.go.domain.materials.Material;
+import com.thoughtworks.go.config.materials.Material;
 import com.thoughtworks.go.server.messaging.GoMessage;
 
 import static org.apache.commons.lang3.builder.EqualsBuilder.reflectionEquals;

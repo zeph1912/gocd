@@ -17,8 +17,8 @@
 
 package com.thoughtworks.go.server.web.i18n;
 
-import com.thoughtworks.go.domain.JobResult;
-import com.thoughtworks.go.domain.ViewableStatus;
+import com.thoughtworks.go.config.JobResult;
+import com.thoughtworks.go.config.ViewableStatus;
 
 @Deprecated
 public final class CurrentResult implements ViewableStatus {

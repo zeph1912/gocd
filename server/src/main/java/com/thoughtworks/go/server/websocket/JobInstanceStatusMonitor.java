@@ -16,7 +16,7 @@
 
 package com.thoughtworks.go.server.websocket;
 
-import com.thoughtworks.go.domain.JobResult;
+import com.thoughtworks.go.config.JobResult;
 import com.thoughtworks.go.server.service.JobInstanceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

@@ -17,8 +17,7 @@
 package com.thoughtworks.go.server.service.builders;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.EnvironmentVariableConfig;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
+import com.thoughtworks.go.config.materials.MaterialConfig;
 import com.thoughtworks.go.server.domain.MaterialForScheduling;
 import com.thoughtworks.go.server.domain.PipelineScheduleOptions;
 import com.thoughtworks.go.server.scheduling.ScheduleOptions;

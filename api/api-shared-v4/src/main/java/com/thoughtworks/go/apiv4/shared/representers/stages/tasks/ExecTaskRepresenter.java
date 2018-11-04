@@ -18,8 +18,6 @@ package com.thoughtworks.go.apiv4.shared.representers.stages.tasks;
 
 import com.thoughtworks.go.api.base.OutputWriter;
 import com.thoughtworks.go.api.representers.JsonReader;
-import com.thoughtworks.go.config.Argument;
-import com.thoughtworks.go.config.ExecTask;
 
 import java.util.ArrayList;
 import java.util.List;

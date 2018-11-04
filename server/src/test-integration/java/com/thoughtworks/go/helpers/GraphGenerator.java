@@ -17,9 +17,8 @@
 package com.thoughtworks.go.helpers;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterial;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterialConfig;
+import com.thoughtworks.go.config.dependency.DependencyMaterial;
+import com.thoughtworks.go.config.dependency.DependencyMaterialConfig;
 import com.thoughtworks.go.helper.MaterialConfigsMother;
 import com.thoughtworks.go.helper.PipelineMother;
 import com.thoughtworks.go.server.service.ScheduleTestUtil;

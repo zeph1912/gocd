@@ -16,11 +16,8 @@
 
 package com.thoughtworks.go.server.presentation.models;
 
-import com.thoughtworks.go.config.AgentConfig;
-import com.thoughtworks.go.config.Tabs;
-import com.thoughtworks.go.config.TrackingTool;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.exception.IllegalArtifactLocationException;
+import com.thoughtworks.go.config.*;
+import com.thoughtworks.go.config.exception.IllegalArtifactLocationException;
 import com.thoughtworks.go.server.service.ArtifactsService;
 import com.thoughtworks.go.util.DirectoryReader;
 import com.thoughtworks.go.util.TimeConverter;
@@ -36,7 +33,7 @@ import java.util.Collection;
 import java.util.List;
 
 import static com.thoughtworks.go.config.TestArtifactConfig.TEST_OUTPUT_FOLDER;
-import static com.thoughtworks.go.server.web.JsonRenderer.render;
+import static com.thoughtworks.go.server.JsonRenderer.render;
 import static com.thoughtworks.go.util.ArtifactLogUtil.*;
 import static org.apache.commons.lang3.math.NumberUtils.toInt;
 

@@ -20,11 +20,8 @@ import com.thoughtworks.go.api.base.OutputListWriter;
 import com.thoughtworks.go.api.base.OutputWriter;
 import com.thoughtworks.go.api.representers.ErrorGetter;
 import com.thoughtworks.go.api.representers.JsonReader;
-import com.thoughtworks.go.config.ParamConfig;
-import com.thoughtworks.go.config.ParamsConfig;
 
 import java.util.HashMap;
-import java.util.function.Consumer;
 
 public class ParamRepresenter {
 

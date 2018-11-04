@@ -18,8 +18,8 @@ package com.thoughtworks.go.serverhealth;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
 import com.thoughtworks.go.config.CruiseConfig;
-import com.thoughtworks.go.config.materials.mercurial.HgMaterialConfig;
-import com.thoughtworks.go.config.materials.svn.SvnMaterial;
+import com.thoughtworks.go.config.mercurial.HgMaterialConfig;
+import com.thoughtworks.go.config.svn.SvnMaterial;
 import com.thoughtworks.go.helper.GoConfigMother;
 import com.thoughtworks.go.helper.MaterialConfigsMother;
 import com.thoughtworks.go.helper.MaterialsMother;

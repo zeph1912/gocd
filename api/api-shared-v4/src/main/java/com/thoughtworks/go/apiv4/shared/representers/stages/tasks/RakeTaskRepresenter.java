@@ -18,7 +18,6 @@ package com.thoughtworks.go.apiv4.shared.representers.stages.tasks;
 
 import com.thoughtworks.go.api.base.OutputWriter;
 import com.thoughtworks.go.api.representers.JsonReader;
-import com.thoughtworks.go.config.RakeTask;
 
 public class RakeTaskRepresenter {
     public static void toJSON(OutputWriter jsonWriter, RakeTask rakeTask) {

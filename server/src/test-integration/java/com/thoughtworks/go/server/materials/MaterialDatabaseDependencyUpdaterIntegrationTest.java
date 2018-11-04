@@ -17,17 +17,14 @@
 package com.thoughtworks.go.server.materials;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterial;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.materials.Modification;
+import com.thoughtworks.go.config.dependency.DependencyMaterial;
+import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.service.GoConfigService;
 import com.thoughtworks.go.util.GoConfigFileHelper;
-import com.thoughtworks.go.util.TimeProvider;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

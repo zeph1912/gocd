@@ -18,11 +18,10 @@ package com.thoughtworks.go.plugin.access.notification.v4;
 
 import com.thoughtworks.go.config.materials.PackageMaterial;
 import com.thoughtworks.go.config.materials.PluggableSCMMaterial;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.notificationdata.AgentNotificationData;
-import com.thoughtworks.go.domain.notificationdata.StageNotificationData;
-import com.thoughtworks.go.domain.packagerepository.PackageDefinition;
-import com.thoughtworks.go.domain.scm.SCM;
+import com.thoughtworks.go.config.notificationdata.AgentNotificationData;
+import com.thoughtworks.go.config.notificationdata.StageNotificationData;
+import com.thoughtworks.go.config.packagerepository.PackageDefinition;
+import com.thoughtworks.go.config.scm.SCM;
 import com.thoughtworks.go.helper.PipelineMother;
 import com.thoughtworks.go.plugin.api.response.Result;
 import net.javacrumbs.jsonunit.fluent.JsonFluentAssert;

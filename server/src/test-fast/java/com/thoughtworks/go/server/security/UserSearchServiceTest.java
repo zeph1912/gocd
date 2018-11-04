@@ -18,9 +18,7 @@ package com.thoughtworks.go.server.security;
 
 
 import com.thoughtworks.go.ClearSingleton;
-import com.thoughtworks.go.config.SecurityConfig;
 import com.thoughtworks.go.domain.User;
-import com.thoughtworks.go.i18n.LocalizedMessage;
 import com.thoughtworks.go.plugin.access.authorization.AuthorizationExtension;
 import com.thoughtworks.go.plugin.access.authorization.AuthorizationMetadataStore;
 import com.thoughtworks.go.plugin.domain.authorization.AuthorizationPluginInfo;

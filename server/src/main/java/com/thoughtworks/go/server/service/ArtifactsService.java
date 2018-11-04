@@ -17,10 +17,7 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.domain.ArtifactUrlReader;
-import com.thoughtworks.go.domain.JobIdentifier;
-import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.StageIdentifier;
-import com.thoughtworks.go.domain.exception.IllegalArtifactLocationException;
+import com.thoughtworks.go.config.exception.IllegalArtifactLocationException;
 import com.thoughtworks.go.server.dao.StageDao;
 import com.thoughtworks.go.server.view.artifacts.ArtifactDirectoryChooser;
 import com.thoughtworks.go.server.view.artifacts.BuildIdArtifactLocator;

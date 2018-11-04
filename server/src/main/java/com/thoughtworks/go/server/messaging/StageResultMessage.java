@@ -16,9 +16,8 @@
 
 package com.thoughtworks.go.server.messaging;
 
-import com.thoughtworks.go.domain.StageIdentifier;
-import com.thoughtworks.go.domain.StageEvent;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.StageEvent;
+import com.thoughtworks.go.config.Username;
 
 public class StageResultMessage implements GoMessage {
     private final StageIdentifier stageIdentifier;

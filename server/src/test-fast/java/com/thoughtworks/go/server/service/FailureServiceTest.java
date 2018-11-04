@@ -17,18 +17,16 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.domain.JobIdentifier;
 import com.thoughtworks.go.domain.StageFinder;
-import com.thoughtworks.go.domain.StageIdentifier;
-import com.thoughtworks.go.domain.testinfo.FailureDetails;
+import com.thoughtworks.go.config.testinfo.FailureDetails;
 import com.thoughtworks.go.server.dao.sparql.ShineDao;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static com.thoughtworks.go.domain.testinfo.FailureDetails.*;
+import static com.thoughtworks.go.config.testinfo.FailureDetails.*;
 import static com.thoughtworks.go.util.ReflectionUtil.getField;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;

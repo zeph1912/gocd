@@ -16,16 +16,7 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.AdminRole;
-import com.thoughtworks.go.config.AdminUser;
-import com.thoughtworks.go.config.Approval;
-import com.thoughtworks.go.config.AuthConfig;
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.GoConfigDao;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.RoleConfig;
-import com.thoughtworks.go.config.RoleUser;
-import com.thoughtworks.go.config.StageConfig;
 import com.thoughtworks.go.helper.StageConfigMother;
 import com.thoughtworks.go.util.GoConfigFileHelper;
 import org.junit.After;

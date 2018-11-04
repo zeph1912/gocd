@@ -16,9 +16,7 @@
 
 package com.thoughtworks.go.server.ui;
 
-import com.thoughtworks.go.config.ResourceConfig;
-import com.thoughtworks.go.config.ResourceConfigs;
-import com.thoughtworks.go.domain.*;
+import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.util.comparator.AlphaAsciiComparator;
 import org.apache.commons.lang3.StringUtils;
 

@@ -22,9 +22,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import com.thoughtworks.go.domain.valuestreammap.Node;
-import com.thoughtworks.go.domain.valuestreammap.NodeLevelMap;
-
 import static java.lang.Math.abs;
 import static java.util.Collections.sort;
 

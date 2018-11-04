@@ -29,7 +29,6 @@ import com.thoughtworks.go.apiv6.shared.representers.stages.StageRepresenter;
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.remote.ConfigOrigin;
 import com.thoughtworks.go.config.remote.FileConfigOrigin;
-import com.thoughtworks.go.config.remote.RepoConfigOrigin;
 import com.thoughtworks.go.spark.Routes;
 
 import java.util.HashMap;

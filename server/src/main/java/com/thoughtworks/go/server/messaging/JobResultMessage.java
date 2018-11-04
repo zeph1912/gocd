@@ -16,8 +16,7 @@
 
 package com.thoughtworks.go.server.messaging;
 
-import com.thoughtworks.go.domain.JobIdentifier;
-import com.thoughtworks.go.domain.JobResult;
+import com.thoughtworks.go.config.JobResult;
 
 public class JobResultMessage implements GoMessage {
     private JobIdentifier jobIdentifier;

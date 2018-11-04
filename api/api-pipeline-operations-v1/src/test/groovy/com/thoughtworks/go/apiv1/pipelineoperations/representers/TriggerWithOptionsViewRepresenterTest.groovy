@@ -16,10 +16,10 @@
 
 package com.thoughtworks.go.apiv1.pipelineoperations.representers
 
-import com.thoughtworks.go.config.EnvironmentVariablesConfig
-import com.thoughtworks.go.domain.JobResult
-import com.thoughtworks.go.domain.JobState
-import com.thoughtworks.go.domain.MaterialRevisions
+
+import com.thoughtworks.go.config.JobResult
+import com.thoughtworks.go.config.JobState
+
 import com.thoughtworks.go.domain.buildcause.BuildCause
 import com.thoughtworks.go.helper.EnvironmentVariablesConfigMother
 import com.thoughtworks.go.helper.MaterialConfigsMother

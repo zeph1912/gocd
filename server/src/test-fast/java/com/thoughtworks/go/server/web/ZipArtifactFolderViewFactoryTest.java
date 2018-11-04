@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.web;
 
-import com.thoughtworks.go.domain.JobIdentifier;
 import com.thoughtworks.go.server.cache.ZipArtifactCache;
 import com.thoughtworks.go.server.view.artifacts.PreparingArtifactFile;
 import org.junit.Before;

@@ -18,9 +18,8 @@ package com.thoughtworks.go.server.domain;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.gson.internal.bind.util.ISO8601Utils;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.BackupService;
-import com.thoughtworks.go.util.command.CommandLine;
-import com.thoughtworks.go.util.command.CommandLineException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -17,7 +17,7 @@
 package com.thoughtworks.go.server.dashboard;
 
 import com.thoughtworks.go.config.security.users.AllowedUsers;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import org.junit.Test;
 
 import java.util.Collections;

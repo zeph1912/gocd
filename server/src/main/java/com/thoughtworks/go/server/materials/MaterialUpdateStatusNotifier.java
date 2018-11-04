@@ -20,7 +20,6 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.PipelineConfig;
 import com.thoughtworks.go.server.messaging.GoMessageListener;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

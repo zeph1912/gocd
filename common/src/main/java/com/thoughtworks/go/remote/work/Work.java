@@ -17,7 +17,6 @@
 package com.thoughtworks.go.remote.work;
 
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
-import com.thoughtworks.go.util.command.EnvironmentVariableContext;
 
 import java.io.Serializable;
 

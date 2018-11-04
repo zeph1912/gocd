@@ -16,11 +16,7 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.GoConfigDao;
-import com.thoughtworks.go.domain.JobIdentifier;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.Properties;
-import com.thoughtworks.go.domain.Property;
+import com.thoughtworks.go.config.Property;
 import com.thoughtworks.go.fixture.PipelineWithTwoStages;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.dao.PropertyDao;

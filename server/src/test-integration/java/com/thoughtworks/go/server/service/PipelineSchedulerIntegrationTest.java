@@ -18,20 +18,14 @@ package com.thoughtworks.go.server.service;
 
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.GoConfigDao;
-import com.thoughtworks.go.config.StageConfig;
-import com.thoughtworks.go.domain.EnvironmentVariable;
-import com.thoughtworks.go.domain.EnvironmentVariables;
-import com.thoughtworks.go.domain.Pipeline;
 import com.thoughtworks.go.domain.PipelinePauseInfo;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.svn.Subversion;
-import com.thoughtworks.go.domain.materials.svn.SvnCommand;
+import com.thoughtworks.go.config.materials.svn.Subversion;
+import com.thoughtworks.go.config.materials.svn.SvnCommand;
 import com.thoughtworks.go.helper.SvnTestRepo;
 import com.thoughtworks.go.helper.TestRepo;
 import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.scheduling.ScheduleHelper;
 import com.thoughtworks.go.server.scheduling.ScheduleOptions;
 import com.thoughtworks.go.server.service.result.HttpOperationResult;

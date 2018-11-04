@@ -16,6 +16,8 @@
 
 package com.thoughtworks.go.server.web;
 
+import com.thoughtworks.go.server.GoRequestContext;
+import com.thoughtworks.go.server.JsonRenderer;
 import com.thoughtworks.go.util.json.JsonFakeMap;
 import org.springframework.web.servlet.view.AbstractView;
 

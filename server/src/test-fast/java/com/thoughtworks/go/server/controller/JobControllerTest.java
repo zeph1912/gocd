@@ -16,9 +16,8 @@
 
 package com.thoughtworks.go.server.controller;
 
-import com.thoughtworks.go.domain.JobInstance;
-import com.thoughtworks.go.domain.JobResult;
-import com.thoughtworks.go.domain.JobState;
+import com.thoughtworks.go.config.JobResult;
+import com.thoughtworks.go.config.JobState;
 import com.thoughtworks.go.dto.DurationBean;
 import com.thoughtworks.go.helper.JobInstanceMother;
 import com.thoughtworks.go.server.dao.JobInstanceDao;

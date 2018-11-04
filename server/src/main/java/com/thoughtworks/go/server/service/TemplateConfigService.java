@@ -16,19 +16,17 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.rits.cloning.Cloner;
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.commands.EntityConfigUpdateCommand;
-import com.thoughtworks.go.config.exceptions.GoConfigInvalidException;
 import com.thoughtworks.go.config.pluggabletask.PluggableTask;
 import com.thoughtworks.go.config.update.CreateTemplateConfigCommand;
 import com.thoughtworks.go.config.update.DeleteTemplateConfigCommand;
 import com.thoughtworks.go.config.update.UpdateTemplateAuthConfigCommand;
 import com.thoughtworks.go.config.update.UpdateTemplateConfigCommand;
-import com.thoughtworks.go.domain.Task;
+import com.thoughtworks.go.config.Task;
 import com.thoughtworks.go.i18n.LocalizedMessage;
 import com.thoughtworks.go.presentation.ConfigForEdit;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import com.thoughtworks.go.server.service.result.LocalizedOperationResult;
 import com.thoughtworks.go.server.service.tasks.PluggableTaskService;

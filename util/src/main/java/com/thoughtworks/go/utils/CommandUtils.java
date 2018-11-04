@@ -26,8 +26,6 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static com.thoughtworks.go.util.ExceptionUtils.bomb;
-
 public class CommandUtils {
 
     private static final Pattern QUOTED_STRING = Pattern.compile("^(['\"]).+(\\1)$");
@@ -43,7 +41,7 @@ public class CommandUtils {
             Process process = Runtime.getRuntime().exec(commands, null, workingDirectory);
             return captureOutput(process).toString();
         } catch (Exception e) {
-            throw bomb(e);
+            return null;
         }
     }
 

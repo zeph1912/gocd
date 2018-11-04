@@ -16,9 +16,8 @@
 
 package com.thoughtworks.go.server.materials;
 
-import com.thoughtworks.go.domain.MaterialRevisions;
-import com.thoughtworks.go.domain.materials.Material;
-import com.thoughtworks.go.domain.materials.Modification;
+import com.thoughtworks.go.config.materials.Material;
+import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.helper.TestRepo;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.persistence.MaterialRepository;

@@ -21,7 +21,6 @@ import java.util.Arrays;
 import java.util.concurrent.Semaphore;
 
 import com.thoughtworks.go.config.ServerConfig;
-import com.thoughtworks.go.domain.Stage;
 import com.thoughtworks.go.helper.StageMother;
 import com.thoughtworks.go.server.service.result.DiskSpaceOperationResult;
 import com.thoughtworks.go.server.service.result.HttpOperationResult;

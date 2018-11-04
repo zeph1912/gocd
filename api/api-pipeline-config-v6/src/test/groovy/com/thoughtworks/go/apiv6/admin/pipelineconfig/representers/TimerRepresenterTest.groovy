@@ -17,7 +17,7 @@
 package com.thoughtworks.go.apiv6.admin.pipelineconfig.representers
 
 import com.thoughtworks.go.api.util.GsonTransformer
-import com.thoughtworks.go.config.TimerConfig
+
 import org.junit.jupiter.api.Test
 
 import static com.thoughtworks.go.api.base.JsonUtils.toObjectString

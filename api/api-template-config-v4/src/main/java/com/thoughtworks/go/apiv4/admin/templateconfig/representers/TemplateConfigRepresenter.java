@@ -20,7 +20,6 @@ import com.thoughtworks.go.api.base.OutputWriter;
 import com.thoughtworks.go.api.representers.ErrorGetter;
 import com.thoughtworks.go.api.representers.JsonReader;
 import com.thoughtworks.go.apiv4.shared.representers.stages.StageRepresenter;
-import com.thoughtworks.go.config.PipelineTemplateConfig;
 import com.thoughtworks.go.spark.Routes;
 
 import java.util.HashMap;

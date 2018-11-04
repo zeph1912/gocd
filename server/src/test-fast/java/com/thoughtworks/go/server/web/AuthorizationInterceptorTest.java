@@ -25,7 +25,7 @@ import org.junit.Test;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.mock.web.MockHttpServletResponse;
 
-import static com.thoughtworks.go.server.domain.Username.ANONYMOUS;
+import static com.thoughtworks.go.config.Username.ANONYMOUS;
 import static com.thoughtworks.go.server.newsecurity.SessionUtilsHelper.loginAsAnonymous;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;

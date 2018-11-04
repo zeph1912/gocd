@@ -17,6 +17,7 @@
 package com.thoughtworks.go.server.domain;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
+import com.thoughtworks.go.config.Username;
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.is;

@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.server.dao.sparql;
 
-import com.thoughtworks.go.domain.JobIdentifier;
-
 /**
 * @understands test case run in a job
 */

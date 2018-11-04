@@ -20,18 +20,10 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import com.thoughtworks.go.domain.JobInstance;
-import com.thoughtworks.go.domain.JobInstances;
-import com.thoughtworks.go.domain.MaterialRevision;
-import com.thoughtworks.go.domain.MaterialRevisions;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.ModifiedFile;
-import com.thoughtworks.go.domain.materials.ModifiedAction;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.ModifiedFile;
+import com.thoughtworks.go.config.materials.ModifiedAction;
 import com.thoughtworks.go.helper.MaterialsMother;
-import com.thoughtworks.go.util.TimeProvider;
 
 public class PipelineBuilder {
     private String name;

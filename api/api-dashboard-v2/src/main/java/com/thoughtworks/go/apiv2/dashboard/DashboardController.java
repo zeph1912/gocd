@@ -25,7 +25,7 @@ import com.thoughtworks.go.apiv2.dashboard.representers.DashboardFor;
 import com.thoughtworks.go.apiv2.dashboard.representers.DashboardRepresenter;
 import com.thoughtworks.go.server.dashboard.GoDashboardEnvironment;
 import com.thoughtworks.go.server.dashboard.GoDashboardPipelineGroup;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.domain.user.DashboardFilter;
 import com.thoughtworks.go.server.domain.user.PipelineSelections;
 import com.thoughtworks.go.server.service.GoDashboardService;

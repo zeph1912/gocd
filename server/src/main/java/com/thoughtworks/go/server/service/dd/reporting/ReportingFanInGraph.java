@@ -26,10 +26,8 @@ import java.util.Map;
 import java.util.Set;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.CruiseConfig;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterialConfig;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
+import com.thoughtworks.go.config.dependency.DependencyMaterialConfig;
+import com.thoughtworks.go.config.materials.MaterialConfig;
 import com.thoughtworks.go.server.dao.PipelineDao;
 import com.thoughtworks.go.server.domain.PipelineTimeline;
 import com.thoughtworks.go.util.Pair;

@@ -16,9 +16,7 @@
 
 package com.thoughtworks.go.util;
 
-import com.thoughtworks.go.util.command.CommandLineException;
 import com.thoughtworks.go.util.command.ConsoleOutputStreamConsumer;
-import com.thoughtworks.go.util.command.EnvironmentVariableContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

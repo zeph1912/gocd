@@ -16,9 +16,9 @@
 
 package com.thoughtworks.go.helpers
 
-import com.thoughtworks.go.domain.JobResult
-import com.thoughtworks.go.domain.JobState
-import com.thoughtworks.go.domain.MaterialRevisions
+import JobResult
+import JobState
+import MaterialRevisions
 import com.thoughtworks.go.domain.PipelinePauseInfo
 import com.thoughtworks.go.domain.buildcause.BuildCause
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModel

@@ -21,16 +21,16 @@ module ApiV1
 
         property :plugin,
                  exec_context: :decorator,
-                 skip_parse: :represented.class == com.thoughtworks.go.domain.packagerepository.PackageDefinition
+                 skip_parse: :represented.class == com.thoughtworks.go.config.packagerepository.PackageDefinition
 
         collection :configuration,
                    decorator: ApiV1::Config::PluginConfigurationPropertyRepresenter,
                    exec_context: :decorator,
-                   class: com.thoughtworks.go.domain.config.ConfigurationProperty
+                   class: com.thoughtworks.go.config.ConfigurationProperty
 
 
         def plugin=(value)
-          plugin_configuration = com.thoughtworks.go.domain.config.PluginConfiguration.new(value, nil)
+          plugin_configuration = com.thoughtworks.go.config.PluginConfiguration.new(value, nil)
           represented.setPluginConfiguration(plugin_configuration)
         end
 

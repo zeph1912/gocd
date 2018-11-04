@@ -18,11 +18,8 @@ package com.thoughtworks.go.server.presentation.models;
 
 import java.util.Date;
 
-import com.thoughtworks.go.domain.JobInstance;
-import com.thoughtworks.go.domain.JobState;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.StageState;
+import com.thoughtworks.go.config.JobState;
+import com.thoughtworks.go.config.StageState;
 import com.thoughtworks.go.util.DateUtils;
 import org.jdom2.Element;
 

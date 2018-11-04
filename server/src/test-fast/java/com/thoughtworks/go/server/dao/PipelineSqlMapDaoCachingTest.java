@@ -16,17 +16,12 @@
 
 package com.thoughtworks.go.server.dao;
 
-import com.thoughtworks.go.config.BasicCruiseConfig;
-import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.CruiseConfig;
-import com.thoughtworks.go.config.GoConfigDao;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterial;
-import com.thoughtworks.go.config.materials.git.GitMaterial;
+import com.thoughtworks.go.config.*;
+import com.thoughtworks.go.config.dependency.DependencyMaterial;
+import com.thoughtworks.go.config.git.GitMaterial;
 import com.thoughtworks.go.database.Database;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.git.GitMaterialInstance;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.git.GitMaterialInstance;
 import com.thoughtworks.go.helper.*;
 import com.thoughtworks.go.presentation.pipelinehistory.*;
 import com.thoughtworks.go.server.cache.GoCache;
@@ -36,7 +31,6 @@ import com.thoughtworks.go.server.transaction.SqlMapClientTemplate;
 import com.thoughtworks.go.server.transaction.TestTransactionSynchronizationManager;
 import com.thoughtworks.go.server.transaction.TransactionSynchronizationManager;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
-import com.thoughtworks.go.util.TimeProvider;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.hamcrest.Matchers;

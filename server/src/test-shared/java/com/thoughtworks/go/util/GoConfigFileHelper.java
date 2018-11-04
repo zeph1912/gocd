@@ -16,26 +16,20 @@
 
 package com.thoughtworks.go.util;
 
-import com.rits.cloning.Cloner;
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.exceptions.NoSuchEnvironmentException;
 import com.thoughtworks.go.config.materials.Filter;
 import com.thoughtworks.go.config.materials.MaterialConfigs;
 import com.thoughtworks.go.config.materials.PackageMaterialConfig;
-import com.thoughtworks.go.config.materials.svn.SvnMaterialConfig;
-import com.thoughtworks.go.config.registry.ConfigElementImplementationRegistry;
-import com.thoughtworks.go.config.remote.ConfigRepoConfig;
-import com.thoughtworks.go.config.remote.ConfigReposConfig;
-import com.thoughtworks.go.domain.ServerSiteUrlConfig;
-import com.thoughtworks.go.domain.config.Admin;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
-import com.thoughtworks.go.domain.materials.svn.Subversion;
-import com.thoughtworks.go.domain.materials.svn.SvnCommand;
-import com.thoughtworks.go.domain.packagerepository.PackageRepository;
-import com.thoughtworks.go.domain.scm.SCM;
+import com.thoughtworks.go.config.svn.SvnMaterialConfig;
+import com.thoughtworks.go.config.ServerSiteUrlConfig;
+import com.thoughtworks.go.config.materials.MaterialConfig;
+import com.thoughtworks.go.config.materials.svn.Subversion;
+import com.thoughtworks.go.config.materials.svn.SvnCommand;
+import com.thoughtworks.go.config.packagerepository.PackageRepository;
+import com.thoughtworks.go.config.scm.SCM;
 import com.thoughtworks.go.helper.*;
 import com.thoughtworks.go.serverhealth.ServerHealthService;
-import com.thoughtworks.go.service.ConfigRepository;
 import org.apache.commons.io.FileUtils;
 
 import java.io.ByteArrayOutputStream;
@@ -46,7 +40,7 @@ import java.util.List;
 import java.util.UUID;
 
 import static com.thoughtworks.go.config.PipelineConfigs.DEFAULT_GROUP;
-import static com.thoughtworks.go.domain.packagerepository.ConfigurationPropertyMother.create;
+import static com.thoughtworks.go.config.packagerepository.ConfigurationPropertyMother.create;
 import static com.thoughtworks.go.util.ExceptionUtils.bomb;
 import static java.nio.charset.StandardCharsets.UTF_8;
 

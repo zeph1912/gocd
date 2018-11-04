@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.ui;
 
 
-import com.thoughtworks.go.config.ResourceConfig;
 import com.thoughtworks.go.domain.AgentInstance;
 import com.thoughtworks.go.helper.AgentInstanceMother;
 import org.junit.Test;

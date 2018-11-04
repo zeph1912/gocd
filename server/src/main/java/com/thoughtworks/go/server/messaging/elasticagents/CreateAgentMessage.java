@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.messaging.elasticagents;
 
 import com.thoughtworks.go.config.elastic.ElasticProfile;
-import com.thoughtworks.go.domain.JobIdentifier;
 import com.thoughtworks.go.server.messaging.PluginAwareMessage;
 
 import java.util.Map;

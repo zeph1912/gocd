@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.presentation.models;
 
-import com.thoughtworks.go.config.PipelineConfig;
 import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.presentation.pipelinehistory.NullStageHistoryItem;
 import static org.hamcrest.core.Is.is;

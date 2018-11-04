@@ -25,7 +25,6 @@ import com.thoughtworks.go.api.spring.ApiAuthenticationHelper;
 import com.thoughtworks.go.api.util.GsonTransformer;
 import com.thoughtworks.go.apiv1.elasticprofile.representers.ElasticProfileRepresenter;
 import com.thoughtworks.go.apiv1.elasticprofile.representers.ElasticProfilesRepresenter;
-import com.thoughtworks.go.config.PluginProfiles;
 import com.thoughtworks.go.config.elastic.ElasticProfile;
 import com.thoughtworks.go.config.exceptions.RecordNotFoundException;
 import com.thoughtworks.go.server.service.ElasticProfileService;

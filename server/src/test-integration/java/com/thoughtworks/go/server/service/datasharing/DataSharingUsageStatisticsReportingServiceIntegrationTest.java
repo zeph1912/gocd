@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.service.datasharing;
 
-import com.thoughtworks.go.domain.UsageStatisticsReporting;
 import com.thoughtworks.go.server.cache.CacheKeyGenerator;
 import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.UsageStatisticsReportingSqlMapDao;
@@ -28,7 +27,6 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import com.thoughtworks.go.server.dao.*;
 
 import java.sql.Timestamp;
 

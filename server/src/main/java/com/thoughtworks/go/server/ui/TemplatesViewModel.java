@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.server.ui;
 
-import com.thoughtworks.go.config.PipelineTemplateConfig;
-
 public class TemplatesViewModel {
     private PipelineTemplateConfig templateConfig;
     private final boolean authorizedToViewTemplate;

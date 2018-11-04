@@ -17,9 +17,8 @@
 package com.thoughtworks.go.apiv1.buildcause.representers;
 
 import com.thoughtworks.go.api.base.OutputWriter;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterial;
-import com.thoughtworks.go.domain.MaterialRevision;
-import com.thoughtworks.go.domain.materials.dependency.DependencyMaterialRevision;
+import com.thoughtworks.go.config.dependency.DependencyMaterial;
+import com.thoughtworks.go.config.materials.dependency.DependencyMaterialRevision;
 
 public class MaterialRevisionRepresenter {
 

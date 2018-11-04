@@ -16,14 +16,10 @@
 
 package com.thoughtworks.go.server.controller;
 
-import com.thoughtworks.go.config.AgentConfig;
-import com.thoughtworks.go.config.SecurityConfig;
 import com.thoughtworks.go.config.ServerConfig;
-import com.thoughtworks.go.config.UpdateConfigCommand;
-import com.thoughtworks.go.domain.JarDetector;
 import com.thoughtworks.go.helper.AgentInstanceMother;
 import com.thoughtworks.go.plugin.infra.commons.PluginsZip;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.AgentConfigService;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
 import com.thoughtworks.go.server.service.AgentService;

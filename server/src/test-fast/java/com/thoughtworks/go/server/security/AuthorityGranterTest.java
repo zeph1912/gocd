@@ -17,7 +17,7 @@
 package com.thoughtworks.go.server.security;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.SecurityService;
 import org.junit.Before;
 import org.junit.Test;

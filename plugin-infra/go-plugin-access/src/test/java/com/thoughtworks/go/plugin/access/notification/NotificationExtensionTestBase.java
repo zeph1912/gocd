@@ -17,8 +17,8 @@
 package com.thoughtworks.go.plugin.access.notification;
 
 import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.notificationdata.StageNotificationData;
+import com.thoughtworks.go.config.buildcause.BuildCause;
+import com.thoughtworks.go.config.notificationdata.StageNotificationData;
 import com.thoughtworks.go.plugin.access.common.AbstractExtension;
 import com.thoughtworks.go.plugin.access.common.settings.PluginSettingsConfiguration;
 import com.thoughtworks.go.plugin.access.common.settings.PluginSettingsConstants;

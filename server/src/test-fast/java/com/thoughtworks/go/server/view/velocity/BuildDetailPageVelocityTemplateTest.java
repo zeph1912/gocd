@@ -18,11 +18,8 @@ package com.thoughtworks.go.server.view.velocity;
 
 import com.thoughtworks.go.CurrentGoCDVersion;
 import com.thoughtworks.go.config.materials.MaterialConfigs;
-import com.thoughtworks.go.config.materials.git.GitMaterialConfig;
-import com.thoughtworks.go.domain.JobInstances;
-import com.thoughtworks.go.domain.MaterialRevisions;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.materials.Modification;
+import com.thoughtworks.go.config.git.GitMaterialConfig;
+import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.helper.StageMother;
 import com.thoughtworks.go.server.presentation.models.JobDetailPresentationModel;
 import com.thoughtworks.go.server.service.ArtifactsService;
@@ -34,7 +31,7 @@ import java.util.Date;
 import java.util.HashMap;
 
 import static com.thoughtworks.go.config.TrackingTool.createTrackingTool;
-import static com.thoughtworks.go.domain.buildcause.BuildCause.createWithModifications;
+import static com.thoughtworks.go.config.buildcause.BuildCause.createWithModifications;
 import static com.thoughtworks.go.helper.JobInstanceMother.building;
 import static com.thoughtworks.go.helper.MaterialConfigsMother.gitMaterialConfig;
 import static com.thoughtworks.go.helper.MaterialsMother.gitMaterial;

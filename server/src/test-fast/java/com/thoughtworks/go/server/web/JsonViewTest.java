@@ -16,6 +16,7 @@
 
 package com.thoughtworks.go.server.web;
 
+import com.thoughtworks.go.server.GoRequestContext;
 import com.thoughtworks.go.server.web.i18n.ResolvableViewableStatus;
 import com.thoughtworks.go.util.json.JsonUrl;
 import org.junit.Test;
@@ -27,7 +28,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.thoughtworks.go.server.web.JsonRenderer.render;
+import static com.thoughtworks.go.server.JsonRenderer.render;
 import static com.thoughtworks.go.server.web.JsonView.asMap;
 import static com.thoughtworks.go.server.web.i18n.CurrentStatus.WAITING;
 import static net.javacrumbs.jsonunit.fluent.JsonFluentAssert.assertThatJson;

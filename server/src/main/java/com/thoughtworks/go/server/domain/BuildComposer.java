@@ -15,17 +15,15 @@
  * ************************GO-LICENSE-END***********************************/
 package com.thoughtworks.go.server.domain;
 
-import com.thoughtworks.go.config.materials.Materials;
-import com.thoughtworks.go.domain.*;
+import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.domain.builder.Builder;
 import com.thoughtworks.go.remote.work.BuildAssignment;
-import com.thoughtworks.go.util.command.EnvironmentVariableContext;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.thoughtworks.go.domain.BuildCommand.*;
-import static com.thoughtworks.go.domain.JobState.*;
+import static com.thoughtworks.go.config.BuildCommand.*;
+import static com.thoughtworks.go.config.JobState.*;
 
 public class BuildComposer {
     private BuildAssignment assignment;
@@ -70,16 +68,17 @@ public class BuildComposer {
 
 
     private BuildCommand harvestProperties() {
-        List<ArtifactPropertiesGenerator> generators = assignment.getPropertyGenerators();
-        List<BuildCommand> commands = new ArrayList<>();
-
-        for (ArtifactPropertiesGenerator generator : generators) {
-            BuildCommand command = BuildCommand.generateProperty(generator.getName(), generator.getSrc(), generator.getXpath()).setWorkingDirectory(workingDirectory());
-            commands.add(command);
-        }
-        return BuildCommand.compose(
-                reportAction("Start to create properties"),
-                BuildCommand.compose(commands));
+//        List<ArtifactPropertiesGenerator> generators = assignment.getPropertyGenerators();
+//        List<BuildCommand> commands = new ArrayList<>();
+//
+//        for (ArtifactPropertiesGenerator generator : generators) {
+//            BuildCommand command = BuildCommand.generateProperty(generator.getName(), generator.getSrc(), generator.getXpath()).setWorkingDirectory(workingDirectory());
+//            commands.add(command);
+//        }
+//        return BuildCommand.compose(
+//                reportAction("Start to create properties"),
+//                BuildCommand.compose(commands));
+        return null;
     }
 
 
@@ -92,32 +91,34 @@ public class BuildComposer {
     }
 
     private BuildCommand runSingleBuilder(Builder builder) {
-        String runIfConfig = builder.resolvedRunIfConfig().toString();
-        return BuildCommand.compose(
-                echoWithPrefix("Current job status: passed"),
-                echoWithPrefix("Current job status: failed").runIf("failed"),
-                echoWithPrefix("Task: %s", builder.getDescription()).runIf(runIfConfig),
-                builder.buildCommand()
-                        .runIf(runIfConfig)
-                        .setOnCancel(runCancelTask(builder.getCancelBuilder()))).runIf(runIfConfig);
+//        String runIfConfig = builder.resolvedRunIfConfig().toString();
+//        return BuildCommand.compose(
+//                echoWithPrefix("Current job status: passed"),
+//                echoWithPrefix("Current job status: failed").runIf("failed"),
+//                echoWithPrefix("Task: %s", builder.getDescription()).runIf(runIfConfig),
+//                builder.buildCommand()
+//                        .runIf(runIfConfig)
+//                        .setOnCancel(runCancelTask(builder.getCancelBuilder()))).runIf(runIfConfig);
+        return null;
     }
 
     private BuildCommand runCancelTask(Builder cancelBuilder) {
         if (cancelBuilder == null) {
             return null;
         }
-        return BuildCommand.compose(
-                echoWithPrefix("Cancel task: %s", cancelBuilder.getDescription()),
-                cancelBuilder.buildCommand(),
-                echoWithPrefix("Task is cancelled"));
+        return null;
+//        return BuildCommand.compose(
+//                echoWithPrefix("Cancel task: %s", cancelBuilder.getDescription()),
+//                cancelBuilder.buildCommand(),
+//                echoWithPrefix("Task is cancelled"));
     }
 
     private BuildCommand uploadArtifacts() {
         List<BuildCommand> commands = new ArrayList<>();
-        for (ArtifactPlan ap : assignment.getArtifactPlans()) {
-            commands.add(uploadArtifact(ap.getSrc(), ap.getDest(), ap.getArtifactPlanType().isTest())
-                    .setWorkingDirectory(workingDirectory()));
-        }
+//        for (ArtifactPlan ap : assignment.getArtifactPlans()) {
+//            commands.add(uploadArtifact(ap.getSrc(), ap.getDest(), ap.getArtifactPlanType().isTest())
+//                    .setWorkingDirectory(workingDirectory()));
+//        }
 
         return BuildCommand.compose(
                 reportAction("Start to upload"),
@@ -127,11 +128,11 @@ public class BuildComposer {
 
     private BuildCommand generateTestReport() {
         List<String> srcs = new ArrayList<>();
-        for (ArtifactPlan ap : assignment.getArtifactPlans()) {
-            if (ap.getArtifactPlanType() == ArtifactPlanType.unit) {
-                srcs.add(ap.getSrc());
-            }
-        }
+//        for (ArtifactPlan ap : assignment.getArtifactPlans()) {
+//            if (ap.getArtifactPlanType() == ArtifactPlanType.unit) {
+//                srcs.add(ap.getSrc());
+//            }
+//        }
         return srcs.isEmpty() ? noop() : BuildCommand.generateTestReport(srcs, "testoutput").setWorkingDirectory(workingDirectory());
     }
 
@@ -160,16 +161,17 @@ public class BuildComposer {
     }
 
     private BuildCommand updateMaterials() {
-        if (!assignment.shouldFetchMaterials()) {
-            return echoWithPrefix("Skipping material update since stage is configured not to fetch materials");
-        }
+//        if (!assignment.shouldFetchMaterials()) {
+//            return echoWithPrefix("Skipping material update since stage is configured not to fetch materials");
+//        }
+        return echoWithPrefix("Skipping material update since stage is configured not to fetch materials");
 
-        MaterialRevisions materialRevisions = assignment.materialRevisions();
-        Materials materials = materialRevisions.getMaterials();
-        return BuildCommand.compose(
-                materials.cleanUpCommand(workingDirectory()),
-                echoWithPrefix("Start to update materials \n"),
-                materialRevisions.updateToCommand(workingDirectory()));
+//        MaterialRevisions materialRevisions = assignment.materialRevisions();
+//        Materials materials = materialRevisions.getMaterials();
+//        return BuildCommand.compose(
+//                materials.cleanUpCommand(workingDirectory()),
+//                echoWithPrefix("Start to update materials \n"),
+//                materialRevisions.updateToCommand(workingDirectory()));
     }
 
     private BuildCommand refreshWorkingDir() {
@@ -193,7 +195,8 @@ public class BuildComposer {
     }
 
     private JobIdentifier getJobIdentifier() {
-        return assignment.getJobIdentifier();
+//        return assignment.getJobIdentifier();
+        return null;
     }
 
     private EnvironmentVariableContext environmentVariableContext() {

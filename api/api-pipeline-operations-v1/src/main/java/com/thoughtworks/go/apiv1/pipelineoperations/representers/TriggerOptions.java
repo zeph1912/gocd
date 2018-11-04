@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.apiv1.pipelineoperations.representers;
 
-import com.thoughtworks.go.config.EnvironmentVariablesConfig;
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModel;
 
 public class TriggerOptions {

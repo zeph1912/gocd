@@ -18,7 +18,7 @@ package com.thoughtworks.go.server.view.artifacts;
 
 import java.io.File;
 
-import com.thoughtworks.go.domain.LocatableEntity;
+import com.thoughtworks.go.config.LocatableEntity;
 
 public class BuildIdArtifactLocator implements ArtifactLocator {
     private final File artifactsRoot;

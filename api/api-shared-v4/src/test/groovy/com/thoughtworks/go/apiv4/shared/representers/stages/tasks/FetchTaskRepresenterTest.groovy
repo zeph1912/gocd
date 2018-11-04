@@ -17,7 +17,6 @@
 package com.thoughtworks.go.apiv4.shared.representers.stages.tasks
 
 import com.thoughtworks.go.config.CaseInsensitiveString
-import com.thoughtworks.go.config.FetchTask
 
 class FetchTaskRepresenterTest implements TaskRepresenterTest {
   def existingTask() {

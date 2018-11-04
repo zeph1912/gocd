@@ -17,7 +17,7 @@
 package com.thoughtworks.go.server.dashboard;
 
 import com.thoughtworks.go.config.security.Permissions;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 
 public class GoDashboardPipelineGroup extends AbstractDashboardGroup {
     private Permissions permissions;

@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.dao;
 
-import com.thoughtworks.go.domain.VersionInfo;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;

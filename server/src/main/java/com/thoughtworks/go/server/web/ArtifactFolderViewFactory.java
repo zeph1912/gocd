@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.web;
 
 import org.springframework.web.servlet.ModelAndView;
-import com.thoughtworks.go.domain.JobIdentifier;
 
 public interface ArtifactFolderViewFactory {
     ModelAndView createView(JobIdentifier identifier, ArtifactFolder artifactFolder) throws Exception;

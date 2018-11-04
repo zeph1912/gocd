@@ -19,17 +19,17 @@ require 'rails_helper'
 describe "/api/jobs" do
 
   before :each do
-    @properties = com.thoughtworks.go.domain.Properties.new
-    @properties.add(com.thoughtworks.go.domain.Property.new("foo", "value_of_property_foo"))
+    @properties = com.thoughtworks.go.config.Properties.new
+    @properties.add(com.thoughtworks.go.config.Property.new("foo", "value_of_property_foo"))
 
     @plans = ArrayList.new
-    @plans.add(com.thoughtworks.go.domain.ArtifactPlan.new(com.thoughtworks.go.domain.ArtifactPlanType::file, "artifact", "blahartifact/path"))
-    @plans.add(com.thoughtworks.go.domain.ArtifactPlan.new(com.thoughtworks.go.domain.ArtifactPlanType::file, "logs/log-artifact", "log-path"))
-    @plans.add(com.thoughtworks.go.domain.ArtifactPlan.new(com.thoughtworks.go.domain.ArtifactPlanType::unit, "test.xml", ""))
+    @plans.add(com.thoughtworks.go.config.ArtifactPlan.new(com.thoughtworks.go.config.ArtifactPlanType::file, "artifact", "blahartifact/path"))
+    @plans.add(com.thoughtworks.go.config.ArtifactPlan.new(com.thoughtworks.go.config.ArtifactPlanType::file, "logs/log-artifact", "log-path"))
+    @plans.add(com.thoughtworks.go.config.ArtifactPlan.new(com.thoughtworks.go.config.ArtifactPlanType::unit, "test.xml", ""))
 
-    @resources = com.thoughtworks.go.domain.Resources.new("linux, teapot")
+    @resources = com.thoughtworks.go.config.Resources.new("linux, teapot")
 
-    @variables = com.thoughtworks.go.domain.EnvironmentVariables.new
+    @variables = com.thoughtworks.go.config.EnvironmentVariables.new
     @variables.add("VARIABLE_NAME", "variable-value")
 
     @job = JobInstanceMother::completed("job-name")
@@ -104,15 +104,15 @@ describe "/api/jobs" do
     include GoUtil
 
     before :each do
-      properties = com.thoughtworks.go.domain.Properties.new
-      properties.add(com.thoughtworks.go.domain.Property.new("prop<er\"ty", "val<ue_of_prop\"erty_foo"))
+      properties = com.thoughtworks.go.config.Properties.new
+      properties.add(com.thoughtworks.go.config.Property.new("prop<er\"ty", "val<ue_of_prop\"erty_foo"))
 
       plans = ArrayList.new
-      plans.add(com.thoughtworks.go.domain.ArtifactPlan.new(com.thoughtworks.go.domain.ArtifactPlanType::file, "artifact", "blah<artif\"act/path"))
-      plans.add(com.thoughtworks.go.domain.ArtifactPlan.new(com.thoughtworks.go.domain.ArtifactPlanType::file, "logs/log-arti\"fact", "log-path"))
-      plans.add(com.thoughtworks.go.domain.ArtifactPlan.new(com.thoughtworks.go.domain.ArtifactPlanType::unit, "te<s\"t.xml", ""))
+      plans.add(com.thoughtworks.go.config.ArtifactPlan.new(com.thoughtworks.go.config.ArtifactPlanType::file, "artifact", "blah<artif\"act/path"))
+      plans.add(com.thoughtworks.go.config.ArtifactPlan.new(com.thoughtworks.go.config.ArtifactPlanType::file, "logs/log-arti\"fact", "log-path"))
+      plans.add(com.thoughtworks.go.config.ArtifactPlan.new(com.thoughtworks.go.config.ArtifactPlanType::unit, "te<s\"t.xml", ""))
 
-      variables = com.thoughtworks.go.domain.EnvironmentVariables.new
+      variables = com.thoughtworks.go.config.EnvironmentVariables.new
       variables.add("VARIA<BLE_NA\"ME", "varia<ble-val\"ue")
 
       @job = JobInstanceMother::completed("job<na\"me")

@@ -19,10 +19,7 @@ package com.thoughtworks.go.server.presentation.models;
 import java.util.Map;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.StageConfig;
 import com.thoughtworks.go.domain.BaseCollection;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.domain.StageIdentifier;
 
 import static com.thoughtworks.go.util.ExceptionUtils.methodNotImplemented;
 

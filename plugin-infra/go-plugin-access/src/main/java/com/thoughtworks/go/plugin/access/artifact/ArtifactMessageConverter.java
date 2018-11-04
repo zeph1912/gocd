@@ -18,7 +18,7 @@ package com.thoughtworks.go.plugin.access.artifact;
 
 import com.thoughtworks.go.config.ArtifactStore;
 import com.thoughtworks.go.domain.ArtifactPlan;
-import com.thoughtworks.go.domain.config.Configuration;
+import com.thoughtworks.go.config.config.Configuration;
 import com.thoughtworks.go.plugin.access.artifact.model.PublishArtifactResponse;
 import com.thoughtworks.go.plugin.access.artifact.models.FetchArtifactEnvironmentVariable;
 import com.thoughtworks.go.plugin.api.response.validation.ValidationResult;

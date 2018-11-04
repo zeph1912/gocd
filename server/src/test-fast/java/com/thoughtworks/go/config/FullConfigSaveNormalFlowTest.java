@@ -17,13 +17,7 @@
 package com.thoughtworks.go.config;
 
 import com.thoughtworks.go.CurrentGoCDVersion;
-import com.thoughtworks.go.config.registry.ConfigElementImplementationRegistry;
-import com.thoughtworks.go.config.remote.PartialConfig;
 import com.thoughtworks.go.config.update.FullConfigUpdateCommand;
-import com.thoughtworks.go.domain.GoConfigRevision;
-import com.thoughtworks.go.helper.GoConfigMother;
-import com.thoughtworks.go.service.ConfigRepository;
-import com.thoughtworks.go.util.TimeProvider;
 import org.hamcrest.core.Is;
 import org.jdom2.Document;
 import org.junit.Before;

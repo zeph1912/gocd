@@ -18,10 +18,8 @@ package com.thoughtworks.go.listener;
 
 import java.io.IOException;
 
-import com.thoughtworks.go.config.BasicCruiseConfig;
-import com.thoughtworks.go.config.CruiseConfig;
 import com.thoughtworks.go.config.ServerConfig;
-import com.thoughtworks.go.domain.ServerSiteUrlConfig;
+import com.thoughtworks.go.config.ServerSiteUrlConfig;
 import com.thoughtworks.go.server.cache.GoCache;
 import org.junit.Test;
 

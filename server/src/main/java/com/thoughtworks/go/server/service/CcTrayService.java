@@ -17,8 +17,8 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.domain.activity.ProjectStatus;
-import com.thoughtworks.go.domain.cctray.CcTrayCache;
+import com.thoughtworks.go.config.activity.ProjectStatus;
+import com.thoughtworks.go.config.cctray.CcTrayCache;
 import com.thoughtworks.go.server.newsecurity.utils.SessionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;

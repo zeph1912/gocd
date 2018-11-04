@@ -17,21 +17,15 @@
 package com.thoughtworks.go.server.service;
 
 import com.rits.cloning.Cloner;
+import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.CruiseConfig;
-import com.thoughtworks.go.config.GoConfigDao;
-import com.thoughtworks.go.config.StageConfig;
 import com.thoughtworks.go.config.materials.Filter;
 import com.thoughtworks.go.config.materials.IgnoredFiles;
-import com.thoughtworks.go.config.materials.git.GitMaterial;
-import com.thoughtworks.go.config.materials.mercurial.HgMaterial;
-import com.thoughtworks.go.config.materials.svn.SvnMaterial;
-import com.thoughtworks.go.domain.MaterialRevision;
-import com.thoughtworks.go.domain.MaterialRevisions;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.Material;
-import com.thoughtworks.go.domain.materials.ModifiedAction;
+import com.thoughtworks.go.config.git.GitMaterial;
+import com.thoughtworks.go.config.mercurial.HgMaterial;
+import com.thoughtworks.go.config.svn.SvnMaterial;
+import com.thoughtworks.go.config.materials.Material;
+import com.thoughtworks.go.config.materials.ModifiedAction;
 import com.thoughtworks.go.helper.StageConfigMother;
 import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;

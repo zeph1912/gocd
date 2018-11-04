@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.domain;
 
-import static java.util.Arrays.asList;
 import java.util.HashSet;
 import java.util.Set;
 

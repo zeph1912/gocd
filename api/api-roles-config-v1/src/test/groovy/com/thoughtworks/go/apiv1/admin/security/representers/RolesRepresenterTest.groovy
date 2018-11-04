@@ -17,9 +17,6 @@
 package com.thoughtworks.go.apiv1.admin.security.representers
 
 import com.thoughtworks.go.config.*
-import com.thoughtworks.go.domain.config.ConfigurationKey
-import com.thoughtworks.go.domain.config.ConfigurationProperty
-import com.thoughtworks.go.domain.config.ConfigurationValue
 import org.junit.jupiter.api.Test
 
 import static com.thoughtworks.go.api.base.JsonUtils.toObjectString

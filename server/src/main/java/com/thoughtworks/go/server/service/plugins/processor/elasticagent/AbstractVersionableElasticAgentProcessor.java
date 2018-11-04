@@ -19,7 +19,7 @@ package com.thoughtworks.go.server.service.plugins.processor.elasticagent;
 import com.thoughtworks.go.domain.AgentInstance;
 import com.thoughtworks.go.plugin.access.elastic.models.AgentMetadata;
 import com.thoughtworks.go.server.domain.ElasticAgentMetadata;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.AgentConfigService;
 import com.thoughtworks.go.server.service.AgentService;
 import com.thoughtworks.go.server.service.ElasticAgentPluginService;

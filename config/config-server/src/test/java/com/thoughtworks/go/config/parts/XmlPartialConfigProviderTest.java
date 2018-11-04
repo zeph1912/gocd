@@ -16,9 +16,6 @@
 package com.thoughtworks.go.config.parts;
 
 import com.thoughtworks.go.config.*;
-import com.thoughtworks.go.config.remote.PartialConfig;
-import com.thoughtworks.go.domain.PipelineGroups;
-import com.thoughtworks.go.domain.config.Configuration;
 import com.thoughtworks.go.helper.EnvironmentConfigMother;
 import com.thoughtworks.go.helper.GoConfigMother;
 import com.thoughtworks.go.util.ConfigElementImplementationRegistryMother;

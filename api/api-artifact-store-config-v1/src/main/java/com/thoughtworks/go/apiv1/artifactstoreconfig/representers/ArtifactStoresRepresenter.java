@@ -17,7 +17,6 @@
 package com.thoughtworks.go.apiv1.artifactstoreconfig.representers;
 
 import com.thoughtworks.go.api.base.OutputWriter;
-import com.thoughtworks.go.config.ArtifactStores;
 import com.thoughtworks.go.spark.Routes;
 
 public class ArtifactStoresRepresenter {

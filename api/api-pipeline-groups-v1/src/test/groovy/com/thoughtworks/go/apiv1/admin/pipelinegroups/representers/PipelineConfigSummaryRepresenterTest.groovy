@@ -17,7 +17,7 @@
 package com.thoughtworks.go.apiv1.admin.pipelinegroups.representers
 
 import com.thoughtworks.go.config.CaseInsensitiveString
-import com.thoughtworks.go.config.PipelineConfig
+
 import com.thoughtworks.go.helper.MaterialConfigsMother
 import org.junit.jupiter.api.Test
 

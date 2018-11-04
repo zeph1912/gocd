@@ -18,10 +18,6 @@ package com.thoughtworks.go.plugins.presentation;
 
 import com.google.gson.Gson;
 import com.thoughtworks.go.config.pluggabletask.PluggableTask;
-import com.thoughtworks.go.domain.config.Configuration;
-import com.thoughtworks.go.domain.config.ConfigurationProperty;
-import com.thoughtworks.go.domain.config.PluginConfiguration;
-import com.thoughtworks.go.presentation.MissingPluggableTaskViewModel;
 import com.thoughtworks.go.plugin.access.pluggabletask.PluggableTaskConfigStore;
 import com.thoughtworks.go.plugin.access.pluggabletask.TaskPreference;
 import com.thoughtworks.go.plugin.api.task.TaskView;
@@ -32,7 +28,7 @@ import org.junit.Test;
 import java.util.Map;
 import java.util.Set;
 
-import static com.thoughtworks.go.domain.packagerepository.ConfigurationPropertyMother.create;
+import static com.thoughtworks.go.config.packagerepository.ConfigurationPropertyMother.create;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;

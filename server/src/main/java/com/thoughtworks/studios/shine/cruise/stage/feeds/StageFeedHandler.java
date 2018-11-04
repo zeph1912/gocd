@@ -16,7 +16,7 @@
 
 package com.thoughtworks.studios.shine.cruise.stage.feeds;
 
-import com.thoughtworks.go.domain.feed.stage.StageFeedEntry;
+import com.thoughtworks.go.config.feed.stage.StageFeedEntry;
 import com.thoughtworks.go.server.service.PipelineInstanceLoader;
 
 public interface StageFeedHandler {

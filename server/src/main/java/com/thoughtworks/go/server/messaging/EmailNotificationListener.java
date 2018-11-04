@@ -16,10 +16,7 @@
 
 package com.thoughtworks.go.server.messaging;
 
-import com.thoughtworks.go.config.CruiseConfig;
-import com.thoughtworks.go.config.GoMailSender;
-import com.thoughtworks.go.config.GoSmtpMailSender;
-import com.thoughtworks.go.domain.materials.ValidationBean;
+import com.thoughtworks.go.config.materials.ValidationBean;
 import com.thoughtworks.go.server.service.GoConfigService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

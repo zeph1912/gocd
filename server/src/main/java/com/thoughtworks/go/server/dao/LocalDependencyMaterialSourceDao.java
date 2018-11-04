@@ -20,12 +20,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterial;
-import com.thoughtworks.go.domain.Stage;
+import com.thoughtworks.go.config.dependency.DependencyMaterial;
 import com.thoughtworks.go.domain.StageAsDMR;
-import com.thoughtworks.go.domain.StageIdentifier;
-import com.thoughtworks.go.domain.Stages;
-import com.thoughtworks.go.domain.materials.Modification;
+import com.thoughtworks.go.config.Stages;
+import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.server.util.Pagination;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

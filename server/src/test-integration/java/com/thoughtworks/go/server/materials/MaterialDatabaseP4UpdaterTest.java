@@ -16,8 +16,8 @@
 
 package com.thoughtworks.go.server.materials;
 
-import com.thoughtworks.go.config.materials.perforce.P4Material;
-import com.thoughtworks.go.domain.materials.Material;
+import com.thoughtworks.go.config.perforce.P4Material;
+import com.thoughtworks.go.config.materials.Material;
 import com.thoughtworks.go.helper.P4TestRepo;
 import com.thoughtworks.go.helper.TestRepo;
 

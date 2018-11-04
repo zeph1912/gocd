@@ -103,21 +103,21 @@ describe Admin::UsersController do
 
     it "should modify roles through UserService" do
       selections = [TriStateSelection.new("admin", "add")]
-      expect(@user_service).to receive(:modifyRolesAndUserAdminPrivileges).with(users = ["user-1"], TriStateSelection.new(com.thoughtworks.go.domain.config.Admin::GO_SYSTEM_ADMIN, TriStateSelection::Action.remove), selections, an_instance_of(HttpLocalizedOperationResult))
-      post :operate, params:{:operation => "apply_roles", :selected => users, :selections => {"admin" => TriStateSelection::Action.add.to_s}, :admin => {com.thoughtworks.go.domain.config.Admin::GO_SYSTEM_ADMIN => TriStateSelection::Action.remove.to_s}}
+      expect(@user_service).to receive(:modifyRolesAndUserAdminPrivileges).with(users = ["user-1"], TriStateSelection.new(com.thoughtworks.go.config.Admin::GO_SYSTEM_ADMIN, TriStateSelection::Action.remove), selections, an_instance_of(HttpLocalizedOperationResult))
+      post :operate, params:{:operation => "apply_roles", :selected => users, :selections => {"admin" => TriStateSelection::Action.add.to_s}, :admin => {com.thoughtworks.go.config.Admin::GO_SYSTEM_ADMIN => TriStateSelection::Action.remove.to_s}}
       assert_redirected_with_flash("/admin/users", "Role(s)/Admin-Privilege modified for 1 user(s) successfully.", 'success')
     end
 
     it "should not modify admin-privileges when not submitted" do
       selections = [TriStateSelection.new("admin", "add")]
-      expect(@user_service).to receive(:modifyRolesAndUserAdminPrivileges).with(users = ["user-1"], TriStateSelection.new(com.thoughtworks.go.domain.config.Admin::GO_SYSTEM_ADMIN, TriStateSelection::Action.nochange), selections, an_instance_of(HttpLocalizedOperationResult))
+      expect(@user_service).to receive(:modifyRolesAndUserAdminPrivileges).with(users = ["user-1"], TriStateSelection.new(com.thoughtworks.go.config.Admin::GO_SYSTEM_ADMIN, TriStateSelection::Action.nochange), selections, an_instance_of(HttpLocalizedOperationResult))
       post :operate, params:{:operation => "apply_roles", :selected => users, :selections => {"admin" => TriStateSelection::Action.add.to_s}}
       assert_redirected_with_flash("/admin/users", "Role(s)/Admin-Privilege modified for 1 user(s) successfully.", 'success')
     end
 
     it "should add a new role to users through UserService" do
       selections = [TriStateSelection.new("admin", TriStateSelection::Action.add.to_s)]
-      expect(@user_service).to receive(:modifyRolesAndUserAdminPrivileges).with( users = ["user-1"], TriStateSelection.new(com.thoughtworks.go.domain.config.Admin::GO_SYSTEM_ADMIN, TriStateSelection::Action.nochange), selections, an_instance_of(HttpLocalizedOperationResult))
+      expect(@user_service).to receive(:modifyRolesAndUserAdminPrivileges).with( users = ["user-1"], TriStateSelection.new(com.thoughtworks.go.config.Admin::GO_SYSTEM_ADMIN, TriStateSelection::Action.nochange), selections, an_instance_of(HttpLocalizedOperationResult))
       post :operate, params:{:operation => "add_role", :selected => users, :new_role => "admin"}
       assert_redirected_with_flash("/admin/users", "New role assigned to 1 user(s) successfully.", 'success')
     end
@@ -166,7 +166,7 @@ describe Admin::UsersController do
     end
 
     it "should search for a user" do
-      current_user_name = com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new('admin_user'))
+      current_user_name = com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new('admin_user'))
       allow(controller).to receive(:current_user).and_return(current_user_name)
 
       search_text = "foo"
@@ -182,7 +182,7 @@ describe Admin::UsersController do
     end
 
     it "should search for a user" do
-      current_user_name = com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new('admin_user'))
+      current_user_name = com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new('admin_user'))
       allow(controller).to receive(:current_user).and_return(current_user_name)
 
       search_text = "foo"
@@ -201,7 +201,7 @@ describe Admin::UsersController do
       allow(@result).to receive(:hasMessage).with(no_args).and_return(true)
       allow(@result).to receive(:message).and_return("some ldap error")
 
-      current_user_name = com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new('admin_user'))
+      current_user_name = com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new('admin_user'))
       allow(controller).to receive(:current_user).and_return(current_user_name)
 
       search_text = "foo"

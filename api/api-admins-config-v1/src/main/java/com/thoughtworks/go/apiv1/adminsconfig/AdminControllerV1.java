@@ -25,7 +25,6 @@ import com.thoughtworks.go.api.representers.JsonReader;
 import com.thoughtworks.go.api.spring.ApiAuthenticationHelper;
 import com.thoughtworks.go.api.util.GsonTransformer;
 import com.thoughtworks.go.apiv1.adminsconfig.representers.AdminsConfigRepresenter;
-import com.thoughtworks.go.config.AdminsConfig;
 import com.thoughtworks.go.server.service.AdminsConfigService;
 import com.thoughtworks.go.server.service.EntityHashingService;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;

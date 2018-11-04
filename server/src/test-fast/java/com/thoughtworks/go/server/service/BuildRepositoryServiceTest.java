@@ -16,10 +16,8 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.domain.JobInstance;
-import com.thoughtworks.go.domain.JobResult;
-import com.thoughtworks.go.domain.JobState;
-import com.thoughtworks.go.domain.NullJobInstance;
+import com.thoughtworks.go.config.JobResult;
+import com.thoughtworks.go.config.JobState;
 import com.thoughtworks.go.helper.JobInstanceMother;
 import com.thoughtworks.go.remote.work.InvalidAgentException;
 import org.junit.Before;

@@ -20,7 +20,7 @@ describe ApiV1::StageRepresenter do
 
   it 'renders an stage with hal representation' do
     stage_model     =StageMother.createPassedStage('pipeline', 1, 'stage', 2, 'job', java.util.Date.new())
-    stage_identifier=com.thoughtworks.go.domain.StageIdentifier.new("pipeline", 1, "1", "stage", "2")
+    stage_identifier=com.thoughtworks.go.config.StageIdentifier.new("pipeline", 1, "1", "stage", "2")
     stage_model.setIdentifier(stage_identifier)
     stage_model.setRerunOfCounter(1)
 

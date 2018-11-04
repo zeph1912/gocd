@@ -38,7 +38,7 @@ module ApiV1
       collection :configuration,
                  exec_context: :decorator,
                  decorator: ApiV1::Config::PluginConfigurationPropertyRepresenter,
-                 class: com.thoughtworks.go.domain.config.ConfigurationProperty
+                 class: com.thoughtworks.go.config.ConfigurationProperty
 
       delegate :plugin_id, :plugin_id=, to: :plugin_settings
 

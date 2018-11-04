@@ -18,7 +18,6 @@ package com.thoughtworks.go.apiv6.shared.representers.stages.artifacts;
 
 import com.thoughtworks.go.api.base.OutputWriter;
 import com.thoughtworks.go.api.representers.JsonReader;
-import com.thoughtworks.go.config.BuiltinArtifactConfig;
 
 public class BuiltinArtifactConfigRepresenter {
 

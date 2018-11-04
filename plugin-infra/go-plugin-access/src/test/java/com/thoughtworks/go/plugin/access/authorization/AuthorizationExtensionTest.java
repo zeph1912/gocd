@@ -19,7 +19,7 @@ package com.thoughtworks.go.plugin.access.authorization;
 import com.thoughtworks.go.config.PluginRoleConfig;
 import com.thoughtworks.go.config.SecurityAuthConfig;
 import com.thoughtworks.go.config.SecurityAuthConfigs;
-import com.thoughtworks.go.domain.packagerepository.ConfigurationPropertyMother;
+import com.thoughtworks.go.config.packagerepository.ConfigurationPropertyMother;
 import com.thoughtworks.go.plugin.access.authorization.models.AuthenticationResponse;
 import com.thoughtworks.go.plugin.access.authorization.models.SupportedAuthType;
 import com.thoughtworks.go.plugin.access.authorization.models.User;

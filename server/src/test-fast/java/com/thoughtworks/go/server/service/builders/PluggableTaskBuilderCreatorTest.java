@@ -16,13 +16,9 @@
 
 package com.thoughtworks.go.server.service.builders;
 
-import com.thoughtworks.go.config.ExecTask;
 import com.thoughtworks.go.config.pluggabletask.PluggableTask;
-import com.thoughtworks.go.domain.Pipeline;
 import com.thoughtworks.go.domain.builder.Builder;
 import com.thoughtworks.go.domain.builder.pluggableTask.PluggableTaskBuilder;
-import com.thoughtworks.go.domain.config.Configuration;
-import com.thoughtworks.go.domain.config.PluginConfiguration;
 import com.thoughtworks.go.plugin.access.pluggabletask.TaskExtension;
 import com.thoughtworks.go.server.service.UpstreamPipelineResolver;
 import org.hamcrest.core.Is;

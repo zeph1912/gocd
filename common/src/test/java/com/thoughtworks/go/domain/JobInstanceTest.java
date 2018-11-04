@@ -17,7 +17,6 @@
 package com.thoughtworks.go.domain;
 
 import com.thoughtworks.go.helper.JobInstanceMother;
-import com.thoughtworks.go.util.TimeProvider;
 import org.apache.commons.lang3.time.DateUtils;
 import org.hamcrest.BaseMatcher;
 import org.hamcrest.Description;

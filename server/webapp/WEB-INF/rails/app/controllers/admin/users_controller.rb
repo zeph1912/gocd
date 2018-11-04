@@ -61,10 +61,10 @@ module Admin
         redirect_with_flash('Please select one or more users.', :action => :users, :params => params.slice(:column, :order), :class => "error")
         return
       end
-      do_not_change_admin = TriStateSelection.new(com.thoughtworks.go.domain.config.Admin::GO_SYSTEM_ADMIN, TriStateSelection::Action.nochange)
+      do_not_change_admin = TriStateSelection.new(com.thoughtworks.go.config.Admin::GO_SYSTEM_ADMIN, TriStateSelection::Action.nochange)
 
       if params[:operation] == 'apply_roles'
-        admin_selection = params[:admin] ? TriStateSelection.new(com.thoughtworks.go.domain.config.Admin::GO_SYSTEM_ADMIN, params[:admin][com.thoughtworks.go.domain.config.Admin::GO_SYSTEM_ADMIN]) : do_not_change_admin
+        admin_selection = params[:admin] ? TriStateSelection.new(com.thoughtworks.go.config.Admin::GO_SYSTEM_ADMIN, params[:admin][com.thoughtworks.go.config.Admin::GO_SYSTEM_ADMIN]) : do_not_change_admin
         user_service.modifyRolesAndUserAdminPrivileges(selected_users, admin_selection, selections, result = HttpLocalizedOperationResult.new)
       elsif params[:operation] == 'add_role'
         user_service.modifyRolesAndUserAdminPrivileges(selected_users, do_not_change_admin, [TriStateSelection.new(params[:new_role], TriStateSelection::Action.add)], result = HttpLocalizedOperationResult.new)

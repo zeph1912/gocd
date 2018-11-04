@@ -16,7 +16,6 @@
 
 package com.thoughtworks.studios.shine.cruise.stage.details;
 
-import com.thoughtworks.go.domain.JobInstance;
 import com.thoughtworks.go.server.domain.xml.JobXmlViewModel;
 import com.thoughtworks.go.server.service.XmlApiService;
 import com.thoughtworks.go.util.SystemEnvironment;

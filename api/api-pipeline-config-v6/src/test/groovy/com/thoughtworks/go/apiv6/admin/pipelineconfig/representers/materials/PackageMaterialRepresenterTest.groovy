@@ -18,10 +18,9 @@ package com.thoughtworks.go.apiv6.admin.pipelineconfig.representers.materials
 
 import com.thoughtworks.go.api.util.GsonTransformer
 import com.thoughtworks.go.apiv6.shared.representers.stages.ConfigHelperOptions
-import com.thoughtworks.go.config.BasicCruiseConfig
+
 import com.thoughtworks.go.config.CaseInsensitiveString
-import com.thoughtworks.go.config.PipelineConfig
-import com.thoughtworks.go.config.PipelineConfigSaveValidationContext
+
 import com.thoughtworks.go.config.materials.MaterialConfigs
 import com.thoughtworks.go.config.materials.PackageMaterialConfig
 import com.thoughtworks.go.config.materials.PasswordDeserializer

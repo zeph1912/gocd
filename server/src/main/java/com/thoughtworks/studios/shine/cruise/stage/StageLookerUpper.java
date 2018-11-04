@@ -16,8 +16,6 @@
 
 package com.thoughtworks.studios.shine.cruise.stage;
 
-import com.thoughtworks.go.domain.StageIdentifier;
-
 public interface StageLookerUpper {
     String lookUpStageURL(StageIdentifier stageIdentifier);
 }

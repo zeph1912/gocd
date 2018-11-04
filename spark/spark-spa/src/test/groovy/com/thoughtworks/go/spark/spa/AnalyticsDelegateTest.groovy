@@ -19,8 +19,7 @@ package com.thoughtworks.go.spark.spa
 import com.google.gson.Gson
 import com.thoughtworks.go.api.mocks.MockHttpServletResponseAssert
 import com.thoughtworks.go.config.CaseInsensitiveString
-import com.thoughtworks.go.config.PipelineConfig
-import com.thoughtworks.go.config.PipelineConfigs
+
 import com.thoughtworks.go.plugin.access.analytics.AnalyticsExtension
 import com.thoughtworks.go.plugin.domain.analytics.AnalyticsData
 import com.thoughtworks.go.server.service.PipelineConfigService

@@ -18,10 +18,8 @@ package com.thoughtworks.go.server.service.builders;
 
 import java.io.File;
 
-import com.thoughtworks.go.config.NantTask;
 import com.thoughtworks.go.domain.builder.Builder;
 import com.thoughtworks.go.domain.builder.CommandBuilder;
-import com.thoughtworks.go.domain.Pipeline;
 import com.thoughtworks.go.server.service.UpstreamPipelineResolver;
 import com.thoughtworks.go.util.FileUtil;
 import org.springframework.stereotype.Component;

@@ -25,7 +25,7 @@ import java.net.URISyntaxException;
 import java.net.URLEncoder;
 import java.util.List;
 
-import static com.thoughtworks.go.util.ExceptionUtils.bomb;
+//import static com.thoughtworks.go.util.ExceptionUtils.bomb;
 
 public class UrlUtil {
 
@@ -39,7 +39,7 @@ public class UrlUtil {
             try {
                 builder.append(URLEncoder.encode(part, UTF_8));
             } catch (UnsupportedEncodingException e) {
-                bomb(e);
+                return null;
             }
             if (i < parts.length - 1) {
                 builder.append('/');

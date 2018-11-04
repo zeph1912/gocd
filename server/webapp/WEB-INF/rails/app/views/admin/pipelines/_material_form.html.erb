@@ -20,38 +20,38 @@
                 </div>
 
                 <div class="hidden material_entry SvnMaterial">
-                    <%= materials_form.fields_for com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::TYPE, svn_material do |svn_form| %>
+                    <%= materials_form.fields_for com.thoughtworks.go.config.svn.SvnMaterialConfig::TYPE, svn_material do |svn_form| %>
                         <%= render :partial => 'admin/pipelines/materials/svn_material_form.html', :locals => {:scope => {:form => svn_form, :material => svn_material}} %>
                         <%= render :partial => 'shared/convert_tool_tips.html', :locals => {:scope => {}} %>
                     <% end %>
                 </div>
 
                 <div class="hidden material_entry GitMaterial">
-                    <%= materials_form.fields_for com.thoughtworks.go.config.materials.git.GitMaterialConfig::TYPE, git_material do |git_form| %>
+                    <%= materials_form.fields_for com.thoughtworks.go.config.git.GitMaterialConfig::TYPE, git_material do |git_form| %>
                         <%= render :partial => "admin/pipelines/materials/git_form.html", :locals => {:scope => {:form => git_form, :material => git_material}} -%>
                     <% end %>
                 </div>
 
                 <div class="hidden material_entry HgMaterial">
-                    <%= materials_form.fields_for com.thoughtworks.go.config.materials.mercurial.HgMaterialConfig::TYPE, hg_material do |hg_form| %>
+                    <%= materials_form.fields_for com.thoughtworks.go.config.mercurial.HgMaterialConfig::TYPE, hg_material do |hg_form| %>
                         <%= render :partial => "admin/pipelines/materials/hg_form.html", :locals => {:scope => {:form => hg_form, :material => hg_material}} -%>
                     <% end %>
                 </div>
 
                 <div class="hidden material_entry P4Material">
-                    <%= materials_form.fields_for com.thoughtworks.go.config.materials.perforce.P4MaterialConfig::TYPE, p4_material do |p4_form| %>
+                    <%= materials_form.fields_for com.thoughtworks.go.config.perforce.P4MaterialConfig::TYPE, p4_material do |p4_form| %>
                         <%= render :partial => "admin/pipelines/materials/p4_form.html", :locals => {:scope => {:form => p4_form, :material => p4_material}} -%>
                     <% end %>
                 </div>
 
                 <div class="hidden material_entry TfsMaterial">
-                    <%= materials_form.fields_for com.thoughtworks.go.config.materials.tfs.TfsMaterialConfig::TYPE, tfs_material do |tfs_form| %>
+                    <%= materials_form.fields_for com.thoughtworks.go.config.tfs.TfsMaterialConfig::TYPE, tfs_material do |tfs_form| %>
                         <%= render :partial => "admin/pipelines/materials/tfs_form.html", :locals => {:scope => {:form => tfs_form, :material => tfs_material}} -%>
                     <% end %>
                 </div>
 
                 <div class="hidden material_entry DependencyMaterial">
-                    <%= materials_form.fields_for com.thoughtworks.go.config.materials.dependency.DependencyMaterialConfig::TYPE, dependency_material do |dependency_form| %>
+                    <%= materials_form.fields_for com.thoughtworks.go.config.dependency.DependencyMaterialConfig::TYPE, dependency_material do |dependency_form| %>
                         <%= render :partial => "admin/pipelines/materials/dependency_form.html", :locals => {:scope => {:form => dependency_form, :material => dependency_material}} -%>
                     <% end %>
                 </div>

@@ -17,9 +17,9 @@
 package com.thoughtworks.go.server.service;
 
 import ch.qos.logback.classic.Level;
+import com.thoughtworks.go.InstanceFactory;
 import com.thoughtworks.go.config.*;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.activity.AgentAssignment;
+import com.thoughtworks.go.config.activity.AgentAssignment;
 import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.helper.PipelineMother;
 import com.thoughtworks.go.helper.StageMother;
@@ -32,8 +32,6 @@ import com.thoughtworks.go.server.service.result.OperationResult;
 import com.thoughtworks.go.server.transaction.TestTransactionSynchronizationManager;
 import com.thoughtworks.go.server.transaction.TestTransactionTemplate;
 import com.thoughtworks.go.serverhealth.ServerHealthService;
-import com.thoughtworks.go.util.LogFixture;
-import com.thoughtworks.go.util.TimeProvider;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.transaction.support.TransactionCallback;

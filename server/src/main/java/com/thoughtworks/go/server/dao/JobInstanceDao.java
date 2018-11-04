@@ -16,7 +16,7 @@
 
 package com.thoughtworks.go.server.dao;
 
-import com.thoughtworks.go.domain.*;
+import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.server.service.JobInstanceService;
 import com.thoughtworks.go.server.ui.SortOrder;
 

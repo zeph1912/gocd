@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.server.ui;
 
-import com.thoughtworks.go.domain.JobInstance;
-import com.thoughtworks.go.domain.JobInstances;
 import com.thoughtworks.go.server.util.Pagination;
 
 import java.util.Iterator;

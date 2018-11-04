@@ -35,7 +35,6 @@ import static org.hamcrest.Matchers.not;
 import static org.hamcrest.Matchers.nullValue;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
-import static org.mockito.Mockito.*;
 
 public class AgentRuntimeInfoTest {
     private static final int OLD_IDX = 0;

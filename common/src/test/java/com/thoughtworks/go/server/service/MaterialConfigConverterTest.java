@@ -16,17 +16,17 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.materials.git.GitMaterialConfig;
-import com.thoughtworks.go.config.materials.tfs.TfsMaterialConfig;
-import com.thoughtworks.go.domain.materials.TestingMaterialConfig;
-import com.thoughtworks.go.domain.materials.dependency.DependencyMaterialInstance;
-import com.thoughtworks.go.domain.materials.git.GitMaterialInstance;
-import com.thoughtworks.go.domain.materials.mercurial.HgMaterialInstance;
-import com.thoughtworks.go.domain.materials.packagematerial.PackageMaterialInstance;
-import com.thoughtworks.go.domain.materials.perforce.P4MaterialInstance;
-import com.thoughtworks.go.domain.materials.scm.PluggableSCMMaterialInstance;
-import com.thoughtworks.go.domain.materials.svn.SvnMaterialInstance;
-import com.thoughtworks.go.domain.materials.tfs.TfsMaterialInstance;
+import com.thoughtworks.go.config.git.GitMaterialConfig;
+import com.thoughtworks.go.config.tfs.TfsMaterialConfig;
+import com.thoughtworks.go.config.materials.TestingMaterialConfig;
+import com.thoughtworks.go.config.materials.dependency.DependencyMaterialInstance;
+import com.thoughtworks.go.config.materials.git.GitMaterialInstance;
+import com.thoughtworks.go.config.materials.mercurial.HgMaterialInstance;
+import com.thoughtworks.go.config.materials.packagematerial.PackageMaterialInstance;
+import com.thoughtworks.go.config.materials.perforce.P4MaterialInstance;
+import com.thoughtworks.go.config.materials.scm.PluggableSCMMaterialInstance;
+import com.thoughtworks.go.config.materials.svn.SvnMaterialInstance;
+import com.thoughtworks.go.config.materials.tfs.TfsMaterialInstance;
 import com.thoughtworks.go.helper.MaterialConfigsMother;
 import org.junit.Test;
 

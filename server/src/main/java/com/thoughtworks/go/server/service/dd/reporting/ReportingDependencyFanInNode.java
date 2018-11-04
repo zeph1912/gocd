@@ -17,11 +17,10 @@
 package com.thoughtworks.go.server.service.dd.reporting;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterialConfig;
+import com.thoughtworks.go.config.dependency.DependencyMaterialConfig;
 import com.thoughtworks.go.domain.PipelineTimelineEntry;
-import com.thoughtworks.go.domain.StageIdentifier;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
-import com.thoughtworks.go.domain.materials.dependency.DependencyMaterialRevision;
+import com.thoughtworks.go.config.materials.MaterialConfig;
+import com.thoughtworks.go.config.materials.dependency.DependencyMaterialRevision;
 import com.thoughtworks.go.server.domain.PipelineTimeline;
 import com.thoughtworks.go.util.Pair;
 import org.apache.commons.collections4.CollectionUtils;

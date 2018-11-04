@@ -20,7 +20,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping package="com.thoughtworks.go.domain" default-access="field" default-lazy="false">
-  <class name="com.thoughtworks.go.domain.ArtifactPlan" table="artifactPlans" polymorphism="explicit">
+  <class name="com.thoughtworks.go.config.ArtifactPlan" table="artifactPlans" polymorphism="explicit">
     <id name="id" column="id">
       <generator class="identity"/>
     </id>
@@ -30,7 +30,7 @@
     <property name="dest"/>
     <property name="artifactPlanType" column="artifactType">
       <type name="org.hibernate.type.EnumType">
-        <param name="enumClass">com.thoughtworks.go.domain.ArtifactPlanType</param>
+        <param name="enumClass">com.thoughtworks.go.config.ArtifactPlanType</param>
         <param name="type">12</param>
       </type>
     </property>

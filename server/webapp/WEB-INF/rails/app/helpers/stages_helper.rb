@@ -17,7 +17,7 @@
 module StagesHelper
 
   def placeholder_stage? stage
-    stage.getState() == com.thoughtworks.go.domain.StageState::Unknown
+    stage.getState() == com.thoughtworks.go.config.StageState::Unknown
   end
 
   def is_current_stage?(identifier)

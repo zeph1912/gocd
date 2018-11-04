@@ -16,12 +16,7 @@
 
 package com.thoughtworks.go.server.controller;
 
-import com.thoughtworks.go.config.AgentConfig;
-import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.Tabs;
-import com.thoughtworks.go.config.TrackingTool;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.Properties;
+import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.plugin.access.elastic.ElasticAgentMetadataStore;
 import com.thoughtworks.go.plugin.domain.elastic.ElasticAgentPluginInfo;
 import com.thoughtworks.go.server.dao.JobAgentMetadataDao;

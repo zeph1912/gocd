@@ -16,9 +16,6 @@
 
 package com.thoughtworks.go.server.controller;
 
-import com.thoughtworks.go.config.GoConfigDao;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.Stage;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.functional.helpers.CSVResponse;
 import com.thoughtworks.go.server.service.PipelineService;

@@ -17,7 +17,6 @@
 package com.thoughtworks.go.apiv1.admin.pipelinegroups.representers
 
 import com.thoughtworks.go.config.*
-import com.thoughtworks.go.domain.PipelineGroups
 import com.thoughtworks.go.helper.MaterialConfigsMother
 import org.junit.jupiter.api.Test
 

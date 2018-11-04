@@ -16,10 +16,7 @@
 
 package com.thoughtworks.go.config;
 
-import com.thoughtworks.go.config.materials.git.GitMaterialConfig;
-import com.thoughtworks.go.config.remote.ConfigRepoConfig;
-import com.thoughtworks.go.config.remote.PartialConfig;
-import com.thoughtworks.go.config.remote.RepoConfigOrigin;
+import com.thoughtworks.go.config.git.GitMaterialConfig;
 import com.thoughtworks.go.helper.PartialConfigMother;
 import com.thoughtworks.go.serverhealth.HealthStateScope;
 import com.thoughtworks.go.serverhealth.HealthStateType;

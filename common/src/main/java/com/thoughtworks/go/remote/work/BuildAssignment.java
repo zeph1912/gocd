@@ -17,11 +17,9 @@
 package com.thoughtworks.go.remote.work;
 
 import com.thoughtworks.go.config.ArtifactStores;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
+import com.thoughtworks.go.config.buildcause.BuildCause;
 import com.thoughtworks.go.domain.builder.Builder;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.util.command.EnvironmentVariableContext;
+import com.thoughtworks.go.config.materials.Modification;
 
 import java.io.File;
 import java.io.Serializable;
@@ -86,7 +84,7 @@ public class BuildAssignment implements Serializable {
         return buildAssignment;
     }
 
-    public MaterialRevisions materialRevisions() {
+    public com.thoughtworks.go.config.MaterialRevisions materialRevisions() {
         return materialRevisions;
     }
 

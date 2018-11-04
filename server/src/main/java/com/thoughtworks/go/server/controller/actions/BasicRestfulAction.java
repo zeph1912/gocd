@@ -19,7 +19,6 @@ package com.thoughtworks.go.server.controller.actions;
 import javax.servlet.http.HttpServletResponse;
 import static javax.servlet.http.HttpServletResponse.SC_NOT_FOUND;
 
-import com.thoughtworks.go.domain.JobIdentifier;
 import static com.thoughtworks.go.util.GoConstants.RESPONSE_CHARSET;
 import org.springframework.web.servlet.ModelAndView;
 

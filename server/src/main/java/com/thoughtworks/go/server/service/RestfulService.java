@@ -17,10 +17,7 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.JobNotFoundException;
-import com.thoughtworks.go.domain.JobConfigIdentifier;
-import com.thoughtworks.go.domain.JobIdentifier;
-import com.thoughtworks.go.domain.PipelineIdentifier;
-import com.thoughtworks.go.domain.StageIdentifier;
+import com.thoughtworks.go.config.JobConfigIdentifier;
 import com.thoughtworks.go.server.dao.StageDao;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;

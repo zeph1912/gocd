@@ -19,9 +19,6 @@ package com.thoughtworks.go.apiv4.shared.representers.stages.tasks;
 import com.thoughtworks.go.api.base.OutputWriter;
 import com.thoughtworks.go.api.representers.ConfigurationPropertyRepresenter;
 import com.thoughtworks.go.api.representers.JsonReader;
-import com.thoughtworks.go.config.AbstractFetchTask;
-import com.thoughtworks.go.config.FetchPluggableArtifactTask;
-import com.thoughtworks.go.config.FetchTask;
 import com.thoughtworks.go.config.exceptions.UnprocessableEntityException;
 
 import java.util.Optional;

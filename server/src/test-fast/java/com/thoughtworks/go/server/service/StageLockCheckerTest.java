@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.domain.PipelineIdentifier;
 import com.thoughtworks.go.server.service.result.HttpOperationResult;
 import org.junit.Test;
 import org.junit.Before;

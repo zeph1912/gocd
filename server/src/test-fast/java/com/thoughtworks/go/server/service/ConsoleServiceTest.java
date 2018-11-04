@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.domain.JobIdentifier;
 import com.thoughtworks.go.helper.JobIdentifierMother;
 import com.thoughtworks.go.server.view.artifacts.ArtifactDirectoryChooser;
 import org.junit.After;

@@ -16,12 +16,11 @@
 
 package com.thoughtworks.go.server.materials;
 
-import com.thoughtworks.go.config.materials.ScmMaterial;
-import com.thoughtworks.go.config.materials.SubprocessExecutionContext;
-import com.thoughtworks.go.config.materials.git.GitMaterial;
-import com.thoughtworks.go.domain.materials.Material;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.git.GitTestRepo;
+import com.thoughtworks.go.config.SubprocessExecutionContext;
+import com.thoughtworks.go.config.git.GitMaterial;
+import com.thoughtworks.go.config.materials.Material;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.git.GitTestRepo;
 import com.thoughtworks.go.plugin.access.packagematerial.PackageRepositoryExtension;
 import com.thoughtworks.go.plugin.access.scm.SCMExtension;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;

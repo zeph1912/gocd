@@ -27,8 +27,6 @@ import com.thoughtworks.go.api.util.GsonTransformer;
 import com.thoughtworks.go.apiv1.admin.security.representers.RoleRepresenter;
 import com.thoughtworks.go.apiv1.admin.security.representers.RolesRepresenter;
 import com.thoughtworks.go.config.InvalidPluginTypeException;
-import com.thoughtworks.go.config.Role;
-import com.thoughtworks.go.config.RolesConfig;
 import com.thoughtworks.go.config.exceptions.RecordNotFoundException;
 import com.thoughtworks.go.server.newsecurity.utils.SessionUtils;
 import com.thoughtworks.go.server.service.EntityHashingService;

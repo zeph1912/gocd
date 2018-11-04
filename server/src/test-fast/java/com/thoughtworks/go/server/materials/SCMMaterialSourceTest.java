@@ -16,15 +16,12 @@
 
 package com.thoughtworks.go.server.materials;
 
-import com.thoughtworks.go.config.CruiseConfig;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.remote.ConfigRepoConfig;
-import com.thoughtworks.go.domain.materials.Material;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
+import com.thoughtworks.go.config.materials.Material;
+import com.thoughtworks.go.config.materials.MaterialConfig;
 import com.thoughtworks.go.helper.MaterialsMother;
 import com.thoughtworks.go.listener.EntityConfigChangedListener;
 import com.thoughtworks.go.server.service.GoConfigService;
-import com.thoughtworks.go.server.service.MaterialConfigConverter;
+import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.serverhealth.ServerHealthService;
 import com.thoughtworks.go.serverhealth.ServerHealthStates;
 import com.thoughtworks.go.util.SystemEnvironment;

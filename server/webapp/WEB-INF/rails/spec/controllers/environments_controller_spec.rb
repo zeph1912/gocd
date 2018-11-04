@@ -29,14 +29,14 @@ describe EnvironmentsController do
     end
 
     it "should set current tab" do
-         user = com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new('user_foo'))
+         user = com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new('user_foo'))
          allow(controller).to receive(:current_user).and_return(user)
          get :index
          expect(assigns[:current_tab_name]).to eq("environments")
     end
 
     it "should show add environment only if the user is a Go admin" do
-      user = com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new('user_foo'))
+      user = com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new('user_foo'))
       allow(controller).to receive(:current_user).and_return(user)
       allow(controller).to receive(:security_service).and_return(@security_service = double(SecurityService))
 
@@ -48,7 +48,7 @@ describe EnvironmentsController do
     end
 
     it "should not show add environment link when the user is not a Go admin" do
-      user = com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new('user_foo'))
+      user = com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new('user_foo'))
       allow(controller).to receive(:current_user).and_return(user)
       allow(controller).to receive(:security_service).and_return(@security_service = double(SecurityService))
 
@@ -92,7 +92,7 @@ describe EnvironmentsController do
     end
 
     it "should create a new environment" do
-      user = com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new('user_foo'))
+      user = com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new('user_foo'))
       allow(controller).to receive(:current_user).and_return(user)
       environment_name = "foo-environment"
       result = ""
@@ -120,7 +120,7 @@ describe EnvironmentsController do
     end
 
     it "should create a new environment with pipeline selections" do
-      user = com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new('user_foo'))
+      user = com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new('user_foo'))
       allow(controller).to receive(:current_user).and_return(user)
       environment_name = "foo-environment"
       createEnvironmentCalled = false
@@ -130,7 +130,7 @@ describe EnvironmentsController do
         expect(env_config.name()).to eq(CaseInsensitiveString.new(environment_name))
         expect(env_config.getPipelineNames().to_a).to eq([CaseInsensitiveString.new("first_pipeline"), CaseInsensitiveString.new("second_pipeline")])
         expect(env_config.getAgents().map(&:getUuid)).to eq(["agent_1_uuid"])
-        expect(user).to eq(com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new('user_foo')))
+        expect(user).to eq(com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new('user_foo')))
         createEnvironmentCalled = true
       end
 
@@ -147,7 +147,7 @@ describe EnvironmentsController do
     render_views
 
     before :each do
-      user = com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new('user_foo'))
+      user = com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new('user_foo'))
       @entity_hashing_service = double("Entity Hashing Service")
       allow(controller).to receive(:entity_hashing_service).and_return(@entity_hashing_service)
       allow(controller).to receive(:environment_config_service).and_return(@environment_config_service = double('environment_config_service', :isEnvironmentFeatureEnabled => true))
@@ -155,7 +155,7 @@ describe EnvironmentsController do
       @config_helper = com.thoughtworks.go.util.GoConfigFileHelper.new
       @config_helper.onSetUp()
       @config_helper.using_cruise_config_dao(Spring.bean("goConfigDao"))
-      allow(controller).to receive(:current_user).and_return(com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new('user_foo')))
+      allow(controller).to receive(:current_user).and_return(com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new('user_foo')))
       allow(@security_service).to receive(:canViewAdminPage).with(user).and_return(true)
       allow(@security_service).to receive(:isUserAdmin).with(user).and_return(true)
       setup_base_urls
@@ -193,7 +193,7 @@ describe EnvironmentsController do
     end
 
     it "should retain pipeline selection on error" do
-      current_user = com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new('user_foo'))
+      current_user = com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new('user_foo'))
       allow(controller).to receive(:current_user).and_return(current_user)
       expect(@environment_config_service).to receive(:getAllLocalPipelinesForUser).with(current_user).and_return([EnvironmentPipelineModel.new("first", nil)])
 
@@ -213,7 +213,7 @@ describe EnvironmentsController do
       allow(controller).to receive(:entity_hashing_service).and_return(@entity_hashing_service)
       allow(controller).to receive(:environment_config_service).and_return(@environment_config_service = double('environment_config_service', :isEnvironmentFeatureEnabled => true))
       allow(controller).to receive(:security_service).and_return(@security_service = double(SecurityService))
-      @user = com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new('user_foo'))
+      @user = com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new('user_foo'))
       allow(controller).to receive(:current_user).and_return(@user)
       allow(@security_service).to receive(:canViewAdminPage).with(@user).and_return(true)
       @environment_name = "foo-environment"
@@ -227,7 +227,7 @@ describe EnvironmentsController do
 
     it "should return error message and the response status code of the passed in result" do
       result = HttpLocalizedOperationResult.new()
-      expect(@environment_config_service).to receive(:getMergedEnvironmentforDisplay).with(@environment_name, an_instance_of(HttpLocalizedOperationResult)).and_return(com.thoughtworks.go.domain.ConfigElementForEdit.new(@environment,"md5"))
+      expect(@environment_config_service).to receive(:getMergedEnvironmentforDisplay).with(@environment_name, an_instance_of(HttpLocalizedOperationResult)).and_return(com.thoughtworks.go.config.ConfigElementForEdit.new(@environment,"md5"))
       allow(@environment_config_service).to receive(:getEnvironmentForEdit).and_return(@environment)
       expect(@environment_config_service).to receive(:getAllLocalPipelinesForUser).with(@user).and_return([])
       expect(@environment_config_service).to receive(:getAllRemotePipelinesForUserInEnvironment).with(@user,@environment).and_return([])
@@ -245,7 +245,7 @@ describe EnvironmentsController do
     end
 
     it "should return error message if environment name is blank" do
-      expect(@environment_config_service).to receive(:getMergedEnvironmentforDisplay).with(@environment_name, an_instance_of(HttpLocalizedOperationResult)).and_return(com.thoughtworks.go.domain.ConfigElementForEdit.new(@environment,"md5"))
+      expect(@environment_config_service).to receive(:getMergedEnvironmentforDisplay).with(@environment_name, an_instance_of(HttpLocalizedOperationResult)).and_return(com.thoughtworks.go.config.ConfigElementForEdit.new(@environment,"md5"))
       allow(@environment_config_service).to receive(:getEnvironmentForEdit).with(@environment_name).and_return(@environment)
       expect(@environment_config_service).to receive(:getAllLocalPipelinesForUser).with(@user).and_return([])
       expect(@environment_config_service).to receive(:getAllRemotePipelinesForUserInEnvironment).with(@user,@environment).and_return([])
@@ -273,7 +273,7 @@ describe EnvironmentsController do
 
     it "should successfully update environment" do
       result = HttpLocalizedOperationResult.new()
-      expect(@environment_config_service).to receive(:getMergedEnvironmentforDisplay).with(@environment_name, an_instance_of(HttpLocalizedOperationResult)).and_return(com.thoughtworks.go.domain.ConfigElementForEdit.new(@environment,"md5"))
+      expect(@environment_config_service).to receive(:getMergedEnvironmentforDisplay).with(@environment_name, an_instance_of(HttpLocalizedOperationResult)).and_return(com.thoughtworks.go.config.ConfigElementForEdit.new(@environment,"md5"))
       allow(@environment_config_service).to receive(:getEnvironmentForEdit).and_return(@environment)
       expect(@environment_config_service).to receive(:getAllLocalPipelinesForUser).with(@user).and_return([])
       expect(@environment_config_service).to receive(:getAllRemotePipelinesForUserInEnvironment).with(@user,@environment).and_return([])
@@ -305,7 +305,7 @@ describe EnvironmentsController do
     it "should show that modified environment is merged with latest configuration" do
       allow(@entity_hashing_service).to receive(:md5ForEntity).and_return('md5')
       result = HttpLocalizedOperationResult.new()
-      expect(@environment_config_service).to receive(:getMergedEnvironmentforDisplay).with(anything, anything).and_return(com.thoughtworks.go.domain.ConfigElementForEdit.new(BasicEnvironmentConfig.new(), "md5"))
+      expect(@environment_config_service).to receive(:getMergedEnvironmentforDisplay).with(anything, anything).and_return(com.thoughtworks.go.config.ConfigElementForEdit.new(BasicEnvironmentConfig.new(), "md5"))
       expect(@environment_config_service).to receive(:getAllLocalPipelinesForUser).with(any_args).and_return([])
       expect(@environment_config_service).to receive(:getAllRemotePipelinesForUserInEnvironment).with(anything, anything).and_return([])
 
@@ -340,11 +340,11 @@ describe EnvironmentsController do
       allow(controller).to receive(:environment_config_service).and_return(@environment_config_service = double('environment_config_service', :isEnvironmentFeatureEnabled => true))
       allow(controller).to receive(:agent_service).and_return(@agent_service = double('agent_service'))
       allow(controller).to receive(:security_service).and_return(@security_service = double(SecurityService))
-      user = com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new('user_foo'))
+      user = com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new('user_foo'))
       @config_helper = com.thoughtworks.go.util.GoConfigFileHelper.new
       @config_helper.onSetUp()
       @config_helper.using_cruise_config_dao(Spring.bean('goConfigDao'))
-      allow(controller).to receive(:current_user).and_return(com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new('user_foo')))
+      allow(controller).to receive(:current_user).and_return(com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new('user_foo')))
       @config_helper.addAdmins(["user_foo"].to_java(:string))
       @config_helper.addEnvironments([@environment_name])
       @config_helper.addEnvironmentVariablesToEnvironment(@environment_name, "name_foo", "value_bar")
@@ -360,7 +360,7 @@ describe EnvironmentsController do
     end
 
     it "should load existing variables for environment variables edit" do
-      expect(@environment_config_service).to receive(:getMergedEnvironmentforDisplay).with(@environment_name, an_instance_of(HttpLocalizedOperationResult)).and_return(com.thoughtworks.go.domain.ConfigElementForEdit.new(@environment,"md5"))
+      expect(@environment_config_service).to receive(:getMergedEnvironmentforDisplay).with(@environment_name, an_instance_of(HttpLocalizedOperationResult)).and_return(com.thoughtworks.go.config.ConfigElementForEdit.new(@environment,"md5"))
       expect(@environment_config_service).to receive(:getEnvironmentForEdit).with(@environment_name).and_return(@environment)
 
       get :edit_variables, params:{:name => "foo-environment", :no_layout => true}
@@ -373,7 +373,7 @@ describe EnvironmentsController do
     end
 
     it "should load existing pipelines as checked for pipeline edit" do
-      user = com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new('user_foo'))
+      user = com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new('user_foo'))
       @config_helper.addPipelineWithGroup("foo-group", "foo", "dev", ["unit"].to_java(:string))
       @config_helper.addPipelineToEnvironment(@environment_name, "foo")
 
@@ -382,7 +382,7 @@ describe EnvironmentsController do
       @config_helper.addPipelineToEnvironment("another_env", "bar")
 
       @config_helper.addPipelineWithGroup("baz-group", "baz", "dev", ["unit"].to_java(:string))
-      expect(@environment_config_service).to receive(:getMergedEnvironmentforDisplay).with(@environment_name, an_instance_of(HttpLocalizedOperationResult)).and_return(com.thoughtworks.go.domain.ConfigElementForEdit.new(@environment,"md5"))
+      expect(@environment_config_service).to receive(:getMergedEnvironmentforDisplay).with(@environment_name, an_instance_of(HttpLocalizedOperationResult)).and_return(com.thoughtworks.go.config.ConfigElementForEdit.new(@environment,"md5"))
       expect(@environment_config_service).to receive(:getEnvironmentForEdit).with(@environment_name).and_return(@environment)
       expect(@environment_config_service).to receive(:getAllLocalPipelinesForUser).with(user).and_return([EnvironmentPipelineModel.new("foo", @environment_name), EnvironmentPipelineModel.new("bar", "another_env"), EnvironmentPipelineModel.new("baz", nil)])
       expect(@environment_config_service).to receive(:getAllRemotePipelinesForUserInEnvironment).with(anything,anything).and_return([])
@@ -399,14 +399,14 @@ describe EnvironmentsController do
 
     it "should load existing agents as checked for agent edit" do
       @environment.getLocalAgents().add(com.thoughtworks.go.config.EnvironmentAgentConfig.new('in-env'))
-      user = com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new('user_foo'))
+      user = com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new('user_foo'))
       @config_helper.addAgent("in-env", "in-env")
       @config_helper.addAgentToEnvironment(@environment_name, "in-env")
       @config_helper.addAgent("out-of-env", "out-env")
       in_env = AgentViewModel.new(AgentInstanceMother.localInstance(SystemEnvironment.new, "in-env", "in-env"), "foo-environment")
       out_env = AgentViewModel.new(AgentInstanceMother.localInstance(SystemEnvironment.new, "out-env", "out-of-env"))
       agents_view_model = AgentsViewModel.new(in_env, out_env)
-      expect(@environment_config_service).to receive(:getMergedEnvironmentforDisplay).with(@environment_name, an_instance_of(HttpLocalizedOperationResult)).and_return(com.thoughtworks.go.domain.ConfigElementForEdit.new(@environment,"md5"))
+      expect(@environment_config_service).to receive(:getMergedEnvironmentforDisplay).with(@environment_name, an_instance_of(HttpLocalizedOperationResult)).and_return(com.thoughtworks.go.config.ConfigElementForEdit.new(@environment,"md5"))
       expect(@environment_config_service).to receive(:getEnvironmentForEdit).with(@environment_name).and_return(@environment)
       expect(@environment_config_service).to receive(:getAllLocalPipelinesForUser).with(user).and_return([EnvironmentPipelineModel.new("foo", @environment_name), EnvironmentPipelineModel.new("bar", "another_env"), EnvironmentPipelineModel.new("baz", nil)])
       expect(@environment_config_service).to receive(:getAllRemotePipelinesForUserInEnvironment).with(anything,anything).and_return([])

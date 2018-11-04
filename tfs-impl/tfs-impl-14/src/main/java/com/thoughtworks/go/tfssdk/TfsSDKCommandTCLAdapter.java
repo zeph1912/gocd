@@ -19,9 +19,9 @@ package com.thoughtworks.go.tfssdk;
 import java.io.File;
 import java.util.List;
 
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.Revision;
-import com.thoughtworks.go.domain.materials.tfs.TfsCommand;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.Revision;
+import com.thoughtworks.go.config.materials.tfs.TfsCommand;
 import com.thoughtworks.go.tfssdk14.TfsSDKCommand;
 import com.thoughtworks.go.util.command.CommandArgument;
 

@@ -17,7 +17,7 @@
 package com.thoughtworks.go.server.service.dd;
 
 import com.thoughtworks.go.domain.PipelineTimelineEntry;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
+import com.thoughtworks.go.config.materials.MaterialConfig;
 
 import java.util.Set;
 

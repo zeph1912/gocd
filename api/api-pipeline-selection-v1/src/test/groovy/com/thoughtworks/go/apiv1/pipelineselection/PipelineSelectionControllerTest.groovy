@@ -21,10 +21,9 @@ import com.thoughtworks.go.apiv1.pipelineselection.representers.PipelineSelectio
 import com.thoughtworks.go.apiv1.pipelineselection.representers.PipelineSelectionsRepresenter
 import com.thoughtworks.go.apiv1.pipelineselection.representers.PipelinesDataRepresenter
 import com.thoughtworks.go.apiv1.pipelineselection.representers.PipelinesDataResponse
-import com.thoughtworks.go.config.BasicPipelineConfigs
+
 import com.thoughtworks.go.config.CaseInsensitiveString
-import com.thoughtworks.go.config.PipelineConfig
-import com.thoughtworks.go.config.PipelineConfigs
+
 import com.thoughtworks.go.server.domain.user.PipelineSelections
 import com.thoughtworks.go.server.service.PipelineConfigService
 import com.thoughtworks.go.server.service.PipelineSelectionsService

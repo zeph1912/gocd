@@ -16,15 +16,12 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.materials.MaterialConfigs;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
+import com.thoughtworks.go.config.buildcause.BuildCause;
 import com.thoughtworks.go.helper.*;
 import com.thoughtworks.go.server.domain.Username;
 import com.thoughtworks.go.util.Clock;
 import com.thoughtworks.go.util.GoConstants;
-import com.thoughtworks.go.util.TimeProvider;
 import com.thoughtworks.go.utils.Timeout;
 import org.hamcrest.CoreMatchers;
 import org.hamcrest.core.IsNull;

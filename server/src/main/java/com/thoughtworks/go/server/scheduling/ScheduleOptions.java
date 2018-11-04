@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.server.scheduling;
 
-import com.thoughtworks.go.config.EnvironmentVariableConfig;
-import com.thoughtworks.go.config.EnvironmentVariablesConfig;
 import com.thoughtworks.go.security.GoCipher;
 
 import java.util.HashMap;

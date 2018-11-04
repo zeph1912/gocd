@@ -17,7 +17,6 @@
 package com.thoughtworks.go.helper;
 
 import ch.qos.logback.classic.Level;
-import com.thoughtworks.go.util.LogFixture;
 import org.junit.Test;
 
 import static com.thoughtworks.go.util.LogFixture.logFixtureFor;

@@ -154,8 +154,8 @@ describe ValueStreamMapController do
         allow(@pipeline_service).to receive(:findPipelineByNameAndCounter).with("current", 1).and_return(nil)
         revision_p1_1 = PipelineRevision.new("p1", 1, "label-p1-1")
         revision_p1_1.addStages(Stages.new([StageMother.passedStageInstance("stage-1-for-p1-1", "j1", "p1"), StageMother.passedStageInstance("stage-2-for-p1-1", "j2", "p1")]))
-          modification = com.thoughtworks.go.domain.materials.Modification.new("user", "comment", "", java.util.Date.new() , "r1")
-          modifications = com.thoughtworks.go.domain.materials.Modifications.new([modification].to_java(com.thoughtworks.go.domain.materials.Modification))
+          modification = com.thoughtworks.go.config.materials.Modification.new("user", "comment", "", java.util.Date.new() , "r1")
+          modifications = com.thoughtworks.go.config.materials.Modifications.new([modification].to_java(com.thoughtworks.go.config.materials.Modification))
         scm_revision = SCMRevision.new(modification)
         pipeline = "current"
         vsm = ValueStreamMap.new(CaseInsensitiveString.new(pipeline), nil)
@@ -336,7 +336,7 @@ describe ValueStreamMapController do
     describe "render json" do
       it "should get the pipeline dependency graph json" do
         material = GitMaterial.new("url")
-        vsm = ValueStreamMap.new(material, nil, com.thoughtworks.go.domain.materials.Modification.new("user", "comment", "", java.util.Date.new() , "r1"))
+        vsm = ValueStreamMap.new(material, nil, com.thoughtworks.go.config.materials.Modification.new("user", "comment", "", java.util.Date.new() , "r1"))
         vsm.addDownstreamNode(PipelineDependencyNode.new(CaseInsensitiveString.new("p1"), "p1"), vsm.current_material.getId())
         model = vsm.presentationModel()
         expect(@value_stream_map_service).to receive(:getValueStreamMap).with(material.getFingerprint(), 'revision', @user, @result).and_return(model)

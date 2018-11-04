@@ -27,9 +27,7 @@ import com.thoughtworks.go.apiv1.pipelineselection.representers.PipelineSelectio
 import com.thoughtworks.go.apiv1.pipelineselection.representers.PipelinesDataRepresenter;
 import com.thoughtworks.go.apiv1.pipelineselection.representers.PipelinesDataResponse;
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.PipelineConfigs;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.domain.user.FilterValidationException;
 import com.thoughtworks.go.server.domain.user.Filters;
 import com.thoughtworks.go.server.domain.user.PipelineSelections;

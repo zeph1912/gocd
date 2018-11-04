@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.web;
 
-import com.thoughtworks.go.service.ConfigRepository;
 import org.eclipse.jgit.http.server.GitFilter;
 import org.eclipse.jgit.transport.resolver.FileResolver;
 import org.springframework.web.context.ContextLoader;

@@ -17,7 +17,7 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
+import com.thoughtworks.go.config.materials.MaterialConfig;
 
 public class NoCompatibleUpstreamRevisionsException extends RuntimeException {
     private NoCompatibleUpstreamRevisionsException(CaseInsensitiveString pipelineName, String message) {

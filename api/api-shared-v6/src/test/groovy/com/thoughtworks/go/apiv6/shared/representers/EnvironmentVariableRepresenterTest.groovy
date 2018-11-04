@@ -17,7 +17,7 @@
 package com.thoughtworks.go.apiv6.shared.representers
 
 import com.thoughtworks.go.api.util.GsonTransformer
-import com.thoughtworks.go.config.EnvironmentVariableConfig
+
 import com.thoughtworks.go.security.GoCipher
 import org.junit.jupiter.api.Test
 

@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.domain;
 
-import com.thoughtworks.go.util.command.EnvironmentVariableContext;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;

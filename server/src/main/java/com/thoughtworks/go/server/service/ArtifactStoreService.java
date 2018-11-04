@@ -16,14 +16,12 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.ArtifactStore;
-import com.thoughtworks.go.config.ArtifactStores;
 import com.thoughtworks.go.config.update.CreateArtifactStoreConfigCommand;
 import com.thoughtworks.go.config.update.DeleteArtifactStoreConfigCommand;
 import com.thoughtworks.go.config.update.UpdateArtifactStoreConfigCommand;
 import com.thoughtworks.go.i18n.LocalizedMessage;
 import com.thoughtworks.go.plugin.access.artifact.ArtifactExtension;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.result.LocalizedOperationResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

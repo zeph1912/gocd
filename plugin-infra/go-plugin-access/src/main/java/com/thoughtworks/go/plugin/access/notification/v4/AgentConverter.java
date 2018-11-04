@@ -16,7 +16,7 @@
 
 package com.thoughtworks.go.plugin.access.notification.v4;
 
-import com.thoughtworks.go.domain.notificationdata.AgentNotificationData;
+import com.thoughtworks.go.config.notificationdata.AgentNotificationData;
 import com.thoughtworks.go.plugin.access.notification.DataConverter;
 
 public class AgentConverter extends DataConverter<AgentNotificationDTO> {

@@ -19,7 +19,7 @@ package com.thoughtworks.go.server.service;
 import java.util.List;
 
 import com.thoughtworks.go.config.*;
-import com.thoughtworks.go.domain.StageArtifactCleanupProhibited;
+import com.thoughtworks.go.config.StageArtifactCleanupProhibited;
 import com.thoughtworks.go.helper.StageConfigMother;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.util.GoConfigFileHelper;

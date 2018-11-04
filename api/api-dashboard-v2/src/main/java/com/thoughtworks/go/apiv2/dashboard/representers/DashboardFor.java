@@ -18,7 +18,7 @@ package com.thoughtworks.go.apiv2.dashboard.representers;
 
 import com.thoughtworks.go.server.dashboard.DashboardGroup;
 import com.thoughtworks.go.server.dashboard.GoDashboardPipeline;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 
 import java.util.List;
 import java.util.stream.Collectors;

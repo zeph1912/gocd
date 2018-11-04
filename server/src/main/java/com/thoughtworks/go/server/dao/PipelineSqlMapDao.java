@@ -17,15 +17,11 @@
 package com.thoughtworks.go.server.dao;
 
 import com.rits.cloning.Cloner;
-import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.GoConfigDao;
-import com.thoughtworks.go.config.PipelineNotFoundException;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterial;
+import com.thoughtworks.go.config.*;
+import com.thoughtworks.go.config.dependency.DependencyMaterial;
 import com.thoughtworks.go.database.Database;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.dependency.DependencyMaterialRevision;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.dependency.DependencyMaterialRevision;
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModel;
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModels;
 import com.thoughtworks.go.server.cache.CacheKeyGenerator;

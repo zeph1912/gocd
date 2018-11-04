@@ -16,9 +16,9 @@
 
 package com.thoughtworks.go.apiv2.dashboard
 
-import com.thoughtworks.go.domain.JobResult
-import com.thoughtworks.go.domain.JobState
-import com.thoughtworks.go.domain.StageIdentifier
+import com.thoughtworks.go.config.JobResult
+import com.thoughtworks.go.config.JobState
+
 import com.thoughtworks.go.presentation.pipelinehistory.JobHistory
 import com.thoughtworks.go.presentation.pipelinehistory.StageInstanceModel
 

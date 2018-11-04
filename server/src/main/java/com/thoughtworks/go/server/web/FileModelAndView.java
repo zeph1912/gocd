@@ -17,13 +17,11 @@
 package com.thoughtworks.go.server.web;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.thoughtworks.go.domain.JobIdentifier;
 import com.thoughtworks.go.server.domain.ZippedArtifact;
 import com.thoughtworks.go.util.ArtifactLogUtil;
 import com.thoughtworks.go.util.FileUtil;

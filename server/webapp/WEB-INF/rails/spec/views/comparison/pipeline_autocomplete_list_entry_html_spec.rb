@@ -51,7 +51,7 @@ describe "/comparison/_pipeline_autocomplete_list_entry.html.erb" do
 
   it "should display pipeline counter and its details for package material with trackback url" do
     package_revision = ModificationsMother.createPackageMaterialRevision("1234", nil, '{"TYPE":"PACKAGE_MATERIAL","COMMENT":"Built on blrstdgobgr03.","TRACKBACK_URL":"/go/tab/build/detail/go-packages/244/dist/2/rpm"}')
-    package_revisions = MaterialRevisions.new([package_revision].to_java(com.thoughtworks.go.domain.MaterialRevision))
+    package_revisions = MaterialRevisions.new([package_revision].to_java(com.thoughtworks.go.config.MaterialRevision))
     pipeline = PipelineInstanceModel.createPipeline("some_pipeline", 10, "some-label", BuildCause.createWithModifications(package_revisions, "user"), stage_history_for("dev", "prod"))
 
     render :partial => "pipeline_autocomplete_list_entry", :locals => {:scope => {:pipeline => pipeline}}
@@ -72,7 +72,7 @@ describe "/comparison/_pipeline_autocomplete_list_entry.html.erb" do
 
   it "should display pipeline counter and its details for package material without trackback and no comment" do
     package_revision = ModificationsMother.createPackageMaterialRevision("1234", nil, '{"TYPE":"PACKAGE_MATERIAL"}')
-    package_revisions = MaterialRevisions.new([package_revision].to_java(com.thoughtworks.go.domain.MaterialRevision))
+    package_revisions = MaterialRevisions.new([package_revision].to_java(com.thoughtworks.go.config.MaterialRevision))
     pipeline = PipelineInstanceModel.createPipeline("some_pipeline", 10, "some-label", BuildCause.createWithModifications(package_revisions, "user"), stage_history_for("dev", "prod"))
 
     render :partial => "pipeline_autocomplete_list_entry", :locals => {:scope => {:pipeline => pipeline}}

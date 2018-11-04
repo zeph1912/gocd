@@ -18,12 +18,10 @@ package com.thoughtworks.go.server.service.builders;
 
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.materials.MaterialConfigs;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterial;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
+import com.thoughtworks.go.config.dependency.DependencyMaterial;
 import com.thoughtworks.go.domain.builder.FetchArtifactBuilder;
 import com.thoughtworks.go.domain.builder.FetchPluggableArtifactBuilder;
-import com.thoughtworks.go.domain.materials.dependency.DependencyMaterialRevision;
+import com.thoughtworks.go.config.materials.dependency.DependencyMaterialRevision;
 import com.thoughtworks.go.helper.*;
 import com.thoughtworks.go.server.service.GoConfigService;
 import com.thoughtworks.go.server.service.UpstreamPipelineResolver;

@@ -21,10 +21,8 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
-import com.thoughtworks.go.domain.StageFinder;
-import com.thoughtworks.go.domain.StageIdentifier;
-import com.thoughtworks.go.domain.StageResult;
-import com.thoughtworks.go.domain.feed.stage.StageFeedEntry;
+import com.thoughtworks.go.config.StageResult;
+import com.thoughtworks.go.config.feed.stage.StageFeedEntry;
 import com.thoughtworks.go.server.dao.FeedModifier;
 import com.thoughtworks.go.server.dao.StageDao;
 import com.thoughtworks.go.server.service.PipelineInstanceLoader;

@@ -16,15 +16,11 @@
 
 package com.thoughtworks.go.server.dashboard;
 
-import com.thoughtworks.go.config.GoConfigDao;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.StageResult;
-import com.thoughtworks.go.domain.StageState;
+import com.thoughtworks.go.config.StageResult;
+import com.thoughtworks.go.config.StageState;
 import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.presentation.pipelinehistory.EmptyPipelineInstanceModel;
 import com.thoughtworks.go.presentation.pipelinehistory.NullStageHistoryItem;
-import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModels;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.dao.PipelineDao;
 import com.thoughtworks.go.server.service.GoConfigService;

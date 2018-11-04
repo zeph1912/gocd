@@ -18,7 +18,6 @@ package com.thoughtworks.go.server.service.materials;
 
 import java.util.List;
 
-import com.thoughtworks.go.domain.config.Configuration;
 import com.thoughtworks.go.plugin.access.packagematerial.PackageConfiguration;
 import com.thoughtworks.go.plugin.api.config.Property;
 

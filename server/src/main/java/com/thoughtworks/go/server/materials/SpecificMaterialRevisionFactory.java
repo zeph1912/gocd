@@ -19,10 +19,9 @@ package com.thoughtworks.go.server.materials;
 import java.util.Map;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.domain.MaterialRevisions;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
+import com.thoughtworks.go.config.materials.MaterialConfig;
 import com.thoughtworks.go.server.service.GoConfigService;
-import com.thoughtworks.go.server.service.MaterialConfigConverter;
+import com.thoughtworks.go.MaterialConfigConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

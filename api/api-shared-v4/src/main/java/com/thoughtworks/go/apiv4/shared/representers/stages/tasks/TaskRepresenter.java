@@ -23,7 +23,7 @@ import com.thoughtworks.go.api.representers.JsonReader;
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.exceptions.UnprocessableEntityException;
 import com.thoughtworks.go.config.pluggabletask.PluggableTask;
-import com.thoughtworks.go.domain.Task;
+import com.thoughtworks.go.config.Task;
 
 import java.util.HashMap;
 import java.util.Optional;

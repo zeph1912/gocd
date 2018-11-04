@@ -17,9 +17,6 @@
 package com.thoughtworks.go.server.presentation.models;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.StageConfig;
-import com.thoughtworks.go.domain.StageIdentifier;
-import com.thoughtworks.go.server.presentation.models.StageConfigurationModel;
 
 public class StageInfoAdapter implements StageConfigurationModel {
     private final StageConfig config;

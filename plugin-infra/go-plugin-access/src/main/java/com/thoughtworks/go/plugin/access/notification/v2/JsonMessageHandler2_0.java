@@ -17,7 +17,7 @@
 package com.thoughtworks.go.plugin.access.notification.v2;
 
 import com.google.gson.GsonBuilder;
-import com.thoughtworks.go.domain.notificationdata.StageNotificationData;
+import com.thoughtworks.go.config.notificationdata.StageNotificationData;
 import com.thoughtworks.go.plugin.access.notification.DataConverter;
 import com.thoughtworks.go.plugin.access.notification.JsonMessageHandler;
 import com.thoughtworks.go.plugin.api.response.Result;

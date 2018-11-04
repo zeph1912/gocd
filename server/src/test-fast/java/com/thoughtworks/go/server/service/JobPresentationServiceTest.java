@@ -17,8 +17,6 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.domain.AgentInstance;
-import com.thoughtworks.go.domain.JobInstance;
-import com.thoughtworks.go.domain.JobInstances;
 import com.thoughtworks.go.server.domain.Agent;
 import com.thoughtworks.go.server.domain.JobDurationStrategy;
 import com.thoughtworks.go.server.ui.JobInstanceModel;

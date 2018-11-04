@@ -19,7 +19,6 @@ package com.thoughtworks.studios.shine.cruise.stage;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.thoughtworks.go.domain.StageIdentifier;
 import com.thoughtworks.go.server.dao.sparql.RdfResultMapper;
 import com.thoughtworks.studios.shine.cruise.stage.details.StageGraphLoader;
 import com.thoughtworks.studios.shine.semweb.BoundVariables;

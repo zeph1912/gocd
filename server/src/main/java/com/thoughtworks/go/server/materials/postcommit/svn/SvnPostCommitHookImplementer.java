@@ -21,9 +21,9 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import com.thoughtworks.go.config.materials.svn.SvnMaterial;
-import com.thoughtworks.go.domain.materials.Material;
-import com.thoughtworks.go.domain.materials.svn.SvnCommand;
+import com.thoughtworks.go.config.svn.SvnMaterial;
+import com.thoughtworks.go.config.materials.Material;
+import com.thoughtworks.go.config.materials.svn.SvnCommand;
 import com.thoughtworks.go.server.materials.postcommit.PostCommitHookImplementer;
 
 public class SvnPostCommitHookImplementer implements PostCommitHookImplementer {

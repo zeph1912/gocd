@@ -17,11 +17,8 @@
 package com.thoughtworks.go.server.valuestreammap;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.StageConfig;
-import com.thoughtworks.go.domain.NullStage;
-import com.thoughtworks.go.domain.Stages;
-import com.thoughtworks.go.domain.valuestreammap.*;
+import com.thoughtworks.go.config.Stages;
+import com.thoughtworks.go.config.valuestreammap.*;
 import com.thoughtworks.go.server.service.GoConfigService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

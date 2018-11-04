@@ -19,7 +19,6 @@ package com.thoughtworks.go.api.representers;
 import com.google.gson.JsonParseException;
 import com.thoughtworks.go.api.base.OutputListWriter;
 import com.thoughtworks.go.api.base.OutputWriter;
-import com.thoughtworks.go.domain.config.ConfigurationProperty;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;

@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.domain.JobIdentifier;
 import com.thoughtworks.go.server.dao.JobInstanceDao;
 import org.junit.Before;
 import org.junit.Test;

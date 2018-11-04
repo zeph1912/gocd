@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.helper;
 
-import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.domain.AgentInstance;
 import com.thoughtworks.go.domain.AgentRuntimeStatus;
 import com.thoughtworks.go.domain.AgentStatus;

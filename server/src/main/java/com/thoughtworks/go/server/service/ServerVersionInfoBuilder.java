@@ -17,9 +17,8 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.CurrentGoCDVersion;
-import com.thoughtworks.go.domain.GoVersion;
-import com.thoughtworks.go.domain.VersionInfo;
-import com.thoughtworks.go.domain.exception.VersionFormatException;
+import com.thoughtworks.go.config.GoVersion;
+import com.thoughtworks.go.config.exception.VersionFormatException;
 import com.thoughtworks.go.server.dao.VersionInfoDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

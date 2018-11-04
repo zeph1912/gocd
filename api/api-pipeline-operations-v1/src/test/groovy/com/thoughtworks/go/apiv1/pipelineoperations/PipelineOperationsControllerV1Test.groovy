@@ -20,12 +20,12 @@ import com.thoughtworks.go.api.SecurityTestTrait
 import com.thoughtworks.go.api.spring.ApiAuthenticationHelper
 import com.thoughtworks.go.apiv1.pipelineoperations.representers.TriggerOptions
 import com.thoughtworks.go.apiv1.pipelineoperations.representers.TriggerWithOptionsViewRepresenter
-import com.thoughtworks.go.config.EnvironmentVariableConfig
-import com.thoughtworks.go.config.EnvironmentVariablesConfig
+
+
 import com.thoughtworks.go.config.PipelineNotFoundException
-import com.thoughtworks.go.domain.JobResult
-import com.thoughtworks.go.domain.JobState
-import com.thoughtworks.go.domain.MaterialRevisions
+import com.thoughtworks.go.config.JobResult
+import com.thoughtworks.go.config.JobState
+
 import com.thoughtworks.go.domain.buildcause.BuildCause
 import com.thoughtworks.go.helper.EnvironmentVariablesConfigMother
 import com.thoughtworks.go.helper.MaterialConfigsMother
@@ -37,7 +37,7 @@ import com.thoughtworks.go.presentation.pipelinehistory.StageInstanceModels
 import com.thoughtworks.go.security.GoCipher
 import com.thoughtworks.go.server.domain.MaterialForScheduling
 import com.thoughtworks.go.server.domain.PipelineScheduleOptions
-import com.thoughtworks.go.server.domain.Username
+import com.thoughtworks.go.config.Username
 import com.thoughtworks.go.server.service.PipelineHistoryService
 import com.thoughtworks.go.server.service.PipelinePauseService
 import com.thoughtworks.go.server.service.PipelineTriggerService

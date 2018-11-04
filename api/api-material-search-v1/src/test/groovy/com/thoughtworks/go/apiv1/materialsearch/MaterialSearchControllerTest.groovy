@@ -20,7 +20,7 @@ import com.thoughtworks.go.api.SecurityTestTrait
 import com.thoughtworks.go.api.spring.ApiAuthenticationHelper
 import com.thoughtworks.go.apiv1.materialsearch.representers.MatchedRevisionRepresenter
 import com.thoughtworks.go.domain.materials.MatchedRevision
-import com.thoughtworks.go.server.domain.Username
+import com.thoughtworks.go.config.Username
 import com.thoughtworks.go.server.service.MaterialService
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult
 import com.thoughtworks.go.server.service.result.LocalizedOperationResult

@@ -16,8 +16,8 @@
 
 package com.thoughtworks.go.server.web.i18n;
 
-import com.thoughtworks.go.domain.JobState;
-import com.thoughtworks.go.domain.ViewableStatus;
+import com.thoughtworks.go.config.JobState;
+import com.thoughtworks.go.config.ViewableStatus;
 import org.apache.commons.lang3.StringUtils;
 
 @Deprecated

@@ -19,7 +19,6 @@ package com.thoughtworks.go.apiv4.shared.representers.stages.artifacts;
 import com.thoughtworks.go.api.base.OutputWriter;
 import com.thoughtworks.go.api.representers.ConfigurationPropertyRepresenter;
 import com.thoughtworks.go.api.representers.JsonReader;
-import com.thoughtworks.go.config.PluggableArtifactConfig;
 
 public class ExternalArtifactConfigRepresenter {
 

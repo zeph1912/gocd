@@ -16,8 +16,8 @@
 
 package com.thoughtworks.go.presentation.pipelinehistory;
 
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.Revision;
+import com.thoughtworks.go.config.buildcause.BuildCause;
+import com.thoughtworks.go.config.materials.Revision;
 
 /**
  * @understands empty pipeline instance for scenarios where there is no instance to be shown

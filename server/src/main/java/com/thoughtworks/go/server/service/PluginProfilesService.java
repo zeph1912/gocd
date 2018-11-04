@@ -17,16 +17,10 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.ConfigTag;
-import com.thoughtworks.go.config.PluginProfile;
-import com.thoughtworks.go.config.PluginProfiles;
-import com.thoughtworks.go.config.commands.EntityConfigUpdateCommand;
-import com.thoughtworks.go.config.exceptions.GoConfigInvalidException;
 import com.thoughtworks.go.config.update.PluginProfileCommand;
-import com.thoughtworks.go.domain.config.ConfigurationProperty;
-import com.thoughtworks.go.i18n.LocalizedMessage;
 import com.thoughtworks.go.plugin.access.PluginNotFoundException;
 import com.thoughtworks.go.plugin.api.response.validation.ValidationResult;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.result.LocalizedOperationResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

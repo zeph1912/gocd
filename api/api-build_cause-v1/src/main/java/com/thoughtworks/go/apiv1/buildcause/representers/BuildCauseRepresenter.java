@@ -17,7 +17,6 @@
 package com.thoughtworks.go.apiv1.buildcause.representers;
 
 import com.thoughtworks.go.api.base.OutputWriter;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
 
 public class BuildCauseRepresenter {
 

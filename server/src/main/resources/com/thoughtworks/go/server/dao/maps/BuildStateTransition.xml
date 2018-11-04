@@ -15,7 +15,7 @@
   -->
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="BuildStateTransition">
-    <resultMap id="referenced-build-transition" type="com.thoughtworks.go.domain.JobStateTransition">
+    <resultMap id="referenced-build-transition" type="com.thoughtworks.go.config.JobStateTransition">
         <result property="id" column="stateId" jdbcType="BIGINT"/>
         <result property="jobId" column="buildId" jdbcType="BIGINT"/>
         <result property="stageId" column="stageId" jdbcType="BIGINT"/>
@@ -23,7 +23,7 @@
         <result property="stateChangeTime" column="stateChangeTime" javaType="date" jdbcType="TIMESTAMP"/>
     </resultMap>
 
-    <resultMap id="build-transition" type="com.thoughtworks.go.domain.JobStateTransition">
+    <resultMap id="build-transition" type="com.thoughtworks.go.config.JobStateTransition">
         <result property="id" column="id" jdbcType="BIGINT"/>
         <result property="jobId" column="buildId" jdbcType="BIGINT"/>
         <result property="stageId" column="stageId" jdbcType="BIGINT"/>
@@ -31,7 +31,7 @@
         <result property="stateChangeTime" column="stateChangeTime" javaType="date" jdbcType="TIMESTAMP"/>
     </resultMap>
 
-    <parameterMap id="insert-transition-param" type="com.thoughtworks.go.domain.JobStateTransition">
+    <parameterMap id="insert-transition-param" type="com.thoughtworks.go.config.JobStateTransition">
         <parameter property="currentState"/>
         <parameter property="stateChangeTime" javaType="date" jdbcType="TIMESTAMP"/>
         <parameter property="jobId"/>

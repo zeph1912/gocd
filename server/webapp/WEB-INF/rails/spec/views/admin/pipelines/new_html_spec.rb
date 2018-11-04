@@ -197,13 +197,13 @@ describe "admin/pipelines/new.html.erb" do
 
         Capybara.string(response.body).find('div#tab-content-of-materials div.form_content').tap do |div|
           expect(div).to have_selector("label", :text => "URL*")
-          expect(div).to have_selector("input[type='text'][name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::TYPE}][#{com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::URL}]']")
+          expect(div).to have_selector("input[type='text'][name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.svn.SvnMaterialConfig::TYPE}][#{com.thoughtworks.go.config.svn.SvnMaterialConfig::URL}]']")
 
           expect(div).to have_selector("label", :text => "Username")
-          expect(div).to have_selector("input[type='text'][name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::TYPE}][#{com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::USERNAME}]']")
+          expect(div).to have_selector("input[type='text'][name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.svn.SvnMaterialConfig::TYPE}][#{com.thoughtworks.go.config.svn.SvnMaterialConfig::USERNAME}]']")
 
           expect(div).to have_selector("label", :text => "Password")
-          expect(div).to have_selector("input[type='password'][name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::TYPE}][#{com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::PASSWORD}]']")
+          expect(div).to have_selector("input[type='password'][name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.svn.SvnMaterialConfig::TYPE}][#{com.thoughtworks.go.config.svn.SvnMaterialConfig::PASSWORD}]']")
         end
       end
 
@@ -224,9 +224,9 @@ describe "admin/pipelines/new.html.erb" do
       end
 
       it "should display new svn material view with errors" do
-        error = config_error(com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::URL, "Url is wrong")
-        error.add(com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::USERNAME, "Username is wrong")
-        error.add(com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::PASSWORD, "Password is wrong")
+        error = config_error(com.thoughtworks.go.config.svn.SvnMaterialConfig::URL, "Url is wrong")
+        error.add(com.thoughtworks.go.config.svn.SvnMaterialConfig::USERNAME, "Username is wrong")
+        error.add(com.thoughtworks.go.config.svn.SvnMaterialConfig::PASSWORD, "Password is wrong")
 
         set(@material_config, "errors", error)
 
@@ -234,13 +234,13 @@ describe "admin/pipelines/new.html.erb" do
 
         Capybara.string(response.body).find("form[method='post'][action='create_path']").tap do |form|
           form.find("div.steps_panes.sub_tab_container_content div#tab-content-of-materials div.form_content") do |div|
-            expect(div).to have_selector("div.field_with_errors input[type='text'][name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::TYPE}][#{com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::URL}]'][value='svn://foo']")
+            expect(div).to have_selector("div.field_with_errors input[type='text'][name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.svn.SvnMaterialConfig::TYPE}][#{com.thoughtworks.go.config.svn.SvnMaterialConfig::URL}]'][value='svn://foo']")
             expect(div).to have_selector("div.form_error", :text => "Url is wrong")
 
-            expect(div).to have_selector("div.field_with_errors input[type='text'][name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::TYPE}][#{com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::USERNAME}]'][value='loser']")
+            expect(div).to have_selector("div.field_with_errors input[type='text'][name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.svn.SvnMaterialConfig::TYPE}][#{com.thoughtworks.go.config.svn.SvnMaterialConfig::USERNAME}]'][value='loser']")
             expect(div).to have_selector("div.form_error", :text => "Username is wrong")
 
-            expect(div).to have_selector("div.field_with_errors input[type='password'][name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::TYPE}][#{com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::PASSWORD}]'][value='secret']")
+            expect(div).to have_selector("div.field_with_errors input[type='password'][name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.svn.SvnMaterialConfig::TYPE}][#{com.thoughtworks.go.config.svn.SvnMaterialConfig::PASSWORD}]'][value='secret']")
             expect(div).to have_selector("div.form_error", :text => "Password is wrong")
           end
         end
@@ -356,13 +356,13 @@ describe "admin/pipelines/new.html.erb" do
 
       Capybara.string(response.body).find("form[method='post'][action='create_path']").tap do |form|
         form.find("div.steps_panes.sub_tab_container_content div#tab-content-of-materials div.form_content") do |div|
-          expect(div).to have_selector("input[name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::TYPE}][#{com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::URL}]'].required")
-          expect(div).to have_selector("input[name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.materials.mercurial.HgMaterialConfig::TYPE}][#{com.thoughtworks.go.config.materials.mercurial.HgMaterialConfig::URL}]'].required")
-          expect(div).to have_selector("input[name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.materials.git.GitMaterialConfig::TYPE}][#{com.thoughtworks.go.config.materials.git.GitMaterialConfig::URL}]'].required")
-          expect(div).to have_selector("input[name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.materials.perforce.P4MaterialConfig::TYPE}][#{com.thoughtworks.go.config.materials.perforce.P4MaterialConfig::SERVER_AND_PORT}]'].required")
-          expect(div).to have_selector("textarea[name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.materials.perforce.P4MaterialConfig::TYPE}][#{com.thoughtworks.go.config.materials.perforce.P4MaterialConfig::VIEW}]'].required")
-          expect(div).to have_selector("input[name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.materials.dependency.DependencyMaterialConfig::TYPE}][#{com.thoughtworks.go.config.materials.dependency.DependencyMaterialConfig::PIPELINE_STAGE_NAME}]'].required")
-          expect(div).to have_selector("input[name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.materials.tfs.TfsMaterialConfig::TYPE}][#{com.thoughtworks.go.config.materials.tfs.TfsMaterialConfig::PROJECT_PATH}]'].required")
+          expect(div).to have_selector("input[name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.svn.SvnMaterialConfig::TYPE}][#{com.thoughtworks.go.config.svn.SvnMaterialConfig::URL}]'].required")
+          expect(div).to have_selector("input[name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.mercurial.HgMaterialConfig::TYPE}][#{com.thoughtworks.go.config.mercurial.HgMaterialConfig::URL}]'].required")
+          expect(div).to have_selector("input[name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.git.GitMaterialConfig::TYPE}][#{com.thoughtworks.go.config.git.GitMaterialConfig::URL}]'].required")
+          expect(div).to have_selector("input[name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.perforce.P4MaterialConfig::TYPE}][#{com.thoughtworks.go.config.perforce.P4MaterialConfig::SERVER_AND_PORT}]'].required")
+          expect(div).to have_selector("textarea[name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.perforce.P4MaterialConfig::TYPE}][#{com.thoughtworks.go.config.perforce.P4MaterialConfig::VIEW}]'].required")
+          expect(div).to have_selector("input[name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.dependency.DependencyMaterialConfig::TYPE}][#{com.thoughtworks.go.config.dependency.DependencyMaterialConfig::PIPELINE_STAGE_NAME}]'].required")
+          expect(div).to have_selector("input[name='pipeline_group[pipeline][materials][#{com.thoughtworks.go.config.tfs.TfsMaterialConfig::TYPE}][#{com.thoughtworks.go.config.tfs.TfsMaterialConfig::PROJECT_PATH}]'].required")
         end
       end
     end

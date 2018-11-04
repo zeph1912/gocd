@@ -16,7 +16,7 @@
 
 package com.thoughtworks.go.server.dashboard;
 
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 
 import java.util.Collection;
 import java.util.Set;

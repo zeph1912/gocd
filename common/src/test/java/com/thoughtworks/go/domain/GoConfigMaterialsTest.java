@@ -18,19 +18,18 @@ package com.thoughtworks.go.domain;
 
 import java.util.Set;
 
-import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.materials.MaterialConfigs;
 import com.thoughtworks.go.config.materials.PackageMaterialConfig;
 import com.thoughtworks.go.config.materials.PluggableSCMMaterialConfig;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterialConfig;
-import com.thoughtworks.go.config.materials.mercurial.HgMaterialConfig;
-import com.thoughtworks.go.config.materials.perforce.P4MaterialConfig;
-import com.thoughtworks.go.config.materials.svn.SvnMaterialConfig;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
-import com.thoughtworks.go.domain.config.Configuration;
-import com.thoughtworks.go.domain.packagerepository.PackageDefinition;
-import com.thoughtworks.go.domain.packagerepository.PackageRepositoryMother;
-import com.thoughtworks.go.domain.scm.SCMMother;
+import com.thoughtworks.go.config.dependency.DependencyMaterialConfig;
+import com.thoughtworks.go.config.mercurial.HgMaterialConfig;
+import com.thoughtworks.go.config.perforce.P4MaterialConfig;
+import com.thoughtworks.go.config.svn.SvnMaterialConfig;
+import com.thoughtworks.go.config.materials.MaterialConfig;
+import com.thoughtworks.go.config.config.Configuration;
+import com.thoughtworks.go.config.packagerepository.PackageDefinition;
+import com.thoughtworks.go.config.packagerepository.PackageRepositoryMother;
+import com.thoughtworks.go.config.scm.SCMMother;
 import com.thoughtworks.go.helper.MaterialConfigsMother;
 import org.junit.Test;
 

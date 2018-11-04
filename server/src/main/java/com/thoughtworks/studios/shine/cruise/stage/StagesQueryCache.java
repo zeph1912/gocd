@@ -19,8 +19,6 @@ package com.thoughtworks.studios.shine.cruise.stage;
 import java.text.MessageFormat;
 import java.util.List;
 
-import com.thoughtworks.go.domain.StageIdentifier;
-
 public interface StagesQueryCache {
 
     class CacheKey {

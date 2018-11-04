@@ -18,9 +18,9 @@ package com.thoughtworks.go.presentation.pipelinehistory;
 
 import java.util.Date;
 
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
-import com.thoughtworks.go.domain.materials.Revision;
+import com.thoughtworks.go.config.buildcause.BuildCause;
+import com.thoughtworks.go.config.materials.MaterialConfig;
+import com.thoughtworks.go.config.materials.Revision;
 
 /**
  * @understands a pipeline that is preparing to schedule

@@ -17,10 +17,8 @@
 package com.thoughtworks.go.server.controller;
 
 import com.thoughtworks.go.ClearSingleton;
-import com.thoughtworks.go.config.AgentConfig;
-import com.thoughtworks.go.config.GoConfigDao;
+import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.elastic.ElasticProfile;
-import com.thoughtworks.go.domain.*;
 import com.thoughtworks.go.fixture.PipelineWithTwoStages;
 import com.thoughtworks.go.plugin.access.elastic.ElasticAgentMetadataStore;
 import com.thoughtworks.go.plugin.domain.elastic.Capabilities;

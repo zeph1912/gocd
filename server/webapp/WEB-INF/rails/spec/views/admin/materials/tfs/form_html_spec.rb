@@ -42,12 +42,12 @@ describe "_form.html.erb" do
     expect(response.body).to have_selector(".popup_form input[type='text'][name='material[#{com.thoughtworks.go.config.materials.AbstractMaterialConfig::MATERIAL_NAME}]'][value='Tfs Material Name']")
     expect(response.body).to have_selector(".popup_form input[type='text'][name='material[#{com.thoughtworks.go.config.materials.ScmMaterialConfig::URL}]'][value='http://10.4.4.101:8080/tfs/Sample']")
     expect(response.body).to have_selector(".popup_form input[type='text'][name='material[#{com.thoughtworks.go.config.materials.ScmMaterialConfig::USERNAME}]'][value='loser']")
-    expect(response.body).to have_selector(".popup_form input[type='text'][name='material[#{com.thoughtworks.go.config.materials.tfs.TfsMaterialConfig::DOMAIN}]'][value='domain']")
+    expect(response.body).to have_selector(".popup_form input[type='text'][name='material[#{com.thoughtworks.go.config.tfs.TfsMaterialConfig::DOMAIN}]'][value='domain']")
     expect(response.body).to have_selector(".popup_form input[type='password'][name='material[#{com.thoughtworks.go.config.materials.ScmMaterialConfig::PASSWORD}]'][value='passwd']")
     expect(response.body).to have_selector(".popup_form input[type='hidden'][name='material[#{com.thoughtworks.go.config.materials.ScmMaterialConfig::ENCRYPTED_PASSWORD}]'][value='#{@material_config.getEncryptedPassword()}']", {visible: :hidden})
     expect(response.body).to have_selector(".popup_form input[type='text'][name='material[#{com.thoughtworks.go.config.materials.ScmMaterialConfig::FOLDER}]'][value='boulder']")
     expect(response.body).to have_selector(".popup_form input[type='checkbox'][name='material[#{com.thoughtworks.go.config.materials.ScmMaterialConfig::AUTO_UPDATE}]'][checked='checked']")
-    expect(response.body).to have_selector(".popup_form input[type='text'][name='material[#{com.thoughtworks.go.config.materials.tfs.TfsMaterialConfig::PROJECT_PATH}]'][value='walk_this_path']")
+    expect(response.body).to have_selector(".popup_form input[type='text'][name='material[#{com.thoughtworks.go.config.tfs.TfsMaterialConfig::PROJECT_PATH}]'][value='walk_this_path']")
     expect(response.body).to have_selector(".popup_form textarea[name='material[#{com.thoughtworks.go.config.materials.ScmMaterialConfig::FILTER}]']", :text => "/sugar,/jaggery")
     expect(response.body).to have_selector(".form_buttons button[type='submit'] span", :text => "FOO")
 
@@ -69,9 +69,9 @@ describe "_form.html.erb" do
 
     render :partial => "admin/materials/tfs/form.html", :locals => {:scope => {:material => @material_config, :url => "http://google.com", :method => "POST", :submit_label => "FOO", :edit_mode => false}}
 
-    expect(response.body).to have_selector(".popup_form input[type='password'][name='material[#{com.thoughtworks.go.config.materials.tfs.TfsMaterialConfig::PASSWORD}]']")
+    expect(response.body).to have_selector(".popup_form input[type='password'][name='material[#{com.thoughtworks.go.config.tfs.TfsMaterialConfig::PASSWORD}]']")
     Capybara.string(response.body).find(".popup_form  div[class='hidden']").tap do |popup_form|
-      expect(popup_form).to have_selector("input[type='checkbox'][name='material[#{com.thoughtworks.go.config.materials.tfs.TfsMaterialConfig::PASSWORD_CHANGED}]'][value='1'][checked='checked']")
+      expect(popup_form).to have_selector("input[type='checkbox'][name='material[#{com.thoughtworks.go.config.tfs.TfsMaterialConfig::PASSWORD_CHANGED}]'][value='1'][checked='checked']")
     end
   end
 
@@ -91,7 +91,7 @@ describe "_form.html.erb" do
     error = config_error(com.thoughtworks.go.config.materials.ScmMaterialConfig::URL, "Url is wrong")
     error.add(com.thoughtworks.go.config.materials.ScmMaterialConfig::USERNAME, "Username is wrong")
     error.add(com.thoughtworks.go.config.materials.ScmMaterialConfig::MATERIAL_NAME, "Material Name is so wrong")
-    error.add(com.thoughtworks.go.config.materials.tfs.TfsMaterialConfig::PROJECT_PATH, "path you talk and path you walk are different.")
+    error.add(com.thoughtworks.go.config.tfs.TfsMaterialConfig::PROJECT_PATH, "path you talk and path you walk are different.")
     error.add(com.thoughtworks.go.config.materials.ScmMaterialConfig::PASSWORD, "Password is wrong")
     error.add(com.thoughtworks.go.config.materials.ScmMaterialConfig::AUTO_UPDATE, "AUTO_UPDATE is wrong")
     error.add(com.thoughtworks.go.config.materials.ScmMaterialConfig::FOLDER, "Folder is wrong")
@@ -121,7 +121,7 @@ describe "_form.html.erb" do
       expect(popup_form).to have_selector("div.field_with_errors input[type='checkbox'][name='material[#{com.thoughtworks.go.config.materials.ScmMaterialConfig::AUTO_UPDATE}]'][checked='checked']")
       expect(popup_form).to have_selector("div.form_error", :text => "AUTO_UPDATE is wrong")
 
-      expect(popup_form).to have_selector("div.field_with_errors input[type='text'][name='material[#{com.thoughtworks.go.config.materials.tfs.TfsMaterialConfig::PROJECT_PATH}]'][value='walk_this_path']")
+      expect(popup_form).to have_selector("div.field_with_errors input[type='text'][name='material[#{com.thoughtworks.go.config.tfs.TfsMaterialConfig::PROJECT_PATH}]'][value='walk_this_path']")
       expect(popup_form).to have_selector("div.form_error", :text => "path you talk and path you walk are different.")
 
       #Have skipped asserting on the div fieldWithError thats rendered around the text area , since the keys mismatch (pattern vs filter). Div around the actual text area is currently

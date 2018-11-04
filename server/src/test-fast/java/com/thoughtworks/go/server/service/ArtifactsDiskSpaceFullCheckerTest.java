@@ -18,10 +18,8 @@ package com.thoughtworks.go.server.service;
 
 import java.io.File;
 
-import com.thoughtworks.go.config.BasicCruiseConfig;
-import com.thoughtworks.go.config.CruiseConfig;
 import com.thoughtworks.go.config.ServerConfig;
-import com.thoughtworks.go.domain.ServerSiteUrlConfig;
+import com.thoughtworks.go.config.ServerSiteUrlConfig;
 import com.thoughtworks.go.fixture.ArtifactsDiskIsFull;
 import com.thoughtworks.go.server.messaging.SendEmailMessage;
 import com.thoughtworks.go.server.service.result.ServerHealthStateOperationResult;

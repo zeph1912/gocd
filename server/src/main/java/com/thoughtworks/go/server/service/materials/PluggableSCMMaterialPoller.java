@@ -16,16 +16,12 @@
 
 package com.thoughtworks.go.server.service.materials;
 
-import com.thoughtworks.go.config.materials.PluggableSCMMaterial;
-import com.thoughtworks.go.config.materials.SubprocessExecutionContext;
-import com.thoughtworks.go.domain.MaterialInstance;
-import com.thoughtworks.go.domain.config.Configuration;
-import com.thoughtworks.go.domain.config.ConfigurationProperty;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.Modifications;
-import com.thoughtworks.go.domain.materials.Revision;
-import com.thoughtworks.go.domain.materials.scm.PluggableSCMMaterialRevision;
-import com.thoughtworks.go.domain.scm.SCM;
+import com.thoughtworks.go.config.SubprocessExecutionContext;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.Modifications;
+import com.thoughtworks.go.config.materials.Revision;
+import com.thoughtworks.go.config.materials.scm.PluggableSCMMaterialRevision;
+import com.thoughtworks.go.config.scm.SCM;
 import com.thoughtworks.go.plugin.access.scm.SCMExtension;
 import com.thoughtworks.go.plugin.access.scm.SCMProperty;
 import com.thoughtworks.go.plugin.access.scm.SCMPropertyConfiguration;
@@ -37,7 +33,6 @@ import com.thoughtworks.go.plugin.api.response.Result;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import com.thoughtworks.go.util.json.JsonHelper;
-import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.TransactionCallback;
 
 import java.io.File;
@@ -144,14 +139,14 @@ public class PluggableSCMMaterialPoller implements MaterialPoller<PluggableSCMMa
         return modification;
     }
 
-    private com.thoughtworks.go.domain.materials.ModifiedAction convertAction(ModifiedAction modifiedFile) {
+    private com.thoughtworks.go.config.materials.ModifiedAction convertAction(ModifiedAction modifiedFile) {
         if (modifiedFile == ModifiedAction.added) {
-            return com.thoughtworks.go.domain.materials.ModifiedAction.added;
+            return com.thoughtworks.go.config.materials.ModifiedAction.added;
         } else if (modifiedFile == ModifiedAction.modified) {
-            return com.thoughtworks.go.domain.materials.ModifiedAction.modified;
+            return com.thoughtworks.go.config.materials.ModifiedAction.modified;
         } else if (modifiedFile == ModifiedAction.deleted) {
-            return com.thoughtworks.go.domain.materials.ModifiedAction.deleted;
+            return com.thoughtworks.go.config.materials.ModifiedAction.deleted;
         }
-        return com.thoughtworks.go.domain.materials.ModifiedAction.unknown;
+        return com.thoughtworks.go.config.materials.ModifiedAction.unknown;
     }
 }

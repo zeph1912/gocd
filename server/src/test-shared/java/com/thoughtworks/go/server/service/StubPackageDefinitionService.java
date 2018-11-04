@@ -15,7 +15,7 @@
  */
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.domain.packagerepository.PackageDefinition;
+import com.thoughtworks.go.config.packagerepository.PackageDefinition;
 import com.thoughtworks.go.server.service.materials.PackageDefinitionService;
 
 public class StubPackageDefinitionService extends PackageDefinitionService {

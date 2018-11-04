@@ -20,7 +20,6 @@ import com.googlecode.junit.ext.RunIf;
 import com.thoughtworks.go.buildsession.BuildSession;
 import com.thoughtworks.go.buildsession.BuildSessionBasedTestCase;
 import com.thoughtworks.go.config.*;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
 import com.thoughtworks.go.domain.builder.Builder;
 import com.thoughtworks.go.helper.JobInstanceMother;
 import com.thoughtworks.go.helper.StageMother;
@@ -52,8 +51,8 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import static com.google.common.collect.Iterables.getLast;
-import static com.thoughtworks.go.domain.JobResult.*;
-import static com.thoughtworks.go.domain.JobState.*;
+import static com.thoughtworks.go.config.JobResult.*;
+import static com.thoughtworks.go.config.JobState.*;
 import static com.thoughtworks.go.helper.ConfigFileFixture.withJob;
 import static com.thoughtworks.go.junitext.EnhancedOSChecker.DO_NOT_RUN_ON;
 import static com.thoughtworks.go.junitext.EnhancedOSChecker.WINDOWS;

@@ -16,31 +16,26 @@
 
 package com.thoughtworks.go.server.dao;
 
-import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.StageConfig;
+import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.materials.MaterialConfigs;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterial;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.Material;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.dependency.DependencyMaterialRevision;
+import com.thoughtworks.go.config.dependency.DependencyMaterial;
+import com.thoughtworks.go.config.materials.Material;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.dependency.DependencyMaterialRevision;
 import com.thoughtworks.go.helper.*;
 import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.domain.PipelineTimeline;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.persistence.PipelineRepository;
-import com.thoughtworks.go.server.service.InstanceFactory;
+import com.thoughtworks.go.InstanceFactory;
 import com.thoughtworks.go.server.service.ManualBuild;
-import com.thoughtworks.go.server.service.MaterialConfigConverter;
+import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.server.service.PipelineService;
 import com.thoughtworks.go.server.transaction.TransactionSynchronizationManager;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import com.thoughtworks.go.util.Clock;
 import com.thoughtworks.go.util.GoConstants;
-import com.thoughtworks.go.util.TimeProvider;
 import org.apache.ibatis.cache.Cache;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.dbunit.DataSourceDatabaseTester;
@@ -73,7 +68,7 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
-import static com.thoughtworks.go.domain.JobResult.Failed;
+import static com.thoughtworks.go.config.JobResult.Failed;
 import static com.thoughtworks.go.helper.ModificationsMother.modifyOneFile;
 
 @Component

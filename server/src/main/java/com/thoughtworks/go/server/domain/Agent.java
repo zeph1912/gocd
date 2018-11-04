@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.domain;
 
-import com.thoughtworks.go.config.AgentConfig;
 import com.thoughtworks.go.domain.PersistentObject;
 
 public class Agent extends PersistentObject {

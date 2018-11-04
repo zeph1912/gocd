@@ -16,7 +16,7 @@
 
 package com.thoughtworks.go.plugin.access.elastic.v3;
 
-import com.thoughtworks.go.domain.JobIdentifier;
+//import com.thoughtworks.go.domain.JobIdentifier;
 import com.thoughtworks.go.plugin.access.DefaultPluginInteractionCallback;
 import com.thoughtworks.go.plugin.access.PluginRequestHelper;
 import com.thoughtworks.go.plugin.access.elastic.VersionedElasticAgentExtension;

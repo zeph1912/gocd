@@ -21,11 +21,11 @@ import com.thoughtworks.go.api.spring.ApiAuthenticationHelper
 import com.thoughtworks.go.api.util.HaltApiMessages
 import com.thoughtworks.go.apiv1.artifactstoreconfig.representers.ArtifactStoreRepresenter
 import com.thoughtworks.go.apiv1.artifactstoreconfig.representers.ArtifactStoresRepresenter
-import com.thoughtworks.go.config.ArtifactStore
-import com.thoughtworks.go.config.ArtifactStores
+
+
 import com.thoughtworks.go.domain.packagerepository.ConfigurationPropertyMother
 import com.thoughtworks.go.i18n.LocalizedMessage
-import com.thoughtworks.go.server.domain.Username
+import com.thoughtworks.go.config.Username
 import com.thoughtworks.go.server.service.ArtifactStoreService
 import com.thoughtworks.go.server.service.EntityHashingService
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult

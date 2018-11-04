@@ -18,9 +18,9 @@ package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.exceptions.NoSuchEnvironmentException;
-import com.thoughtworks.go.domain.ConfigElementForEdit;
+import com.thoughtworks.go.config.ConfigElementForEdit;
 import com.thoughtworks.go.helper.PipelineConfigMother;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import com.thoughtworks.go.util.GoConfigFileHelper;
 import org.junit.After;

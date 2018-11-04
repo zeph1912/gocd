@@ -20,8 +20,7 @@ package com.thoughtworks.go.websocket;
 import com.thoughtworks.go.config.ArtifactStores;
 import com.thoughtworks.go.config.CruiseConfig;
 import com.thoughtworks.go.config.materials.Materials;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
+import com.thoughtworks.go.config.buildcause.BuildCause;
 import com.thoughtworks.go.domain.builder.*;
 import com.thoughtworks.go.helper.MaterialsMother;
 import com.thoughtworks.go.helper.ModificationsMother;
@@ -29,7 +28,6 @@ import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.remote.work.BuildAssignment;
 import com.thoughtworks.go.remote.work.BuildWork;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
-import com.thoughtworks.go.util.command.EnvironmentVariableContext;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;

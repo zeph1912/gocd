@@ -57,8 +57,8 @@ describe "_form.html.erb" do
 
     render :partial => "admin/materials/p4/form.html", :locals => {:scope => {:material => @material_config, :url => "http://google.com", :method => "POST", :submit_label => "FOO", :edit_mode => true}}
 
-    expect(response.body).to have_selector(".popup_form input[disabled='disabled'][type='password'][name='material[#{com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::PASSWORD}]'][value='']")
-    expect(response.body).to have_selector(".popup_form input[type='checkbox'][name='material[#{com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::PASSWORD_CHANGED}]']")
+    expect(response.body).to have_selector(".popup_form input[disabled='disabled'][type='password'][name='material[#{com.thoughtworks.go.config.svn.SvnMaterialConfig::PASSWORD}]'][value='']")
+    expect(response.body).to have_selector(".popup_form input[type='checkbox'][name='material[#{com.thoughtworks.go.config.svn.SvnMaterialConfig::PASSWORD_CHANGED}]']")
   end
 
   it "should display the password field as textbox in new mode" do
@@ -66,9 +66,9 @@ describe "_form.html.erb" do
 
     render :partial => "admin/materials/p4/form.html", :locals => {:scope => {:material => @material_config, :url => "http://google.com", :method => "POST", :submit_label => "FOO", :edit_mode => false}}
 
-    expect(response.body).to have_selector(".popup_form input[type='password'][name='material[#{com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::PASSWORD}]']")
+    expect(response.body).to have_selector(".popup_form input[type='password'][name='material[#{com.thoughtworks.go.config.svn.SvnMaterialConfig::PASSWORD}]']")
     Capybara.string(response.body).find(".popup_form  div[class='hidden']").tap do |popup_form|
-      expect(popup_form).to have_selector("input[type='checkbox'][name='material[#{com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::PASSWORD_CHANGED}]'][value='1'][checked='checked']")
+      expect(popup_form).to have_selector("input[type='checkbox'][name='material[#{com.thoughtworks.go.config.svn.SvnMaterialConfig::PASSWORD_CHANGED}]'][value='1'][checked='checked']")
     end
   end
 
@@ -103,15 +103,15 @@ describe "_form.html.erb" do
     Capybara.string(response.body).find('.popup_form').tap do |popup_form|
       expect(popup_form).to have_selector("div.field_with_errors input[type='text'][name='material[#{com.thoughtworks.go.config.materials.AbstractMaterialConfig::MATERIAL_NAME}]'][value='P4 Material Name']")
       expect(popup_form).to have_selector("div.form_error", :text => "Material Name is so wrong")
-      expect(popup_form).to have_selector("div.field_with_errors input[type='text'][name='material[#{com.thoughtworks.go.config.materials.perforce.P4MaterialConfig::SERVER_AND_PORT}]'][value='p4:5000']")
+      expect(popup_form).to have_selector("div.field_with_errors input[type='text'][name='material[#{com.thoughtworks.go.config.perforce.P4MaterialConfig::SERVER_AND_PORT}]'][value='p4:5000']")
       expect(popup_form).to have_selector("div.form_error", :text => "Port is wrong")
-      expect(popup_form).to have_selector("div.field_with_errors input[type='text'][name='material[#{com.thoughtworks.go.config.materials.perforce.P4MaterialConfig::USERNAME}]'][value='loser']")
+      expect(popup_form).to have_selector("div.field_with_errors input[type='text'][name='material[#{com.thoughtworks.go.config.perforce.P4MaterialConfig::USERNAME}]'][value='loser']")
       expect(popup_form).to have_selector("div.form_error", :text => "Username is wrong")
-      expect(popup_form).to have_selector("div.field_with_errors input[type='password'][name='material[#{com.thoughtworks.go.config.materials.perforce.P4MaterialConfig::PASSWORD}]'][value='secret']")
+      expect(popup_form).to have_selector("div.field_with_errors input[type='password'][name='material[#{com.thoughtworks.go.config.perforce.P4MaterialConfig::PASSWORD}]'][value='secret']")
       expect(popup_form).to have_selector("div.form_error", :text => "Password is wrong")
-      expect(popup_form).to have_selector("div.field_with_errors input[type='checkbox'][name='material[#{com.thoughtworks.go.config.materials.perforce.P4MaterialConfig::USE_TICKETS}]'][value='true'][checked='checked']")
+      expect(popup_form).to have_selector("div.field_with_errors input[type='checkbox'][name='material[#{com.thoughtworks.go.config.perforce.P4MaterialConfig::USE_TICKETS}]'][value='true'][checked='checked']")
       expect(popup_form).to have_selector("div.form_error", :text => "Tickets are wrong")
-      expect(popup_form).to have_selector("div.field_with_errors textarea[name='material[#{com.thoughtworks.go.config.materials.perforce.P4MaterialConfig::VIEW}]']", "through_window")
+      expect(popup_form).to have_selector("div.field_with_errors textarea[name='material[#{com.thoughtworks.go.config.perforce.P4MaterialConfig::VIEW}]']", "through_window")
       expect(popup_form).to have_selector("div.form_error", :text => "View is wrong")
       expect(popup_form).to have_selector("div.field_with_errors input[type='text'][name='material[#{com.thoughtworks.go.config.materials.ScmMaterialConfig::FOLDER}]'][value='dest']")
       expect(popup_form).to have_selector("div.form_error", :text => "Folder is wrong")
@@ -135,7 +135,7 @@ describe "_form.html.erb" do
     render :partial => "admin/materials/p4/form.html", :locals => {:scope => {:material => @material_config, :url => "http://google.com", :method => "POST", :submit_label => "foo"}}
 
     Capybara.string(response.body).find('.popup_form').tap do |popup_form|
-      expect(popup_form).to have_selector("div.field_with_errors textarea[name='material[#{com.thoughtworks.go.config.materials.perforce.P4MaterialConfig::VIEW}]']", :text => "view")
+      expect(popup_form).to have_selector("div.field_with_errors textarea[name='material[#{com.thoughtworks.go.config.perforce.P4MaterialConfig::VIEW}]']", :text => "view")
       expect(popup_form).to have_selector("div.form_error", :text => "View is wrong")
     end
   end

@@ -18,10 +18,7 @@ package com.thoughtworks.go.server.service.builders;
 
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.pluggabletask.PluggableTask;
-import com.thoughtworks.go.domain.KillAllChildProcessTask;
-import com.thoughtworks.go.domain.NullTask;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.Task;
+import com.thoughtworks.go.config.Task;
 import com.thoughtworks.go.domain.builder.Builder;
 import com.thoughtworks.go.server.service.UpstreamPipelineResolver;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -17,23 +17,16 @@
 package com.thoughtworks.go.apiv1.admin.pipelinegroups.representers
 
 import com.thoughtworks.go.api.util.GsonTransformer
-import com.thoughtworks.go.config.AdminRole
-import com.thoughtworks.go.config.AdminUser
-import com.thoughtworks.go.config.AdminsConfig
-import com.thoughtworks.go.config.Authorization
-import com.thoughtworks.go.config.BasicCruiseConfig
+
+
 import com.thoughtworks.go.config.CaseInsensitiveString
-import com.thoughtworks.go.config.OperationConfig
-import com.thoughtworks.go.config.ViewConfig
+
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 
 import static com.thoughtworks.go.api.base.JsonUtils.toObjectString
 import static net.javacrumbs.jsonunit.fluent.JsonFluentAssert.assertThatJson
-import static org.junit.jupiter.api.Assertions.assertEquals
 import static org.junit.jupiter.api.Assertions.assertTrue
-import static org.junit.jupiter.api.Assertions.assertTrue
-import static org.mockito.Mockito.mock
 
 class AuthorizationRepresenterTest {
     @Nested

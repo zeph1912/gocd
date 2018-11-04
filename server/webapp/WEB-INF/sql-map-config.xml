@@ -25,11 +25,11 @@
   <typeHandlers>
 
     <typeHandler
-        javaType="com.thoughtworks.go.domain.JobState"
+        javaType="com.thoughtworks.go.config.JobState"
         handler="com.thoughtworks.go.server.dao.handlers.BuildStateTypeHandlerCallback"/>
 
     <typeHandler
-        javaType="com.thoughtworks.go.domain.JobResult"
+        javaType="com.thoughtworks.go.config.JobResult"
         handler="org.apache.ibatis.type.EnumTypeHandler"/>
 
     <typeHandler
@@ -37,15 +37,15 @@
         handler="com.thoughtworks.go.server.dao.handlers.VariableValueConfigTypeHandlerCallback"/>
 
     <typeHandler
-        javaType="com.thoughtworks.go.domain.StageResult"
+        javaType="com.thoughtworks.go.config.StageResult"
         handler="org.apache.ibatis.type.EnumTypeHandler"/>
 
     <typeHandler
-        javaType="com.thoughtworks.go.domain.StageState"
+        javaType="com.thoughtworks.go.config.StageState"
         handler="org.apache.ibatis.type.EnumTypeHandler"/>
 
     <typeHandler
-        javaType="com.thoughtworks.go.domain.buildcause.BuildCause"
+        javaType="com.thoughtworks.go.config.buildcause.BuildCause"
         handler="com.thoughtworks.go.server.dao.handlers.BuildCauseHandlerCallback"/>
 
     <typeHandler
@@ -53,11 +53,11 @@
         handler="com.thoughtworks.go.server.dao.handlers.FileTypeHandlerCallback"/>
 
     <typeHandler
-        javaType="com.thoughtworks.go.domain.materials.ModifiedAction"
+        javaType="com.thoughtworks.go.config.materials.ModifiedAction"
         handler="org.apache.ibatis.type.EnumTypeHandler"/>
 
     <typeHandler
-        javaType="com.thoughtworks.go.domain.StageEvent"
+        javaType="com.thoughtworks.go.config.StageEvent"
         handler="org.apache.ibatis.type.EnumTypeHandler"/>
   </typeHandlers>
 

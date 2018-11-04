@@ -43,7 +43,7 @@ module Admin::Materials
     end
 
     def new
-      scm = com.thoughtworks.go.domain.scm.SCM.new
+      scm = com.thoughtworks.go.config.scm.SCM.new
       scm.setPluginConfiguration(PluginConfiguration.new(params[:plugin_id], nil))
       pluggable_scm = PluggableSCMMaterialConfig.new
       pluggable_scm.setSCMConfig(scm)
@@ -54,7 +54,7 @@ module Admin::Materials
     end
 
     def create
-      scm = com.thoughtworks.go.domain.scm.SCM.new
+      scm = com.thoughtworks.go.config.scm.SCM.new
       scm.setPluginConfiguration(PluginConfiguration.new(params[:plugin_id], '1'))
       pluggable_scm = PluggableSCMMaterialConfig.new
       pluggable_scm.setSCMConfig(scm)
@@ -96,7 +96,7 @@ module Admin::Materials
     end
 
     def check_connection
-      scm = com.thoughtworks.go.domain.scm.SCM.new
+      scm = com.thoughtworks.go.config.scm.SCM.new
       scm.setPluginConfiguration(PluginConfiguration.new(params[:plugin_id], nil))
       scm.setConfigAttributes(params[:material])
 

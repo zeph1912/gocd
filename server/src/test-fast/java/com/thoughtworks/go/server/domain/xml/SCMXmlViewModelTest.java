@@ -17,10 +17,10 @@
 package com.thoughtworks.go.server.domain.xml;
 
 import com.thoughtworks.go.domain.XmlWriterContext;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.Modifications;
-import com.thoughtworks.go.domain.materials.ModifiedAction;
-import com.thoughtworks.go.domain.materials.ModifiedFile;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.Modifications;
+import com.thoughtworks.go.config.materials.ModifiedAction;
+import com.thoughtworks.go.config.materials.ModifiedFile;
 import com.thoughtworks.go.helper.MaterialsMother;
 import com.thoughtworks.go.util.DateUtils;
 import org.dom4j.DocumentHelper;

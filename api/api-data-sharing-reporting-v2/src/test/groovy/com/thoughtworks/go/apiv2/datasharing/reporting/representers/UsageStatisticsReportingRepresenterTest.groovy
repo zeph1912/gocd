@@ -16,7 +16,7 @@
 
 package com.thoughtworks.go.apiv2.datasharing.reporting.representers
 
-import com.thoughtworks.go.domain.UsageStatisticsReporting
+
 import org.junit.jupiter.api.Test
 
 import static com.thoughtworks.go.api.base.JsonUtils.toObjectString

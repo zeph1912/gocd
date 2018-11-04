@@ -17,8 +17,8 @@
 package com.thoughtworks.go.spark
 
 import com.thoughtworks.go.config.CaseInsensitiveString
-import com.thoughtworks.go.domain.PipelineGroups
-import com.thoughtworks.go.server.domain.Username
+
+import com.thoughtworks.go.config.Username
 import com.thoughtworks.go.server.newsecurity.utils.SessionUtils
 import com.thoughtworks.go.server.security.GoAuthority
 import com.thoughtworks.go.server.security.userdetail.GoUserPrinciple

@@ -17,13 +17,9 @@
 package com.thoughtworks.go.server.presentation.models;
 
 import com.google.gson.Gson;
-import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.StageConfig;
-import com.thoughtworks.go.config.TrackingTool;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.label.PipelineLabel;
-import com.thoughtworks.go.domain.materials.Modification;
+import com.thoughtworks.go.config.*;
+import com.thoughtworks.go.config.label.PipelineLabel;
+import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.dto.DurationBean;
 import com.thoughtworks.go.dto.DurationBeans;
 import com.thoughtworks.go.helper.JobInstanceMother;
@@ -31,7 +27,7 @@ import com.thoughtworks.go.helper.MaterialsMother;
 import com.thoughtworks.go.helper.ModificationsMother;
 import com.thoughtworks.go.helper.StageMother;
 import com.thoughtworks.go.server.domain.Agent;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.AgentService;
 import com.thoughtworks.go.util.*;
 import org.junit.Before;
@@ -40,8 +36,8 @@ import org.junit.Test;
 import java.util.Date;
 import java.util.Map;
 
-import static com.thoughtworks.go.domain.NullStage.createNullStage;
-import static com.thoughtworks.go.domain.buildcause.BuildCause.createManualForced;
+import static com.thoughtworks.go.config.NullStage.createNullStage;
+import static com.thoughtworks.go.config.buildcause.BuildCause.createManualForced;
 import static com.thoughtworks.go.helper.ModificationsMother.multipleModifications;
 import static com.thoughtworks.go.helper.StageConfigMother.oneBuildPlanWithResourcesAndMaterials;
 import static net.javacrumbs.jsonunit.core.Option.IGNORING_EXTRA_FIELDS;

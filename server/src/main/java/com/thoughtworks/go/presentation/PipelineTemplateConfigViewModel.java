@@ -22,8 +22,6 @@ import java.util.Map;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
 import com.thoughtworks.go.config.ParamsAttributeAware;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.PipelineTemplateConfig;
 
 /**
  * @understands: How to render the PipelineTemplateConfig object for new & create

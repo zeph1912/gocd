@@ -17,7 +17,7 @@
 package com.thoughtworks.go.server.security.userdetail;
 
 import com.google.common.collect.Sets;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import org.springframework.security.core.GrantedAuthority;
 
 import java.util.Set;

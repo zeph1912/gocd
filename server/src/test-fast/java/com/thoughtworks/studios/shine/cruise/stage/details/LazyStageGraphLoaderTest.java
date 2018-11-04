@@ -16,7 +16,6 @@
 
 package com.thoughtworks.studios.shine.cruise.stage.details;
 
-import com.thoughtworks.go.domain.StageIdentifier;
 import com.thoughtworks.studios.shine.cruise.GoIntegrationException;
 import com.thoughtworks.studios.shine.cruise.GoOntology;
 import com.thoughtworks.studios.shine.semweb.Graph;

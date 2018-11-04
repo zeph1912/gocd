@@ -17,10 +17,8 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.*;
-import com.thoughtworks.go.domain.*;
 import com.thoughtworks.go.domain.Users;
-import com.thoughtworks.go.domain.config.Admin;
-import com.thoughtworks.go.domain.exception.ValidationException;
+import com.thoughtworks.go.config.exception.ValidationException;
 import com.thoughtworks.go.helper.ConfigFileFixture;
 import com.thoughtworks.go.helper.UserRoleMatcherMother;
 import com.thoughtworks.go.presentation.TriStateSelection;
@@ -29,11 +27,8 @@ import com.thoughtworks.go.presentation.UserSearchModel;
 import com.thoughtworks.go.presentation.UserSourceType;
 import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
-import com.thoughtworks.go.server.dao.UserDao;
 import com.thoughtworks.go.server.dao.UserSqlMapDao;
-import com.thoughtworks.go.server.domain.Username;
-import com.thoughtworks.go.server.security.GoAuthority;
-import com.thoughtworks.go.server.security.userdetail.GoUserPrinciple;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import com.thoughtworks.go.util.GoConfigFileHelper;
 import com.thoughtworks.go.util.TriState;

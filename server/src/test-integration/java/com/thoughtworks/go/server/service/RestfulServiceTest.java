@@ -16,17 +16,14 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.Agents;
-import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.GoConfigDao;
-import com.thoughtworks.go.domain.*;
+import com.thoughtworks.go.InstanceFactory;
+import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.fixture.PipelineWithTwoStages;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.dao.StageDao;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import com.thoughtworks.go.util.GoConfigFileHelper;
-import com.thoughtworks.go.util.TimeProvider;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;

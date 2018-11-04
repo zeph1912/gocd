@@ -19,9 +19,9 @@ package com.thoughtworks.go.plugin.access.notification.v4;
 import com.thoughtworks.go.domain.JobInstance;
 import com.thoughtworks.go.domain.MaterialRevision;
 import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.notificationdata.StageNotificationData;
+import com.thoughtworks.go.config.buildcause.BuildCause;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.notificationdata.StageNotificationData;
 import com.thoughtworks.go.plugin.access.notification.DataConverter;
 
 import java.util.ArrayList;

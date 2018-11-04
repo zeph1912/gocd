@@ -22,17 +22,17 @@
                 <fieldset>
                     <div class="hidden">
                         <%= md5_field %>
-                        <%= f.hidden_field com.thoughtworks.go.domain.packagerepository.PackageRepository::REPO_ID %>
+                        <%= f.hidden_field com.thoughtworks.go.config.packagerepository.PackageRepository::REPO_ID %>
                     </div>
 
                     <div class="field required">
-                        <%= label_with_hint f, com.thoughtworks.go.domain.packagerepository.PackageRepository::NAME, 'Name', "Enter a globally unique name", "required" %>
-                        <%= f.text_field com.thoughtworks.go.domain.packagerepository.PackageRepository::NAME, :class => 'important' -%>
+                        <%= label_with_hint f, com.thoughtworks.go.config.packagerepository.PackageRepository::NAME, 'Name', "Enter a globally unique name", "required" %>
+                        <%= f.text_field com.thoughtworks.go.config.packagerepository.PackageRepository::NAME, :class => 'important' -%>
                     </div>
-                    <%= f.fields_for com.thoughtworks.go.domain.packagerepository.PackageRepository::PLUGIN_CONFIGURATION, scope[:package_repository].getPluginConfiguration() do |plugin_configuration_form| %>
+                    <%= f.fields_for com.thoughtworks.go.config.packagerepository.PackageRepository::PLUGIN_CONFIGURATION, scope[:package_repository].getPluginConfiguration() do |plugin_configuration_form| %>
                         <div class="field required">
-                            <%= label_with_hint plugin_configuration_form, com.thoughtworks.go.domain.config.PluginConfiguration::ID, 'Type', "Choose from available plugins", "required" -%>
-                            <%= plugin_configuration_form.select com.thoughtworks.go.domain.config.PluginConfiguration::ID, package_material_plugins, {:selected => scope[:package_repository].getPluginConfiguration().getId()}, {} -%>
+                            <%= label_with_hint plugin_configuration_form, com.thoughtworks.go.config.PluginConfiguration::ID, 'Type', "Choose from available plugins", "required" -%>
+                            <%= plugin_configuration_form.select com.thoughtworks.go.config.PluginConfiguration::ID, package_material_plugins, {:selected => scope[:package_repository].getPluginConfiguration().getId()}, {} -%>
                         </div>
                     <% end %>
                 </fieldset>

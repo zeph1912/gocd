@@ -15,8 +15,7 @@
  */
 package com.thoughtworks.go.buildsession;
 
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.exception.ArtifactPublishingException;
+import com.thoughtworks.go.config.exception.ArtifactPublishingException;
 import com.thoughtworks.go.util.FileUtil;
 import org.junit.Before;
 import org.junit.Test;

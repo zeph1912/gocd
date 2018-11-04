@@ -16,13 +16,8 @@
 
 package com.thoughtworks.go.server.service.tasks;
 
-import com.thoughtworks.go.config.FetchTaskAdapter;
 import com.thoughtworks.go.config.pluggabletask.PluggableTask;
-import com.thoughtworks.go.config.registry.ConfigElementImplementationRegistry;
-import com.thoughtworks.go.domain.NullTask;
-import com.thoughtworks.go.domain.Task;
-import com.thoughtworks.go.domain.config.Configuration;
-import com.thoughtworks.go.domain.config.PluginConfiguration;
+import com.thoughtworks.go.config.Task;
 import com.thoughtworks.go.plugin.access.pluggabletask.PluggableTaskConfigStore;
 import com.thoughtworks.go.plugin.access.pluggabletask.TaskPreference;
 import com.thoughtworks.go.plugin.api.config.Property;
@@ -30,7 +25,7 @@ import com.thoughtworks.go.plugin.api.task.TaskConfig;
 import com.thoughtworks.go.plugin.infra.PluginManager;
 import com.thoughtworks.go.plugin.infra.plugininfo.GoPluginDescriptor;
 import com.thoughtworks.go.plugins.presentation.PluggableViewModel;
-import com.thoughtworks.go.service.TaskFactory;
+import com.thoughtworks.go.server.TaskFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

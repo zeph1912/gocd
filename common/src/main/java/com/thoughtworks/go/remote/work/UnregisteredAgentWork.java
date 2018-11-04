@@ -16,9 +16,8 @@
 
 package com.thoughtworks.go.remote.work;
 
-import com.thoughtworks.go.domain.exception.UnregisteredAgentException;
+import com.thoughtworks.go.config.exception.UnregisteredAgentException;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
-import com.thoughtworks.go.util.command.EnvironmentVariableContext;
 
 public class UnregisteredAgentWork implements Work {
     private String message;

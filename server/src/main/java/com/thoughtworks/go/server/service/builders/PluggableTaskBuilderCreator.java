@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.service.builders;
 
 import com.thoughtworks.go.config.pluggabletask.PluggableTask;
-import com.thoughtworks.go.domain.Pipeline;
 import com.thoughtworks.go.domain.builder.Builder;
 import com.thoughtworks.go.domain.builder.pluggableTask.PluggableTaskBuilder;
 import com.thoughtworks.go.plugin.access.pluggabletask.TaskExtension;

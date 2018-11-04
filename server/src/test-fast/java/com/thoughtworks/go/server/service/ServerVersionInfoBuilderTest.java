@@ -17,8 +17,7 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.CurrentGoCDVersion;
-import com.thoughtworks.go.domain.GoVersion;
-import com.thoughtworks.go.domain.VersionInfo;
+import com.thoughtworks.go.config.GoVersion;
 import com.thoughtworks.go.server.dao.VersionInfoDao;
 import org.junit.Before;
 import org.junit.Test;

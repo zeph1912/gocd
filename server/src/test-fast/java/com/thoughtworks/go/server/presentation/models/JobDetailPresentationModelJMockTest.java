@@ -16,9 +16,7 @@
 
 package com.thoughtworks.go.server.presentation.models;
 
-import com.thoughtworks.go.config.Tabs;
-import com.thoughtworks.go.config.TrackingTool;
-import com.thoughtworks.go.domain.*;
+import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.helper.StageMother;
 import com.thoughtworks.go.server.service.ArtifactsService;
 import com.thoughtworks.go.util.TestFileUtil;

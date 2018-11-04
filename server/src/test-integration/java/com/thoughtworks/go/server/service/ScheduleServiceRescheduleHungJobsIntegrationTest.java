@@ -16,13 +16,10 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.AgentConfig;
-import com.thoughtworks.go.config.GoConfigDao;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.svn.Subversion;
-import com.thoughtworks.go.domain.materials.svn.SvnCommand;
+import com.thoughtworks.go.InstanceFactory;
+import com.thoughtworks.go.config.*;
+import com.thoughtworks.go.config.materials.svn.Subversion;
+import com.thoughtworks.go.config.materials.svn.SvnCommand;
 import com.thoughtworks.go.helper.AgentMother;
 import com.thoughtworks.go.helper.SvnTestRepo;
 import com.thoughtworks.go.helper.TestRepo;
@@ -35,7 +32,6 @@ import com.thoughtworks.go.server.dao.StageDao;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import com.thoughtworks.go.util.GoConfigFileHelper;
 import com.thoughtworks.go.util.SystemEnvironment;
-import com.thoughtworks.go.util.TimeProvider;
 import org.apache.commons.io.FileUtils;
 import org.junit.*;
 import org.junit.rules.TemporaryFolder;

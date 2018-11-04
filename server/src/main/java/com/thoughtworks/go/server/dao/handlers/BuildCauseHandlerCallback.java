@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.dao.handlers;
 
-import com.thoughtworks.go.domain.buildcause.BuildCause;
 import org.apache.ibatis.type.JdbcType;
 
 import java.sql.PreparedStatement;

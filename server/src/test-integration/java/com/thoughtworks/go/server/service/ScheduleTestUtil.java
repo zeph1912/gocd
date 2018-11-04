@@ -16,21 +16,16 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.StageConfig;
-import com.thoughtworks.go.config.TimerConfig;
+import com.thoughtworks.go.MaterialConfigConverter;
+import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.materials.MaterialConfigs;
 import com.thoughtworks.go.config.materials.PackageMaterialConfig;
-import com.thoughtworks.go.config.materials.ScmMaterial;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterial;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.Material;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.ModifiedAction;
-import com.thoughtworks.go.domain.scm.SCM;
+import com.thoughtworks.go.config.dependency.DependencyMaterial;
+import com.thoughtworks.go.config.materials.Material;
+import com.thoughtworks.go.config.materials.MaterialConfig;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.ModifiedAction;
+import com.thoughtworks.go.config.scm.SCM;
 import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.helper.StageConfigMother;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
@@ -50,7 +45,7 @@ import java.io.File;
 import java.sql.SQLException;
 import java.util.*;
 
-import static com.thoughtworks.go.domain.config.CaseInsensitiveStringMother.str;
+import static com.thoughtworks.go.config.CaseInsensitiveStringMother.str;
 import static com.thoughtworks.go.util.DataStructureUtils.a;
 
 public class ScheduleTestUtil {

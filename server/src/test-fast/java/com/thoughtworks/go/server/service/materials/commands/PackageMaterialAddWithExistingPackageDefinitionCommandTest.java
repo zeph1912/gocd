@@ -17,11 +17,10 @@
 package com.thoughtworks.go.server.service.materials.commands;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.PipelineConfig;
 import com.thoughtworks.go.config.materials.PackageMaterialConfig;
-import com.thoughtworks.go.domain.packagerepository.PackageDefinition;
-import com.thoughtworks.go.domain.packagerepository.PackageDefinitionMother;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.packagerepository.PackageDefinition;
+import com.thoughtworks.go.config.packagerepository.PackageDefinitionMother;
+import com.thoughtworks.go.config.Username;
 import org.junit.Test;
 
 import java.io.Serializable;

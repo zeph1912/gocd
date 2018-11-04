@@ -17,8 +17,7 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.StageConfig;
-import com.thoughtworks.go.domain.PipelineInfo;
+import com.thoughtworks.go.config.PipelineInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

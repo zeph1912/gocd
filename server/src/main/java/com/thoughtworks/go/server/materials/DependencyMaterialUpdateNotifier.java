@@ -17,19 +17,16 @@
 package com.thoughtworks.go.server.materials;
 
 
-import com.thoughtworks.go.config.CruiseConfig;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterial;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterialConfig;
-import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.StageResult;
-import com.thoughtworks.go.domain.materials.Material;
+import com.thoughtworks.go.config.dependency.DependencyMaterial;
+import com.thoughtworks.go.config.dependency.DependencyMaterialConfig;
+import com.thoughtworks.go.config.StageResult;
+import com.thoughtworks.go.config.materials.Material;
 import com.thoughtworks.go.listener.ConfigChangedListener;
 import com.thoughtworks.go.listener.EntityConfigChangedListener;
 import com.thoughtworks.go.server.domain.StageStatusListener;
 import com.thoughtworks.go.server.initializers.Initializer;
 import com.thoughtworks.go.server.service.GoConfigService;
-import com.thoughtworks.go.server.service.MaterialConfigConverter;
+import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.serverhealth.HealthStateScope;
 import com.thoughtworks.go.serverhealth.ServerHealthService;
 import org.apache.commons.collections4.CollectionUtils;

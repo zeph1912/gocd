@@ -17,7 +17,7 @@
 package com.thoughtworks.go.apiv4.shared.representers.stages.tasks
 
 import com.thoughtworks.go.api.util.GsonTransformer
-import com.thoughtworks.go.config.RakeTask
+
 import org.junit.jupiter.api.Test
 
 import static net.javacrumbs.jsonunit.fluent.JsonFluentAssert.assertThatJson

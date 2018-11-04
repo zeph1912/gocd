@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.messaging;
 
-import com.thoughtworks.go.domain.Stage;
 import com.thoughtworks.go.server.service.StageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

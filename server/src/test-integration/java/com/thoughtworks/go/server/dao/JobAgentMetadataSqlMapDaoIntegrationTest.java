@@ -16,14 +16,11 @@
 
 package com.thoughtworks.go.server.dao;
 
-import com.thoughtworks.go.config.PipelineConfig;
+import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.elastic.ElasticProfile;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.config.ConfigurationProperty;
 import com.thoughtworks.go.helper.BuildPlanMother;
 import com.thoughtworks.go.helper.PipelineMother;
-import com.thoughtworks.go.server.service.InstanceFactory;
-import com.thoughtworks.go.util.TimeProvider;
+import com.thoughtworks.go.InstanceFactory;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

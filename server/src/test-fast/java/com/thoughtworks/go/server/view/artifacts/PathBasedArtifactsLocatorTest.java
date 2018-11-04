@@ -18,8 +18,6 @@ package com.thoughtworks.go.server.view.artifacts;
 
 import java.io.File;
 
-import com.thoughtworks.go.domain.JobIdentifier;
-import com.thoughtworks.go.domain.StageIdentifier;
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.is;

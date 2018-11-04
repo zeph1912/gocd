@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.server.service.dd;
 
-import com.thoughtworks.go.domain.StageIdentifier;
-
 public class StageIdFaninScmMaterialPair {
     StageIdentifier stageIdentifier;
     FaninScmMaterial faninScmMaterial;

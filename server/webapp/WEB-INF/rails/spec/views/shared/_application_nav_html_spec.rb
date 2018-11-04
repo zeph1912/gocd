@@ -20,7 +20,7 @@ describe "/shared/_application_nav.html.erb" do
   include GoUtil
 
   before do
-    assign(:user, com.thoughtworks.go.server.domain.Username::ANONYMOUS)
+    assign(:user, com.thoughtworks.go.config.Username::ANONYMOUS)
     allow(view).to receive(:is_user_an_admin?).and_return(true)
   end
 
@@ -61,7 +61,7 @@ describe "/shared/_application_nav.html.erb" do
   describe "user name and logout" do
 
     it "should display username and logout botton if a user is logged in" do
-      assign(:user, com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new("maulik suchak")))
+      assign(:user, com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new("maulik suchak")))
       allow(view).to receive(:can_view_admin_page?).and_return(false)
       controller.request.path_parameters[:controller] = 'pipelines'
       controller.request.path_parameters[:action]     = 'index'
@@ -75,7 +75,7 @@ describe "/shared/_application_nav.html.erb" do
     end
 
     it "should not display username and logout botton if anonymous user is logged in" do
-      assign(:user, com.thoughtworks.go.server.domain.Username::ANONYMOUS)
+      assign(:user, com.thoughtworks.go.config.Username::ANONYMOUS)
       allow(view).to receive(:can_view_admin_page?).and_return(false)
 
       controller.request.path_parameters[:controller] = 'pipelines'
@@ -104,7 +104,7 @@ describe "/shared/_application_nav.html.erb" do
 
     it "should mark admin tab as hilighted when current_tab override used" do
       assign(:current_tab_name, "admin")
-      assign(:user, com.thoughtworks.go.server.domain.Username::ANONYMOUS)
+      assign(:user, com.thoughtworks.go.config.Username::ANONYMOUS)
       allow(view).to receive(:can_view_admin_page?).and_return(true)
       controller.request.path_parameters[:controller] = 'pipelines'
       controller.request.path_parameters[:action]     = 'index'
@@ -116,7 +116,7 @@ describe "/shared/_application_nav.html.erb" do
 
     it "should not mark admin tab as hilighted when not overridden" do
       assign(:current_tab_name, nil)
-      assign(:user, com.thoughtworks.go.server.domain.Username::ANONYMOUS)
+      assign(:user, com.thoughtworks.go.config.Username::ANONYMOUS)
       allow(view).to receive(:can_view_admin_page?).and_return(true)
 
       controller.request.path_parameters[:controller] = 'environments'
@@ -128,7 +128,7 @@ describe "/shared/_application_nav.html.erb" do
     end
 
     it "should render header with pipelines not selected as current when visiting environment page" do
-      assign(:user, com.thoughtworks.go.server.domain.Username::ANONYMOUS)
+      assign(:user, com.thoughtworks.go.config.Username::ANONYMOUS)
       assign(:current_tab_name, 'environments')
       allow(view).to receive(:can_view_admin_page?).and_return(false)
       controller.request.path_parameters[:controller] = 'environments'
@@ -140,7 +140,7 @@ describe "/shared/_application_nav.html.erb" do
     end
 
     it "should hookup auto refresh of server health messages" do
-      assign(:user, com.thoughtworks.go.server.domain.Username::ANONYMOUS)
+      assign(:user, com.thoughtworks.go.config.Username::ANONYMOUS)
       allow(view).to receive(:can_view_admin_page?).and_return(false)
       controller.request.path_parameters[:controller] = 'agents'
       controller.request.path_parameters[:action]     = 'index'
@@ -151,7 +151,7 @@ describe "/shared/_application_nav.html.erb" do
     end
 
     it "should hookup auto refresh with update once when auto refresh is false" do
-      assign(:user, com.thoughtworks.go.server.domain.Username::ANONYMOUS)
+      assign(:user, com.thoughtworks.go.config.Username::ANONYMOUS)
       params[:autoRefresh] = 'false'
       allow(view).to receive(:can_view_admin_page?).and_return(false)
       controller.request.path_parameters[:controller] = 'agents'

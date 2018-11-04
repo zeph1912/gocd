@@ -20,10 +20,9 @@ import java.io.Serializable;
 import java.util.HashMap;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.PipelineConfig;
 import com.thoughtworks.go.config.materials.PackageMaterialConfig;
-import com.thoughtworks.go.domain.packagerepository.PackageDefinitionMother;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.packagerepository.PackageDefinitionMother;
+import com.thoughtworks.go.config.Username;
 import org.junit.Before;
 import org.junit.Test;
 

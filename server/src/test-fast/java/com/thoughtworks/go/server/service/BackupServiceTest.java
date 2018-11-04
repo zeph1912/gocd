@@ -19,7 +19,6 @@ package com.thoughtworks.go.server.service;
 import com.thoughtworks.go.database.Database;
 import com.thoughtworks.go.server.domain.ServerBackup;
 import com.thoughtworks.go.server.persistence.ServerBackupRepository;
-import com.thoughtworks.go.service.ConfigRepository;
 import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.util.ThrowingFn;
 import org.junit.Before;

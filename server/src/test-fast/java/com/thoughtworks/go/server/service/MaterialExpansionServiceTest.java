@@ -16,13 +16,12 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.PipelineConfig;
+import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.materials.MaterialConfigs;
-import com.thoughtworks.go.config.materials.Materials;
-import com.thoughtworks.go.config.materials.git.GitMaterial;
-import com.thoughtworks.go.config.materials.mercurial.HgMaterialConfig;
-import com.thoughtworks.go.config.materials.svn.SvnMaterial;
-import com.thoughtworks.go.config.materials.svn.SvnMaterialConfig;
+import com.thoughtworks.go.config.git.GitMaterial;
+import com.thoughtworks.go.config.mercurial.HgMaterialConfig;
+import com.thoughtworks.go.config.svn.SvnMaterial;
+import com.thoughtworks.go.config.svn.SvnMaterialConfig;
 import com.thoughtworks.go.helper.*;
 import com.thoughtworks.go.server.cache.GoCache;
 import org.assertj.core.api.Assertions;

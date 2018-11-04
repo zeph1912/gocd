@@ -21,7 +21,7 @@ import static javax.servlet.http.HttpServletResponse.SC_CREATED;
 import static javax.servlet.http.HttpServletResponse.SC_FORBIDDEN;
 import static javax.servlet.http.HttpServletResponse.SC_OK;
 
-import com.thoughtworks.go.domain.Property;
+import com.thoughtworks.go.config.Property;
 import com.thoughtworks.go.server.controller.PropertiesController;
 
 public class PropertyAction extends BasicRestfulAction {

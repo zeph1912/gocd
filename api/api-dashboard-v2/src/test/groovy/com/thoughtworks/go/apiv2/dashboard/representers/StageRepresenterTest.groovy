@@ -16,7 +16,11 @@
 
 package com.thoughtworks.go.apiv2.dashboard.representers
 
-import com.thoughtworks.go.domain.*
+import com.thoughtworks.go.config.JobResult
+import com.thoughtworks.go.config.JobState
+
+import com.thoughtworks.go.config.StageResult
+import com.thoughtworks.go.config.StageState
 import com.thoughtworks.go.presentation.pipelinehistory.StageInstanceModel
 import org.junit.jupiter.api.Test
 

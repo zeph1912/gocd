@@ -16,9 +16,9 @@
 
 package com.thoughtworks.go.helper;
 
-import com.thoughtworks.go.config.materials.svn.SvnMaterial;
-import com.thoughtworks.go.config.materials.svn.SvnMaterialConfig;
-import com.thoughtworks.go.domain.materials.*;
+import com.thoughtworks.go.config.svn.SvnMaterial;
+import com.thoughtworks.go.config.svn.SvnMaterialConfig;
+import com.thoughtworks.go.config.materials.*;
 import com.thoughtworks.go.util.FileUtil;
 import com.thoughtworks.go.util.command.InMemoryStreamConsumer;
 import com.thoughtworks.go.util.command.ProcessOutputStreamConsumer;

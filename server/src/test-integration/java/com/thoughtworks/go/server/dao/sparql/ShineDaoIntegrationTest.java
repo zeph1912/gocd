@@ -16,13 +16,8 @@
 
 package com.thoughtworks.go.server.dao.sparql;
 
-import com.thoughtworks.go.config.GoConfigDao;
-import com.thoughtworks.go.domain.JobIdentifier;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.StageIdentifier;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.testinfo.*;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.testinfo.*;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.domain.PipelineTimeline;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
@@ -45,7 +40,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
-import org.junit.contrib.java.lang.system.EnvironmentVariables;
 import org.junit.rules.TemporaryFolder;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

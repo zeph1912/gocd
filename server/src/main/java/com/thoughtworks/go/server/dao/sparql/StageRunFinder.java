@@ -18,8 +18,6 @@ package com.thoughtworks.go.server.dao.sparql;
 
 import java.util.List;
 
-import com.thoughtworks.go.domain.StageIdentifier;
-
 public interface StageRunFinder {
 
     List<StageIdentifier> findRunForStage(StageIdentifier stageIdentifier);

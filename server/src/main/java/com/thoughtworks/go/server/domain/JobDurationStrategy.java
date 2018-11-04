@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.server.domain;
 
-import com.thoughtworks.go.domain.JobInstance;
-
 /**
  * @understands how to calculate the expected duration of a job
  */

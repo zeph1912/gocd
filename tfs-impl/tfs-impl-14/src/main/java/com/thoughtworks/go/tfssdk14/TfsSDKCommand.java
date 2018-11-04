@@ -24,11 +24,11 @@ import com.microsoft.tfs.core.clients.versioncontrol.specs.version.ChangesetVers
 import com.microsoft.tfs.core.clients.versioncontrol.specs.version.LatestVersionSpec;
 import com.microsoft.tfs.core.clients.versioncontrol.specs.version.VersionSpec;
 import com.microsoft.tfs.core.httpclient.UsernamePasswordCredentials;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.ModifiedAction;
-import com.thoughtworks.go.domain.materials.ModifiedFile;
-import com.thoughtworks.go.domain.materials.Revision;
-import com.thoughtworks.go.domain.materials.tfs.AbstractTfsCommand;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.ModifiedAction;
+import com.thoughtworks.go.config.materials.ModifiedFile;
+import com.thoughtworks.go.config.materials.Revision;
+import com.thoughtworks.go.config.materials.tfs.AbstractTfsCommand;
 import com.thoughtworks.go.tfssdk14.wrapper.GoTfsVersionControlClient;
 import com.thoughtworks.go.tfssdk14.wrapper.GoTfsWorkspace;
 import com.thoughtworks.go.util.FileUtil;

@@ -17,7 +17,7 @@
 package com.thoughtworks.go.server.service.dd;
 
 
-import com.thoughtworks.go.domain.materials.MaterialConfig;
+import com.thoughtworks.go.config.materials.MaterialConfig;
 
 /*
 * Understands: Throws this exception when FainIn backtracking reaches the set limit

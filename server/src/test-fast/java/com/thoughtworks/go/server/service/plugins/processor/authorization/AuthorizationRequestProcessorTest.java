@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.server.service.plugins.processor.authorization;
 
-import com.thoughtworks.go.config.SecurityAuthConfigs;
-import com.thoughtworks.go.config.SecurityConfig;
 import com.thoughtworks.go.plugin.access.authorization.AuthorizationExtension;
 import com.thoughtworks.go.plugin.access.authorization.AuthorizationMessageConverterV1;
 import com.thoughtworks.go.plugin.api.request.DefaultGoApiRequest;

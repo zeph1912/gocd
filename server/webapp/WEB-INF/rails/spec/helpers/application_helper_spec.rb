@@ -407,7 +407,7 @@ describe ApplicationHelper do
   end
 
   it "should create stage_identifier for given locator string" do
-    expect(stage_identifier_for_locator("foo/10/bar/2")).to eq(com.thoughtworks.go.domain.StageIdentifier.new("foo", 10, "bar", "2"))
+    expect(stage_identifier_for_locator("foo/10/bar/2")).to eq(com.thoughtworks.go.config.StageIdentifier.new("foo", 10, "bar", "2"))
   end
 
   describe "load_from_flash" do

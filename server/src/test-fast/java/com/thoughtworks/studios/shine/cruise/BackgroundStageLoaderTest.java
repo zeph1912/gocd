@@ -16,9 +16,7 @@
 
 package com.thoughtworks.studios.shine.cruise;
 
-import com.thoughtworks.go.domain.JobInstances;
-import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.StageState;
+import com.thoughtworks.go.config.StageState;
 import com.thoughtworks.go.server.service.PipelineInstanceLoader;
 import com.thoughtworks.go.server.service.StageService;
 import com.thoughtworks.go.util.ReflectionUtil;

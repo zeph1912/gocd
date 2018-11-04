@@ -17,9 +17,6 @@
 package com.thoughtworks.go.server.messaging.elasticagents;
 
 import com.thoughtworks.go.config.elastic.ElasticProfile;
-import com.thoughtworks.go.domain.config.ConfigurationKey;
-import com.thoughtworks.go.domain.config.ConfigurationProperty;
-import com.thoughtworks.go.domain.config.ConfigurationValue;
 import org.junit.Test;
 
 import java.util.Arrays;

@@ -33,26 +33,26 @@ describe MaterialsHelper do
   end
 
   it "should understand current modification" do
-    @deployed_revision = com.thoughtworks.go.domain.materials.svn.SubversionRevision.new("123")
-    modification = com.thoughtworks.go.domain.materials.Modification.new(java.util.Date.new(), "123", "label-10", nil)
-    another_modification = com.thoughtworks.go.domain.materials.Modification.new(java.util.Date.new(), "456", "label-10", nil)
+    @deployed_revision = com.thoughtworks.go.config.materials.svn.SubversionRevision.new("123")
+    modification = com.thoughtworks.go.config.materials.Modification.new(java.util.Date.new(), "123", "label-10", nil)
+    another_modification = com.thoughtworks.go.config.materials.Modification.new(java.util.Date.new(), "456", "label-10", nil)
     expect(current_modification?(modification)).to be_truthy
     expect(current_modification?(another_modification)).to be_falsey
   end
 
   it "should not consider current modification when deployed revision is unknown" do
     @deployed_revision = com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModel::UNKNOWN_REVISION
-    modification = com.thoughtworks.go.domain.materials.Modification.new(java.util.Date.new(), "No historical data", "label-20", nil)
+    modification = com.thoughtworks.go.config.materials.Modification.new(java.util.Date.new(), "No historical data", "label-20", nil)
     expect(current_modification?(modification)).to be_falsey
   end
 
   it "should understand latest modification" do
     date = java.util.Date.new()
 
-    modification = com.thoughtworks.go.domain.materials.Modification.new(date, "abc", "label-10", nil)
-    another_modification = com.thoughtworks.go.domain.materials.Modification.new(date, "def", "label-10", nil)
+    modification = com.thoughtworks.go.config.materials.Modification.new(date, "abc", "label-10", nil)
+    another_modification = com.thoughtworks.go.config.materials.Modification.new(date, "def", "label-10", nil)
 
-    @modifications = com.thoughtworks.go.domain.materials.Modifications.new([modification, another_modification])
+    @modifications = com.thoughtworks.go.config.materials.Modifications.new([modification, another_modification])
 
     expect(latest_modification?(modification)).to be_truthy
     expect(latest_modification?(another_modification)).to be_falsey

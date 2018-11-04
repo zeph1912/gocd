@@ -16,10 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.GoMailSender;
-import com.thoughtworks.go.config.GoSmtpMailSender;
-import com.thoughtworks.go.config.MailHost;
-
 public interface GoMailSenderProvider {
 
     GoMailSender createSender(MailHost mailHost);

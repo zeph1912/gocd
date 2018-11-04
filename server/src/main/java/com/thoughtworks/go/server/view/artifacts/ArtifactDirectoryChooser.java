@@ -16,8 +16,8 @@
 
 package com.thoughtworks.go.server.view.artifacts;
 
-import com.thoughtworks.go.domain.LocatableEntity;
-import com.thoughtworks.go.domain.exception.IllegalArtifactLocationException;
+import com.thoughtworks.go.config.LocatableEntity;
+import com.thoughtworks.go.config.exception.IllegalArtifactLocationException;
 import com.thoughtworks.go.util.FileUtil;
 import org.apache.commons.codec.digest.DigestUtils;
 

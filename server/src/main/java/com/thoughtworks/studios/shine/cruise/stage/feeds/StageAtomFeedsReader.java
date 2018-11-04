@@ -19,8 +19,8 @@ package com.thoughtworks.studios.shine.cruise.stage.feeds;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.thoughtworks.go.domain.feed.FeedEntry;
-import com.thoughtworks.go.domain.feed.stage.StageFeedEntry;
+import com.thoughtworks.go.config.feed.FeedEntry;
+import com.thoughtworks.go.config.feed.stage.StageFeedEntry;
 import com.thoughtworks.go.server.dao.FeedModifier;
 import com.thoughtworks.go.server.dao.StageDao;
 import com.thoughtworks.go.server.service.PipelineInstanceLoader;

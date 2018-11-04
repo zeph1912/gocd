@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.util;
 
-import com.thoughtworks.go.util.command.EnvironmentVariableContext;
 import org.junit.Before;
 import org.junit.Test;
 

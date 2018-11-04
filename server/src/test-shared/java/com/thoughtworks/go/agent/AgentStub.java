@@ -17,7 +17,7 @@
 package com.thoughtworks.go.agent;
 
 import com.thoughtworks.go.domain.AgentRuntimeStatus;
-import com.thoughtworks.go.domain.exception.UnregisteredAgentException;
+import com.thoughtworks.go.config.exception.UnregisteredAgentException;
 import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.remote.BuildRepositoryRemote;
 import com.thoughtworks.go.remote.work.Work;

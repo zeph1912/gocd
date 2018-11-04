@@ -16,10 +16,6 @@
 
 package com.thoughtworks.go.server.valuestreammap;
 
-import com.thoughtworks.go.domain.valuestreammap.Node;
-import com.thoughtworks.go.domain.valuestreammap.NodeLevelMap;
-import com.thoughtworks.go.domain.valuestreammap.ValueStreamMap;
-
 import java.util.*;
 
 public class LevelAssignment {

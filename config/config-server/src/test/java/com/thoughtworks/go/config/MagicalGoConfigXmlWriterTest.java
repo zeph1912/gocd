@@ -16,23 +16,18 @@
 
 package com.thoughtworks.go.config;
 
-import com.thoughtworks.go.config.exceptions.GoConfigInvalidException;
 import com.thoughtworks.go.config.materials.MaterialConfigs;
 import com.thoughtworks.go.config.materials.PackageMaterialConfig;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterialConfig;
-import com.thoughtworks.go.config.materials.git.GitMaterialConfig;
-import com.thoughtworks.go.config.materials.mercurial.HgMaterialConfig;
-import com.thoughtworks.go.config.materials.perforce.P4MaterialConfig;
-import com.thoughtworks.go.config.materials.svn.SvnMaterialConfig;
-import com.thoughtworks.go.config.materials.tfs.TfsMaterialConfig;
-import com.thoughtworks.go.config.remote.PartialConfig;
-import com.thoughtworks.go.config.remote.RepoConfigOrigin;
-import com.thoughtworks.go.domain.RunIfConfigs;
-import com.thoughtworks.go.domain.config.*;
-import com.thoughtworks.go.domain.packagerepository.PackageDefinition;
-import com.thoughtworks.go.domain.packagerepository.PackageRepositories;
-import com.thoughtworks.go.domain.packagerepository.PackageRepository;
-import com.thoughtworks.go.domain.packagerepository.Packages;
+import com.thoughtworks.go.config.dependency.DependencyMaterialConfig;
+import com.thoughtworks.go.config.git.GitMaterialConfig;
+import com.thoughtworks.go.config.mercurial.HgMaterialConfig;
+import com.thoughtworks.go.config.perforce.P4MaterialConfig;
+import com.thoughtworks.go.config.svn.SvnMaterialConfig;
+import com.thoughtworks.go.config.tfs.TfsMaterialConfig;
+import com.thoughtworks.go.config.packagerepository.PackageDefinition;
+import com.thoughtworks.go.config.packagerepository.PackageRepositories;
+import com.thoughtworks.go.config.packagerepository.PackageRepository;
+import com.thoughtworks.go.config.packagerepository.Packages;
 import com.thoughtworks.go.helper.ConfigFileFixture;
 import com.thoughtworks.go.helper.GoConfigMother;
 import com.thoughtworks.go.helper.PartialConfigMother;
@@ -43,7 +38,6 @@ import com.thoughtworks.go.util.ConfigElementImplementationRegistryMother;
 import com.thoughtworks.go.util.ReflectionUtil;
 import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.util.XsdValidationException;
-import com.thoughtworks.go.util.command.UrlArgument;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.hamcrest.core.Is;
@@ -941,9 +935,9 @@ public class MagicalGoConfigXmlWriterTest {
         CruiseConfig configToSave = new BasicCruiseConfig();
         String packageId = "does-not-exist";
         PackageMaterialConfig packageMaterialConfig = new PackageMaterialConfig(packageId);
-        PackageRepository repository = com.thoughtworks.go.domain.packagerepository.PackageRepositoryMother.create("repo-id", "repo-name", "pluginid", "version", new Configuration(com.thoughtworks.go.domain.packagerepository.ConfigurationPropertyMother.create("k1", false, "v1")));
+        PackageRepository repository = com.thoughtworks.go.config.packagerepository.PackageRepositoryMother.create("repo-id", "repo-name", "pluginid", "version", new Configuration(com.thoughtworks.go.config.packagerepository.ConfigurationPropertyMother.create("k1", false, "v1")));
         packageMaterialConfig.setPackageDefinition(
-                com.thoughtworks.go.domain.packagerepository.PackageDefinitionMother.create("does-not-exist", "package-name", new Configuration(com.thoughtworks.go.domain.packagerepository.ConfigurationPropertyMother.create("k2", false, "v2")), repository));
+                com.thoughtworks.go.config.packagerepository.PackageDefinitionMother.create("does-not-exist", "package-name", new Configuration(com.thoughtworks.go.config.packagerepository.ConfigurationPropertyMother.create("k2", false, "v2")), repository));
 
         configToSave.addPipeline("default", com.thoughtworks.go.helper.PipelineConfigMother.pipelineConfig("test", new MaterialConfigs(packageMaterialConfig), new JobConfigs(new JobConfig("ls"))));
         try {

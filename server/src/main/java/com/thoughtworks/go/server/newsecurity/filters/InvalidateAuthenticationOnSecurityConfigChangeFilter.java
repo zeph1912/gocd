@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.server.newsecurity.filters;
 
-import com.thoughtworks.go.config.CruiseConfig;
-import com.thoughtworks.go.config.SecurityConfig;
 import com.thoughtworks.go.listener.ConfigChangedListener;
 import com.thoughtworks.go.listener.PluginRoleChangeListener;
 import com.thoughtworks.go.listener.SecurityConfigChangeListener;

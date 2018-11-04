@@ -16,7 +16,6 @@
 
 package com.thoughtworks.studios.shine.cruise.stage.details;
 
-import com.thoughtworks.go.domain.StageIdentifier;
 import com.thoughtworks.studios.shine.semweb.Graph;
 import com.thoughtworks.studios.shine.semweb.grddl.XSLTTransformerRegistry;
 import com.thoughtworks.studios.shine.semweb.sesame.InMemoryTempGraphFactory;

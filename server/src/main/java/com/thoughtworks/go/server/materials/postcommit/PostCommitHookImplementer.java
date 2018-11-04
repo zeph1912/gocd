@@ -19,7 +19,7 @@ package com.thoughtworks.go.server.materials.postcommit;
 import java.util.Map;
 import java.util.Set;
 
-import com.thoughtworks.go.domain.materials.Material;
+import com.thoughtworks.go.config.materials.Material;
 
 public interface PostCommitHookImplementer {
     Set<Material> prune(Set<Material> materials, Map params);

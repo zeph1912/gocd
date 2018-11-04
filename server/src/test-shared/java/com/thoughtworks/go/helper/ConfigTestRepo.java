@@ -15,11 +15,9 @@
  */
 package com.thoughtworks.go.helper;
 
-import com.thoughtworks.go.config.MagicalGoConfigXmlWriter;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.materials.mercurial.HgMaterial;
+import com.thoughtworks.go.config.mercurial.HgMaterial;
 import com.thoughtworks.go.config.parts.PartialConfigHelper;
-import com.thoughtworks.go.domain.materials.Modification;
+import com.thoughtworks.go.config.materials.Modification;
 
 import java.io.File;
 import java.io.IOException;

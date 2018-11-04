@@ -16,7 +16,7 @@
  *#
 #* @vtlmacrolibrary path="velocity/macros/urls.vm" *#
 #* @vtlvariable name="controllerName" type="java.lang.String" *#
-#* @vtlvariable name="currentUser" type="com.thoughtworks.go.server.domain.Username" *#
+#* @vtlvariable name="currentUser" type="com.thoughtworks.go.config.Username" *#
 #* @vtlvariable name="currentVersion" type="com.thoughtworks.go.CurrentGoCDVersion" *#
 #* @vtlvariable name="goUpdate" type="java.lang.String" *#
 #* @vtlvariable name="goUpdateCheckEnabled" type="boolean" *#

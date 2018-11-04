@@ -19,12 +19,9 @@ package com.thoughtworks.go.server.service;
 import java.util.Date;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.materials.svn.SvnMaterial;
-import com.thoughtworks.go.domain.MaterialRevision;
-import com.thoughtworks.go.domain.MaterialRevisions;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.svn.SvnMaterial;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.Username;
 import org.junit.Before;
 import org.junit.Test;
 

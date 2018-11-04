@@ -20,7 +20,6 @@ import com.google.gson.annotations.Expose;
 import com.thoughtworks.go.domain.JobIdentifier;
 
 import java.io.ByteArrayInputStream;
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
 import java.text.SimpleDateFormat;

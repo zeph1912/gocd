@@ -22,7 +22,7 @@ import com.thoughtworks.go.config.update.RoleConfigDeleteCommand;
 import com.thoughtworks.go.config.update.RoleConfigUpdateCommand;
 import com.thoughtworks.go.helper.GoConfigMother;
 import com.thoughtworks.go.plugin.access.authorization.AuthorizationExtension;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.plugins.validators.authorization.RoleConfigurationValidator;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import org.junit.Before;

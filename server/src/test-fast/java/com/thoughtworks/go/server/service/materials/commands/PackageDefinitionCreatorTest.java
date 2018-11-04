@@ -19,13 +19,11 @@ package com.thoughtworks.go.server.service.materials.commands;
 import java.io.Serializable;
 import java.util.HashMap;
 
-import com.thoughtworks.go.config.BasicCruiseConfig;
-import com.thoughtworks.go.config.CruiseConfig;
-import com.thoughtworks.go.domain.packagerepository.PackageDefinition;
-import com.thoughtworks.go.domain.packagerepository.PackageDefinitionMother;
-import com.thoughtworks.go.domain.packagerepository.PackageRepositories;
-import com.thoughtworks.go.domain.packagerepository.PackageRepository;
-import com.thoughtworks.go.domain.packagerepository.PackageRepositoryMother;
+import com.thoughtworks.go.config.packagerepository.PackageDefinition;
+import com.thoughtworks.go.config.packagerepository.PackageDefinitionMother;
+import com.thoughtworks.go.config.packagerepository.PackageRepositories;
+import com.thoughtworks.go.config.packagerepository.PackageRepository;
+import com.thoughtworks.go.config.packagerepository.PackageRepositoryMother;
 import com.thoughtworks.go.server.service.materials.PackageDefinitionService;
 import org.junit.Before;
 import org.junit.Test;

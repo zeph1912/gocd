@@ -17,7 +17,6 @@
 package com.thoughtworks.go.api.representers;
 
 import com.thoughtworks.go.api.base.OutputWriter;
-import com.thoughtworks.go.domain.config.PluginConfiguration;
 
 public class PluginConfigurationRepresenter {
     public static void toJSON(OutputWriter jsonWriter, PluginConfiguration pluginConfiguration) {

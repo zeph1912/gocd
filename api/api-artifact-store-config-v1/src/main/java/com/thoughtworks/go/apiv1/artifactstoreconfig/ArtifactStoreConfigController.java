@@ -27,8 +27,6 @@ import com.thoughtworks.go.api.spring.ApiAuthenticationHelper;
 import com.thoughtworks.go.api.util.GsonTransformer;
 import com.thoughtworks.go.apiv1.artifactstoreconfig.representers.ArtifactStoreRepresenter;
 import com.thoughtworks.go.apiv1.artifactstoreconfig.representers.ArtifactStoresRepresenter;
-import com.thoughtworks.go.config.ArtifactStore;
-import com.thoughtworks.go.config.ArtifactStores;
 import com.thoughtworks.go.config.exceptions.RecordNotFoundException;
 import com.thoughtworks.go.server.service.ArtifactStoreService;
 import com.thoughtworks.go.server.service.EntityHashingService;

@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.plugin.access.artifact.models;
 
-import com.thoughtworks.go.util.command.EnvironmentVariableContext;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 

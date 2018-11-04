@@ -19,9 +19,7 @@ package com.thoughtworks.go.apiv1.adminsconfig
 import com.thoughtworks.go.api.SecurityTestTrait
 import com.thoughtworks.go.api.spring.ApiAuthenticationHelper
 import com.thoughtworks.go.apiv1.adminsconfig.representers.AdminsConfigRepresenter
-import com.thoughtworks.go.config.AdminRole
-import com.thoughtworks.go.config.AdminUser
-import com.thoughtworks.go.config.AdminsConfig
+
 import com.thoughtworks.go.config.CaseInsensitiveString
 import com.thoughtworks.go.server.service.AdminsConfigService
 import com.thoughtworks.go.server.service.EntityHashingService

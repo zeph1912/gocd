@@ -17,9 +17,7 @@
 package com.thoughtworks.go.server.presentation.models;
 
 import com.google.gson.Gson;
-import com.thoughtworks.go.domain.JobIdentifier;
-import com.thoughtworks.go.domain.JobInstance;
-import com.thoughtworks.go.domain.JobResult;
+import com.thoughtworks.go.config.JobResult;
 import com.thoughtworks.go.dto.DurationBean;
 import com.thoughtworks.go.helper.JobInstanceMother;
 import com.thoughtworks.go.server.domain.Agent;
@@ -29,7 +27,7 @@ import org.junit.Test;
 
 import java.util.Map;
 
-import static com.thoughtworks.go.domain.JobResult.Passed;
+import static com.thoughtworks.go.config.JobResult.Passed;
 import static com.thoughtworks.go.helper.JobInstanceMother.*;
 import static net.javacrumbs.jsonunit.core.Option.IGNORING_EXTRA_FIELDS;
 import static net.javacrumbs.jsonunit.fluent.JsonFluentAssert.assertThatJson;

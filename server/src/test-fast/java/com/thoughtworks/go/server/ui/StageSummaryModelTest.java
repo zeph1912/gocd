@@ -16,12 +16,9 @@
 
 package com.thoughtworks.go.server.ui;
 
-import com.thoughtworks.go.domain.JobInstance;
-import com.thoughtworks.go.domain.JobInstances;
-import com.thoughtworks.go.domain.JobResult;
-import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.StageState;
-import com.thoughtworks.go.domain.Stages;
+import com.thoughtworks.go.config.JobResult;
+import com.thoughtworks.go.config.StageState;
+import com.thoughtworks.go.config.Stages;
 import com.thoughtworks.go.helper.JobInstanceMother;
 import com.thoughtworks.go.helper.StageMother;
 import static com.thoughtworks.go.helper.StageMother.completedFailedStageInstance;

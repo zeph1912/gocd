@@ -18,8 +18,6 @@ package com.thoughtworks.go.server.dao;
 
 import com.opensymphony.oscache.base.Cache;
 import com.rits.cloning.Cloner;
-import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.StageIdentifier;
 import com.thoughtworks.go.helper.StageMother;
 import com.thoughtworks.go.presentation.pipelinehistory.StageHistoryEntry;
 import com.thoughtworks.go.presentation.pipelinehistory.StageHistoryPage;

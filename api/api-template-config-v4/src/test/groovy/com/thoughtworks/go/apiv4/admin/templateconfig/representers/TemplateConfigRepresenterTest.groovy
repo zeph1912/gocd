@@ -18,10 +18,8 @@ package com.thoughtworks.go.apiv4.admin.templateconfig.representers
 
 import com.thoughtworks.go.api.util.GsonTransformer
 import com.thoughtworks.go.config.CaseInsensitiveString
-import com.thoughtworks.go.config.JobConfig
-import com.thoughtworks.go.config.JobConfigs
-import com.thoughtworks.go.config.PipelineTemplateConfig
-import com.thoughtworks.go.config.StageConfig
+
+
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 

@@ -31,7 +31,7 @@ describe "admin/materials/pluggable_scm/show_existing.html.erb" do
     allow(view).to receive(:admin_pluggable_scm_choose_existing_path).and_return('admin_pluggable_scm_choose_existing_path')
 
     scm = SCMMother.create('scm-id', 'scm-name', plugin_id, '1', Configuration.new)
-    scms = com.thoughtworks.go.domain.scm.SCMs.new
+    scms = com.thoughtworks.go.config.scm.SCMs.new
     scms.add(scm)
     pluggable_scm = PluggableSCMMaterialConfig.new(nil, scm, 'dest', Filter.new)
     assign(:material, @material = pluggable_scm)
@@ -89,7 +89,7 @@ describe "admin/materials/pluggable_scm/show_existing.html.erb" do
   end
 
   it "should render warning when no SCMs in config" do
-    assign(:scms, @scms = com.thoughtworks.go.domain.scm.SCMs.new)
+    assign(:scms, @scms = com.thoughtworks.go.config.scm.SCMs.new)
 
     render
 

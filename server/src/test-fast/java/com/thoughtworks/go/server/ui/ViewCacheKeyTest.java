@@ -16,11 +16,8 @@
 
 package com.thoughtworks.go.server.ui;
 
-import com.thoughtworks.go.config.MingleConfig;
-import com.thoughtworks.go.config.TrackingTool;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.Modification;
+import com.thoughtworks.go.config.*;
+import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.helper.ModificationsMother;
 import com.thoughtworks.go.helper.StageMother;
 import com.thoughtworks.go.presentation.pipelinehistory.*;

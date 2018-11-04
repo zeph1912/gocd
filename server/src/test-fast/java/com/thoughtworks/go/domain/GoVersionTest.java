@@ -16,7 +16,8 @@
 
 package com.thoughtworks.go.domain;
 
-import com.thoughtworks.go.domain.exception.VersionFormatException;
+import com.thoughtworks.go.config.GoVersion;
+import com.thoughtworks.go.config.exception.VersionFormatException;
 import org.junit.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;

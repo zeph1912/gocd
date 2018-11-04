@@ -17,7 +17,7 @@
 package com.thoughtworks.go.fixture;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.domain.materials.svn.SvnCommand;
+import com.thoughtworks.go.config.materials.svn.SvnCommand;
 import com.thoughtworks.go.helper.SvnTestRepo;
 import com.thoughtworks.go.helper.TestRepo;
 import com.thoughtworks.go.util.GoConfigFileHelper;

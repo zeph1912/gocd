@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.GoConfigDao;
-import com.thoughtworks.go.domain.Pipeline;
 import com.thoughtworks.go.fixture.DatabaseDiskIsFull;
 import com.thoughtworks.go.fixture.PipelineWithTwoStages;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;

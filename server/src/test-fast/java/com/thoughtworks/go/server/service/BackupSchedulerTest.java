@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.BackupConfig;
-import com.thoughtworks.go.config.BasicCruiseConfig;
 import com.thoughtworks.go.config.ServerConfig;
 import com.thoughtworks.go.serverhealth.HealthStateScope;
 import com.thoughtworks.go.serverhealth.HealthStateType;

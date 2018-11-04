@@ -22,7 +22,6 @@ import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.helper.TestRepo;
 import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
-import com.thoughtworks.go.util.command.EnvironmentVariableContext;
 import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Before;
@@ -31,8 +30,8 @@ import org.junit.Test;
 import java.io.File;
 import java.io.IOException;
 
-import static com.thoughtworks.go.domain.JobResult.Failed;
-import static com.thoughtworks.go.domain.JobResult.Passed;
+import static com.thoughtworks.go.config.JobResult.Failed;
+import static com.thoughtworks.go.config.JobResult.Passed;
 import static com.thoughtworks.go.matchers.ConsoleOutMatcher.containsResult;
 import static com.thoughtworks.go.util.SystemUtil.currentWorkingDirectory;
 import static org.hamcrest.Matchers.not;

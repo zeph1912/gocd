@@ -16,7 +16,7 @@
 
 package com.thoughtworks.go.config;
 
-import com.thoughtworks.go.domain.materials.ValidationBean;
+import com.thoughtworks.go.config.materials.ValidationBean;
 import com.thoughtworks.go.security.CryptoException;
 import com.thoughtworks.go.security.GoCipher;
 import com.thoughtworks.go.util.GoConstants;

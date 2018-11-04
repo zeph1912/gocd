@@ -19,7 +19,7 @@ module MiscSpecExtensions
   end
 
   def current_user
-    @user ||= com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new("some-user"), "display name")
+    @user ||= com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new("some-user"), "display name")
     allow(@controller).to receive(:current_user).and_return(@user)
     @user
   end
@@ -30,8 +30,8 @@ module MiscSpecExtensions
       config_service.updateConfig(Class.new do
         def update config
           server = config.server()
-          com.thoughtworks.go.util.ReflectionUtil.setField(server, "siteUrl", com.thoughtworks.go.domain.ServerSiteUrlConfig.new("http://test.host"))
-          com.thoughtworks.go.util.ReflectionUtil.setField(server, "secureSiteUrl", com.thoughtworks.go.domain.ServerSiteUrlConfig.new("https://ssl.host:443"))
+          com.thoughtworks.go.util.ReflectionUtil.setField(server, "siteUrl", com.thoughtworks.go.config.ServerSiteUrlConfig.new("http://test.host"))
+          com.thoughtworks.go.util.ReflectionUtil.setField(server, "secureSiteUrl", com.thoughtworks.go.config.ServerSiteUrlConfig.new("https://ssl.host:443"))
           return config
         end
       end.new)

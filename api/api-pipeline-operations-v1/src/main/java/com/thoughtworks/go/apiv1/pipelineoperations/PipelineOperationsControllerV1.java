@@ -27,7 +27,6 @@ import com.thoughtworks.go.apiv1.pipelineoperations.representers.PipelineSchedul
 import com.thoughtworks.go.apiv1.pipelineoperations.representers.TriggerOptions;
 import com.thoughtworks.go.apiv1.pipelineoperations.representers.TriggerWithOptionsViewRepresenter;
 import com.thoughtworks.go.apiv6.shared.exceptions.InvalidGoCipherTextRuntimeException;
-import com.thoughtworks.go.config.EnvironmentVariablesConfig;
 import com.thoughtworks.go.config.exceptions.RecordNotFoundException;
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModel;
 import com.thoughtworks.go.server.domain.PipelineScheduleOptions;

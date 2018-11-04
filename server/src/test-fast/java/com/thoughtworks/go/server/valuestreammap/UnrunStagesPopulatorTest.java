@@ -16,15 +16,11 @@
 
 package com.thoughtworks.go.server.valuestreammap;
 
-import com.thoughtworks.go.config.BasicCruiseConfig;
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.CruiseConfig;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.materials.git.GitMaterial;
-import com.thoughtworks.go.domain.NullStage;
-import com.thoughtworks.go.domain.StageState;
-import com.thoughtworks.go.domain.Stages;
-import com.thoughtworks.go.domain.valuestreammap.*;
+import com.thoughtworks.go.config.git.GitMaterial;
+import com.thoughtworks.go.config.StageState;
+import com.thoughtworks.go.config.Stages;
+import com.thoughtworks.go.config.valuestreammap.*;
 import com.thoughtworks.go.helper.*;
 import com.thoughtworks.go.server.service.GoConfigService;
 import org.junit.Before;

@@ -17,8 +17,7 @@
 package com.thoughtworks.go.server.dao;
 
 import com.thoughtworks.go.database.Database;
-import com.thoughtworks.go.domain.Properties;
-import com.thoughtworks.go.domain.Property;
+import com.thoughtworks.go.config.Property;
 import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.transaction.SqlMapClientDaoSupport;
 import com.thoughtworks.go.util.IBatisUtil;

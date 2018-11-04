@@ -16,10 +16,6 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.ConfigCache;
-import com.thoughtworks.go.config.EnvironmentConfig;
-import com.thoughtworks.go.config.MagicalGoConfigXmlWriter;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.registry.ConfigElementImplementationRegistry;
 import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.util.CachedDigestUtils;

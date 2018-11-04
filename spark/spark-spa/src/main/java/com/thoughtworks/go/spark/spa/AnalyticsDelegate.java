@@ -17,7 +17,6 @@
 package com.thoughtworks.go.spark.spa;
 
 import com.google.gson.Gson;
-import com.thoughtworks.go.config.PipelineConfigs;
 import com.thoughtworks.go.plugin.access.analytics.AnalyticsExtension;
 import com.thoughtworks.go.plugin.domain.analytics.AnalyticsData;
 import com.thoughtworks.go.server.newsecurity.utils.SessionUtils;

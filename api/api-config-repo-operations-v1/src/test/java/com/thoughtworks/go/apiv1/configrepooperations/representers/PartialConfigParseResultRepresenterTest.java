@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.apiv1.configrepooperations.representers;
 
-import com.thoughtworks.go.config.PartialConfigParseResult;
-import com.thoughtworks.go.config.remote.PartialConfig;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

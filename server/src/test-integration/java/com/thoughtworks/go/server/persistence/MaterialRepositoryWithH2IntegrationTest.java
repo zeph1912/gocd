@@ -19,8 +19,7 @@ package com.thoughtworks.go.server.persistence;
 import java.sql.SQLException;
 
 import com.googlecode.junit.ext.RunIf;
-import com.thoughtworks.go.config.materials.AbstractMaterial;
-import com.thoughtworks.go.config.materials.mercurial.HgMaterial;
+import com.thoughtworks.go.config.mercurial.HgMaterial;
 import com.thoughtworks.go.junitext.DatabaseChecker;
 import com.thoughtworks.go.junitext.GoJUnitExtSpringRunner;
 import com.thoughtworks.go.server.cache.GoCache;

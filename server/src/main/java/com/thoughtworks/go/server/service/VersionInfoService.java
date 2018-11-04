@@ -17,8 +17,7 @@
 package com.thoughtworks.go.server.service;
 
 
-import com.thoughtworks.go.domain.VersionInfo;
-import com.thoughtworks.go.domain.exception.VersionFormatException;
+import com.thoughtworks.go.config.exception.VersionFormatException;
 import com.thoughtworks.go.server.service.result.LocalizedOperationResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

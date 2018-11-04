@@ -17,8 +17,6 @@
 package com.thoughtworks.go.server.dao;
 
 import com.opensymphony.oscache.base.Cache;
-import com.thoughtworks.go.domain.JobIdentifier;
-import com.thoughtworks.go.domain.StageIdentifier;
 import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.persistence.ArtifactPlanRepository;
 import com.thoughtworks.go.server.persistence.ArtifactPropertiesGeneratorRepository;

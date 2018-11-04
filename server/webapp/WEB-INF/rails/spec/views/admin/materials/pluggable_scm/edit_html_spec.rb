@@ -82,10 +82,10 @@ describe "/admin/materials/pluggable_scm/edit.html.erb" do
   it "should render name, check-connection, auto-update, destination & filter" do
     render
 
-    expect(response.body).to have_selector(".popup_form input[type='text'][name='material[#{com.thoughtworks.go.domain.scm.SCM::NAME}]'][value='scm-name']")
+    expect(response.body).to have_selector(".popup_form input[type='text'][name='material[#{com.thoughtworks.go.config.scm.SCM::NAME}]'][value='scm-name']")
     expect(response.body).to have_selector(".popup_form button#check_connection_pluggable_scm", :text => 'CHECK CONNECTION')
     expect(response.body).to have_selector(".popup_form #pluggable_scm_check_connection_message", :text => '')
-    expect(response.body).to have_selector(".popup_form input[type='checkbox'][name='material[#{com.thoughtworks.go.domain.scm.SCM::AUTO_UPDATE}]']")
+    expect(response.body).to have_selector(".popup_form input[type='checkbox'][name='material[#{com.thoughtworks.go.config.scm.SCM::AUTO_UPDATE}]']")
     expect(response.body).to have_selector(".popup_form input[type='text'][name='material[#{PluggableSCMMaterialConfig::FOLDER}]'][value='dest']")
     expect(response.body).to have_selector(".popup_form textarea[name='material[#{PluggableSCMMaterialConfig::FILTER}]']", :text => '/sugar,/jaggery')
   end
@@ -105,8 +105,8 @@ describe "/admin/materials/pluggable_scm/edit.html.erb" do
   end
 
   it "should display edit pluggable SCM material view with errors" do
-    scm_errors = config_error(com.thoughtworks.go.domain.scm.SCM::NAME, 'Material Name is so wrong')
-    scm_errors.add(com.thoughtworks.go.domain.scm.SCM::AUTO_UPDATE, 'AUTO_UPDATE is wrong')
+    scm_errors = config_error(com.thoughtworks.go.config.scm.SCM::NAME, 'Material Name is so wrong')
+    scm_errors.add(com.thoughtworks.go.config.scm.SCM::AUTO_UPDATE, 'AUTO_UPDATE is wrong')
     set(@material.getSCMConfig(), 'errors', scm_errors)
 
     pluggable_scm_errors = config_error(PluggableSCMMaterialConfig::FOLDER, 'Folder is wrong')

@@ -19,12 +19,6 @@ package com.thoughtworks.go.server.valuestreammap;
 import java.util.Arrays;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.domain.MaterialRevision;
-import com.thoughtworks.go.domain.valuestreammap.Node;
-import com.thoughtworks.go.domain.valuestreammap.NodeLevelMap;
-import com.thoughtworks.go.domain.valuestreammap.SCMDependencyNode;
-import com.thoughtworks.go.domain.valuestreammap.ValueStreamMap;
-import com.thoughtworks.go.domain.valuestreammap.PipelineDependencyNode;
 import org.junit.Before;
 import org.junit.Test;
 

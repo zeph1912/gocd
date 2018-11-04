@@ -17,9 +17,8 @@
 package com.thoughtworks.go.config;
 
 import com.thoughtworks.go.config.materials.ScmMaterialConfig;
-import com.thoughtworks.go.config.materials.git.GitMaterialConfig;
+import com.thoughtworks.go.config.git.GitMaterialConfig;
 import com.thoughtworks.go.config.remote.*;
-import com.thoughtworks.go.domain.config.Configuration;
 import com.thoughtworks.go.helper.PartialConfigMother;
 import com.thoughtworks.go.server.service.GoConfigService;
 import com.thoughtworks.go.serverhealth.*;

@@ -64,7 +64,7 @@ module ApplicationHelper
 
   def stage_identifier_for_locator(stage_locator_string)
     stage_fragments = stage_locator_string.scan(/(.+)\/(\d+)\/(.+)\/(\d+)/).flatten
-    com.thoughtworks.go.domain.StageIdentifier.new(stage_fragments[0], stage_fragments[1].to_i, stage_fragments[2], stage_fragments[3])
+    com.thoughtworks.go.config.StageIdentifier.new(stage_fragments[0], stage_fragments[1].to_i, stage_fragments[2], stage_fragments[3])
   end
 
   def duration_to_string(duration)

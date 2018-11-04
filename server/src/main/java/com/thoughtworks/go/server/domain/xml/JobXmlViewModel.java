@@ -16,14 +16,12 @@
 
 package com.thoughtworks.go.server.domain.xml;
 
+import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.domain.*;
 import org.dom4j.Document;
-import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.dom.DOMDocument;
 import org.dom4j.dom.DOMElement;
-
-import java.io.IOException;
 
 /**
  * @understands rendering xml representation of Job

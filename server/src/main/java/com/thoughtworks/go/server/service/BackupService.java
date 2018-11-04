@@ -17,22 +17,18 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.CurrentGoCDVersion;
-import com.thoughtworks.go.config.BackupConfig;
-import com.thoughtworks.go.config.GoMailSender;
 import com.thoughtworks.go.database.Database;
 import com.thoughtworks.go.security.AESCipherProvider;
 import com.thoughtworks.go.security.DESCipherProvider;
 import com.thoughtworks.go.server.domain.PostBackupScript;
 import com.thoughtworks.go.server.domain.ServerBackup;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.messaging.EmailMessageDrafter;
 import com.thoughtworks.go.server.persistence.ServerBackupRepository;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import com.thoughtworks.go.server.web.BackupStatusProvider;
 import com.thoughtworks.go.serverhealth.HealthStateType;
-import com.thoughtworks.go.service.ConfigRepository;
 import com.thoughtworks.go.util.SystemEnvironment;
-import com.thoughtworks.go.util.TimeProvider;
 import com.thoughtworks.go.util.VoidThrowingFn;
 import org.apache.commons.io.DirectoryWalker;
 import org.apache.commons.io.FileUtils;

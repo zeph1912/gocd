@@ -16,16 +16,10 @@
 
 package com.thoughtworks.go.agent;
 
-import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.materials.MaterialConfigs;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.builder.Builder;
-import com.thoughtworks.go.helper.BuilderMother;
-import com.thoughtworks.go.helper.JobInstanceMother;
+import com.thoughtworks.go.config.buildcause.BuildCause;
 import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.remote.AgentInstruction;
-import com.thoughtworks.go.remote.work.BuildAssignment;
 import com.thoughtworks.go.remote.work.BuildWork;
 import com.thoughtworks.go.remote.work.GoArtifactsManipulatorStub;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
@@ -37,7 +31,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 

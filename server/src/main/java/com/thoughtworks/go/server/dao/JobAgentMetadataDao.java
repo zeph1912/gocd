@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.server.dao;
 
-import com.thoughtworks.go.domain.JobAgentMetadata;
-
 public interface JobAgentMetadataDao {
     void save(JobAgentMetadata metadata);
 

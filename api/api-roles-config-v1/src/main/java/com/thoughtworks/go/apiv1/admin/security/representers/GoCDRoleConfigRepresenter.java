@@ -19,8 +19,6 @@ package com.thoughtworks.go.apiv1.admin.security.representers;
 
 import com.thoughtworks.go.api.base.OutputWriter;
 import com.thoughtworks.go.api.representers.JsonReader;
-import com.thoughtworks.go.config.RoleConfig;
-import com.thoughtworks.go.config.RoleUser;
 
 import java.util.List;
 import java.util.stream.Collectors;

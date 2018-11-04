@@ -16,9 +16,6 @@
 
 package com.thoughtworks.go.server.domain.xml;
 
-import com.thoughtworks.go.domain.JobInstance;
-import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.StageIdentifier;
 import com.thoughtworks.go.domain.XmlRepresentable;
 import com.thoughtworks.go.domain.XmlWriterContext;
 import com.thoughtworks.go.util.DateUtils;

@@ -18,8 +18,8 @@ package com.thoughtworks.go.server.ui;
 
 import java.util.Set;
 
-import com.thoughtworks.go.domain.feed.Author;
-import com.thoughtworks.go.domain.materials.Modification;
+import com.thoughtworks.go.config.feed.Author;
+import com.thoughtworks.go.config.materials.Modification;
 
 /**
  * @understands association of material revisions of a pipeline

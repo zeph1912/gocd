@@ -18,7 +18,6 @@ package com.thoughtworks.go.apiv1.admin.pipelinegroups.representers;
 
 import com.thoughtworks.go.api.base.OutputListWriter;
 import com.thoughtworks.go.api.base.OutputWriter;
-import com.thoughtworks.go.config.PipelineConfig;
 import com.thoughtworks.go.spark.Routes;
 
 import java.util.List;

@@ -17,7 +17,6 @@
 package com.thoughtworks.go.domain;
 
 import com.thoughtworks.go.helper.StageMother;
-import com.thoughtworks.go.util.TimeProvider;
 import com.thoughtworks.go.utils.Timeout;
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeUtils;

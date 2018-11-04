@@ -16,16 +16,9 @@
 
 package com.thoughtworks.go.config.serialization;
 
-import com.thoughtworks.go.config.Argument;
 import com.thoughtworks.go.config.ConfigCache;
-import com.thoughtworks.go.config.ExecTask;
-import com.thoughtworks.go.config.MagicalGoConfigXmlLoader;
-import com.thoughtworks.go.config.registry.ConfigElementImplementationRegistry;
-import com.thoughtworks.go.domain.config.Arguments;
 import com.thoughtworks.go.helper.ConfigFileFixture;
 import com.thoughtworks.go.util.ConfigElementImplementationRegistryMother;
-import com.thoughtworks.go.util.FileUtil;
-import org.apache.commons.io.IOUtils;
 import org.hamcrest.Matchers;
 import org.junit.Test;
 

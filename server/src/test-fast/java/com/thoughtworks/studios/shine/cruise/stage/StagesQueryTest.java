@@ -16,7 +16,6 @@
 
 package com.thoughtworks.studios.shine.cruise.stage;
 
-import com.thoughtworks.go.domain.StageIdentifier;
 import com.thoughtworks.go.server.dao.sparql.RdfResultMapper;
 import com.thoughtworks.studios.shine.cruise.GoOntology;
 import com.thoughtworks.studios.shine.cruise.stage.details.StageStorage;

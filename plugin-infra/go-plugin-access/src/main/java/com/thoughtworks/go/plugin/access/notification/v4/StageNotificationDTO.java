@@ -18,7 +18,6 @@ package com.thoughtworks.go.plugin.access.notification.v4;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import com.thoughtworks.go.domain.*;
 
 import java.util.HashMap;
 import java.util.List;

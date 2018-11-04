@@ -18,8 +18,6 @@ package com.thoughtworks.go.server.service.builders;
 
 import com.thoughtworks.go.domain.builder.Builder;
 import com.thoughtworks.go.domain.builder.BuilderForKillAllChildTask;
-import com.thoughtworks.go.domain.KillAllChildProcessTask;
-import com.thoughtworks.go.domain.Pipeline;
 import com.thoughtworks.go.server.service.UpstreamPipelineResolver;
 import org.springframework.stereotype.Component;
 

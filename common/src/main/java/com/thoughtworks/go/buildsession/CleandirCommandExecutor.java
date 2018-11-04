@@ -16,7 +16,7 @@
 package com.thoughtworks.go.buildsession;
 
 import com.thoughtworks.go.domain.BuildCommand;
-import com.thoughtworks.go.domain.materials.DirectoryCleaner;
+import com.thoughtworks.go.config.materials.DirectoryCleaner;
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;

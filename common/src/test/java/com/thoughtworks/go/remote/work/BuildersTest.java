@@ -21,7 +21,6 @@ import com.thoughtworks.go.domain.StubGoPublisher;
 import com.thoughtworks.go.domain.builder.Builder;
 import com.thoughtworks.go.domain.builder.CommandBuilder;
 import com.thoughtworks.go.domain.builder.StubBuilder;
-import com.thoughtworks.go.util.command.EnvironmentVariableContext;
 import org.junit.Test;
 
 import java.io.File;

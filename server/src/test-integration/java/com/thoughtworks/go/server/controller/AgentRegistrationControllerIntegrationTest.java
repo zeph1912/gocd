@@ -17,11 +17,10 @@
 package com.thoughtworks.go.server.controller;
 
 import com.rits.cloning.Cloner;
-import com.thoughtworks.go.config.AgentConfig;
-import com.thoughtworks.go.domain.AgentConfigStatus;
+import com.thoughtworks.go.config.AgentConfigStatus;
 import com.thoughtworks.go.domain.AgentInstance;
 import com.thoughtworks.go.security.RegistrationJSONizer;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.AgentConfigService;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
 import com.thoughtworks.go.server.service.AgentService;

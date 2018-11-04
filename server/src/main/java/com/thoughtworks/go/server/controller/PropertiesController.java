@@ -16,10 +16,6 @@
 
 package com.thoughtworks.go.server.controller;
 
-import com.thoughtworks.go.domain.JobIdentifier;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.PipelineIdentifier;
-import com.thoughtworks.go.domain.Properties;
 import com.thoughtworks.go.server.controller.actions.BasicRestfulAction;
 import com.thoughtworks.go.server.security.HeaderConstraint;
 import com.thoughtworks.go.server.service.PipelineService;

@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.server.ui;
 
-import com.thoughtworks.go.config.MingleConfig;
-
 /**
  * @understands a mingle card reference
  */

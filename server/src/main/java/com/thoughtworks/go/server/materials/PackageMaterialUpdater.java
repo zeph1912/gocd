@@ -16,10 +16,9 @@
 
 package com.thoughtworks.go.server.materials;
 
-import com.thoughtworks.go.domain.MaterialInstance;
-import com.thoughtworks.go.domain.materials.Material;
-import com.thoughtworks.go.domain.materials.Modifications;
-import com.thoughtworks.go.domain.materials.packagematerial.PackageMaterialInstance;
+import com.thoughtworks.go.config.materials.Material;
+import com.thoughtworks.go.config.materials.Modifications;
+import com.thoughtworks.go.config.materials.packagematerial.PackageMaterialInstance;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;

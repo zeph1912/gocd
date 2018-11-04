@@ -16,16 +16,16 @@
 
 package com.thoughtworks.go.server.service;
 
+import com.thoughtworks.go.InstanceFactory;
+import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.*;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.activity.AgentAssignment;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
+import com.thoughtworks.go.config.activity.AgentAssignment;
+import com.thoughtworks.go.config.materials.MaterialConfig;
 import com.thoughtworks.go.helper.*;
 import com.thoughtworks.go.server.dao.JobInstanceDao;
 import com.thoughtworks.go.server.dao.PipelineDao;
 import com.thoughtworks.go.server.dao.StageDao;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.perf.SchedulingPerformanceLogger;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import com.thoughtworks.go.server.transaction.TestTransactionSynchronizationManager;
@@ -34,15 +34,14 @@ import com.thoughtworks.go.serverhealth.HealthStateScope;
 import com.thoughtworks.go.serverhealth.HealthStateType;
 import com.thoughtworks.go.serverhealth.ServerHealthService;
 import com.thoughtworks.go.serverhealth.ServerHealthState;
-import com.thoughtworks.go.util.TimeProvider;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.HashMap;
 
-import static com.thoughtworks.go.domain.JobResult.*;
-import static com.thoughtworks.go.domain.JobState.Building;
-import static com.thoughtworks.go.domain.JobState.Completed;
+import static com.thoughtworks.go.config.JobResult.*;
+import static com.thoughtworks.go.config.JobState.Building;
+import static com.thoughtworks.go.config.JobState.Completed;
 import static javax.servlet.http.HttpServletResponse.SC_OK;
 import static org.apache.http.HttpStatus.SC_FORBIDDEN;
 import static org.hamcrest.core.Is.is;

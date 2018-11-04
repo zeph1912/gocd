@@ -20,14 +20,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import com.thoughtworks.go.domain.JobInstance;
-import com.thoughtworks.go.domain.JobInstances;
-import com.thoughtworks.go.domain.JobResult;
-import com.thoughtworks.go.domain.RunDuration;
-import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.StageIdentifier;
-import com.thoughtworks.go.domain.StageState;
-import com.thoughtworks.go.domain.Stages;
+import com.thoughtworks.go.config.JobResult;
+import com.thoughtworks.go.config.StageState;
+import com.thoughtworks.go.config.Stages;
 import com.thoughtworks.go.server.domain.JobDurationStrategy;
 
 public class StageSummaryModel {

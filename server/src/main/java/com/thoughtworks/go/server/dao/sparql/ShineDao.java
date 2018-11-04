@@ -16,15 +16,12 @@
 
 package com.thoughtworks.go.server.dao.sparql;
 
-import com.thoughtworks.go.domain.JobIdentifier;
-import com.thoughtworks.go.domain.StageIdentifier;
-import com.thoughtworks.go.domain.testinfo.FailureDetails;
-import com.thoughtworks.go.domain.testinfo.StageTestRuns;
-import com.thoughtworks.go.domain.testinfo.TestStatus;
-import com.thoughtworks.go.domain.testinfo.TestSuite;
+import com.thoughtworks.go.config.testinfo.FailureDetails;
+import com.thoughtworks.go.config.testinfo.StageTestRuns;
+import com.thoughtworks.go.config.testinfo.TestStatus;
+import com.thoughtworks.go.config.testinfo.TestSuite;
 import com.thoughtworks.go.server.service.StageService;
 import com.thoughtworks.go.server.service.result.LocalizedOperationResult;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.studios.shine.cruise.GoOntology;
 import com.thoughtworks.studios.shine.cruise.stage.StagesQuery;
 import com.thoughtworks.studios.shine.xunit.XUnitOntology;

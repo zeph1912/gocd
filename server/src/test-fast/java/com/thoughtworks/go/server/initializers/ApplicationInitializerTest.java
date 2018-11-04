@@ -16,12 +16,7 @@
 
 package com.thoughtworks.go.server.initializers;
 
-import com.thoughtworks.go.config.CachedGoConfig;
-import com.thoughtworks.go.config.ConfigCipherUpdater;
-import com.thoughtworks.go.config.GoFileConfigDataSource;
-import com.thoughtworks.go.config.InvalidConfigMessageRemover;
-import com.thoughtworks.go.config.registry.ConfigElementImplementationRegistrar;
-import com.thoughtworks.go.domain.cctray.CcTrayActivityListener;
+import com.thoughtworks.go.config.cctray.CcTrayActivityListener;
 import com.thoughtworks.go.plugin.infra.commons.PluginsZip;
 import com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor;
 import com.thoughtworks.go.server.cronjob.GoDiskSpaceMonitor;
@@ -38,7 +33,6 @@ import com.thoughtworks.go.server.service.datasharing.DataSharingUsageStatistics
 import com.thoughtworks.go.server.service.support.ResourceMonitoring;
 import com.thoughtworks.go.server.service.support.toggle.FeatureToggleService;
 import com.thoughtworks.go.server.service.support.toggle.Toggles;
-import com.thoughtworks.go.service.ConfigRepository;
 import com.thoughtworks.go.util.ReflectionUtil;
 import com.thoughtworks.studios.shine.cruise.stage.details.StageResourceImporter;
 import org.junit.Before;

@@ -17,8 +17,6 @@
 package com.thoughtworks.go.server.dashboard;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.CruiseConfig;
-import com.thoughtworks.go.config.PipelineTemplateConfig;
 import com.thoughtworks.go.server.service.GoConfigService;
 import com.thoughtworks.go.server.service.GoDashboardService;
 import org.junit.Before;

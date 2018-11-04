@@ -18,8 +18,8 @@ class ValueStreamMapModel
 
   attr_accessor :current_pipeline, :current_material, :levels, :error
 
-  NODE_TYPE_FOR_PIPELINE = com.thoughtworks.go.domain.valuestreammap.DependencyNodeType::PIPELINE.to_s
-  NODE_TYPE_FOR_MATERIAL = com.thoughtworks.go.domain.valuestreammap.DependencyNodeType::MATERIAL.to_s
+  NODE_TYPE_FOR_PIPELINE = com.thoughtworks.go.config.valuestreammap.DependencyNodeType::PIPELINE.to_s
+  NODE_TYPE_FOR_MATERIAL = com.thoughtworks.go.config.valuestreammap.DependencyNodeType::MATERIAL.to_s
 
   def initialize(vsm, error, vsm_path_partial = proc do
     ""
@@ -153,6 +153,6 @@ class VSMPipelineInstanceStageModel
     @status = status
     @locator = ""
     @duration = duration
-    @locator = stage_detail_path_partial.call pipeline_name, pipeline_counter, name, counter unless com.thoughtworks.go.domain.StageState::Unknown.to_s == status
+    @locator = stage_detail_path_partial.call pipeline_name, pipeline_counter, name, counter unless com.thoughtworks.go.config.StageState::Unknown.to_s == status
   end
 end

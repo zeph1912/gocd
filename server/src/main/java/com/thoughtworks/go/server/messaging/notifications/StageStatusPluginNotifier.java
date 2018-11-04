@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.messaging.notifications;
 
-import com.thoughtworks.go.domain.Stage;
 import com.thoughtworks.go.plugin.access.notification.NotificationExtension;
 import com.thoughtworks.go.plugin.access.notification.NotificationPluginRegistry;
 import com.thoughtworks.go.server.domain.StageStatusListener;

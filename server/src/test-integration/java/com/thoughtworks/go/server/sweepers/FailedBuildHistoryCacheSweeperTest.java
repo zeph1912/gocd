@@ -21,10 +21,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.TreeSet;
 
-import com.thoughtworks.go.domain.PipelineIdentifier;
 import com.thoughtworks.go.domain.PipelineTimelineEntry;
-import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.StageIdentifier;
 import com.thoughtworks.go.helper.StageMother;
 import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.ui.ViewCacheKey;

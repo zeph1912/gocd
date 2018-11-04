@@ -17,9 +17,6 @@
 package com.thoughtworks.go.server.dao;
 
 import com.thoughtworks.go.database.Database;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.PipelineState;
-import com.thoughtworks.go.domain.Stage;
 import com.thoughtworks.go.helper.PipelineMother;
 import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.service.StubGoCache;

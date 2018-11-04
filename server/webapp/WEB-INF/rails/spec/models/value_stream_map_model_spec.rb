@@ -220,7 +220,7 @@ describe ValueStreamMapModel do
     vsm.addUpstreamMaterialNode(SCMDependencyNode.new("git", "git", "Git"), com.thoughtworks.go.config.CaseInsensitiveString.new("git-trunk"), CaseInsensitiveString.new("p1"), material_revision)
 
     p3_node = vsm.addDownstreamNode(PipelineDependencyNode.new(CaseInsensitiveString.new("p3"), "p3"), CaseInsensitiveString.new("current"));
-    p3_node.setViewType(com.thoughtworks.go.domain.valuestreammap.VSMViewType::NO_PERMISSION)
+    p3_node.setViewType(com.thoughtworks.go.config.valuestreammap.VSMViewType::NO_PERMISSION)
     p3_node.setMessage("You are not authorized to view this pipeline")
 
 
@@ -329,8 +329,8 @@ describe ValueStreamMapModel do
   end
 
   def modifications
-    modification = com.thoughtworks.go.domain.materials.Modification.new("user", "comment", "", java.util.Date.new(), "r1")
-    return com.thoughtworks.go.domain.materials.Modifications.new([modification].to_java(com.thoughtworks.go.domain.materials.Modification))
+    modification = com.thoughtworks.go.config.materials.Modification.new("user", "comment", "", java.util.Date.new(), "r1")
+    return com.thoughtworks.go.config.materials.Modifications.new([modification].to_java(com.thoughtworks.go.config.materials.Modification))
   end
 
   def material_revision

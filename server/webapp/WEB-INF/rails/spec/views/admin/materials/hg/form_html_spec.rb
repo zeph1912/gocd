@@ -60,7 +60,7 @@ describe "_form.html.erb" do
     error.add(ScmMaterialConfig::MATERIAL_NAME, "Material Name is so wrong")
     error.add(HgMaterialConfig::AUTO_UPDATE, "AUTO_UPDATE is wrong")
     error.add(HgMaterialConfig::FOLDER, "Folder is wrong")
-    error.add(com.thoughtworks.go.config.materials.svn.SvnMaterialConfig::FOLDER, "Folder is wrong")
+    error.add(com.thoughtworks.go.config.svn.SvnMaterialConfig::FOLDER, "Folder is wrong")
     set(@material_config, "errors", error)
     set(@ignored_file, "configErrors", config_error(com.thoughtworks.go.config.materials.IgnoredFiles::PATTERN, "Filter is wrong"))
 

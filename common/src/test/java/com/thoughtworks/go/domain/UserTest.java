@@ -21,7 +21,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
-import com.thoughtworks.go.domain.exception.ValidationException;
+import com.thoughtworks.go.config.exception.ValidationException;
 import com.thoughtworks.go.helper.MaterialsMother;
 import org.hamcrest.core.Is;
 import org.junit.Test;

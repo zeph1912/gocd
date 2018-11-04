@@ -17,8 +17,6 @@
 package com.thoughtworks.go.spark
 
 import com.thoughtworks.go.config.CaseInsensitiveString
-import com.thoughtworks.go.config.PipelineConfig
-import com.thoughtworks.go.config.PipelineConfigs
 
 import static org.mockito.Mockito.mock
 import static org.mockito.Mockito.when

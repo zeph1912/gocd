@@ -16,9 +16,9 @@
 
 package com.thoughtworks.go.server.service.materials;
 
-import com.thoughtworks.go.config.materials.SubprocessExecutionContext;
-import com.thoughtworks.go.domain.materials.Material;
-import com.thoughtworks.go.domain.materials.ValidationBean;
+import com.thoughtworks.go.config.SubprocessExecutionContext;
+import com.thoughtworks.go.config.materials.Material;
+import com.thoughtworks.go.config.materials.ValidationBean;
 
 public interface MaterialConnectivityChecker<T extends Material> {
     ValidationBean checkConnection(T material, SubprocessExecutionContext executionContext);

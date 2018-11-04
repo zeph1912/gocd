@@ -16,10 +16,8 @@
 
 package com.thoughtworks.go.server.presentation.models;
 
-import com.thoughtworks.go.domain.JobInstance;
-import com.thoughtworks.go.domain.JobResult;
-import com.thoughtworks.go.domain.JobState;
-import com.thoughtworks.go.domain.NullAgent;
+import com.thoughtworks.go.config.JobResult;
+import com.thoughtworks.go.config.JobState;
 import com.thoughtworks.go.dto.DurationBean;
 import com.thoughtworks.go.server.domain.Agent;
 import com.thoughtworks.go.server.web.JsonView;
@@ -30,7 +28,7 @@ import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import static com.thoughtworks.go.domain.JobState.*;
+import static com.thoughtworks.go.config.JobState.*;
 import static java.lang.String.valueOf;
 
 

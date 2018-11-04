@@ -16,8 +16,7 @@
 
 package com.thoughtworks.go.apiv1.artifactstoreconfig.representers
 
-import com.thoughtworks.go.config.ArtifactStore
-import com.thoughtworks.go.config.ArtifactStores
+
 import com.thoughtworks.go.domain.packagerepository.ConfigurationPropertyMother
 import org.junit.jupiter.api.Test
 

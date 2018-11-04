@@ -20,7 +20,7 @@ require 'rails_helper'
 describe "/admin/users/roles.html.erb" do
   it "should render tristate-checkbox disabled when go-sys-adm checkbox is disabled" do
     assign(:selections,[])
-    admin_selection = TriStateSelection.new(com.thoughtworks.go.domain.config.Admin::GO_SYSTEM_ADMIN, TriStateSelection::Action.nochange, false)
+    admin_selection = TriStateSelection.new(com.thoughtworks.go.config.Admin::GO_SYSTEM_ADMIN, TriStateSelection::Action.nochange, false)
     assign(:admin_selection, admin_selection)
 
     render
@@ -32,7 +32,7 @@ describe "/admin/users/roles.html.erb" do
 
   it "should render go-sys-adm checkbox" do
     assign(:selections,[])
-    admin_selection = TriStateSelection.new(com.thoughtworks.go.domain.config.Admin::GO_SYSTEM_ADMIN, TriStateSelection::Action.nochange)
+    admin_selection = TriStateSelection.new(com.thoughtworks.go.config.Admin::GO_SYSTEM_ADMIN, TriStateSelection::Action.nochange)
     assign(:admin_selection, admin_selection)
 
     render
@@ -46,7 +46,7 @@ describe "/admin/users/roles.html.erb" do
     foo = TriStateSelection.new("foo", TriStateSelection::Action.nochange)
     bar = TriStateSelection.new("bar", TriStateSelection::Action.add)
     assign(:selections,[foo,bar])
-    assign(:admin_selection,TriStateSelection.new(com.thoughtworks.go.domain.config.Admin::GO_SYSTEM_ADMIN, TriStateSelection::Action.nochange))
+    assign(:admin_selection,TriStateSelection.new(com.thoughtworks.go.config.Admin::GO_SYSTEM_ADMIN, TriStateSelection::Action.nochange))
 
     render
 

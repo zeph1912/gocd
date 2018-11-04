@@ -19,7 +19,6 @@ package com.thoughtworks.go.work;
 import com.thoughtworks.go.remote.work.AgentWorkContext;
 import com.thoughtworks.go.remote.work.Work;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
-import com.thoughtworks.go.util.command.EnvironmentVariableContext;
 
 public class FakeWork implements Work {
     int callCount;

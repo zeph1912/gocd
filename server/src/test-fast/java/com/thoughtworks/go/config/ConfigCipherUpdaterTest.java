@@ -17,19 +17,15 @@
 package com.thoughtworks.go.config;
 
 import com.thoughtworks.go.config.materials.MaterialConfigs;
-import com.thoughtworks.go.config.materials.perforce.P4MaterialConfig;
-import com.thoughtworks.go.config.materials.svn.SvnMaterialConfig;
-import com.thoughtworks.go.config.materials.tfs.TfsMaterialConfig;
-import com.thoughtworks.go.config.registry.ConfigElementImplementationRegistrar;
-import com.thoughtworks.go.config.registry.ConfigElementImplementationRegistry;
-import com.thoughtworks.go.config.registry.NoPluginsInstalled;
+import com.thoughtworks.go.config.perforce.P4MaterialConfig;
+import com.thoughtworks.go.config.svn.SvnMaterialConfig;
+import com.thoughtworks.go.config.tfs.TfsMaterialConfig;
 import com.thoughtworks.go.security.AESCipherProvider;
 import com.thoughtworks.go.security.CryptoException;
 import com.thoughtworks.go.security.DESCipherProvider;
 import com.thoughtworks.go.security.GoCipher;
 import com.thoughtworks.go.util.ReflectionUtil;
 import com.thoughtworks.go.util.SystemEnvironment;
-import com.thoughtworks.go.util.TimeProvider;
 import org.apache.commons.io.FileUtils;
 import org.joda.time.DateTime;
 import org.junit.After;

@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.service.support;
 
-import com.thoughtworks.go.config.CruiseConfig;
 import com.thoughtworks.go.plugin.access.authorization.AuthorizationMetadataStore;
 import com.thoughtworks.go.plugin.domain.authorization.AuthorizationPluginInfo;
 import com.thoughtworks.go.server.service.GoConfigService;

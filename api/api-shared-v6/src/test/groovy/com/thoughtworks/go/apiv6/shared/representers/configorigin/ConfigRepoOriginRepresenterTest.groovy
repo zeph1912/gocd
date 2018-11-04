@@ -17,8 +17,7 @@
 package com.thoughtworks.go.apiv6.shared.representers.configorigin
 
 import com.thoughtworks.go.config.materials.git.GitMaterialConfig
-import com.thoughtworks.go.config.remote.ConfigRepoConfig
-import com.thoughtworks.go.config.remote.RepoConfigOrigin
+
 import org.junit.jupiter.api.Test
 
 import static com.thoughtworks.go.api.base.JsonUtils.toObjectString

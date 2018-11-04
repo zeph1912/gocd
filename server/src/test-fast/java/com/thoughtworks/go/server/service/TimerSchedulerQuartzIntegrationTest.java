@@ -19,11 +19,6 @@ package com.thoughtworks.go.server.service;
 import static java.util.Arrays.asList;
 import java.util.List;
 
-import com.thoughtworks.go.config.BasicCruiseConfig;
-import com.thoughtworks.go.config.BasicPipelineConfigs;
-import com.thoughtworks.go.config.CruiseConfig;
-import com.thoughtworks.go.config.PipelineConfig;
-
 import static com.thoughtworks.go.helper.PipelineConfigMother.pipelineConfigWithTimer;
 import com.thoughtworks.go.server.scheduling.BuildCauseProducerService;
 import com.thoughtworks.go.server.service.result.ServerHealthStateOperationResult;

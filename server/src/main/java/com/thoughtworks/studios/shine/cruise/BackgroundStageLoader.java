@@ -16,9 +16,7 @@
 
 package com.thoughtworks.studios.shine.cruise;
 
-import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.StageIdentifier;
-import com.thoughtworks.go.domain.feed.stage.StageFeedEntry;
+import com.thoughtworks.go.config.feed.stage.StageFeedEntry;
 import com.thoughtworks.go.server.domain.StageStatusListener;
 import com.thoughtworks.go.server.service.PipelineInstanceLoader;
 import com.thoughtworks.go.server.service.StageService;

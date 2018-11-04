@@ -16,14 +16,9 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.SecurityAuthConfig;
-import com.thoughtworks.go.config.SecurityConfig;
 import com.thoughtworks.go.config.update.SecurityAuthConfigCreateCommand;
 import com.thoughtworks.go.config.update.SecurityAuthConfigDeleteCommand;
 import com.thoughtworks.go.config.update.SecurityAuthConfigUpdateCommand;
-import com.thoughtworks.go.domain.config.ConfigurationKey;
-import com.thoughtworks.go.domain.config.ConfigurationProperty;
-import com.thoughtworks.go.domain.config.ConfigurationValue;
 import com.thoughtworks.go.plugin.access.PluginNotFoundException;
 import com.thoughtworks.go.plugin.access.authorization.AuthorizationExtension;
 import com.thoughtworks.go.plugin.access.authorization.AuthorizationMetadataStore;
@@ -35,7 +30,7 @@ import com.thoughtworks.go.plugin.domain.common.ValidationError;
 import com.thoughtworks.go.plugin.domain.common.ValidationResult;
 import com.thoughtworks.go.plugin.domain.common.VerifyConnectionResponse;
 import com.thoughtworks.go.plugin.infra.plugininfo.GoPluginDescriptor;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import com.thoughtworks.go.server.ui.AuthPluginInfoViewModel;
 import org.junit.Before;
@@ -43,7 +38,7 @@ import org.junit.Test;
 
 import java.util.*;
 
-import static com.thoughtworks.go.domain.packagerepository.ConfigurationPropertyMother.create;
+import static com.thoughtworks.go.config.packagerepository.ConfigurationPropertyMother.create;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThat;

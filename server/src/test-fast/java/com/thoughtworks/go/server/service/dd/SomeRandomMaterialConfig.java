@@ -18,8 +18,6 @@ package com.thoughtworks.go.server.service.dd;
 
 import java.util.Map;
 
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.ValidationContext;
 import com.thoughtworks.go.config.materials.AbstractMaterialConfig;
 import com.thoughtworks.go.config.materials.Filter;
 

@@ -16,20 +16,18 @@
 
 package com.thoughtworks.go.server.presentation.models;
 
-import com.thoughtworks.go.domain.CommentRenderer;
-import com.thoughtworks.go.domain.MaterialRevision;
-import com.thoughtworks.go.domain.ModificationVisitorAdapter;
-import com.thoughtworks.go.domain.materials.Material;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.ModifiedFile;
-import com.thoughtworks.go.domain.materials.Revision;
+import com.thoughtworks.go.config.CommentRenderer;
+import com.thoughtworks.go.config.materials.Material;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.ModifiedFile;
+import com.thoughtworks.go.config.materials.Revision;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.thoughtworks.go.config.materials.PackageMaterial.TYPE;
+import static com.thoughtworks.go.config.PackageMaterial.TYPE;
 import static com.thoughtworks.go.util.DateUtils.formatISO8601;
 import static java.lang.String.valueOf;
 

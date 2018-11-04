@@ -16,8 +16,7 @@
 
 package com.thoughtworks.go.server.messaging;
 
-import com.thoughtworks.go.domain.JobIdentifier;
-import com.thoughtworks.go.domain.JobResult;
+import com.thoughtworks.go.config.JobResult;
 import com.thoughtworks.go.server.service.AgentService;
 import org.junit.Before;
 import org.junit.Test;

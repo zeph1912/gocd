@@ -15,7 +15,6 @@
  */
 package com.thoughtworks.go.buildsession;
 
-import com.thoughtworks.go.domain.*;
 import com.thoughtworks.go.javasysmon.wrapper.DefaultCurrentProcess;
 import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.util.Clock;

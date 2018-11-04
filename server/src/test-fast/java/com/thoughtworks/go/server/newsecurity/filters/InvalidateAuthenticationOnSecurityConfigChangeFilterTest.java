@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.newsecurity.filters;
 
 import com.rits.cloning.Cloner;
-import com.thoughtworks.go.config.BasicCruiseConfig;
 import com.thoughtworks.go.helper.GoConfigMother;
 import com.thoughtworks.go.http.mocks.HttpRequestBuilder;
 import com.thoughtworks.go.http.mocks.MockHttpServletRequest;

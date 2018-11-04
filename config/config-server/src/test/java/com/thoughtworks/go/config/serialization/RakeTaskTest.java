@@ -17,10 +17,6 @@
 package com.thoughtworks.go.config.serialization;
 
 import com.thoughtworks.go.config.ConfigCache;
-import com.thoughtworks.go.config.MagicalGoConfigXmlLoader;
-import com.thoughtworks.go.config.RakeTask;
-import com.thoughtworks.go.domain.KillAllChildProcessTask;
-import com.thoughtworks.go.domain.NullTask;
 import com.thoughtworks.go.util.ConfigElementImplementationRegistryMother;
 import org.junit.Test;
 

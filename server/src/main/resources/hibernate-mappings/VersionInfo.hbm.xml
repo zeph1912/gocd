@@ -20,15 +20,15 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping package="com.thoughtworks.go.domain" default-access="field" default-lazy="false">
-    <class name="com.thoughtworks.go.domain.VersionInfo" table="versioninfos">
+    <class name="com.thoughtworks.go.config.VersionInfo" table="versioninfos">
         <id name="id" column="id">
             <generator class="identity"/>
         </id>
         <property name="componentName"/>
-        <component name="installedVersion" class="com.thoughtworks.go.domain.GoVersion">
+        <component name="installedVersion" class="com.thoughtworks.go.config.GoVersion">
             <property name="version" column="installedVersion" access="property"/>
         </component>
-        <component name="latestVersion" class="com.thoughtworks.go.domain.GoVersion">
+        <component name="latestVersion" class="com.thoughtworks.go.config.GoVersion">
             <property name="version" column="latestVersion" access="property"/>
         </component>
         <property name="latestVersionUpdatedAt"/>

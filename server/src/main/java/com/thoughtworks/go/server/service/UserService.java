@@ -17,15 +17,14 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.*;
-import com.thoughtworks.go.domain.*;
 import com.thoughtworks.go.domain.Users;
-import com.thoughtworks.go.domain.exception.ValidationException;
+import com.thoughtworks.go.config.exception.ValidationException;
 import com.thoughtworks.go.i18n.LocalizedMessage;
 import com.thoughtworks.go.presentation.TriStateSelection;
 import com.thoughtworks.go.presentation.UserModel;
 import com.thoughtworks.go.presentation.UserSearchModel;
 import com.thoughtworks.go.server.dao.UserDao;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.exceptions.UserEnabledException;
 import com.thoughtworks.go.server.exceptions.UserNotFoundException;
 import com.thoughtworks.go.server.security.OnlyKnownUsersAllowedException;

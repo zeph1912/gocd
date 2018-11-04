@@ -16,19 +16,14 @@
 
 package com.thoughtworks.go.server.scheduling;
 
+import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.PipelineConfig;
 import com.thoughtworks.go.config.materials.MaterialConfigs;
-import com.thoughtworks.go.config.materials.Materials;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterial;
+import com.thoughtworks.go.config.dependency.DependencyMaterial;
 import com.thoughtworks.go.config.remote.ConfigOrigin;
-import com.thoughtworks.go.config.remote.RepoConfigOrigin;
-import com.thoughtworks.go.domain.EnvironmentVariables;
-import com.thoughtworks.go.domain.MaterialRevisions;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.Material;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.materials.Material;
+import com.thoughtworks.go.config.materials.MaterialConfig;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.materials.*;
 import com.thoughtworks.go.server.perf.SchedulingPerformanceLogger;
 import com.thoughtworks.go.server.persistence.MaterialRepository;

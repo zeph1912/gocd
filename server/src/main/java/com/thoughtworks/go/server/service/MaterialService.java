@@ -16,21 +16,18 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.materials.PackageMaterial;
-import com.thoughtworks.go.config.materials.PluggableSCMMaterial;
-import com.thoughtworks.go.config.materials.SubprocessExecutionContext;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterial;
-import com.thoughtworks.go.config.materials.git.GitMaterial;
-import com.thoughtworks.go.config.materials.mercurial.HgMaterial;
-import com.thoughtworks.go.config.materials.perforce.P4Material;
-import com.thoughtworks.go.config.materials.svn.SvnMaterial;
-import com.thoughtworks.go.config.materials.tfs.TfsMaterial;
-import com.thoughtworks.go.domain.MaterialInstance;
-import com.thoughtworks.go.domain.materials.*;
+import com.thoughtworks.go.config.SubprocessExecutionContext;
+import com.thoughtworks.go.config.dependency.DependencyMaterial;
+import com.thoughtworks.go.config.git.GitMaterial;
+import com.thoughtworks.go.config.mercurial.HgMaterial;
+import com.thoughtworks.go.config.perforce.P4Material;
+import com.thoughtworks.go.config.svn.SvnMaterial;
+import com.thoughtworks.go.config.tfs.TfsMaterial;
+import com.thoughtworks.go.config.materials.*;
 import com.thoughtworks.go.i18n.LocalizedMessage;
 import com.thoughtworks.go.plugin.access.packagematerial.PackageRepositoryExtension;
 import com.thoughtworks.go.plugin.access.scm.SCMExtension;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.service.materials.*;
 import com.thoughtworks.go.server.service.result.LocalizedOperationResult;

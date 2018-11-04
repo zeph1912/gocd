@@ -25,12 +25,9 @@ import java.util.Queue;
 import java.util.Set;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.PipelineConfig;
 import com.thoughtworks.go.config.materials.MaterialConfigs;
-import com.thoughtworks.go.domain.MaterialRevision;
-import com.thoughtworks.go.domain.MaterialRevisions;
-import com.thoughtworks.go.domain.materials.Material;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
+import com.thoughtworks.go.config.materials.Material;
+import com.thoughtworks.go.config.materials.MaterialConfig;
 
 /**
  * @understands configuration of all the upstream pipelines.

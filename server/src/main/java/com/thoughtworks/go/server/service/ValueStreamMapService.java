@@ -16,18 +16,16 @@
 
 package com.thoughtworks.go.server.service;
 
+import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.*;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterial;
-import com.thoughtworks.go.domain.MaterialInstance;
-import com.thoughtworks.go.domain.MaterialRevision;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.materials.Material;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.dependency.DependencyMaterialRevision;
-import com.thoughtworks.go.domain.valuestreammap.*;
+import com.thoughtworks.go.config.dependency.DependencyMaterial;
+import com.thoughtworks.go.config.materials.Material;
+import com.thoughtworks.go.config.materials.MaterialConfig;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.dependency.DependencyMaterialRevision;
+import com.thoughtworks.go.config.valuestreammap.*;
 import com.thoughtworks.go.i18n.LocalizedMessage;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.presentation.models.ValueStreamMapPresentationModel;
 import com.thoughtworks.go.server.service.result.LocalizedOperationResult;

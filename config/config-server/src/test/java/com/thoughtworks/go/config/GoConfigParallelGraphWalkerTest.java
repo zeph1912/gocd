@@ -20,7 +20,6 @@ import java.util.List;
 
 import com.rits.cloning.Cloner;
 import com.thoughtworks.go.domain.BaseCollection;
-import com.thoughtworks.go.domain.ConfigErrors;
 import com.thoughtworks.go.helper.GoConfigMother;
 import com.thoughtworks.go.helper.JobConfigMother;
 import com.thoughtworks.go.helper.MaterialConfigsMother;

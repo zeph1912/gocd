@@ -22,9 +22,6 @@ import com.thoughtworks.go.api.base.OutputWriter;
 import com.thoughtworks.go.api.representers.ErrorGetter;
 import com.thoughtworks.go.api.representers.JsonReader;
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.PluginRoleConfig;
-import com.thoughtworks.go.config.Role;
-import com.thoughtworks.go.config.RoleConfig;
 import com.thoughtworks.go.spark.Routes;
 
 import java.util.Collections;

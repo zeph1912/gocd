@@ -17,8 +17,8 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.*;
-import com.thoughtworks.go.domain.ServerSiteUrlConfig;
-import com.thoughtworks.go.domain.materials.ValidationBean;
+import com.thoughtworks.go.config.ServerSiteUrlConfig;
+import com.thoughtworks.go.config.materials.ValidationBean;
 import com.thoughtworks.go.i18n.LocalizedMessage;
 import com.thoughtworks.go.security.GoCipher;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;

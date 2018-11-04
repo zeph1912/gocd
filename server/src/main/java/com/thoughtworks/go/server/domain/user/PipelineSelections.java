@@ -17,8 +17,6 @@
 package com.thoughtworks.go.server.domain.user;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.PipelineConfigs;
 import com.thoughtworks.go.domain.PersistentObject;
 import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.lang3.builder.ToStringBuilder;

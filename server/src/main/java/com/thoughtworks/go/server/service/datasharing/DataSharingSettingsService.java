@@ -18,7 +18,6 @@ package com.thoughtworks.go.server.service.datasharing;
 
 import com.thoughtworks.go.listener.DataSharingSettingsChangeListener;
 import com.thoughtworks.go.server.dao.DataSharingSettingsSqlMapDao;
-import com.thoughtworks.go.server.domain.DataSharingSettings;
 import com.thoughtworks.go.server.service.EntityHashingService;
 import com.thoughtworks.go.server.transaction.TransactionSynchronizationManager;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;

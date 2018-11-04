@@ -17,7 +17,7 @@
 package com.thoughtworks.go.server.dashboard;
 
 import com.thoughtworks.go.config.security.users.Users;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 
 public class GoDashboardEnvironment extends AbstractDashboardGroup {
     private Users allowedUsers;

@@ -16,15 +16,11 @@
 
 package com.thoughtworks.go.server.service.materials;
 
-import com.thoughtworks.go.config.materials.PluggableSCMMaterial;
-import com.thoughtworks.go.domain.MaterialInstance;
-import com.thoughtworks.go.domain.config.Configuration;
-import com.thoughtworks.go.domain.config.ConfigurationProperty;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.scm.PluggableSCMMaterialRevision;
-import com.thoughtworks.go.domain.packagerepository.ConfigurationPropertyMother;
-import com.thoughtworks.go.domain.scm.SCM;
-import com.thoughtworks.go.domain.scm.SCMMother;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.scm.PluggableSCMMaterialRevision;
+import com.thoughtworks.go.config.packagerepository.ConfigurationPropertyMother;
+import com.thoughtworks.go.config.scm.SCM;
+import com.thoughtworks.go.config.scm.SCMMother;
 import com.thoughtworks.go.plugin.access.scm.SCMExtension;
 import com.thoughtworks.go.plugin.access.scm.SCMPropertyConfiguration;
 import com.thoughtworks.go.plugin.access.scm.material.MaterialPollResult;
@@ -137,9 +133,9 @@ public class PluggableSCMMaterialPollerTest {
         assertThat(modifications.get(0).getComment(), is("comment"));
         assertThat(modifications.get(0).getAdditionalData(), is(JsonHelper.toJsonString(data)));
         assertThat(modifications.get(0).getModifiedFiles().size(), is(3));
-        com.thoughtworks.go.domain.materials.ModifiedFile f1 = new com.thoughtworks.go.domain.materials.ModifiedFile("f1", null, com.thoughtworks.go.domain.materials.ModifiedAction.added);
-        com.thoughtworks.go.domain.materials.ModifiedFile f2 = new com.thoughtworks.go.domain.materials.ModifiedFile("f2", null, com.thoughtworks.go.domain.materials.ModifiedAction.modified);
-        com.thoughtworks.go.domain.materials.ModifiedFile f3 = new com.thoughtworks.go.domain.materials.ModifiedFile("f3", null, com.thoughtworks.go.domain.materials.ModifiedAction.deleted);
+        com.thoughtworks.go.config.materials.ModifiedFile f1 = new com.thoughtworks.go.config.materials.ModifiedFile("f1", null, com.thoughtworks.go.config.materials.ModifiedAction.added);
+        com.thoughtworks.go.config.materials.ModifiedFile f2 = new com.thoughtworks.go.config.materials.ModifiedFile("f2", null, com.thoughtworks.go.config.materials.ModifiedAction.modified);
+        com.thoughtworks.go.config.materials.ModifiedFile f3 = new com.thoughtworks.go.config.materials.ModifiedFile("f3", null, com.thoughtworks.go.config.materials.ModifiedAction.deleted);
         assertThat(new HashSet(modifications.get(0).getModifiedFiles()), is(new HashSet(asList(f1, f2, f3))));
         assertConfiguration(scmConfiguration.getValue(), material.getScmConfig().getConfiguration());
         assertThat(materialData.getValue().size(), is(1));

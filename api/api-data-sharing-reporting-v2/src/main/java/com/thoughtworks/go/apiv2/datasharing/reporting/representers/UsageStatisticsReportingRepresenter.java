@@ -17,7 +17,6 @@
 package com.thoughtworks.go.apiv2.datasharing.reporting.representers;
 
 import com.thoughtworks.go.api.base.OutputWriter;
-import com.thoughtworks.go.domain.UsageStatisticsReporting;
 import com.thoughtworks.go.spark.Routes.DataSharing;
 
 public class UsageStatisticsReportingRepresenter {

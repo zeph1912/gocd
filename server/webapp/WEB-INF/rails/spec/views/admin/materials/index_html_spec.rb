@@ -29,7 +29,7 @@ describe "admin/materials/index.html.erb" do
     svn_config = MaterialConfigsMother.svnMaterialConfig("http://some/svn/url", "svnDir", nil, nil, false, nil)
     package_config = MaterialConfigsMother.packageMaterialConfig()
     pluggable_scm_config = MaterialConfigsMother.pluggableSCMMaterialConfig('scm-id', 'scm-dest', nil)
-    material_configs = MaterialConfigs.new([svn_config, package_config, pluggable_scm_config].to_java(com.thoughtworks.go.domain.materials.MaterialConfig))
+    material_configs = MaterialConfigs.new([svn_config, package_config, pluggable_scm_config].to_java(com.thoughtworks.go.config.materials.MaterialConfig))
 
     @pipeline_config = PipelineConfigMother.pipelineConfig("pipeline-name", "foo", material_configs, ["build-1"].to_java(java.lang.String))
     assign(:pipeline_config, @pipeline_config)
@@ -66,7 +66,7 @@ describe "admin/materials/index.html.erb" do
     end
 
   it "should show cannot delete material icon with title when there is only one material" do
-    @pipeline_config.setMaterialConfigs(MaterialConfigs.new([@pipeline_config.materialConfigs().get(0)].to_java(com.thoughtworks.go.domain.materials.MaterialConfig)))
+    @pipeline_config.setMaterialConfigs(MaterialConfigs.new([@pipeline_config.materialConfigs().get(0)].to_java(com.thoughtworks.go.config.materials.MaterialConfig)))
 
     render
 
@@ -126,7 +126,7 @@ describe "admin/materials/index.html.erb" do
   end
 
   it "should not have new material warning div when scm material has dest set" do
-    @pipeline_config.setMaterialConfigs(MaterialConfigs.new([@pipeline_config.materialConfigs().get(0)].to_java(com.thoughtworks.go.domain.materials.MaterialConfig)))
+    @pipeline_config.setMaterialConfigs(MaterialConfigs.new([@pipeline_config.materialConfigs().get(0)].to_java(com.thoughtworks.go.config.materials.MaterialConfig)))
 
     render
 

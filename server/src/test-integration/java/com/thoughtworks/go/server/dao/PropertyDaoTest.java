@@ -16,10 +16,7 @@
 
 package com.thoughtworks.go.server.dao;
 
-import com.thoughtworks.go.domain.JobIdentifier;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.Properties;
-import com.thoughtworks.go.domain.Property;
+import com.thoughtworks.go.config.Property;
 import com.thoughtworks.go.helper.PipelineMother;
 import org.apache.commons.lang3.StringUtils;
 import org.hamcrest.Description;

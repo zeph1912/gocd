@@ -22,7 +22,7 @@ import com.thoughtworks.go.config.JobConfig;
 import com.thoughtworks.go.domain.DefaultSchedulingContext;
 import com.thoughtworks.go.domain.JobIdentifier;
 import com.thoughtworks.go.domain.JobPlan;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
+import com.thoughtworks.go.config.buildcause.BuildCause;
 import com.thoughtworks.go.helper.GoConfigMother;
 import com.thoughtworks.go.helper.JobInstanceMother;
 import com.thoughtworks.go.remote.AgentIdentifier;
@@ -31,7 +31,6 @@ import com.thoughtworks.go.remote.work.BuildWork;
 import com.thoughtworks.go.remote.work.Work;
 import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.util.TestFileUtil;
-import com.thoughtworks.go.util.command.EnvironmentVariableContext;
 
 import java.io.File;
 import java.io.IOException;

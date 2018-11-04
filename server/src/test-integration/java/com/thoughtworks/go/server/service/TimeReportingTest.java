@@ -19,7 +19,7 @@ package com.thoughtworks.go.server.service;
 import java.util.Date;
 
 import com.thoughtworks.go.config.*;
-import com.thoughtworks.go.config.materials.mercurial.HgMaterialConfig;
+import com.thoughtworks.go.config.mercurial.HgMaterialConfig;
 import com.thoughtworks.go.config.update.ConfigUpdateResponse;
 import com.thoughtworks.go.config.update.UpdateConfigFromUI;
 import com.thoughtworks.go.helper.PipelineConfigMother;

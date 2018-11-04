@@ -16,9 +16,7 @@
 
 package com.thoughtworks.go.server.messaging;
 
-import com.thoughtworks.go.domain.JobIdentifier;
-import com.thoughtworks.go.domain.JobState;
-import com.thoughtworks.go.domain.StageIdentifier;
+import com.thoughtworks.go.config.JobState;
 
 public class JobStatusMessage implements GoMessage {
     private JobIdentifier jobIdentifier;

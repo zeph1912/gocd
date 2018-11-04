@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.apiv4.shared.representers.stages;
 
-import com.thoughtworks.go.config.CruiseConfig;
 import com.thoughtworks.go.config.materials.PasswordDeserializer;
 
 public class ConfigHelperOptions {

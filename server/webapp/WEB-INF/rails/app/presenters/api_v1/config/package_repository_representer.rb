@@ -43,18 +43,18 @@ module ApiV1
       property :plugin_configuration,
                as: :plugin_metadata,
                decorator: ApiV1::Config::PluginConfigurationRepresenter,
-               class: com.thoughtworks.go.domain.config.PluginConfiguration
+               class: com.thoughtworks.go.config.PluginConfiguration
 
       collection :configuration,
                  exec_context: :decorator,
                  decorator:    ApiV1::Config::PluginConfigurationPropertyRepresenter,
-                 class: com.thoughtworks.go.domain.config.ConfigurationProperty
+                 class: com.thoughtworks.go.config.ConfigurationProperty
 
       collection :packages,
                  exec_context: :decorator,
                  embedded: true,
                  decorator:    ApiV1::Config::PackageSummaryRepresenter,
-                 class:        com.thoughtworks.go.domain.packagerepository.PackageDefinition
+                 class:        com.thoughtworks.go.config.packagerepository.PackageDefinition
 
       delegate :packages, :configuration, to: :package_repository
 

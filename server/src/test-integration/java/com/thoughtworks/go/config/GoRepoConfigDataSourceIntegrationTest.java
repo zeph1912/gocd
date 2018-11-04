@@ -16,12 +16,10 @@
 
 package com.thoughtworks.go.config;
 
-import com.thoughtworks.go.config.materials.git.GitMaterialConfig;
-import com.thoughtworks.go.config.remote.ConfigRepoConfig;
+import com.thoughtworks.go.config.git.GitMaterialConfig;
 import com.thoughtworks.go.server.service.GoConfigService;
 import com.thoughtworks.go.serverhealth.ServerHealthService;
 import com.thoughtworks.go.util.GoConfigFileHelper;
-import com.thoughtworks.go.util.command.CommandLine;
 import com.thoughtworks.go.util.command.ConsoleResult;
 import org.apache.commons.io.FileUtils;
 import org.junit.After;

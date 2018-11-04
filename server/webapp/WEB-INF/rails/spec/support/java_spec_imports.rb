@@ -27,7 +27,7 @@ module JavaSpecImports
   java_import com.thoughtworks.go.server.ui.AgentsViewModel unless defined? AgentsViewModel
   java_import com.thoughtworks.go.server.ui.AgentViewModel unless defined? AgentViewModel
   java_import com.thoughtworks.go.domain.DiskSpace unless defined? DiskSpace
-  java_import com.thoughtworks.go.domain.AgentConfigStatus unless defined? AgentConfigStatus
+  java_import com.thoughtworks.go.config.AgentConfigStatus unless defined? AgentConfigStatus
   java_import com.thoughtworks.go.helper.GoConfigMother unless defined? GoConfigMother
   java_import com.thoughtworks.go.helper.JobIdentifierMother unless defined? JobIdentifierMother
   java_import com.thoughtworks.go.helper.JobInstanceMother unless defined? JobInstanceMother
@@ -48,8 +48,8 @@ module JavaSpecImports
   java_import com.thoughtworks.go.server.service.UserService unless defined? UserService
   java_import com.thoughtworks.go.server.service.AdminService unless defined? AdminService
   java_import com.thoughtworks.go.presentation.TriStateSelection unless defined? TriStateSelection
-  java_import com.thoughtworks.go.server.domain.Username unless defined? Username
-  java_import com.thoughtworks.go.config.materials.AbstractMaterial unless defined? AbstractMaterial
+  java_import com.thoughtworks.go.config.Username unless defined? Username
+  java_import com.thoughtworks.go.config.AbstractMaterial unless defined? AbstractMaterial
   java_import com.thoughtworks.go.config.materials.AbstractMaterialConfig unless defined? AbstractMaterialConfig
   java_import com.thoughtworks.go.config.EnvironmentVariableConfig unless defined? EnvironmentVariableConfig
   java_import com.thoughtworks.go.config.EncryptedVariableValueConfig unless defined? EncryptedVariableValueConfig
@@ -58,9 +58,9 @@ module JavaSpecImports
   java_import com.thoughtworks.go.config.ExecTask unless defined? ExecTask
   java_import com.thoughtworks.go.config.AntTask unless defined? AntTask
   java_import com.thoughtworks.go.config.RakeTask unless defined? RakeTask
-  java_import com.thoughtworks.go.domain.Task unless defined? Task
+  java_import com.thoughtworks.go.config.Task unless defined? Task
   java_import com.thoughtworks.go.config.Argument unless defined? Argument
-  java_import com.thoughtworks.go.domain.config.Arguments unless defined? Arguments
+  java_import com.thoughtworks.go.config.Arguments unless defined? Arguments
   java_import com.thoughtworks.go.config.RunIfConfig unless defined? RunIfConfig
   java_import com.thoughtworks.go.config.AdminUser unless defined? AdminUser
   java_import com.thoughtworks.go.config.AdminRole unless defined? AdminRole
@@ -71,31 +71,31 @@ module JavaSpecImports
   java_import com.thoughtworks.go.server.presentation.CanDeleteResult unless defined? CanDeleteResult
   java_import com.thoughtworks.go.security.GoCipher unless defined? GoCipher
   java_import com.thoughtworks.go.config.update.ConfigUpdateResponse unless defined? ConfigUpdateResponse
-  java_import com.thoughtworks.go.config.materials.perforce.P4MaterialView unless defined? P4MaterialView
-  java_import com.thoughtworks.go.config.materials.perforce.P4MaterialViewConfig unless defined? P4MaterialViewConfig
-  java_import com.thoughtworks.go.config.materials.tfs.TfsMaterialConfig unless defined? TfsMaterialConfig
+  java_import com.thoughtworks.go.config.perforce.P4MaterialView unless defined? P4MaterialView
+  java_import com.thoughtworks.go.config.perforce.P4MaterialViewConfig unless defined? P4MaterialViewConfig
+  java_import com.thoughtworks.go.config.tfs.TfsMaterialConfig unless defined? TfsMaterialConfig
   java_import com.thoughtworks.go.server.domain.xml.JobPlanXmlViewModel unless defined? JobPlanXmlViewModel
   java_import com.thoughtworks.go.domain.WaitingJobPlan unless defined? WaitingJobPlan
-  java_import com.thoughtworks.go.domain.feed.Author unless defined? Author
+  java_import com.thoughtworks.go.config.feed.Author unless defined? Author
   java_import com.thoughtworks.go.domain.NullAgentInstance unless defined? NullAgentInstance
   java_import com.thoughtworks.go.server.ui.MingleCard unless defined? MingleCard
-  java_import com.thoughtworks.go.domain.buildcause.BuildCause unless defined? BuildCause
+  java_import com.thoughtworks.go.config.buildcause.BuildCause unless defined? BuildCause
   java_import com.thoughtworks.go.server.web.PipelineRevisionRange unless defined? PipelineRevisionRange
   java_import com.thoughtworks.go.helper.CommandSnippetMother unless defined? CommandSnippetMother
-  java_import com.thoughtworks.go.domain.valuestreammap.DependencyNodeType unless defined? DependencyNodeType
+  java_import com.thoughtworks.go.config.valuestreammap.DependencyNodeType unless defined? DependencyNodeType
   java_import com.thoughtworks.go.server.valuestreammap.DummyNodeCreation unless defined? DummyNodeCreation
-  java_import com.thoughtworks.go.domain.valuestreammap.PipelineRevision unless defined? PipelineRevision
-  java_import com.thoughtworks.go.domain.valuestreammap.SCMRevision unless defined? SCMRevision
+  java_import com.thoughtworks.go.config.valuestreammap.PipelineRevision unless defined? PipelineRevision
+  java_import com.thoughtworks.go.config.valuestreammap.SCMRevision unless defined? SCMRevision
   java_import com.thoughtworks.go.config.validation.GoConfigValidity unless defined? GoConfigValidity
-  java_import com.thoughtworks.go.domain.valuestreammap.UnrunPipelineRevision unless defined? UnrunPipelineRevision
-  java_import com.thoughtworks.go.domain.valuestreammap.PipelineDependencyNode unless defined? PipelineDependencyNode
-  java_import com.thoughtworks.go.domain.valuestreammap.SCMDependencyNode unless defined? SCMDependencyNode
-  java_import com.thoughtworks.go.domain.packagerepository.PackageRepositoryMother unless defined? PackageRepositoryMother
-  java_import com.thoughtworks.go.domain.packagerepository.PackageDefinitionMother unless defined? PackageDefinitionMother
-  java_import com.thoughtworks.go.domain.packagerepository.ConfigurationPropertyMother unless defined? ConfigurationPropertyMother
-  java_import com.thoughtworks.go.domain.scm.SCMMother unless defined? SCMMother
+  java_import com.thoughtworks.go.config.valuestreammap.UnrunPipelineRevision unless defined? UnrunPipelineRevision
+  java_import com.thoughtworks.go.config.valuestreammap.PipelineDependencyNode unless defined? PipelineDependencyNode
+  java_import com.thoughtworks.go.config.valuestreammap.SCMDependencyNode unless defined? SCMDependencyNode
+  java_import com.thoughtworks.go.config.packagerepository.PackageRepositoryMother unless defined? PackageRepositoryMother
+  java_import com.thoughtworks.go.config.packagerepository.PackageDefinitionMother unless defined? PackageDefinitionMother
+  java_import com.thoughtworks.go.config.packagerepository.ConfigurationPropertyMother unless defined? ConfigurationPropertyMother
+  java_import com.thoughtworks.go.config.scm.SCMMother unless defined? SCMMother
   java_import com.thoughtworks.go.helper.EnvironmentConfigMother unless defined? EnvironmentConfigMother
-  java_import com.thoughtworks.go.domain.config.RepositoryMetadataStoreHelper unless defined? RepositoryMetadataStoreHelper
+  java_import com.thoughtworks.go.config.RepositoryMetadataStoreHelper unless defined? RepositoryMetadataStoreHelper
   java_import com.thoughtworks.go.config.pluggabletask.PluggableTask unless defined? PluggableTask
   java_import com.thoughtworks.go.plugin.access.pluggabletask.TaskPreference unless defined? TaskPreference
   java_import com.thoughtworks.go.presentation.PluggableTaskViewModel unless defined? PluggableTaskViewModel
@@ -108,8 +108,8 @@ module JavaSpecImports
   java_import com.thoughtworks.go.server.domain.helper.FeatureToggleMother unless defined? FeatureToggleMother
   java_import com.thoughtworks.go.helper.EnvironmentVariablesConfigMother unless defined? EnvironmentVariablesConfigMother
   java_import com.thoughtworks.go.config.validation.FilePathTypeValidator unless defined? FilePathTypeValidator
-  java_import com.thoughtworks.go.domain.GoVersion unless defined? GoVersion
-  java_import com.thoughtworks.go.domain.VersionInfo unless defined? VersionInfo
+  java_import com.thoughtworks.go.config.GoVersion unless defined? GoVersion
+  java_import com.thoughtworks.go.config.VersionInfo unless defined? VersionInfo
   java_import com.thoughtworks.go.server.service.CheckConnectionSubprocessExecutionContext unless defined? CheckConnectionSubprocessExecutionContext
   java_import com.thoughtworks.go.config.remote.RepoConfigOrigin unless defined? RepoConfigOrigin
   java_import com.thoughtworks.go.config.remote.ConfigRepoConfig unless defined? ConfigRepoConfig
@@ -122,10 +122,10 @@ module JavaSpecImports
   java_import com.thoughtworks.go.server.service.GoConfigService unless defined? GoConfigService
   java_import com.thoughtworks.go.server.service.SystemService unless defined? SystemService
   java_import com.thoughtworks.go.server.service.ServerConfigService unless defined? ServerConfigService
-  java_import com.thoughtworks.go.domain.materials.ValidationBean unless defined? ValidationBean
+  java_import com.thoughtworks.go.config.materials.ValidationBean unless defined? ValidationBean
   java_import com.thoughtworks.go.config.preprocessor.ConfigParamPreprocessor unless defined? ConfigParamPreprocessor
   java_import com.thoughtworks.go.config.PipelineConfig unless defined? PipelineConfig
-  java_import com.thoughtworks.go.server.service.MaterialConfigConverter unless defined? MaterialConfigConverter
+  java_import com.thoughtworks.go.MaterialConfigConverter unless defined? MaterialConfigConverter
   java_import com.thoughtworks.go.config.security.Permissions unless defined? Permissions
   java_import com.thoughtworks.go.config.security.users.Everyone unless defined? Everyone
   java_import com.thoughtworks.go.config.security.users.NoOne unless defined? NoOne
@@ -133,7 +133,7 @@ module JavaSpecImports
   java_import com.thoughtworks.go.server.dashboard.TimeStampBasedCounter unless defined? TimeStampBasedCounter
   java_import com.thoughtworks.go.util.SystemTimeClock unless defined? SystemTimeClock
   java_import com.thoughtworks.go.config.FetchTaskAdapter unless defined? FetchTaskAdapter
-  java_import com.thoughtworks.go.domain.UsageStatisticsReporting unless defined? UsageStatisticsReporting
+  java_import com.thoughtworks.go.config.UsageStatisticsReporting unless defined? UsageStatisticsReporting
   java_import com.thoughtworks.go.server.cache.GoCache unless defined? GoCache
   java_import com.thoughtworks.go.server.ui.EnvironmentViewModel unless defined? EnvironmentViewModel
 end

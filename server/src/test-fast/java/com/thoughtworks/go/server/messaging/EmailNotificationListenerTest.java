@@ -16,10 +16,6 @@
 
 package com.thoughtworks.go.server.messaging;
 
-import com.thoughtworks.go.config.BasicCruiseConfig;
-import com.thoughtworks.go.config.CruiseConfig;
-import com.thoughtworks.go.config.GoSmtpMailSender;
-import com.thoughtworks.go.config.MailHost;
 import com.thoughtworks.go.helper.GoConfigMother;
 import com.thoughtworks.go.server.service.GoConfigService;
 import org.junit.Before;

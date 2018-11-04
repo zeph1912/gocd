@@ -19,7 +19,7 @@ package com.thoughtworks.go.util.json;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import static com.thoughtworks.go.util.ExceptionUtils.bomb;
+//import static com.thoughtworks.go.util.ExceptionUtils.bomb;
 
 /**
  * ModelAndView object requires a Map. This will fake a map when all we care about is a list
@@ -33,12 +33,14 @@ public class JsonFakeMap extends LinkedHashMap<String, Object> {
     }
 
     public Object put(String s, Object json) {
-        throw bomb("This is a fake map with a single list element");
+//        throw bomb("This is a fake map with a single list element");
+        return null;
     }
 
     public void putAll(Map map) {
-        throw bomb("This is a fake map with a single list element");
+//        throw bomb("This is a fake map with a single list element");
     }
+
 
     public Object get(Object o) {
         if (json instanceof JsonAware){

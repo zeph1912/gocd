@@ -16,8 +16,7 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.domain.GoVersion;
-import com.thoughtworks.go.domain.VersionInfo;
+import com.thoughtworks.go.config.GoVersion;
 import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.VersionInfoDao;
 import com.thoughtworks.go.util.Clock;
@@ -28,7 +27,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.Calendar;
 import java.util.Date;
 
 import static com.thoughtworks.go.util.DateUtils.isToday;

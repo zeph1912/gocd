@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.ui;
 
-import com.thoughtworks.go.domain.JobInstance;
 import com.thoughtworks.go.helper.AgentInstanceMother;
 import com.thoughtworks.go.helper.JobInstanceMother;
 import com.thoughtworks.go.server.domain.Agent;

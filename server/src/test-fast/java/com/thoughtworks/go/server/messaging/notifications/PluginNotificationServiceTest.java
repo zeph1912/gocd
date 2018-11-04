@@ -16,15 +16,10 @@
 
 package com.thoughtworks.go.server.messaging.notifications;
 
-import com.thoughtworks.go.config.AgentConfig;
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.StageConfig;
 import com.thoughtworks.go.domain.AgentInstance;
 import com.thoughtworks.go.domain.AgentRuntimeStatus;
-import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.notificationdata.AgentNotificationData;
-import com.thoughtworks.go.domain.notificationdata.StageNotificationData;
+import com.thoughtworks.go.config.notificationdata.AgentNotificationData;
 import com.thoughtworks.go.helper.AgentInstanceMother;
 import com.thoughtworks.go.helper.StageMother;
 import com.thoughtworks.go.listener.AgentStatusChangeListener;

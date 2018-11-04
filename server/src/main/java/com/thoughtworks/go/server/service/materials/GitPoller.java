@@ -16,10 +16,10 @@
 
 package com.thoughtworks.go.server.service.materials;
 
-import com.thoughtworks.go.config.materials.SubprocessExecutionContext;
-import com.thoughtworks.go.config.materials.git.GitMaterial;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.Revision;
+import com.thoughtworks.go.config.SubprocessExecutionContext;
+import com.thoughtworks.go.config.git.GitMaterial;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.Revision;
 import com.thoughtworks.go.util.SystemEnvironment;
 
 import java.io.File;

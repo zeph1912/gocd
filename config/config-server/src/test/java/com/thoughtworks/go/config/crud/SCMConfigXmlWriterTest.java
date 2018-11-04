@@ -17,15 +17,13 @@
 package com.thoughtworks.go.config.crud;
 
 import com.thoughtworks.go.config.*;
-import com.thoughtworks.go.config.exceptions.GoConfigInvalidException;
 import com.thoughtworks.go.config.materials.*;
 import com.thoughtworks.go.config.materials.Filter;
-import com.thoughtworks.go.domain.config.*;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
-import com.thoughtworks.go.domain.packagerepository.ConfigurationPropertyMother;
-import com.thoughtworks.go.domain.scm.SCM;
-import com.thoughtworks.go.domain.scm.SCMMother;
-import com.thoughtworks.go.domain.scm.SCMs;
+import com.thoughtworks.go.config.materials.MaterialConfig;
+import com.thoughtworks.go.config.packagerepository.ConfigurationPropertyMother;
+import com.thoughtworks.go.config.scm.SCM;
+import com.thoughtworks.go.config.scm.SCMMother;
+import com.thoughtworks.go.config.scm.SCMs;
 import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.security.GoCipher;
 import com.thoughtworks.go.util.*;

@@ -16,13 +16,9 @@
 
 package com.thoughtworks.go.server.service;
 
+import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.EnvironmentVariableConfig;
-import com.thoughtworks.go.config.GoConfigDao;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.materials.svn.SvnMaterial;
-import com.thoughtworks.go.domain.EnvironmentVariable;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
+import com.thoughtworks.go.config.svn.SvnMaterial;
 import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.helper.TestRepo;
 import com.thoughtworks.go.security.CryptoException;
@@ -31,7 +27,7 @@ import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.dao.PipelineSqlMapDao;
 import com.thoughtworks.go.server.domain.MaterialForScheduling;
 import com.thoughtworks.go.server.domain.PipelineScheduleOptions;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.materials.MaterialUpdateStatusNotifier;
 import com.thoughtworks.go.server.materials.MaterialUpdateSuccessfulMessage;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
@@ -41,7 +37,6 @@ import com.thoughtworks.go.server.service.result.HttpOperationResult;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import com.thoughtworks.go.util.GoConfigFileHelper;
 import org.apache.commons.collections4.IterableUtils;
-import org.apache.commons.collections4.Predicate;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

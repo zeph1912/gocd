@@ -19,9 +19,6 @@ package com.thoughtworks.go.apiv6.admin.pipelineconfig.representers.trackingtool
 import com.thoughtworks.go.api.base.OutputWriter;
 import com.thoughtworks.go.api.representers.ErrorGetter;
 import com.thoughtworks.go.api.representers.JsonReader;
-import com.thoughtworks.go.config.MingleConfig;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.TrackingTool;
 import com.thoughtworks.go.config.exceptions.UnprocessableEntityException;
 
 import java.util.HashMap;

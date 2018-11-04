@@ -16,9 +16,9 @@
 
 package com.thoughtworks.go.helpers
 
-import com.thoughtworks.go.domain.JobResult
-import com.thoughtworks.go.domain.JobState
-import com.thoughtworks.go.domain.StageIdentifier
+import JobResult
+import JobState
+import StageIdentifier
 import com.thoughtworks.go.presentation.pipelinehistory.JobHistory
 import com.thoughtworks.go.presentation.pipelinehistory.StageInstanceModel
 

@@ -16,8 +16,6 @@
 package com.thoughtworks.go.buildsession;
 
 import com.thoughtworks.go.domain.BuildCommand;
-import com.thoughtworks.go.util.command.CommandLine;
-import com.thoughtworks.go.util.command.CommandLineException;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.SystemUtils;
 import org.slf4j.Logger;

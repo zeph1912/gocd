@@ -18,7 +18,6 @@ package com.thoughtworks.go.apiv1.admin.security.representers;
 
 
 import com.thoughtworks.go.api.base.OutputWriter;
-import com.thoughtworks.go.config.Role;
 import com.thoughtworks.go.spark.Routes;
 
 import java.util.List;

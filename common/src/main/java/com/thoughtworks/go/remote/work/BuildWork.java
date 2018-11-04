@@ -17,8 +17,7 @@
 package com.thoughtworks.go.remote.work;
 
 import com.thoughtworks.go.config.RunIfConfig;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.materials.MaterialAgentFactory;
+import com.thoughtworks.go.config.materials.MaterialAgentFactory;
 import com.thoughtworks.go.plugin.access.packagematerial.PackageRepositoryExtension;
 import com.thoughtworks.go.plugin.access.scm.SCMExtension;
 import com.thoughtworks.go.remote.AgentIdentifier;
@@ -27,7 +26,6 @@ import com.thoughtworks.go.server.service.AgentBuildingInfo;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
 import com.thoughtworks.go.util.ProcessManager;
 import com.thoughtworks.go.util.SystemEnvironment;
-import com.thoughtworks.go.util.TimeProvider;
 import com.thoughtworks.go.util.command.*;
 import com.thoughtworks.go.work.DefaultGoPublisher;
 import com.thoughtworks.go.work.GoPublisher;

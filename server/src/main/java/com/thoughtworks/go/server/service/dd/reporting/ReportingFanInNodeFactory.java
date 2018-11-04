@@ -18,8 +18,8 @@ package com.thoughtworks.go.server.service.dd.reporting;
 
 import com.thoughtworks.go.config.materials.PackageMaterialConfig;
 import com.thoughtworks.go.config.materials.ScmMaterialConfig;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterialConfig;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
+import com.thoughtworks.go.config.dependency.DependencyMaterialConfig;
+import com.thoughtworks.go.config.materials.MaterialConfig;
 
 public class ReportingFanInNodeFactory {
     public static ReportingFanInNode create(MaterialConfig material){

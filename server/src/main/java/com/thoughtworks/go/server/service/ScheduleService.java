@@ -16,10 +16,9 @@
 
 package com.thoughtworks.go.server.service;
 
+import com.thoughtworks.go.InstanceFactory;
 import com.thoughtworks.go.config.*;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.activity.AgentAssignment;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
+import com.thoughtworks.go.config.activity.AgentAssignment;
 import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.remote.work.InvalidAgentException;
 import com.thoughtworks.go.server.GoUnauthorizedException;
@@ -27,7 +26,7 @@ import com.thoughtworks.go.server.dao.JobInstanceDao;
 import com.thoughtworks.go.server.dao.PipelineDao;
 import com.thoughtworks.go.server.dao.StageDao;
 import com.thoughtworks.go.server.domain.AgentInstances;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.newsecurity.utils.SessionUtils;
 import com.thoughtworks.go.server.perf.SchedulingPerformanceLogger;
 import com.thoughtworks.go.server.service.result.*;
@@ -37,7 +36,6 @@ import com.thoughtworks.go.serverhealth.HealthStateScope;
 import com.thoughtworks.go.serverhealth.HealthStateType;
 import com.thoughtworks.go.serverhealth.ServerHealthService;
 import com.thoughtworks.go.serverhealth.ServerHealthState;
-import com.thoughtworks.go.util.TimeProvider;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -54,7 +52,7 @@ import java.util.List;
 import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
-import static com.thoughtworks.go.domain.StageState.Unknown;
+import static com.thoughtworks.go.config.StageState.Unknown;
 import static com.thoughtworks.go.util.GoConstants.DEFAULT_APPROVED_BY;
 
 @Service

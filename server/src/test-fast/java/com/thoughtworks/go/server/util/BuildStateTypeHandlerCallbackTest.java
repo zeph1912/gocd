@@ -16,7 +16,7 @@
 
 package com.thoughtworks.go.server.util;
 
-import com.thoughtworks.go.domain.JobState;
+import com.thoughtworks.go.config.JobState;
 import com.thoughtworks.go.server.dao.handlers.BuildStateTypeHandlerCallback;
 import org.junit.Test;
 

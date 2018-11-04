@@ -17,13 +17,8 @@
 package com.thoughtworks.go.server.messaging.notifications;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.StageConfig;
 import com.thoughtworks.go.domain.AgentInstance;
-import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.StageIdentifier;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.notificationdata.AgentNotificationData;
-import com.thoughtworks.go.domain.notificationdata.StageNotificationData;
+import com.thoughtworks.go.config.notificationdata.AgentNotificationData;
 import com.thoughtworks.go.plugin.access.notification.NotificationExtension;
 import com.thoughtworks.go.plugin.access.notification.NotificationPluginRegistry;
 import com.thoughtworks.go.server.dao.PipelineDao;

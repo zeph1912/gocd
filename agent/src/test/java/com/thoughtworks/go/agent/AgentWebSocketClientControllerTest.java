@@ -21,7 +21,6 @@ import com.thoughtworks.go.agent.service.SslInfrastructureService;
 import com.thoughtworks.go.buildsession.BuildSessionBasedTestCase;
 import com.thoughtworks.go.config.AgentRegistry;
 import com.thoughtworks.go.config.GuidService;
-import com.thoughtworks.go.domain.*;
 import com.thoughtworks.go.matchers.RegexMatcher;
 import com.thoughtworks.go.plugin.access.artifact.ArtifactExtension;
 import com.thoughtworks.go.plugin.access.packagematerial.PackageRepositoryExtension;

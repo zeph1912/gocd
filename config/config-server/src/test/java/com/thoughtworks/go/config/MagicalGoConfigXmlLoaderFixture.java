@@ -17,7 +17,6 @@
 package com.thoughtworks.go.config;
 
 import com.thoughtworks.go.config.materials.MaterialConfigs;
-import com.thoughtworks.go.config.registry.ConfigElementImplementationRegistry;
 import com.thoughtworks.go.util.ConfigElementImplementationRegistryMother;
 import com.thoughtworks.go.util.GoConstants;
 

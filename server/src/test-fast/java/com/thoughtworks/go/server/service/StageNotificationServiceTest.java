@@ -16,19 +16,19 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.domain.*;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.ModifiedAction;
-import com.thoughtworks.go.domain.testinfo.TestStatus;
-import com.thoughtworks.go.domain.testinfo.TestSuite;
+import com.thoughtworks.go.InstanceFactory;
+import com.thoughtworks.go.MaterialConfigConverter;
+import com.thoughtworks.go.config.*;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.ModifiedAction;
+import com.thoughtworks.go.config.testinfo.TestStatus;
+import com.thoughtworks.go.config.testinfo.TestSuite;
+import com.thoughtworks.go.domain.Users;
 import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.server.dao.sparql.ShineDao;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.messaging.InMemoryEmailNotificationTopic;
 import com.thoughtworks.go.util.SystemEnvironment;
-import com.thoughtworks.go.util.TimeProvider;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.invocation.InvocationOnMock;

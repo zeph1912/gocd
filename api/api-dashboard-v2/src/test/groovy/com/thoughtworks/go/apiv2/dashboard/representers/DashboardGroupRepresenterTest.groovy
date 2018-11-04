@@ -25,7 +25,7 @@ import com.thoughtworks.go.server.dashboard.GoDashboardEnvironment
 import com.thoughtworks.go.server.dashboard.GoDashboardPipeline
 import com.thoughtworks.go.server.dashboard.GoDashboardPipelineGroup
 import com.thoughtworks.go.server.dashboard.TimeStampBasedCounter
-import com.thoughtworks.go.server.domain.Username
+import com.thoughtworks.go.config.Username
 import com.thoughtworks.go.spark.util.SecureRandom
 import com.thoughtworks.go.util.Clock
 import org.junit.jupiter.api.Nested

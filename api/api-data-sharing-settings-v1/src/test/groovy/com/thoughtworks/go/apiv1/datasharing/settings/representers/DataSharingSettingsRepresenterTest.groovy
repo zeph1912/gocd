@@ -17,9 +17,9 @@
 package com.thoughtworks.go.apiv1.datasharing.settings.representers
 
 import com.thoughtworks.go.api.util.GsonTransformer
-import com.thoughtworks.go.server.domain.DataSharingSettings
-import com.thoughtworks.go.server.domain.Username
-import com.thoughtworks.go.util.TimeProvider
+
+import com.thoughtworks.go.config.Username
+
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.mockito.Mock

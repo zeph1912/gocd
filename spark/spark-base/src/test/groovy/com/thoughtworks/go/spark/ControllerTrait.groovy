@@ -21,7 +21,7 @@ import com.thoughtworks.go.config.CaseInsensitiveString
 import com.thoughtworks.go.http.mocks.HttpRequestBuilder
 import com.thoughtworks.go.http.mocks.MockHttpServletRequest
 import com.thoughtworks.go.http.mocks.MockHttpServletResponse
-import com.thoughtworks.go.server.domain.Username
+import com.thoughtworks.go.config.Username
 import com.thoughtworks.go.server.newsecurity.utils.SessionUtils
 import com.thoughtworks.go.spark.mocks.StubTemplateEngine
 import com.thoughtworks.go.spark.mocks.TestApplication

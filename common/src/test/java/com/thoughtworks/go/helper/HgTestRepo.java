@@ -17,15 +17,13 @@
 package com.thoughtworks.go.helper;
 
 import com.thoughtworks.go.config.materials.ScmMaterialConfig;
-import com.thoughtworks.go.config.materials.mercurial.HgMaterial;
-import com.thoughtworks.go.config.materials.mercurial.HgMaterialConfig;
-import com.thoughtworks.go.domain.materials.*;
-import com.thoughtworks.go.domain.materials.mercurial.HgCommand;
-import com.thoughtworks.go.domain.materials.mercurial.StringRevision;
-import com.thoughtworks.go.util.command.CommandLine;
+import com.thoughtworks.go.config.mercurial.HgMaterial;
+import com.thoughtworks.go.config.mercurial.HgMaterialConfig;
+import com.thoughtworks.go.config.materials.*;
+import com.thoughtworks.go.config.materials.mercurial.HgCommand;
+import com.thoughtworks.go.config.materials.mercurial.StringRevision;
 import com.thoughtworks.go.util.command.InMemoryStreamConsumer;
 import com.thoughtworks.go.util.command.ProcessOutputStreamConsumer;
-import com.thoughtworks.go.util.command.UrlArgument;
 import org.apache.commons.io.FileUtils;
 import org.junit.rules.TemporaryFolder;
 

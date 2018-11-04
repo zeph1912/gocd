@@ -24,7 +24,7 @@ import com.thoughtworks.go.apiv1.elasticprofile.representers.ElasticProfilesRepr
 import com.thoughtworks.go.config.elastic.ElasticProfile
 import com.thoughtworks.go.config.elastic.ElasticProfiles
 import com.thoughtworks.go.i18n.LocalizedMessage
-import com.thoughtworks.go.server.domain.Username
+import com.thoughtworks.go.config.Username
 import com.thoughtworks.go.server.service.ElasticProfileService
 import com.thoughtworks.go.server.service.EntityHashingService
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult

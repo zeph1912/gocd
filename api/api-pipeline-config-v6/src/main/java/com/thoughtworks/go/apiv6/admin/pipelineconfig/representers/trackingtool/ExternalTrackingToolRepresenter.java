@@ -18,7 +18,6 @@ package com.thoughtworks.go.apiv6.admin.pipelineconfig.representers.trackingtool
 
 import com.thoughtworks.go.api.base.OutputWriter;
 import com.thoughtworks.go.api.representers.JsonReader;
-import com.thoughtworks.go.config.TrackingTool;
 
 
 public class ExternalTrackingToolRepresenter {

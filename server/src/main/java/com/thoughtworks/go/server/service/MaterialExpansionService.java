@@ -16,14 +16,14 @@
 
 package com.thoughtworks.go.server.service;
 
+import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.materials.MaterialConfigs;
-import com.thoughtworks.go.config.materials.Materials;
-import com.thoughtworks.go.config.materials.svn.SvnMaterialConfig;
-import com.thoughtworks.go.domain.materials.Material;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
-import com.thoughtworks.go.domain.materials.svn.Subversion;
-import com.thoughtworks.go.domain.materials.svn.SvnCommand;
-import com.thoughtworks.go.domain.materials.svn.SvnExternal;
+import com.thoughtworks.go.config.svn.SvnMaterialConfig;
+import com.thoughtworks.go.config.materials.Material;
+import com.thoughtworks.go.config.materials.MaterialConfig;
+import com.thoughtworks.go.config.materials.svn.Subversion;
+import com.thoughtworks.go.config.materials.svn.SvnCommand;
+import com.thoughtworks.go.config.materials.svn.SvnExternal;
 import com.thoughtworks.go.server.cache.CacheKeyGenerator;
 import com.thoughtworks.go.server.cache.GoCache;
 import org.springframework.beans.factory.annotation.Autowired;

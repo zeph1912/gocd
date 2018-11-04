@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.presentation.models;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.domain.valuestreammap.Node;
 
 import java.util.List;
 

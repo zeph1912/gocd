@@ -17,11 +17,7 @@
 package com.thoughtworks.go.config;
 
 
-import com.thoughtworks.go.config.materials.git.GitMaterialConfig;
-import com.thoughtworks.go.config.remote.ConfigRepoConfig;
-import com.thoughtworks.go.config.remote.PartialConfig;
-import com.thoughtworks.go.config.remote.RepoConfigOrigin;
-import com.thoughtworks.go.domain.PipelineGroups;
+import com.thoughtworks.go.config.git.GitMaterialConfig;
 import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.util.GoConfigFileHelper;
 import org.junit.Before;

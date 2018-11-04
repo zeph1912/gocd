@@ -16,8 +16,7 @@
 
 package com.thoughtworks.go.server.presentation.models;
 
-import com.thoughtworks.go.config.TrackingTool;
-import com.thoughtworks.go.domain.*;
+import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.dto.DurationBeans;
 import com.thoughtworks.go.server.service.AgentService;
 import com.thoughtworks.go.util.TimeConverter;

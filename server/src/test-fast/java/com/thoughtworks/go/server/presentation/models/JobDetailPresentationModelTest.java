@@ -17,9 +17,7 @@
 package com.thoughtworks.go.server.presentation.models;
 
 import com.thoughtworks.go.domain.DirectoryEntries;
-import com.thoughtworks.go.domain.JobInstance;
-import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.exception.IllegalArtifactLocationException;
+import com.thoughtworks.go.config.exception.IllegalArtifactLocationException;
 import com.thoughtworks.go.helper.JobInstanceMother;
 import com.thoughtworks.go.server.service.ArtifactsService;
 import com.thoughtworks.go.util.DirectoryReader;

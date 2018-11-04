@@ -18,8 +18,6 @@ package com.thoughtworks.go.server.newsecurity.providers;
 
 import com.thoughtworks.go.CurrentGoCDVersion;
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.PluginRoleConfig;
-import com.thoughtworks.go.config.SecurityAuthConfig;
 import com.thoughtworks.go.plugin.access.authorization.models.AuthenticationResponse;
 import com.thoughtworks.go.server.newsecurity.models.AuthenticationToken;
 import com.thoughtworks.go.server.newsecurity.models.Credentials;

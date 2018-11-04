@@ -16,12 +16,10 @@
 
 package com.thoughtworks.go.server.transaction;
 
-import com.thoughtworks.go.config.GoConfigDao;
-import com.thoughtworks.go.config.materials.mercurial.HgMaterial;
-import com.thoughtworks.go.domain.MaterialInstance;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.ModifiedAction;
-import com.thoughtworks.go.domain.materials.ModifiedFile;
+import com.thoughtworks.go.config.mercurial.HgMaterial;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.ModifiedAction;
+import com.thoughtworks.go.config.materials.ModifiedFile;
 import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.util.GoConfigFileHelper;

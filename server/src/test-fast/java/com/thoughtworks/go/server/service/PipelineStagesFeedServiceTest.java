@@ -17,8 +17,8 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.domain.feed.FeedEntries;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.feed.FeedEntries;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import org.junit.Before;
 import org.junit.Test;

@@ -16,13 +16,10 @@
 
 package com.thoughtworks.go.server.service;
 
+import com.thoughtworks.go.InstanceFactory;
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.domain.MaterialRevisions;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.Stage;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
 import com.thoughtworks.go.helper.PipelineMother;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import org.junit.Before;
 import org.junit.Test;

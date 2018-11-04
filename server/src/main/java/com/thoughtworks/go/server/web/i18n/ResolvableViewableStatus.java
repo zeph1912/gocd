@@ -16,7 +16,7 @@
 
 package com.thoughtworks.go.server.web.i18n;
 
-import com.thoughtworks.go.domain.ViewableStatus;
+import com.thoughtworks.go.config.ViewableStatus;
 import org.springframework.context.MessageSourceResolvable;
 
 public class ResolvableViewableStatus implements MessageSourceResolvable {

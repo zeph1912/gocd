@@ -19,8 +19,8 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
-<hibernate-mapping package="com.thoughtworks.go.domain.materials" default-access="field" default-lazy="false">
-    <class name="com.thoughtworks.go.domain.materials.Modification" table="modifications" >
+<hibernate-mapping package="com.thoughtworks.go.config.materials" default-access="field" default-lazy="false">
+    <class name="com.thoughtworks.go.config.materials.Modification" table="modifications" >
         <id name="id" column="id">
             <generator class="identity"/>
         </id>
@@ -33,11 +33,11 @@
         <property name="pipelineId"/>
         <property name="additionalData" access="property"/>
 
-        <many-to-one name="materialInstance" class="com.thoughtworks.go.domain.MaterialInstance" column="materialId"/>
+        <many-to-one name="materialInstance" class="com.thoughtworks.go.config.MaterialInstance" column="materialId"/>
 
         <set name="files" order-by="id" cascade="all" fetch="join">
             <key column="modificationId" not-null="true"/>
-            <one-to-many class="com.thoughtworks.go.domain.materials.ModifiedFile"/>
+            <one-to-many class="com.thoughtworks.go.config.materials.ModifiedFile"/>
         </set>
 
     </class>

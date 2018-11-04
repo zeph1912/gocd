@@ -17,8 +17,8 @@
 package com.thoughtworks.go.server.presentation;
 
 import com.thoughtworks.go.config.*;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterialConfig;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
+import com.thoughtworks.go.config.dependency.DependencyMaterialConfig;
+import com.thoughtworks.go.config.materials.MaterialConfig;
 import com.thoughtworks.go.util.SystemEnvironment;
 
 import java.util.*;

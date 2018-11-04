@@ -18,9 +18,6 @@ package com.thoughtworks.go.server.service.builders;
 
 import com.googlecode.junit.ext.JunitExtRunner;
 import com.googlecode.junit.ext.RunIf;
-import com.thoughtworks.go.config.AntTask;
-import com.thoughtworks.go.config.ExecTask;
-import com.thoughtworks.go.domain.Pipeline;
 import com.thoughtworks.go.domain.StubGoPublisher;
 import com.thoughtworks.go.domain.builder.Builder;
 import com.thoughtworks.go.domain.builder.CommandBuilder;
@@ -28,7 +25,6 @@ import com.thoughtworks.go.junitext.EnhancedOSChecker;
 import com.thoughtworks.go.plugin.access.pluggabletask.TaskExtension;
 import com.thoughtworks.go.server.service.UpstreamPipelineResolver;
 import com.thoughtworks.go.util.command.CruiseControlException;
-import com.thoughtworks.go.util.command.EnvironmentVariableContext;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

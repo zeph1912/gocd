@@ -18,7 +18,6 @@ package com.thoughtworks.go.buildsession;
 import com.thoughtworks.go.domain.BuildCommand;
 import com.thoughtworks.go.util.GoConstants;
 import com.thoughtworks.go.util.ProcessManager;
-import com.thoughtworks.go.util.command.EnvironmentVariableContext;
 
 import java.util.Set;
 

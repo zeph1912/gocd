@@ -18,7 +18,6 @@ package com.thoughtworks.go.server.presentation.models;
 
 import com.google.gson.Gson;
 import com.sdicons.json.model.JSONInteger;
-import com.thoughtworks.go.config.PipelineConfig;
 import com.thoughtworks.go.domain.PipelinePauseInfo;
 import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.helper.PipelineHistoryMother;

@@ -19,7 +19,7 @@ class RepoViewModel
 
   def initialize(metadata, repository, plugin_id)
     @properties = []
-    @errors = com.thoughtworks.go.domain.ConfigErrors.new
+    @errors = com.thoughtworks.go.config.ConfigErrors.new
     unless metadata
       @errors.add("pluginId", com.thoughtworks.go.i18n.LocalizedMessage::resourceNotFound("Plugin", plugin_id))
       return

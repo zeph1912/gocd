@@ -19,13 +19,9 @@ package com.thoughtworks.go.server.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.thoughtworks.go.domain.JobIdentifier;
-import com.thoughtworks.go.domain.JobInstance;
 import com.thoughtworks.go.domain.JobPropertiesReader;
-import com.thoughtworks.go.domain.JobState;
-import com.thoughtworks.go.domain.JobStateTransition;
-import com.thoughtworks.go.domain.Properties;
-import com.thoughtworks.go.domain.Property;
+import com.thoughtworks.go.config.JobState;
+import com.thoughtworks.go.config.Property;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import com.thoughtworks.go.server.controller.actions.PropertyAction;

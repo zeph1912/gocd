@@ -16,10 +16,8 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.BasicPipelineConfigs;
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.GoConfigDao;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import com.thoughtworks.go.util.GoConfigFileHelper;
 import org.junit.After;

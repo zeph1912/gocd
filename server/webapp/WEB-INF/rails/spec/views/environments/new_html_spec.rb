@@ -23,7 +23,7 @@ describe "environments/new.html.erb" do
     assign(:remote_pipelines, [])
     assign(:agents, [])
     assign(:environment, BasicEnvironmentConfig.new())
-    allow(view).to receive(:current_user).and_return(com.thoughtworks.go.server.domain.Username.new(CaseInsensitiveString.new('user_foo')))
+    allow(view).to receive(:current_user).and_return(com.thoughtworks.go.config.Username.new(CaseInsensitiveString.new('user_foo')))
     allow(view).to receive(:security_service).and_return(@security_service = Object.new)
   end
 

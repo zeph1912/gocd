@@ -17,17 +17,16 @@
 package com.thoughtworks.go.apiv2.dashboard.representers
 
 import com.thoughtworks.go.config.CaseInsensitiveString
-import com.thoughtworks.go.config.TrackingTool
-import com.thoughtworks.go.config.remote.ConfigRepoConfig
+
 import com.thoughtworks.go.config.remote.FileConfigOrigin
-import com.thoughtworks.go.config.remote.RepoConfigOrigin
+
 import com.thoughtworks.go.config.security.Permissions
 import com.thoughtworks.go.config.security.users.Everyone
 import com.thoughtworks.go.config.security.users.NoOne
 import com.thoughtworks.go.helper.MaterialConfigsMother
 import com.thoughtworks.go.server.dashboard.Counter
 import com.thoughtworks.go.server.dashboard.GoDashboardPipeline
-import com.thoughtworks.go.server.domain.Username
+import com.thoughtworks.go.config.Username
 import com.thoughtworks.go.spark.util.SecureRandom
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test

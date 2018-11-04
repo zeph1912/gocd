@@ -20,7 +20,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import com.thoughtworks.go.config.materials.ScmMaterialConfig;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
+import com.thoughtworks.go.config.materials.MaterialConfig;
 
 public abstract class ReportingFanInNode {
     MaterialConfig materialConfig;

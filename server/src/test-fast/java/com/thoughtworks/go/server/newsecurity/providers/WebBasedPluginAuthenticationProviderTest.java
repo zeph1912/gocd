@@ -17,8 +17,7 @@
 package com.thoughtworks.go.server.newsecurity.providers;
 
 import com.thoughtworks.go.config.*;
-import com.thoughtworks.go.domain.ServerSiteUrlConfig;
-import com.thoughtworks.go.domain.config.ConfigurationProperty;
+import com.thoughtworks.go.config.ServerSiteUrlConfig;
 import com.thoughtworks.go.plugin.access.authorization.AuthorizationExtension;
 import com.thoughtworks.go.plugin.access.authorization.AuthorizationMetadataStore;
 import com.thoughtworks.go.plugin.access.authorization.models.AuthenticationResponse;

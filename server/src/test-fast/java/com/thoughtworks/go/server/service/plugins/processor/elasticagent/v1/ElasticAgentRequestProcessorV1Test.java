@@ -16,8 +16,7 @@
 
 package com.thoughtworks.go.server.service.plugins.processor.elasticagent.v1;
 
-import com.thoughtworks.go.config.AgentConfig;
-import com.thoughtworks.go.domain.AgentConfigStatus;
+import com.thoughtworks.go.config.AgentConfigStatus;
 import com.thoughtworks.go.domain.AgentInstance;
 import com.thoughtworks.go.domain.AgentRuntimeStatus;
 import com.thoughtworks.go.plugin.api.request.DefaultGoApiRequest;

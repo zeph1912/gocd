@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.server.newsecurity.providers;
 
-import com.thoughtworks.go.config.PluginRoleConfig;
-import com.thoughtworks.go.config.SecurityAuthConfig;
 import com.thoughtworks.go.plugin.access.authorization.AuthorizationExtension;
 import com.thoughtworks.go.plugin.access.authorization.AuthorizationMetadataStore;
 import com.thoughtworks.go.plugin.access.authorization.models.AuthenticationResponse;

@@ -40,12 +40,12 @@ module ApiV1
       property :package_repo,
                exec_context: :decorator,
                decorator: ApiV1::Config::RepositorySummaryRepresenter,
-               class: com.thoughtworks.go.domain.packagerepository.PackageRepository
+               class: com.thoughtworks.go.config.packagerepository.PackageRepository
 
       collection :configuration,
                  exec_context: :decorator,
                  decorator: ApiV1::Config::PluginConfigurationPropertyRepresenter,
-                 class: com.thoughtworks.go.domain.config.ConfigurationProperty
+                 class: com.thoughtworks.go.config.ConfigurationProperty
 
       delegate :name, :name=, :id, :id=, :errors, :auto_update, :auto_update=,  to: :package
 

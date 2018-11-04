@@ -16,8 +16,8 @@
 
 package com.thoughtworks.go.server.domain;
 
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.BackupService;
-import com.thoughtworks.go.util.command.CommandLine;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.jupiter.api.Test;
 

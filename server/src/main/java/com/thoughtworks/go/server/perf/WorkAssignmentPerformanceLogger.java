@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.perf;
 
-import com.thoughtworks.go.domain.JobIdentifier;
 import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.remote.work.BuildWork;
 import com.thoughtworks.go.remote.work.Work;

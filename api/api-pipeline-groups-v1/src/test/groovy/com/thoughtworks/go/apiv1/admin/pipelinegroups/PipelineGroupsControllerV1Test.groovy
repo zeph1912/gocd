@@ -21,9 +21,8 @@ import com.thoughtworks.go.api.spring.ApiAuthenticationHelper
 import com.thoughtworks.go.api.util.HaltApiMessages
 import com.thoughtworks.go.apiv1.admin.pipelinegroups.representers.PipelineGroupRepresenter
 import com.thoughtworks.go.apiv1.admin.pipelinegroups.representers.PipelineGroupsRepresenter
-import com.thoughtworks.go.config.Authorization
-import com.thoughtworks.go.config.BasicPipelineConfigs
-import com.thoughtworks.go.domain.PipelineGroups
+
+
 import com.thoughtworks.go.helper.PipelineConfigMother
 import com.thoughtworks.go.server.service.EntityHashingService
 import com.thoughtworks.go.server.service.PipelineConfigService

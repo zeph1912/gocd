@@ -16,14 +16,10 @@
 
 package com.thoughtworks.studios.shine.cruise;
 
-import com.thoughtworks.go.config.GoConfigDao;
-import com.thoughtworks.go.config.materials.ScmMaterial;
-import com.thoughtworks.go.domain.Pipeline;
-import com.thoughtworks.go.domain.Stage;
 import com.thoughtworks.go.domain.StageFinder;
-import com.thoughtworks.go.domain.StageResult;
-import com.thoughtworks.go.domain.feed.stage.StageFeedEntry;
-import com.thoughtworks.go.domain.materials.Modification;
+import com.thoughtworks.go.config.StageResult;
+import com.thoughtworks.go.config.feed.stage.StageFeedEntry;
+import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.dao.sparql.TestFailureSetup;
 import com.thoughtworks.go.server.domain.PipelineTimeline;

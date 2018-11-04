@@ -16,7 +16,7 @@
 
 package com.thoughtworks.go.presentation.pipelinehistory;
 
-import com.thoughtworks.go.domain.buildcause.BuildCause;
+import com.thoughtworks.go.config.buildcause.BuildCause;
 import com.thoughtworks.go.domain.PipelineIdentifier;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;

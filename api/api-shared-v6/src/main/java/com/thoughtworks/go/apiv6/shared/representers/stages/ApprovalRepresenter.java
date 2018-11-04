@@ -19,8 +19,6 @@ package com.thoughtworks.go.apiv6.shared.representers.stages;
 import com.thoughtworks.go.api.base.OutputWriter;
 import com.thoughtworks.go.api.representers.ErrorGetter;
 import com.thoughtworks.go.api.representers.JsonReader;
-import com.thoughtworks.go.config.Approval;
-import com.thoughtworks.go.config.AuthConfig;
 
 import java.util.HashMap;
 

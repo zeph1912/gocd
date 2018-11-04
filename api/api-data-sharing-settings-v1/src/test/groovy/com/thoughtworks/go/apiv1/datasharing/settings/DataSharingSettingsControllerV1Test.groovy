@@ -19,7 +19,7 @@ package com.thoughtworks.go.apiv1.datasharing.settings
 import com.thoughtworks.go.api.SecurityTestTrait
 import com.thoughtworks.go.api.spring.ApiAuthenticationHelper
 import com.thoughtworks.go.apiv1.datasharing.settings.representers.DataSharingSettingsRepresenter
-import com.thoughtworks.go.server.domain.DataSharingSettings
+
 import com.thoughtworks.go.server.service.datasharing.DataSharingNotification
 import com.thoughtworks.go.server.service.datasharing.DataSharingSettingsService
 import com.thoughtworks.go.server.service.EntityHashingService
@@ -27,7 +27,7 @@ import com.thoughtworks.go.spark.AdminUserSecurity
 import com.thoughtworks.go.spark.ControllerTrait
 import com.thoughtworks.go.spark.NormalUserSecurity
 import com.thoughtworks.go.spark.SecurityServiceTrait
-import com.thoughtworks.go.util.TimeProvider
+
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test

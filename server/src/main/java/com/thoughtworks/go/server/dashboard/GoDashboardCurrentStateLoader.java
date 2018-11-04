@@ -21,7 +21,6 @@ import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.security.GoConfigPipelinePermissionsAuthority;
 import com.thoughtworks.go.config.security.Permissions;
 import com.thoughtworks.go.config.security.users.NoOne;
-import com.thoughtworks.go.domain.PipelineGroupVisitor;
 import com.thoughtworks.go.domain.PipelinePauseInfo;
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModel;
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModels;
@@ -41,7 +40,7 @@ import org.springframework.stereotype.Component;
 import java.util.*;
 
 import static com.thoughtworks.go.config.CaseInsensitiveString.str;
-import static com.thoughtworks.go.domain.buildcause.BuildCause.createWithEmptyModifications;
+import static com.thoughtworks.go.config.buildcause.BuildCause.createWithEmptyModifications;
 import static com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModel.createEmptyPipelineInstanceModel;
 import static com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModel.createPreparingToSchedule;
 import static com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModels.createPipelineInstanceModels;

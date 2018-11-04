@@ -23,7 +23,7 @@ module Admin
        'Subversion' => SvnMaterialConfig::TYPE,
        'Mercurial' => HgMaterialConfig::TYPE,
        'Perforce' => P4MaterialConfig::TYPE,
-       'Team Foundation Server' => com.thoughtworks.go.config.materials.tfs.TfsMaterialConfig::TYPE,
+       'Team Foundation Server' => com.thoughtworks.go.config.tfs.TfsMaterialConfig::TYPE,
        'Pipeline' => DependencyMaterialConfig::TYPE,
        'Package' => PackageMaterialConfig::TYPE
       }

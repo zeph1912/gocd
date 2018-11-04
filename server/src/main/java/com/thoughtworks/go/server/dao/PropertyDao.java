@@ -18,8 +18,7 @@ package com.thoughtworks.go.server.dao;
 
 import java.util.List;
 
-import com.thoughtworks.go.domain.Properties;
-import com.thoughtworks.go.domain.Property;
+import com.thoughtworks.go.config.Property;
 
 public interface PropertyDao {
     boolean save(long buildId, Property property);

@@ -20,10 +20,7 @@ import java.io.File;
 
 import com.googlecode.junit.ext.JunitExtRunner;
 import com.googlecode.junit.ext.RunIf;
-import com.thoughtworks.go.config.NantTask;
 import com.thoughtworks.go.domain.builder.CommandBuilder;
-import com.thoughtworks.go.domain.NullPipeline;
-import com.thoughtworks.go.domain.Pipeline;
 import com.thoughtworks.go.junitext.EnhancedOSChecker;
 import com.thoughtworks.go.server.service.UpstreamPipelineResolver;
 import org.hamcrest.core.Is;

@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.listener;
 
-import com.thoughtworks.go.config.Agents;
-import com.thoughtworks.go.config.CruiseConfig;
 import com.thoughtworks.go.server.service.AgentService;
 
 public class AgentChangeListener extends EntityConfigChangedListener<Agents> {

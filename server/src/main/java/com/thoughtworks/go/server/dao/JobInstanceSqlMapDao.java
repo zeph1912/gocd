@@ -18,8 +18,8 @@ package com.thoughtworks.go.server.dao;
 
 import com.opensymphony.oscache.base.Cache;
 import com.rits.cloning.Cloner;
+import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.database.Database;
-import com.thoughtworks.go.domain.*;
 import com.thoughtworks.go.server.cache.CacheKeyGenerator;
 import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.cache.LazyCache;
@@ -45,7 +45,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataRetrievalFailureException;
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.TransactionCallback;
 import org.springframework.transaction.support.TransactionSynchronizationAdapter;
 
@@ -53,7 +52,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.function.Supplier;
 
 import static com.thoughtworks.go.util.IBatisUtil.arguments;
 

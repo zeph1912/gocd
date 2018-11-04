@@ -16,29 +16,22 @@
 
 package com.thoughtworks.go.server.domain.xml;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-import com.thoughtworks.go.config.materials.AbstractMaterial;
-import com.thoughtworks.go.config.materials.PackageMaterial;
-import com.thoughtworks.go.config.materials.PluggableSCMMaterial;
-import com.thoughtworks.go.config.materials.ScmMaterial;
-import com.thoughtworks.go.config.materials.dependency.DependencyMaterial;
-import com.thoughtworks.go.domain.MaterialRevision;
+import com.thoughtworks.go.config.dependency.DependencyMaterial;
 import com.thoughtworks.go.domain.PipelineTimelineEntry;
 import com.thoughtworks.go.domain.XmlRepresentable;
 import com.thoughtworks.go.domain.XmlWriterContext;
-import com.thoughtworks.go.domain.materials.Material;
-import com.thoughtworks.go.domain.materials.Modification;
-import com.thoughtworks.go.domain.materials.Modifications;
-import com.thoughtworks.go.domain.materials.ModifiedFile;
+import com.thoughtworks.go.config.materials.Material;
+import com.thoughtworks.go.config.materials.Modification;
+import com.thoughtworks.go.config.materials.Modifications;
+import com.thoughtworks.go.config.materials.ModifiedFile;
 import com.thoughtworks.go.presentation.pipelinehistory.NullStageHistoryItem;
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModel;
 import com.thoughtworks.go.presentation.pipelinehistory.StageInstanceModel;
 import com.thoughtworks.go.util.DateUtils;
 import org.dom4j.Document;
-import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.dom.DOMDocument;
 import org.dom4j.dom.DOMElement;

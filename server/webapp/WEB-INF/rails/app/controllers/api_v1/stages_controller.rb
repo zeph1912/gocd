@@ -29,7 +29,7 @@ module ApiV1
 
       stage_model = stage_service.findStageWithIdentifier(pipeline_name, pipeline_counter, stage_name, stage_counter, string_username, result)
 
-      if stage_model.instance_of?(com.thoughtworks.go.domain.NullStage)
+      if stage_model.instance_of?(com.thoughtworks.go.config.NullStage)
         raise RecordNotFound
       else
 

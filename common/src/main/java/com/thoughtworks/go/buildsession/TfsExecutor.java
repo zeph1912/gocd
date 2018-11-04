@@ -16,16 +16,15 @@
 
 package com.thoughtworks.go.buildsession;
 
-import com.thoughtworks.go.config.materials.tfs.TfsMaterial;
+import com.thoughtworks.go.config.tfs.TfsMaterial;
 import com.thoughtworks.go.domain.BuildCommand;
-import com.thoughtworks.go.domain.materials.AgentSubprocessExecutionContext;
-import com.thoughtworks.go.domain.materials.RevisionContext;
-import com.thoughtworks.go.domain.materials.mercurial.StringRevision;
+import com.thoughtworks.go.config.materials.AgentSubprocessExecutionContext;
+import com.thoughtworks.go.config.materials.RevisionContext;
+import com.thoughtworks.go.config.materials.mercurial.StringRevision;
 import com.thoughtworks.go.security.GoCipher;
 import com.thoughtworks.go.util.command.ConsoleOutputStreamConsumer;
 import com.thoughtworks.go.util.command.LabeledOutputStreamConsumer;
 import com.thoughtworks.go.util.command.TaggedStreamConsumer;
-import com.thoughtworks.go.util.command.UrlArgument;
 
 import java.io.File;
 

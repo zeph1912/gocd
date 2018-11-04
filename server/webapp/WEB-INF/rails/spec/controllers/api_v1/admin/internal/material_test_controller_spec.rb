@@ -57,12 +57,12 @@ describe ApiV1::Admin::Internal::MaterialTestController do
       end
 
       it 'renders OK if connection test passed' do
-        @svn_material = double(com.thoughtworks.go.config.materials.svn.SvnMaterial)
+        @svn_material = double(com.thoughtworks.go.config.svn.SvnMaterial)
         allow(@material_config_converter).to receive(:toMaterial).and_return(@svn_material)
         expect(@svn_material).to receive(:checkConnection).with(an_instance_of(CheckConnectionSubprocessExecutionContext)).
-          and_return(com.thoughtworks.go.domain.materials.ValidationBean.valid)
+          and_return(com.thoughtworks.go.config.materials.ValidationBean.valid)
 
-        expect_any_instance_of(com.thoughtworks.go.config.materials.svn.SvnMaterialConfig).
+        expect_any_instance_of(com.thoughtworks.go.config.svn.SvnMaterialConfig).
           to receive(:ensureEncrypted)
 
         post_with_api_header :test, params:{
@@ -90,10 +90,10 @@ describe ApiV1::Admin::Internal::MaterialTestController do
       end
 
       it 'renders error if connection test failed' do
-        @git_material = double(com.thoughtworks.go.config.materials.git.GitMaterial)
+        @git_material = double(com.thoughtworks.go.config.git.GitMaterial)
         allow(@material_config_converter).to receive(:toMaterial).and_return(@git_material)
         expect(@git_material).to receive(:checkConnection).with(an_instance_of(CheckConnectionSubprocessExecutionContext)).
-          and_return(com.thoughtworks.go.domain.materials.ValidationBean.notValid('boom!'))
+          and_return(com.thoughtworks.go.config.materials.ValidationBean.notValid('boom!'))
 
         post_with_api_header :test, params:{
           type:       'git',
@@ -106,10 +106,10 @@ describe ApiV1::Admin::Internal::MaterialTestController do
       end
 
       it 'performs parameter expansion if pipeline_name param is specified' do
-        @git_material = double(com.thoughtworks.go.config.materials.git.GitMaterial)
+        @git_material = double(com.thoughtworks.go.config.git.GitMaterial)
         allow(@material_config_converter).to receive(:toMaterial).and_return(@git_material)
         expect(@git_material).to receive(:checkConnection).with(an_instance_of(CheckConnectionSubprocessExecutionContext)).
-          and_return(com.thoughtworks.go.domain.materials.ValidationBean.valid)
+          and_return(com.thoughtworks.go.config.materials.ValidationBean.valid)
 
         @go_config_service = double(GoConfigService)
         allow(controller).to receive(:go_config_service).and_return(@go_config_service)
@@ -137,10 +137,10 @@ describe ApiV1::Admin::Internal::MaterialTestController do
       end
 
       it 'does not perform parameter expansion if pipeline_name param is blank' do
-        @git_material = double(com.thoughtworks.go.config.materials.git.GitMaterial)
+        @git_material = double(com.thoughtworks.go.config.git.GitMaterial)
         allow(@material_config_converter).to receive(:toMaterial).and_return(@git_material)
         expect(@git_material).to receive(:checkConnection).with(an_instance_of(CheckConnectionSubprocessExecutionContext)).
-          and_return(com.thoughtworks.go.domain.materials.ValidationBean.valid)
+          and_return(com.thoughtworks.go.config.materials.ValidationBean.valid)
 
         post_with_api_header :test, params:{
           type:          'git',

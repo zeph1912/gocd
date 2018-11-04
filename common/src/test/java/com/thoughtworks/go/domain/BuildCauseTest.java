@@ -17,13 +17,13 @@
 package com.thoughtworks.go.domain;
 
 import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.materials.svn.SvnMaterial;
+import com.thoughtworks.go.config.svn.SvnMaterial;
 import com.thoughtworks.go.config.remote.ConfigRepoConfig;
 import com.thoughtworks.go.config.remote.RepoConfigOrigin;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
-import com.thoughtworks.go.domain.buildcause.BuildCauseOutOfDateException;
-import com.thoughtworks.go.domain.materials.MaterialConfig;
-import com.thoughtworks.go.domain.materials.Modification;
+import com.thoughtworks.go.config.buildcause.BuildCause;
+import com.thoughtworks.go.config.buildcause.BuildCauseOutOfDateException;
+import com.thoughtworks.go.config.materials.MaterialConfig;
+import com.thoughtworks.go.config.materials.Modification;
 import static com.thoughtworks.go.helper.ModificationsMother.oneModifiedFile;
 import com.thoughtworks.go.helper.MaterialsMother;
 import static org.hamcrest.core.Is.is;

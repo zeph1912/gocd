@@ -21,7 +21,7 @@ import com.thoughtworks.go.config.Agents;
 import com.thoughtworks.go.domain.AgentInstance;
 import com.thoughtworks.go.domain.AgentStatus;
 import com.thoughtworks.go.domain.NullAgentInstance;
-import com.thoughtworks.go.domain.exception.MaxPendingAgentsLimitReachedException;
+import com.thoughtworks.go.config.exception.MaxPendingAgentsLimitReachedException;
 import com.thoughtworks.go.listener.AgentStatusChangeListener;
 import com.thoughtworks.go.server.service.AgentBuildingInfo;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;

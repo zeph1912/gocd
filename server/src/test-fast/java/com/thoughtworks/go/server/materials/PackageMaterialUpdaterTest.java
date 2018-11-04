@@ -18,16 +18,13 @@ package com.thoughtworks.go.server.materials;
 
 import java.io.File;
 
-import com.thoughtworks.go.config.materials.PackageMaterial;
-import com.thoughtworks.go.domain.MaterialInstance;
-import com.thoughtworks.go.domain.materials.Modifications;
-import com.thoughtworks.go.domain.packagerepository.ConfigurationPropertyMother;
+import com.thoughtworks.go.config.materials.Modifications;
+import com.thoughtworks.go.config.packagerepository.ConfigurationPropertyMother;
 import com.thoughtworks.go.helper.MaterialsMother;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.ArgumentMatchers;
 import org.mockito.Mock;
 import org.springframework.transaction.support.TransactionCallback;
 

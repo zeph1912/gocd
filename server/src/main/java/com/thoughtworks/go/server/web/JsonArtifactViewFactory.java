@@ -17,7 +17,7 @@
 package com.thoughtworks.go.server.web;
 
 import static com.thoughtworks.go.server.controller.actions.JsonAction.jsonFound;
-import com.thoughtworks.go.domain.JobIdentifier;
+
 import org.springframework.web.servlet.ModelAndView;
 
 class JsonArtifactViewFactory implements ArtifactFolderViewFactory {

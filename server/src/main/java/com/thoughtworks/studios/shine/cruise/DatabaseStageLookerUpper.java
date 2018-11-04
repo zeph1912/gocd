@@ -16,7 +16,6 @@
 
 package com.thoughtworks.studios.shine.cruise;
 
-import com.thoughtworks.go.domain.StageIdentifier;
 import com.thoughtworks.go.server.dao.StageDao;
 import com.thoughtworks.studios.shine.cruise.stage.StageLookerUpper;
 import org.springframework.beans.factory.annotation.Autowired;

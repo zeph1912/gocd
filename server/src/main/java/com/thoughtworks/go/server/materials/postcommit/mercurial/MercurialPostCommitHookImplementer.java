@@ -16,8 +16,8 @@
 
 package com.thoughtworks.go.server.materials.postcommit.mercurial;
 
-import com.thoughtworks.go.config.materials.mercurial.HgMaterial;
-import com.thoughtworks.go.domain.materials.Material;
+import com.thoughtworks.go.config.mercurial.HgMaterial;
+import com.thoughtworks.go.config.materials.Material;
 import com.thoughtworks.go.server.materials.postcommit.PostCommitHookImplementer;
 import com.thoughtworks.go.server.materials.postcommit.UrlMatchers;
 import org.apache.commons.lang3.StringUtils;

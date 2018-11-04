@@ -16,7 +16,7 @@
 
 package com.thoughtworks.go.server.domain.xml;
 
-import com.thoughtworks.go.domain.materials.Material;
+import com.thoughtworks.go.config.materials.Material;
 import com.thoughtworks.go.helper.MaterialsMother;
 import org.junit.Test;
 

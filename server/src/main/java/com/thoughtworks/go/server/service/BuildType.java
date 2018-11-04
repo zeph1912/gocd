@@ -16,9 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.domain.MaterialRevisions;
-import com.thoughtworks.go.domain.buildcause.BuildCause;
 import com.thoughtworks.go.server.service.result.OperationResult;
 import com.thoughtworks.go.serverhealth.ServerHealthService;
 

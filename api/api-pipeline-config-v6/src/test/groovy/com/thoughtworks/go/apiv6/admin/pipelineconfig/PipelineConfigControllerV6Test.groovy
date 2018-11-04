@@ -20,19 +20,19 @@ import com.thoughtworks.go.api.SecurityTestTrait
 import com.thoughtworks.go.api.spring.ApiAuthenticationHelper
 import com.thoughtworks.go.api.util.HaltApiMessages
 import com.thoughtworks.go.apiv6.admin.pipelineconfig.representers.PipelineConfigRepresenter
-import com.thoughtworks.go.config.PipelineConfig
+
 import com.thoughtworks.go.config.materials.PackageMaterialConfig
 import com.thoughtworks.go.config.materials.PasswordDeserializer
 import com.thoughtworks.go.config.materials.PluggableSCMMaterialConfig
 import com.thoughtworks.go.config.materials.git.GitMaterialConfig
-import com.thoughtworks.go.config.remote.ConfigRepoConfig
+
 import com.thoughtworks.go.config.remote.FileConfigOrigin
-import com.thoughtworks.go.config.remote.RepoConfigOrigin
+
 import com.thoughtworks.go.domain.packagerepository.PackageRepositoryMother
 import com.thoughtworks.go.domain.scm.SCMMother
 import com.thoughtworks.go.helper.GoConfigMother
 import com.thoughtworks.go.helper.PipelineConfigMother
-import com.thoughtworks.go.server.domain.Username
+import com.thoughtworks.go.config.Username
 import com.thoughtworks.go.server.service.EntityHashingService
 import com.thoughtworks.go.server.service.PipelineConfigService
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult

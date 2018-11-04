@@ -17,9 +17,9 @@
 package com.thoughtworks.go.buildsession;
 
 import com.thoughtworks.go.config.materials.SubprocessExecutionContext;
-import com.thoughtworks.go.config.materials.tfs.TfsMaterial;
+import com.thoughtworks.go.config.tfs.TfsMaterial;
 import com.thoughtworks.go.domain.BuildCommand;
-import com.thoughtworks.go.domain.materials.RevisionContext;
+import com.thoughtworks.go.config.materials.RevisionContext;
 import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.util.command.ConsoleOutputStreamConsumer;
 import com.thoughtworks.go.util.command.ProcessOutputStreamConsumer;

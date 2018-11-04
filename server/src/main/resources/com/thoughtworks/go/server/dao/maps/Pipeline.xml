@@ -15,7 +15,7 @@
   -->
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Pipeline">
-    <resultMap id="select-pipeline-identifier" type="com.thoughtworks.go.domain.PipelineIdentifier">
+    <resultMap id="select-pipeline-identifier" type="com.thoughtworks.go.config.PipelineIdentifier">
         <result property="name" column="pipelineName"/>
         <result property="label" column="label"/>
         <result property="counter" column="pipelineCounter"/>
@@ -27,7 +27,7 @@
         <result property="paused" column="paused"/>
     </resultMap>
 
-    <resultMap id="select-pipeline" type="com.thoughtworks.go.domain.Pipeline">
+    <resultMap id="select-pipeline" type="com.thoughtworks.go.config.Pipeline">
         <result property="id" column="pipelineId"/>
         <result property="name" column="pipelineName"/>
         <result property="buildCause" column="buildCauseType"/>
@@ -37,7 +37,7 @@
         <result property="naturalOrder" column="naturalOrder"/>
     </resultMap>
 
-    <resultMap id="select-pipeline-with-approver" type="com.thoughtworks.go.domain.Pipeline">
+    <resultMap id="select-pipeline-with-approver" type="com.thoughtworks.go.config.Pipeline">
         <result property="id" column="pipelineId"/>
         <result property="name" column="pipelineName"/>
         <result property="buildCause" column="buildCauseType"/>
@@ -60,7 +60,7 @@
     </resultMap>
 
 
-    <resultMap id="stage-identifier" type="com.thoughtworks.go.domain.StageIdentifier">
+    <resultMap id="stage-identifier" type="com.thoughtworks.go.config.StageIdentifier">
         <result property="pipelineName" column="pipelineName"/>
         <result property="pipelineCounter" column="pipelineCounter"/>
         <result property="pipelineLabel" column="pipelineLabel"/>
@@ -68,7 +68,7 @@
         <result property="stageCounter" column="stageCounter"/>
     </resultMap>
 
-    <parameterMap id="insert-pipeline" type="com.thoughtworks.go.domain.Pipeline">
+    <parameterMap id="insert-pipeline" type="com.thoughtworks.go.config.Pipeline">
         <parameter property="name"/>
         <parameter property="counter"/>
         <parameter property="buildCause"/>

@@ -17,11 +17,8 @@
 package com.thoughtworks.go.apiv6.shared.representers.stages
 
 import com.thoughtworks.go.api.util.GsonTransformer
-import com.thoughtworks.go.config.ArtifactPropertyConfig
-import com.thoughtworks.go.config.JobConfig
-import com.thoughtworks.go.config.PipelineConfig
-import com.thoughtworks.go.config.PipelineConfigSaveValidationContext
-import com.thoughtworks.go.config.StageConfig
+
+
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 

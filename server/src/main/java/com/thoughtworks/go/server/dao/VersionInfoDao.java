@@ -17,8 +17,6 @@
 package com.thoughtworks.go.server.dao;
 
 
-import com.thoughtworks.go.domain.VersionInfo;
-
 public interface VersionInfoDao {
     void saveOrUpdate(VersionInfo versionInfo);
     VersionInfo findByComponentName(String name);

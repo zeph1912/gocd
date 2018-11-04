@@ -17,12 +17,10 @@
 package com.thoughtworks.go.server.cache;
 
 import ch.qos.logback.classic.Level;
-import com.thoughtworks.go.config.materials.mercurial.HgMaterial;
-import com.thoughtworks.go.domain.MaterialInstance;
+import com.thoughtworks.go.config.mercurial.HgMaterial;
 import com.thoughtworks.go.domain.NullUser;
 import com.thoughtworks.go.helper.MaterialsMother;
 import com.thoughtworks.go.server.transaction.TransactionSynchronizationManager;
-import com.thoughtworks.go.util.LogFixture;
 import net.sf.ehcache.Cache;
 import net.sf.ehcache.CacheManager;
 import net.sf.ehcache.config.CacheConfiguration;

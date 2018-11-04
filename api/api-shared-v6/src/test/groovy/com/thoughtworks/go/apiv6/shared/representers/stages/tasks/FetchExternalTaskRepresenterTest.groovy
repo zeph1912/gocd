@@ -17,8 +17,8 @@
 package com.thoughtworks.go.apiv6.shared.representers.stages.tasks
 
 import com.thoughtworks.go.config.CaseInsensitiveString
-import com.thoughtworks.go.config.FetchPluggableArtifactTask
-import com.thoughtworks.go.domain.config.Configuration
+
+
 import com.thoughtworks.go.domain.packagerepository.ConfigurationPropertyMother
 
 class FetchExternalTaskRepresenterTest implements TaskRepresenterTest{

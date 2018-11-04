@@ -18,6 +18,7 @@ package com.thoughtworks.go.util;
 
 import com.thoughtworks.go.util.command.*;
 import org.apache.commons.io.IOUtils;
+import org.apache.tools.ant.taskdefs.StreamPumper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

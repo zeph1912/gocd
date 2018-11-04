@@ -31,7 +31,7 @@ import com.thoughtworks.go.api.util.MessageJson;
 import com.thoughtworks.go.apiv1.admin.encryption.representers.EncryptedValueRepresenter;
 import com.thoughtworks.go.security.CryptoException;
 import com.thoughtworks.go.security.GoCipher;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.spark.Routes;
 import org.isomorphism.util.FixedIntervalRefillStrategy;
 import org.isomorphism.util.TokenBucket;

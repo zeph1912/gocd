@@ -49,11 +49,11 @@
     <div id='artifacts_<%= scope[:stage_id] %>_job_<%= scope[:index] %>' class='tab-pane'>
       <% artifacts_by_type = scope[:job].artifactConfigs().group_by(&:artifactType) %>
       <label class="artifact_title build_artifact">Build Artifact</label>
-      <% if artifacts_by_type[com.thoughtworks.go.domain.ArtifactType::build].nil? %>
+      <% if artifacts_by_type[com.thoughtworks.go.config.ArtifactType::build].nil? %>
         <span class="no_build_artifact">No build artifacts have been configured</span>
       <% else %>
         <ul class="artifact_key_value_pair build_artifact">
-          <% Array.wrap(artifacts_by_type[com.thoughtworks.go.domain.ArtifactType::build]).each do |build_artifact| %>
+          <% Array.wrap(artifacts_by_type[com.thoughtworks.go.config.ArtifactType::build]).each do |build_artifact| %>
             <li>
               <label>
                 <span class="key">Source</span>
@@ -70,11 +70,11 @@
       <% end %>
 
       <label class="artifact_title test_artifact">Test Artifact</label>
-      <% if artifacts_by_type[com.thoughtworks.go.domain.ArtifactType::test].nil? %>
+      <% if artifacts_by_type[com.thoughtworks.go.config.ArtifactType::test].nil? %>
         <span class="no_test_artifact">No test artifacts have been configured</span>
       <% else %>
         <ul class="artifact_key_value_pair test_artifact">
-          <% Array.wrap(artifacts_by_type[com.thoughtworks.go.domain.ArtifactType::test]).each do |build_artifact| %>
+          <% Array.wrap(artifacts_by_type[com.thoughtworks.go.config.ArtifactType::test]).each do |build_artifact| %>
             <li>
               <label>
                 <span class="key">Source</span>
@@ -91,11 +91,11 @@
       <% end %>
 
       <label class="artifact_title external_artifact">External Artifact</label>
-      <% if artifacts_by_type[com.thoughtworks.go.domain.ArtifactType::external].nil? %>
+      <% if artifacts_by_type[com.thoughtworks.go.config.ArtifactType::external].nil? %>
         <span class="no_external_artifact">No external artifacts have been configured</span>
       <% else %>
         <ul class="artifact_key_value_pair external_artifact">
-          <% Array.wrap(artifacts_by_type[com.thoughtworks.go.domain.ArtifactType::external]).each do |build_artifact| %>
+          <% Array.wrap(artifacts_by_type[com.thoughtworks.go.config.ArtifactType::external]).each do |build_artifact| %>
             <li>
               <label>
                 <span class="key">Artifact ID</span>

@@ -17,7 +17,7 @@
 package com.thoughtworks.go.apiv1.materialsearch.representers;
 
 import com.thoughtworks.go.api.base.OutputListWriter;
-import com.thoughtworks.go.domain.materials.MatchedRevision;
+import com.thoughtworks.go.config.materials.MatchedRevision;
 
 import java.util.List;
 

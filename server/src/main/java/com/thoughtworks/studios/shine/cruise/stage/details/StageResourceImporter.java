@@ -16,10 +16,7 @@
 
 package com.thoughtworks.studios.shine.cruise.stage.details;
 
-import com.thoughtworks.go.domain.JobInstance;
-import com.thoughtworks.go.domain.Stage;
 import com.thoughtworks.go.domain.StageFinder;
-import com.thoughtworks.go.domain.StageIdentifier;
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModel;
 import com.thoughtworks.go.server.domain.xml.PipelineXmlViewModel;
 import com.thoughtworks.go.server.domain.xml.StageXmlViewModel;

@@ -16,11 +16,8 @@
 
 package com.thoughtworks.go.server.valuestreammap;
 
-import com.thoughtworks.go.domain.Stages;
-import com.thoughtworks.go.domain.valuestreammap.Node;
-import com.thoughtworks.go.domain.valuestreammap.ValueStreamMap;
-import com.thoughtworks.go.domain.valuestreammap.PipelineRevision;
-import com.thoughtworks.go.domain.valuestreammap.Revision;
+import com.thoughtworks.go.config.Stages;
+import com.thoughtworks.go.config.valuestreammap.Revision;
 import com.thoughtworks.go.server.dao.StageDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

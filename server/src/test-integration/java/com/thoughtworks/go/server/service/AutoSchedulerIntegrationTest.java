@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.GoConfigDao;
 import com.thoughtworks.go.fixture.ArtifactsDiskIsFull;
 import com.thoughtworks.go.fixture.ConfigWithFreeEditionLicense;
 import com.thoughtworks.go.fixture.PreCondition;

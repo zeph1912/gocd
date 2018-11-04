@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.domain;
 
-import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.helper.StageConfigMother;
 import com.thoughtworks.go.util.ReflectionUtil;
 import org.junit.Test;

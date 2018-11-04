@@ -18,9 +18,6 @@ package com.thoughtworks.go.apiv1.admin.pipelinegroups.representers;
 
 import com.thoughtworks.go.api.base.OutputWriter;
 import com.thoughtworks.go.api.representers.JsonReader;
-import com.thoughtworks.go.config.Authorization;
-import com.thoughtworks.go.config.BasicPipelineConfigs;
-import com.thoughtworks.go.config.PipelineConfigs;
 import com.thoughtworks.go.spark.Routes;
 
 public class PipelineGroupRepresenter {

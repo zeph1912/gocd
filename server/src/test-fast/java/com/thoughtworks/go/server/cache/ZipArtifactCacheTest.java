@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.cache;
 
-import com.thoughtworks.go.domain.JobIdentifier;
 import com.thoughtworks.go.server.service.ArtifactsDirHolder;
 import com.thoughtworks.go.server.web.ArtifactFolder;
 import com.thoughtworks.go.util.TestFileUtil;

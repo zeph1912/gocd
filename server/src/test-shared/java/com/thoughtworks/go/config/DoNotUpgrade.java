@@ -17,7 +17,6 @@
 package com.thoughtworks.go.config;
 
 import com.thoughtworks.go.util.ConfigElementImplementationRegistryMother;
-import com.thoughtworks.go.util.TimeProvider;
 
 import java.io.File;
 

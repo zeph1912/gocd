@@ -17,15 +17,8 @@
 package com.thoughtworks.go.server.service.datasharing;
 
 import com.thoughtworks.go.CurrentGoCDVersion;
-import com.thoughtworks.go.config.AgentConfig;
-import com.thoughtworks.go.config.BasicCruiseConfig;
-import com.thoughtworks.go.config.JobConfig;
-import com.thoughtworks.go.config.PipelineConfig;
 import com.thoughtworks.go.config.elastic.ElasticProfile;
-import com.thoughtworks.go.config.remote.RepoConfigOrigin;
-import com.thoughtworks.go.domain.JobState;
-import com.thoughtworks.go.domain.JobStateTransition;
-import com.thoughtworks.go.domain.UsageStatisticsReporting;
+import com.thoughtworks.go.config.JobState;
 import com.thoughtworks.go.helper.AgentMother;
 import com.thoughtworks.go.helper.GoConfigMother;
 import com.thoughtworks.go.helper.JobConfigMother;

@@ -16,9 +16,9 @@
 
 package com.thoughtworks.go.presentation.pipelinehistory;
 
-import com.thoughtworks.go.domain.materials.NullRevision;
-import com.thoughtworks.go.domain.materials.dependency.DependencyMaterialRevision;
-import com.thoughtworks.go.domain.materials.mercurial.StringRevision;
+import com.thoughtworks.go.config.materials.NullRevision;
+import com.thoughtworks.go.config.materials.dependency.DependencyMaterialRevision;
+import com.thoughtworks.go.config.materials.mercurial.StringRevision;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 

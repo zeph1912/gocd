@@ -650,7 +650,7 @@ describe Admin::PipelinesController do
       allow(@security_service).to receive(:hasViewOrOperatePermissionForPipeline).and_return(true)
       package_material_config = PackageMaterialConfig.new()
       package_material_config.setPackageDefinition(PackageDefinitionMother.create("pkg-id", "package3-name", nil, @repository1))
-      @pipeline = @cruise_config_mother.addPipeline(@cruise_config, "pipeline2", "stage-2", MaterialConfigs.new([package_material_config].to_java(com.thoughtworks.go.domain.materials.MaterialConfig)), ["job-2"].to_java(java.lang.String))
+      @pipeline = @cruise_config_mother.addPipeline(@cruise_config, "pipeline2", "stage-2", MaterialConfigs.new([package_material_config].to_java(com.thoughtworks.go.config.materials.MaterialConfig)), ["job-2"].to_java(java.lang.String))
       @subject = @pipeline
       expect(@go_config_service).to receive(:getCurrentConfig).twice.and_return(GoConfigCloner.new().deepClone(@cruise_config))
 

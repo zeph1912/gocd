@@ -21,7 +21,7 @@ import com.thoughtworks.go.api.spring.ApiAuthenticationHelper
 import com.thoughtworks.go.apiv1.buildcause.representers.BuildCauseRepresenter
 import com.thoughtworks.go.config.CaseInsensitiveString
 import com.thoughtworks.go.helpers.PipelineModelMother
-import com.thoughtworks.go.server.domain.Username
+import com.thoughtworks.go.config.Username
 import com.thoughtworks.go.server.service.PipelineHistoryService
 import com.thoughtworks.go.server.service.result.HttpOperationResult
 import com.thoughtworks.go.server.service.result.OperationResult

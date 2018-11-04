@@ -16,22 +16,20 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.config.ArtifactStore;
-import com.thoughtworks.go.config.ArtifactStores;
 import com.thoughtworks.go.config.update.CreateArtifactStoreConfigCommand;
 import com.thoughtworks.go.config.update.DeleteArtifactStoreConfigCommand;
 import com.thoughtworks.go.config.update.UpdateArtifactStoreConfigCommand;
 import com.thoughtworks.go.plugin.access.artifact.ArtifactExtension;
 import com.thoughtworks.go.plugin.api.response.validation.ValidationError;
 import com.thoughtworks.go.plugin.api.response.validation.ValidationResult;
-import com.thoughtworks.go.server.domain.Username;
+import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import org.hamcrest.MatcherAssert;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 
-import static com.thoughtworks.go.domain.packagerepository.ConfigurationPropertyMother.create;
+import static com.thoughtworks.go.config.packagerepository.ConfigurationPropertyMother.create;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.mockito.ArgumentMatchers.*;

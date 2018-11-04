@@ -17,14 +17,10 @@
 package com.thoughtworks.go.config.crud;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
-import com.thoughtworks.go.config.GoConfigHolder;
-import com.thoughtworks.go.config.PipelineConfig;
-import com.thoughtworks.go.config.exceptions.GoConfigInvalidException;
 import com.thoughtworks.go.config.materials.Filter;
 import com.thoughtworks.go.config.materials.IgnoredFiles;
 import com.thoughtworks.go.config.materials.PluggableSCMMaterialConfig;
-import com.thoughtworks.go.domain.config.Configuration;
-import com.thoughtworks.go.domain.scm.SCM;
+import com.thoughtworks.go.config.scm.SCM;
 import com.thoughtworks.go.plugin.access.scm.*;
 import com.thoughtworks.go.security.GoCipher;
 import com.thoughtworks.go.util.GoConstants;

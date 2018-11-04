@@ -17,7 +17,7 @@ package com.thoughtworks.go.agent;
 
 import com.thoughtworks.go.buildsession.ArtifactsRepository;
 import com.thoughtworks.go.domain.Property;
-import com.thoughtworks.go.domain.exception.ArtifactPublishingException;
+import com.thoughtworks.go.config.exception.ArtifactPublishingException;
 import com.thoughtworks.go.util.*;
 import com.thoughtworks.go.util.command.TaggedStreamConsumer;
 import org.apache.commons.io.FileUtils;

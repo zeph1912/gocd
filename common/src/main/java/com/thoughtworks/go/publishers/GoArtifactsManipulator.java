@@ -20,7 +20,7 @@ import com.thoughtworks.go.domain.DownloadAction;
 import com.thoughtworks.go.domain.JobIdentifier;
 import com.thoughtworks.go.domain.Property;
 import com.thoughtworks.go.domain.builder.FetchArtifactBuilder;
-import com.thoughtworks.go.domain.exception.ArtifactPublishingException;
+import com.thoughtworks.go.config.exception.ArtifactPublishingException;
 import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.remote.work.ConsoleOutputTransmitter;
 import com.thoughtworks.go.remote.work.RemoteConsoleAppender;

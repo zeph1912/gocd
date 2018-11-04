@@ -16,10 +16,6 @@
 
 package com.thoughtworks.go.server.service.plugins.validators.authorization;
 
-import com.thoughtworks.go.config.PluginRoleConfig;
-import com.thoughtworks.go.domain.config.ConfigurationKey;
-import com.thoughtworks.go.domain.config.ConfigurationProperty;
-import com.thoughtworks.go.domain.config.ConfigurationValue;
 import com.thoughtworks.go.plugin.access.PluginNotFoundException;
 import com.thoughtworks.go.plugin.access.authorization.AuthorizationExtension;
 import com.thoughtworks.go.plugin.api.response.validation.ValidationError;

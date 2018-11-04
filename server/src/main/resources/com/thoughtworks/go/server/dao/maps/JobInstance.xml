@@ -16,7 +16,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="BuildInstance">
     <!-- The select-build-map needs to be merged with join-build-map -->
-    <resultMap id="select-build-map" type="com.thoughtworks.go.domain.JobInstance">
+    <resultMap id="select-build-map" type="com.thoughtworks.go.config.JobInstance">
         <id property="id" column="buildId"/>
         <result property="stageId" column="stageId"/>
         <result property="name" column="name"/>
@@ -31,15 +31,15 @@
         <result property="rerun" column="rerun"/>
     </resultMap>
 
-    <resultMap id="select-build-with-identifier" type="com.thoughtworks.go.domain.JobInstance" extends="select-build-map">
+    <resultMap id="select-build-with-identifier" type="com.thoughtworks.go.config.JobInstance" extends="select-build-map">
         <collection property="identifier" resultMap="BuildInstance.jobIdentifier"/>
     </resultMap>
 
-    <resultMap id="select-build-with-identifier-transitions" type="com.thoughtworks.go.domain.JobInstance" extends="select-build-with-identifier">
+    <resultMap id="select-build-with-identifier-transitions" type="com.thoughtworks.go.config.JobInstance" extends="select-build-with-identifier">
         <collection property="transitions" resultMap="BuildStateTransition.referenced-build-transition"/>
     </resultMap>
 
-    <resultMap id="jobIdentifier" type="com.thoughtworks.go.domain.JobIdentifier">
+    <resultMap id="jobIdentifier" type="com.thoughtworks.go.config.JobIdentifier">
         <result property="pipelineName" column="pipelineName"/>
         <result property="pipelineCounter" column="pipelineCounter"/>
         <result property="pipelineLabel" column="pipelineLabel"/>
@@ -50,15 +50,15 @@
         <result property="rerunOfCounter" column="rerunOfCounter"/>
     </resultMap>
 
-    <resultMap id="join-build-map" type="com.thoughtworks.go.domain.JobInstance" extends="select-build-map">
+    <resultMap id="join-build-map" type="com.thoughtworks.go.config.JobInstance" extends="select-build-map">
         <collection property="transitions" resultMap="BuildStateTransition.referenced-build-transition"/>
     </resultMap>
 
-    <resultMap id="join-build-map-with-identifier" type="com.thoughtworks.go.domain.JobInstance" extends="select-build-with-identifier">
+    <resultMap id="join-build-map-with-identifier" type="com.thoughtworks.go.config.JobInstance" extends="select-build-with-identifier">
         <collection property="transitions" resultMap="BuildStateTransition.referenced-build-transition"/>
     </resultMap>
 
-    <parameterMap id="insert-build-param" type="com.thoughtworks.go.domain.JobInstance">
+    <parameterMap id="insert-build-param" type="com.thoughtworks.go.config.JobInstance">
         <parameter property="name"/>
         <parameter property="scheduledDate" javaType="date" jdbcType="TIMESTAMP"/>
         <parameter property="state"/>
@@ -121,7 +121,7 @@
         LIMIT 1
     </select>
 
-    <resultMap id="select-job-plan" type="com.thoughtworks.go.domain.DefaultJobPlan">
+    <resultMap id="select-job-plan" type="com.thoughtworks.go.config.DefaultJobPlan">
         <id property="jobId" column="buildId" typeHandler="com.thoughtworks.go.server.dao.handlers.SetZeroIfNull"/>
         <result property="agentUuid" column="agentUuid"/>
         <result property="fetchMaterials" column="fetchMaterials"/>
@@ -225,7 +225,7 @@
         SELECT count(*) = 1 FROM builds WHERE id = #{value}
     </select>
 
-    <update id="updateAssignedInfo" parameterType="com.thoughtworks.go.domain.JobInstance">
+    <update id="updateAssignedInfo" parameterType="com.thoughtworks.go.config.JobInstance">
         UPDATE builds SET state=#{state}, agentUuid=#{agentUuid} WHERE id = #{id}
     </update>
 
@@ -233,7 +233,7 @@
         UPDATE builds SET state=#{state} WHERE id = #{id}
     </update>
 
-    <update id="updateResult" parameterType="com.thoughtworks.go.domain.JobInstance">
+    <update id="updateResult" parameterType="com.thoughtworks.go.config.JobInstance">
         UPDATE builds SET result=#{result} WHERE id = #{id}
     </update>
 

@@ -17,15 +17,12 @@
 package com.thoughtworks.go.apiv6.admin.pipelineconfig.representers.materials
 
 import com.thoughtworks.go.apiv6.shared.representers.stages.ConfigHelperOptions
-import com.thoughtworks.go.config.BasicCruiseConfig
-import com.thoughtworks.go.config.PipelineConfig
-import com.thoughtworks.go.config.PipelineConfigSaveValidationContext
+
 import com.thoughtworks.go.config.materials.MaterialConfigs
 import com.thoughtworks.go.config.materials.PasswordDeserializer
 import com.thoughtworks.go.config.materials.tfs.TfsMaterialConfig
 import com.thoughtworks.go.helper.MaterialConfigsMother
 import com.thoughtworks.go.security.GoCipher
-import com.thoughtworks.go.util.command.HgUrlArgument
 
 import static org.mockito.ArgumentMatchers.any
 import static org.mockito.Mockito.mock

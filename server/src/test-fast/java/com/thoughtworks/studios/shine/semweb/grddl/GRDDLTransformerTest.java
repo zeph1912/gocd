@@ -18,7 +18,6 @@ package com.thoughtworks.studios.shine.semweb.grddl;
 
 import com.thoughtworks.studios.shine.cruise.GoOntology;
 import com.thoughtworks.studios.shine.semweb.Graph;
-import com.thoughtworks.studios.shine.semweb.sesame.InMemoryTempGraphFactory;
 import org.junit.Test;
 
 import javax.xml.transform.Templates;

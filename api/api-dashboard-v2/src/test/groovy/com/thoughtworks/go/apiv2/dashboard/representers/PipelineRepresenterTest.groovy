@@ -25,7 +25,7 @@ import com.thoughtworks.go.config.security.users.Everyone
 import com.thoughtworks.go.config.security.users.NoOne
 import com.thoughtworks.go.helper.MaterialConfigsMother
 import com.thoughtworks.go.server.dashboard.Counter
-import com.thoughtworks.go.server.dashboard.GoDashboardPipeline
+
 import com.thoughtworks.go.config.Username
 import com.thoughtworks.go.spark.util.SecureRandom
 import org.junit.jupiter.api.Nested

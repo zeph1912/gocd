@@ -26,7 +26,6 @@ import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.security.Registration;
 import com.thoughtworks.go.server.service.AgentBuildingInfo;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.reflect.FieldUtils;
 import org.junit.After;

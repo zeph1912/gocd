@@ -24,7 +24,6 @@ import com.thoughtworks.go.fixture.PipelineWithTwoStages;
 import com.thoughtworks.go.helper.MaterialConfigsMother;
 import com.thoughtworks.go.helper.ModificationsMother;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
-import com.thoughtworks.go.server.dao.PipelineDao;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.service.GoConfigService;
 import com.thoughtworks.go.server.service.JobInstanceService;

@@ -35,7 +35,6 @@ import com.thoughtworks.go.plugin.infra.PluginRequestProcessorRegistry;
 import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
 import com.thoughtworks.go.util.FileUtil;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.util.URLService;
 import com.thoughtworks.go.util.ZipUtil;
 import com.thoughtworks.go.util.command.CruiseControlException;

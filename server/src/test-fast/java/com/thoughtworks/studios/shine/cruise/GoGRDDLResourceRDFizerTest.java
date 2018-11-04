@@ -19,7 +19,6 @@ package com.thoughtworks.studios.shine.cruise;
 import java.io.ByteArrayInputStream;
 
 import com.thoughtworks.studios.shine.semweb.grddl.XSLTTransformerRegistry;
-import com.thoughtworks.studios.shine.semweb.sesame.InMemoryTempGraphFactory;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.io.SAXReader;

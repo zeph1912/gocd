@@ -25,8 +25,6 @@ import com.thoughtworks.go.helper.BuildPlanMother;
 import com.thoughtworks.go.helper.PipelineMother;
 import com.thoughtworks.go.helper.StageConfigMother;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
-import com.thoughtworks.go.server.dao.JobInstanceDao;
-import com.thoughtworks.go.server.dao.StageDao;
 import com.thoughtworks.go.server.domain.JobStatusListener;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.scheduling.ScheduleHelper;

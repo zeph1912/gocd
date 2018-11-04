@@ -19,7 +19,6 @@ package com.thoughtworks.go.plugin.infra.listeners;
 import com.thoughtworks.go.plugin.infra.GoPluginOSGiFramework;
 import com.thoughtworks.go.plugin.infra.monitor.PluginFileDetails;
 import com.thoughtworks.go.plugin.infra.plugininfo.*;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.io.FileUtils;
 import org.hamcrest.CoreMatchers;
 import org.junit.Before;

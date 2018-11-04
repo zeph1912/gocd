@@ -25,7 +25,6 @@ import com.thoughtworks.go.security.CryptoException;
 import com.thoughtworks.go.security.DESCipherProvider;
 import com.thoughtworks.go.security.GoCipher;
 import com.thoughtworks.go.util.ReflectionUtil;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.io.FileUtils;
 import org.joda.time.DateTime;
 import org.junit.After;

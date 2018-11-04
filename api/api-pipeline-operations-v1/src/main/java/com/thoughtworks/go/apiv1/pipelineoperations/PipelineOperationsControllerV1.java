@@ -29,7 +29,6 @@ import com.thoughtworks.go.apiv1.pipelineoperations.representers.TriggerWithOpti
 import com.thoughtworks.go.apiv6.shared.exceptions.InvalidGoCipherTextRuntimeException;
 import com.thoughtworks.go.config.exceptions.RecordNotFoundException;
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModel;
-import com.thoughtworks.go.server.domain.PipelineScheduleOptions;
 import com.thoughtworks.go.server.service.*;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import com.thoughtworks.go.server.service.result.HttpOperationResult;

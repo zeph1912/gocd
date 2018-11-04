@@ -29,7 +29,6 @@ import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
 import com.thoughtworks.go.server.service.ElasticAgentRuntimeInfo;
 import com.thoughtworks.go.util.SubprocessLogger;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.util.SystemUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

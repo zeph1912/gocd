@@ -20,7 +20,6 @@ import com.thoughtworks.go.config.StageState;
 import com.thoughtworks.go.server.service.PipelineInstanceLoader;
 import com.thoughtworks.go.server.service.StageService;
 import com.thoughtworks.go.util.ReflectionUtil;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.studios.shine.cruise.stage.details.StageResourceImporter;
 import com.thoughtworks.studios.shine.cruise.stage.details.StageStorage;
 import com.thoughtworks.studios.shine.cruise.stage.feeds.StageAtomFeedsReader;

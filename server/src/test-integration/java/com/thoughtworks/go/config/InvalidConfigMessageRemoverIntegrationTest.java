@@ -19,7 +19,6 @@ package com.thoughtworks.go.config;
 import com.thoughtworks.go.server.service.GoConfigService;
 import com.thoughtworks.go.serverhealth.*;
 import com.thoughtworks.go.util.GoConfigFileHelper;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;

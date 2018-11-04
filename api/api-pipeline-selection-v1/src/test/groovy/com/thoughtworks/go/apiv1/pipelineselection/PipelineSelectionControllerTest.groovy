@@ -24,7 +24,7 @@ import com.thoughtworks.go.apiv1.pipelineselection.representers.PipelinesDataRes
 
 import com.thoughtworks.go.config.CaseInsensitiveString
 
-import com.thoughtworks.go.server.domain.user.PipelineSelections
+
 import com.thoughtworks.go.server.service.PipelineConfigService
 import com.thoughtworks.go.server.service.PipelineSelectionsService
 import com.thoughtworks.go.spark.ControllerTrait
@@ -32,7 +32,7 @@ import com.thoughtworks.go.spark.Routes
 import com.thoughtworks.go.spark.SecurityServiceTrait
 import com.thoughtworks.go.spark.util.SecureRandom
 import com.thoughtworks.go.testhelpers.FiltersHelper
-import com.thoughtworks.go.util.SystemEnvironment
+
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 

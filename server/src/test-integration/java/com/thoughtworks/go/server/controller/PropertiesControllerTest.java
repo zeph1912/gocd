@@ -25,7 +25,6 @@ import com.thoughtworks.go.server.service.RestfulService;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import com.thoughtworks.go.util.Csv;
 import com.thoughtworks.go.util.GoConfigFileHelper;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;

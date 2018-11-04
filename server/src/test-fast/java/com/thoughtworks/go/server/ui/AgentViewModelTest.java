@@ -21,7 +21,6 @@ import com.thoughtworks.go.domain.AgentRuntimeStatus;
 import com.thoughtworks.go.domain.DiskSpace;
 import com.thoughtworks.go.helper.AgentInstanceMother;
 import com.thoughtworks.go.util.ReflectionUtil;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Test;
 
 import java.util.*;

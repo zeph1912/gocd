@@ -19,7 +19,6 @@ package com.thoughtworks.go.server.service;
 import com.thoughtworks.go.config.Property;
 import com.thoughtworks.go.fixture.PipelineWithTwoStages;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
-import com.thoughtworks.go.server.dao.PropertyDao;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import com.thoughtworks.go.util.Csv;

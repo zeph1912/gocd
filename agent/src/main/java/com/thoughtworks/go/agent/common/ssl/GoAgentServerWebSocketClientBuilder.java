@@ -17,7 +17,6 @@
 package com.thoughtworks.go.agent.common.ssl;
 
 import com.thoughtworks.go.util.SslVerificationMode;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.eclipse.jetty.util.ssl.SslContextFactory;
 import org.eclipse.jetty.websocket.client.WebSocketClient;
 

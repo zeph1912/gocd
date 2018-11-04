@@ -19,7 +19,6 @@ import com.thoughtworks.go.domain.BuildCommand;
 import com.thoughtworks.go.domain.ChecksumFileHandler;
 import com.thoughtworks.go.domain.FileHandler;
 import com.thoughtworks.go.util.FileUtil;
-import com.thoughtworks.go.util.TempFiles;
 import com.thoughtworks.go.util.URLService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

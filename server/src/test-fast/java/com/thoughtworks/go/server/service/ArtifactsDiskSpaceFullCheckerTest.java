@@ -23,7 +23,6 @@ import com.thoughtworks.go.config.ServerSiteUrlConfig;
 import com.thoughtworks.go.fixture.ArtifactsDiskIsFull;
 import com.thoughtworks.go.server.messaging.SendEmailMessage;
 import com.thoughtworks.go.server.service.result.ServerHealthStateOperationResult;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -32,7 +31,6 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.verifyNoMoreInteractions;
 import static org.mockito.Mockito.when;
 
 public class ArtifactsDiskSpaceFullCheckerTest {

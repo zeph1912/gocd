@@ -18,7 +18,6 @@ package com.thoughtworks.go.apiv1.admin.backups.representers;
 
 import com.thoughtworks.go.api.base.OutputWriter;
 import com.thoughtworks.go.apiv1.user.representers.UserSummaryRepresenter;
-import com.thoughtworks.go.server.domain.ServerBackup;
 import com.thoughtworks.go.spark.Routes;
 
 public class BackupRepresenter {

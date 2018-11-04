@@ -25,7 +25,6 @@ import com.thoughtworks.go.remote.work.artifact.ArtifactsPublisher;
 import com.thoughtworks.go.server.service.AgentBuildingInfo;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
 import com.thoughtworks.go.util.ProcessManager;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.util.command.*;
 import com.thoughtworks.go.work.DefaultGoPublisher;
 import com.thoughtworks.go.work.GoPublisher;

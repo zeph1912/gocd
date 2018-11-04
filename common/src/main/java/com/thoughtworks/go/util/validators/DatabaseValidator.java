@@ -20,8 +20,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.zip.ZipInputStream;
 
-import com.thoughtworks.go.util.SystemEnvironment;
-
 public class DatabaseValidator extends ZipValidator {
 
     public Validation validate(Validation validation) {

@@ -17,18 +17,13 @@
 package com.thoughtworks.go.plugin.infra;
 
 import com.thoughtworks.go.plugin.api.GoPlugin;
-import com.thoughtworks.go.plugin.api.request.DefaultGoPluginApiRequest;
-import com.thoughtworks.go.plugin.api.response.GoPluginApiResponse;
 import com.thoughtworks.go.plugin.infra.plugininfo.DefaultPluginRegistry;
 import com.thoughtworks.go.plugin.infra.plugininfo.GoPluginDescriptor;
 import com.thoughtworks.go.util.ReflectionUtil;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.util.ZipUtil;
 import org.apache.commons.io.FileUtils;
-import org.apache.felix.framework.BundleWiringImpl;
 import org.apache.felix.framework.BundleWiringImpl.BundleClassLoader;
 import org.apache.felix.framework.util.FelixConstants;
-import org.hamcrest.MatcherAssert;
 import org.junit.*;
 import org.junit.contrib.java.lang.system.RestoreSystemProperties;
 import org.junit.rules.TemporaryFolder;

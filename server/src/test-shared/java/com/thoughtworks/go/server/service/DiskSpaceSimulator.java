@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.util.SystemEnvironment;
-
 import java.io.File;
 
 import static com.thoughtworks.go.util.SystemEnvironment.ARTIFACT_FULL_SIZE_LIMIT;

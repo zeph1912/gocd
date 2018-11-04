@@ -32,7 +32,6 @@ import com.thoughtworks.go.plugin.domain.common.VerifyConnectionResponse;
 import com.thoughtworks.go.plugin.infra.plugininfo.GoPluginDescriptor;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
-import com.thoughtworks.go.server.ui.AuthPluginInfoViewModel;
 import org.junit.Before;
 import org.junit.Test;
 

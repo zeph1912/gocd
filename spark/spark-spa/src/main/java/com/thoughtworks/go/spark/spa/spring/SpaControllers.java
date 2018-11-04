@@ -25,7 +25,6 @@ import com.thoughtworks.go.spark.SparkController;
 import com.thoughtworks.go.spark.spa.*;
 import com.thoughtworks.go.spark.spring.SPAAuthenticationHelper;
 import com.thoughtworks.go.spark.spring.SparkSpringController;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

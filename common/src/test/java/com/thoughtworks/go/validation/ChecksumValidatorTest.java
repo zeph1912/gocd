@@ -21,7 +21,6 @@ import java.io.IOException;
 
 import com.thoughtworks.go.agent.ChecksumValidationPublisher;
 import com.thoughtworks.go.domain.ArtifactMd5Checksums;
-import com.thoughtworks.go.util.CachedDigestUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

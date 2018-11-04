@@ -18,12 +18,10 @@ package com.thoughtworks.go.server.materials;
 
 import com.thoughtworks.go.server.cronjob.GoDiskSpaceMonitor;
 import com.thoughtworks.go.server.messaging.GoMessageListener;
-import com.thoughtworks.go.server.perf.MDUPerformanceLogger;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.service.MaterialExpansionService;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import com.thoughtworks.go.serverhealth.ServerHealthService;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;

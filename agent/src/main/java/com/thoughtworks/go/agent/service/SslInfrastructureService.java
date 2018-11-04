@@ -25,7 +25,6 @@ import com.thoughtworks.go.security.KeyStoreManager;
 import com.thoughtworks.go.security.Registration;
 import com.thoughtworks.go.security.RegistrationJSONizer;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.util.SystemUtil;
 import com.thoughtworks.go.util.URLService;
 import org.apache.commons.io.FileUtils;

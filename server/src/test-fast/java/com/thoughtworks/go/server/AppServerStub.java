@@ -15,8 +15,6 @@
  */
 package com.thoughtworks.go.server;
 
-import com.thoughtworks.go.util.SystemEnvironment;
-
 import javax.net.ssl.SSLSocketFactory;
 import java.util.HashMap;
 

@@ -20,7 +20,6 @@ import com.thoughtworks.go.domain.AgentRuntimeStatus;
 import com.thoughtworks.go.helper.AgentMother;
 import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.remote.work.NoWork;
-import com.thoughtworks.go.server.perf.WorkAssignmentPerformanceLogger;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
 import com.thoughtworks.go.server.service.BuildAssignmentService;
 import com.thoughtworks.go.work.FakeWork;

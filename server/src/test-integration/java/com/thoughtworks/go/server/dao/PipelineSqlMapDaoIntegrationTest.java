@@ -42,7 +42,6 @@ import com.thoughtworks.go.server.service.ScheduleTestUtil;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import com.thoughtworks.go.util.GoConfigFileHelper;
 import com.thoughtworks.go.util.GoConstants;
-import com.thoughtworks.go.util.TestingClock;
 import org.apache.commons.lang3.StringUtils;
 import org.hamcrest.BaseMatcher;
 import org.hamcrest.Description;

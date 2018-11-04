@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.agent;
 
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.websocket.Message;
 import com.thoughtworks.go.websocket.MessageCallback;
 import com.thoughtworks.go.websocket.MessageEncoding;

@@ -38,7 +38,6 @@ import com.thoughtworks.go.config.packagerepository.PackageRepository;
 import com.thoughtworks.go.config.packagerepository.PackageRepositoryMother;
 import com.thoughtworks.go.config.scm.SCMMother;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
-import com.thoughtworks.go.server.dao.PipelineSqlMapDao;
 import com.thoughtworks.go.server.database.DatabaseStrategy;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.MaterialExpansionService;

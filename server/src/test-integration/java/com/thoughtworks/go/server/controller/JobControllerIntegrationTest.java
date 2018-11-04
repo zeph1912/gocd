@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.controller;
 
 import com.thoughtworks.go.ClearSingleton;
-import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.elastic.ElasticProfile;
 import com.thoughtworks.go.fixture.PipelineWithTwoStages;
 import com.thoughtworks.go.plugin.access.elastic.ElasticAgentMetadataStore;
@@ -25,15 +24,11 @@ import com.thoughtworks.go.plugin.domain.elastic.Capabilities;
 import com.thoughtworks.go.plugin.domain.elastic.ElasticAgentPluginInfo;
 import com.thoughtworks.go.plugin.infra.plugininfo.GoPluginDescriptor;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
-import com.thoughtworks.go.server.dao.JobAgentMetadataDao;
-import com.thoughtworks.go.server.dao.JobInstanceDao;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.presentation.models.JobDetailPresentationModel;
-import com.thoughtworks.go.server.service.*;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import com.thoughtworks.go.util.GoConfigFileHelper;
 import com.thoughtworks.go.util.GoConstants;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;

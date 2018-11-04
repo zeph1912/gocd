@@ -21,7 +21,6 @@ import com.thoughtworks.go.plugin.api.request.DefaultGoPluginApiRequest;
 import com.thoughtworks.go.plugin.infra.listeners.DefaultPluginJarChangeListener;
 import com.thoughtworks.go.plugin.infra.monitor.PluginFileDetails;
 import com.thoughtworks.go.plugin.infra.plugininfo.GoPluginDescriptor;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.io.FileUtils;
 import org.junit.*;
 import org.junit.contrib.java.lang.system.RestoreSystemProperties;

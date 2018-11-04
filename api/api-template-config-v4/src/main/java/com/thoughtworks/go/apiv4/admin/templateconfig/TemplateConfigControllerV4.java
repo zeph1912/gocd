@@ -32,7 +32,6 @@ import com.thoughtworks.go.config.TemplateToPipelines;
 import com.thoughtworks.go.config.exceptions.RecordNotFoundException;
 import com.thoughtworks.go.i18n.LocalizedMessage;
 import com.thoughtworks.go.config.Username;
-import com.thoughtworks.go.server.newsecurity.utils.SessionUtils;
 import com.thoughtworks.go.server.service.EntityHashingService;
 import com.thoughtworks.go.server.service.TemplateConfigService;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;

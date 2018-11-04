@@ -20,7 +20,6 @@ import com.thoughtworks.go.server.domain.Version;
 import com.thoughtworks.go.serverhealth.HealthStateLevel;
 import com.thoughtworks.go.serverhealth.ServerHealthService;
 import com.thoughtworks.go.serverhealth.ServerHealthState;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.util.ZipUtil;
 import org.junit.Before;
 import org.junit.Rule;

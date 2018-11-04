@@ -18,10 +18,8 @@ package com.thoughtworks.go.server.transaction;
 
 import com.thoughtworks.go.domain.User;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
-import com.thoughtworks.go.server.dao.UserDao;
 import com.thoughtworks.go.server.database.DatabaseStrategy;
 import com.thoughtworks.go.util.GoConfigFileHelper;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.After;
 import org.junit.Before;

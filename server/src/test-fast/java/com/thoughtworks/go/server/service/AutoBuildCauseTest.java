@@ -33,7 +33,6 @@ import com.thoughtworks.go.server.domain.PipelineConfigDependencyGraph;
 import com.thoughtworks.go.server.materials.MaterialChecker;
 import com.thoughtworks.go.serverhealth.ServerHealthService;
 import com.thoughtworks.go.util.GoConstants;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

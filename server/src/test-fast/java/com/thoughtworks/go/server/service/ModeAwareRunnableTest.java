@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;

@@ -23,7 +23,6 @@ import com.thoughtworks.go.helper.AgentMother;
 import com.thoughtworks.go.helper.GoConfigMother;
 import com.thoughtworks.go.helper.JobConfigMother;
 import com.thoughtworks.go.helper.PipelineConfigMother;
-import com.thoughtworks.go.server.dao.JobInstanceSqlMapDao;
 import com.thoughtworks.go.server.domain.UsageStatistics;
 import com.thoughtworks.go.server.service.GoConfigService;
 import org.junit.Before;

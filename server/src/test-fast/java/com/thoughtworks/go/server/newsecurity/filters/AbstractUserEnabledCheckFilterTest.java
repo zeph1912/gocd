@@ -21,8 +21,6 @@ import com.thoughtworks.go.domain.User;
 import com.thoughtworks.go.http.mocks.MockHttpServletRequest;
 import com.thoughtworks.go.http.mocks.MockHttpServletResponse;
 import com.thoughtworks.go.server.newsecurity.SessionUtilsHelper;
-import com.thoughtworks.go.server.newsecurity.models.AuthenticationToken;
-import com.thoughtworks.go.server.newsecurity.utils.SessionUtils;
 import com.thoughtworks.go.server.service.SecurityService;
 import com.thoughtworks.go.server.service.UserService;
 import org.junit.jupiter.api.BeforeEach;

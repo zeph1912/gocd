@@ -16,7 +16,6 @@
 package com.thoughtworks.go.buildsession;
 
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
-import com.thoughtworks.go.util.Clock;
 import org.apache.commons.lang3.text.StrLookup;
 
 import java.text.SimpleDateFormat;

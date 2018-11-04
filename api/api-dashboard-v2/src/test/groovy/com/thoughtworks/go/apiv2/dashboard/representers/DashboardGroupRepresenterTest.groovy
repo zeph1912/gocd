@@ -21,13 +21,10 @@ import com.thoughtworks.go.config.remote.FileConfigOrigin
 import com.thoughtworks.go.config.security.Permissions
 import com.thoughtworks.go.config.security.users.Everyone
 import com.thoughtworks.go.config.security.users.NoOne
-import com.thoughtworks.go.server.dashboard.GoDashboardEnvironment
-import com.thoughtworks.go.server.dashboard.GoDashboardPipeline
-import com.thoughtworks.go.server.dashboard.GoDashboardPipelineGroup
-import com.thoughtworks.go.server.dashboard.TimeStampBasedCounter
+
 import com.thoughtworks.go.config.Username
 import com.thoughtworks.go.spark.util.SecureRandom
-import com.thoughtworks.go.util.Clock
+
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 

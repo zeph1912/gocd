@@ -26,7 +26,6 @@ import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModels;
 import com.thoughtworks.go.presentation.pipelinehistory.StageInstanceModels;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.transaction.SqlMapClientTemplate;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.assertj.core.api.Assertions;
 import org.hibernate.SessionFactory;
 import org.junit.Assert;

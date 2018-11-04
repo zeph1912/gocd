@@ -32,7 +32,6 @@ import com.thoughtworks.go.config.materials.tfs.AbstractTfsCommand;
 import com.thoughtworks.go.tfssdk14.wrapper.GoTfsVersionControlClient;
 import com.thoughtworks.go.tfssdk14.wrapper.GoTfsWorkspace;
 import com.thoughtworks.go.util.FileUtil;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.util.command.CommandArgument;
 
 import java.io.File;

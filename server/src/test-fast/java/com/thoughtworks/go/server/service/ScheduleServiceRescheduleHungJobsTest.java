@@ -21,7 +21,6 @@ import com.thoughtworks.go.helper.JobInstanceMother;
 import com.thoughtworks.go.listener.AgentStatusChangeListener;
 import com.thoughtworks.go.server.domain.AgentInstances;
 import com.thoughtworks.go.server.perf.SchedulingPerformanceLogger;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Before;
 import org.junit.Test;
 

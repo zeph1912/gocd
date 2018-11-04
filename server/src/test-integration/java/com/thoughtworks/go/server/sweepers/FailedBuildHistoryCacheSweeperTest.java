@@ -23,7 +23,6 @@ import java.util.TreeSet;
 
 import com.thoughtworks.go.domain.PipelineTimelineEntry;
 import com.thoughtworks.go.helper.StageMother;
-import com.thoughtworks.go.server.ui.ViewCacheKey;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -24,7 +24,6 @@ import com.thoughtworks.go.helper.TestRepo;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
-import com.thoughtworks.go.server.scheduling.TriggerMonitor;
 import com.thoughtworks.go.server.service.result.HttpOperationResult;
 import com.thoughtworks.go.server.service.result.ServerHealthStateOperationResult;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;

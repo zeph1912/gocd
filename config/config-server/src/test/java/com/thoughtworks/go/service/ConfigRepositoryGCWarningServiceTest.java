@@ -17,7 +17,6 @@
 package com.thoughtworks.go.service;
 
 import com.thoughtworks.go.serverhealth.*;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.agent;
 
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.websocket.Action;
 import com.thoughtworks.go.websocket.Message;
 import org.eclipse.jetty.websocket.api.Session;

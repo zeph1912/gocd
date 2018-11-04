@@ -27,7 +27,6 @@ import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import com.thoughtworks.go.server.util.EncryptionHelper;
 import com.thoughtworks.go.spark.Routes.DataSharing;
 import com.thoughtworks.go.spark.spring.SparkSpringController;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

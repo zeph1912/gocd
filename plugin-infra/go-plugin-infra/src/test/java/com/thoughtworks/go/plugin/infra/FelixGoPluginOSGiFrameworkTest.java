@@ -22,7 +22,6 @@ import com.thoughtworks.go.plugin.infra.service.DefaultPluginHealthService;
 import com.thoughtworks.go.plugin.infra.service.DefaultPluginLoggingService;
 import com.thoughtworks.go.plugin.internal.api.LoggingService;
 import com.thoughtworks.go.plugin.internal.api.PluginHealthService;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.felix.framework.util.FelixConstants;
 import org.junit.After;
 import org.junit.Before;

@@ -18,9 +18,7 @@ package com.thoughtworks.go.server.newsecurity;
 
 import com.thoughtworks.go.server.newsecurity.models.AccessToken;
 import com.thoughtworks.go.server.newsecurity.models.AnonymousCredential;
-import com.thoughtworks.go.server.newsecurity.models.AuthenticationToken;
 import com.thoughtworks.go.server.newsecurity.models.UsernamePassword;
-import com.thoughtworks.go.server.newsecurity.utils.SessionUtils;
 import com.thoughtworks.go.server.security.GoAuthority;
 import com.thoughtworks.go.server.security.userdetail.GoUserPrinciple;
 import org.springframework.security.core.GrantedAuthority;

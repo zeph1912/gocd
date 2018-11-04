@@ -19,7 +19,6 @@ package com.thoughtworks.go.agent;
 import com.thoughtworks.go.agent.common.AgentBootstrapperArgs;
 import com.thoughtworks.go.agent.common.AgentCLI;
 import com.thoughtworks.go.logging.LogConfigurator;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import static com.thoughtworks.go.utils.AssertJava8.assertVMVersion;

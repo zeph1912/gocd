@@ -19,7 +19,6 @@ package com.thoughtworks.go.plugin.infra.commons;
 import com.thoughtworks.go.plugin.infra.PluginChangeListener;
 import com.thoughtworks.go.plugin.infra.PluginManager;
 import com.thoughtworks.go.plugin.infra.plugininfo.GoPluginDescriptor;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.slf4j.Logger;

@@ -21,7 +21,6 @@ import com.thoughtworks.studios.shine.cruise.GoOntology;
 import com.thoughtworks.studios.shine.semweb.Graph;
 import com.thoughtworks.studios.shine.semweb.TempGraphFactory;
 import com.thoughtworks.studios.shine.semweb.grddl.XSLTTransformerRegistry;
-import com.thoughtworks.studios.shine.semweb.sesame.InMemoryTempGraphFactory;
 import com.thoughtworks.studios.shine.xunit.XUnitOntology;
 import org.junit.Before;
 import org.junit.Test;

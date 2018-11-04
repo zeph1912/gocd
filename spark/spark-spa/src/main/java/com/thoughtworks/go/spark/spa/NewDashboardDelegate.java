@@ -23,7 +23,6 @@ import com.thoughtworks.go.server.service.support.toggle.Toggles;
 import com.thoughtworks.go.spark.Routes;
 import com.thoughtworks.go.spark.SparkController;
 import com.thoughtworks.go.spark.spring.SPAAuthenticationHelper;
-import com.thoughtworks.go.util.SystemEnvironment;
 import spark.ModelAndView;
 import spark.Request;
 import spark.Response;

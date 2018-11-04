@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.remote.work;
 
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.util.command.TaggedStreamConsumer;
 import org.apache.commons.collections4.queue.CircularFifoQueue;
 import org.slf4j.Logger;

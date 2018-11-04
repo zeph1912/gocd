@@ -19,7 +19,6 @@ package com.thoughtworks.go.server.newsecurity.filters;
 import com.thoughtworks.go.http.mocks.MockHttpServletRequest;
 import com.thoughtworks.go.http.mocks.MockHttpServletResponse;
 import com.thoughtworks.go.http.mocks.MockHttpServletResponseAssert;
-import com.thoughtworks.go.server.newsecurity.utils.SessionUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.security.web.savedrequest.SavedRequest;
 

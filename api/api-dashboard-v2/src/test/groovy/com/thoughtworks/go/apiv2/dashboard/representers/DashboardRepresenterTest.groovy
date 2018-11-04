@@ -20,8 +20,7 @@ import com.thoughtworks.go.apiv2.dashboard.GoDashboardPipelineMother
 import com.thoughtworks.go.config.CaseInsensitiveString
 import com.thoughtworks.go.config.security.Permissions
 import com.thoughtworks.go.config.security.users.Everyone
-import com.thoughtworks.go.server.dashboard.GoDashboardEnvironment
-import com.thoughtworks.go.server.dashboard.GoDashboardPipelineGroup
+
 import com.thoughtworks.go.config.Username
 import com.thoughtworks.go.spark.util.SecureRandom
 import org.junit.jupiter.api.Test

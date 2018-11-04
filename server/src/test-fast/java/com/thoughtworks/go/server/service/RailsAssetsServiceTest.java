@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.service;
 
 import com.google.gson.annotations.SerializedName;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Before;

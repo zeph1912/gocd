@@ -29,7 +29,6 @@ import com.thoughtworks.go.server.service.result.ServerHealthStateOperationResul
 import com.thoughtworks.go.serverhealth.ServerHealthService;
 import com.thoughtworks.go.util.GoConstants;
 import com.thoughtworks.go.util.ReflectionUtil;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.invocation.InvocationOnMock;
@@ -44,7 +43,6 @@ import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.verifyNoMoreInteractions;
 import static org.mockito.Mockito.when;
 
 public class ArtifactsDiskCleanerTest {

@@ -23,8 +23,6 @@ import com.thoughtworks.go.config.materials.svn.SvnCommand;
 import com.thoughtworks.go.helper.SvnTestRepo;
 import com.thoughtworks.go.helper.TestRepo;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
-import com.thoughtworks.go.server.dao.PipelineDao;
-import com.thoughtworks.go.server.dao.StageDao;
 import com.thoughtworks.go.server.scheduling.ScheduleHelper;
 import com.thoughtworks.go.util.GoConfigFileHelper;
 import org.junit.*;

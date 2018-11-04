@@ -24,7 +24,6 @@ import com.thoughtworks.go.config.TemplatesConfig;
 import com.thoughtworks.go.config.dependency.DependencyMaterialConfig;
 import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.helper.StageConfigMother;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;

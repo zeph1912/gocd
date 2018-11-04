@@ -17,7 +17,7 @@
 package com.thoughtworks.go.apiv1.admin.backups.representers
 
 import com.thoughtworks.go.apiv1.user.representers.UserSummaryRepresenter
-import com.thoughtworks.go.server.domain.ServerBackup
+
 import org.junit.jupiter.api.Test
 
 import static com.thoughtworks.go.api.base.JsonOutputWriter.jsonDate

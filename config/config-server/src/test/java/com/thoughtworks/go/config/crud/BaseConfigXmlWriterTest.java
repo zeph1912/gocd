@@ -17,7 +17,6 @@ package com.thoughtworks.go.config.crud;
 
 import com.thoughtworks.go.config.ConfigCache;
 import com.thoughtworks.go.util.ConfigElementImplementationRegistryMother;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Before;
 
 import java.io.ByteArrayOutputStream;

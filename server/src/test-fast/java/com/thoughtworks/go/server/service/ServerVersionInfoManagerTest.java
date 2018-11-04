@@ -17,9 +17,6 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.GoVersion;
-import com.thoughtworks.go.server.dao.VersionInfoDao;
-import com.thoughtworks.go.util.SystemEnvironment;
-import com.thoughtworks.go.util.SystemTimeClock;
 import org.joda.time.DateTime;
 import org.junit.Before;
 import org.junit.Test;

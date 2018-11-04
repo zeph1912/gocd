@@ -19,7 +19,6 @@ package com.thoughtworks.go.server.materials;
 import com.thoughtworks.go.config.svn.SvnMaterial;
 import com.thoughtworks.go.helper.MaterialsMother;
 import com.thoughtworks.go.server.cronjob.GoDiskSpaceMonitor;
-import com.thoughtworks.go.server.perf.MDUPerformanceLogger;
 import com.thoughtworks.go.server.transaction.TransactionCallback;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import org.junit.Before;

@@ -25,7 +25,6 @@ import com.thoughtworks.go.presentation.ConfigForEdit;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import com.thoughtworks.go.server.service.tasks.PluggableTaskService;
-import com.thoughtworks.go.server.ui.TemplatesViewModel;
 import org.junit.Before;
 import org.junit.Test;
 

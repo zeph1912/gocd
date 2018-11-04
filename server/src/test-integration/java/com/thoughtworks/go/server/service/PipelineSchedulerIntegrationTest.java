@@ -26,7 +26,6 @@ import com.thoughtworks.go.helper.TestRepo;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.scheduling.ScheduleHelper;
-import com.thoughtworks.go.server.scheduling.ScheduleOptions;
 import com.thoughtworks.go.server.service.result.HttpOperationResult;
 import com.thoughtworks.go.serverhealth.HealthStateScope;
 import com.thoughtworks.go.serverhealth.HealthStateType;

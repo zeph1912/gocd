@@ -18,7 +18,6 @@ package com.thoughtworks.go.spark;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
 import com.thoughtworks.go.config.Username;
-import com.thoughtworks.go.server.newsecurity.utils.SessionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.message.BasicNameValuePair;

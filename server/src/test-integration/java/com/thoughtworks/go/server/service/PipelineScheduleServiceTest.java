@@ -27,8 +27,6 @@ import com.thoughtworks.go.config.materials.svn.SvnCommand;
 import com.thoughtworks.go.fixture.PipelineWithTwoStages;
 import com.thoughtworks.go.helper.*;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
-import com.thoughtworks.go.server.dao.PipelineDao;
-import com.thoughtworks.go.server.dao.StageSqlMapDao;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.scheduling.ScheduleHelper;

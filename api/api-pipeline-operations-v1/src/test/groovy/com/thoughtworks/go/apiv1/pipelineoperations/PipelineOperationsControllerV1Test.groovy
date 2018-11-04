@@ -36,7 +36,7 @@ import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModel
 import com.thoughtworks.go.presentation.pipelinehistory.StageInstanceModels
 import com.thoughtworks.go.security.GoCipher
 import com.thoughtworks.go.server.domain.MaterialForScheduling
-import com.thoughtworks.go.server.domain.PipelineScheduleOptions
+
 import com.thoughtworks.go.config.Username
 import com.thoughtworks.go.server.service.PipelineHistoryService
 import com.thoughtworks.go.server.service.PipelinePauseService

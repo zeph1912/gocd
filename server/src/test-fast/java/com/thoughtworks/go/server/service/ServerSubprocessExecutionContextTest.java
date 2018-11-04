@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.util.CachedDigestUtils;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;

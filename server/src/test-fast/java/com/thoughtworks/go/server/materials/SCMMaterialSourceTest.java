@@ -23,7 +23,6 @@ import com.thoughtworks.go.listener.EntityConfigChangedListener;
 import com.thoughtworks.go.server.service.GoConfigService;
 import com.thoughtworks.go.serverhealth.ServerHealthService;
 import com.thoughtworks.go.serverhealth.ServerHealthStates;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.joda.time.DateTimeUtils;
 import org.junit.After;
 import org.junit.Before;

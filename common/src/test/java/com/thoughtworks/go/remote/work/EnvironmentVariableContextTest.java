@@ -25,7 +25,6 @@ import com.thoughtworks.go.domain.MaterialRevisions;
 import com.thoughtworks.go.config.materials.dependency.DependencyMaterialRevision;
 import com.thoughtworks.go.helper.MaterialsMother;
 import com.thoughtworks.go.helper.ModificationsMother;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.lang3.StringUtils;
 import org.hamcrest.core.Is;
 import org.junit.Rule;

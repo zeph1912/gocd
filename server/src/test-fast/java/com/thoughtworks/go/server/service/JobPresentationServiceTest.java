@@ -19,7 +19,6 @@ package com.thoughtworks.go.server.service;
 import com.thoughtworks.go.domain.AgentInstance;
 import com.thoughtworks.go.server.domain.Agent;
 import com.thoughtworks.go.server.domain.JobDurationStrategy;
-import com.thoughtworks.go.server.ui.JobInstanceModel;
 import org.junit.Before;
 import org.junit.Test;
 

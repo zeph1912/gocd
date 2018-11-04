@@ -25,7 +25,6 @@ import com.thoughtworks.go.server.service.ArtifactsService;
 import com.thoughtworks.go.server.service.ConsoleService;
 import com.thoughtworks.go.server.web.ResponseCodeView;
 import com.thoughtworks.go.util.GoConfigFileHelper;
-import com.thoughtworks.go.util.TestFileUtil;
 import com.thoughtworks.go.util.ZipUtil;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.io.FileUtils;

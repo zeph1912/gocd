@@ -21,7 +21,6 @@ import com.thoughtworks.go.server.messaging.SendEmailMessage;
 import com.thoughtworks.go.server.service.result.ServerHealthStateOperationResult;
 import com.thoughtworks.go.serverhealth.HealthStateType;
 import com.thoughtworks.go.serverhealth.ServerHealthService;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Before;

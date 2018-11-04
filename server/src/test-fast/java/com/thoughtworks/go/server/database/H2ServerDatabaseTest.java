@@ -19,7 +19,6 @@ package com.thoughtworks.go.server.database;
 import com.googlecode.junit.ext.JunitExtRunner;
 import com.googlecode.junit.ext.RunIf;
 import com.thoughtworks.go.junitext.DatabaseChecker;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

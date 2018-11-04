@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.newsecurity.filters;
 
-import com.thoughtworks.go.server.newsecurity.handlers.BasicAuthenticationWithChallengeFailureResponseHandler;
 import org.junit.jupiter.api.Test;
 
 import javax.servlet.http.HttpServletRequest;

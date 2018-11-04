@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.agent.statusapi;
 
-import com.thoughtworks.go.util.SystemEnvironment;
 import fi.iki.elonen.NanoHTTPD;
 import org.apache.commons.io.IOUtils;
 import org.junit.Before;

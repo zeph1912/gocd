@@ -22,7 +22,6 @@ import com.thoughtworks.go.listener.ConfigChangedListener;
 import com.thoughtworks.go.listener.EntityConfigChangedListener;
 import com.thoughtworks.go.serverhealth.ServerHealthService;
 import com.thoughtworks.go.serverhealth.ServerHealthState;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.hamcrest.core.Is;
 import org.junit.Assert;
 import org.junit.Before;

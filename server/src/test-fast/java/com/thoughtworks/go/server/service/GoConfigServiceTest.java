@@ -35,7 +35,6 @@ import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.helper.StageConfigMother;
 import com.thoughtworks.go.listener.ConfigChangedListener;
 import com.thoughtworks.go.security.GoCipher;
-import com.thoughtworks.go.server.dao.UserDao;
 import com.thoughtworks.go.server.domain.PipelineConfigDependencyGraph;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.persistence.PipelineRepository;

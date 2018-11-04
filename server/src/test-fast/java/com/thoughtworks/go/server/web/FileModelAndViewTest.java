@@ -18,7 +18,6 @@ package com.thoughtworks.go.server.web;
 
 import com.thoughtworks.go.server.domain.ZippedArtifact;
 import com.thoughtworks.go.util.FileUtil;
-import com.thoughtworks.go.util.TestFileUtil;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.mock.web.MockHttpServletRequest;

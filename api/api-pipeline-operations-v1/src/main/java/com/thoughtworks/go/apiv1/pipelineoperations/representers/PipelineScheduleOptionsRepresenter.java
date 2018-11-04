@@ -19,7 +19,6 @@ package com.thoughtworks.go.apiv1.pipelineoperations.representers;
 import com.thoughtworks.go.api.representers.JsonReader;
 import com.thoughtworks.go.apiv6.shared.representers.EnvironmentVariableRepresenter;
 import com.thoughtworks.go.server.domain.MaterialForScheduling;
-import com.thoughtworks.go.server.domain.PipelineScheduleOptions;
 
 import java.util.ArrayList;
 import java.util.List;

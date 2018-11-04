@@ -18,7 +18,6 @@ package com.thoughtworks.go.server.database;
 
 import java.sql.SQLException;
 
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Before;
 import org.junit.Test;
 

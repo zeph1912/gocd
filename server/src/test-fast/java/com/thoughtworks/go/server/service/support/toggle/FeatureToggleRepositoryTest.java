@@ -18,8 +18,6 @@ package com.thoughtworks.go.server.service.support.toggle;
 import com.google.gson.Gson;
 import com.thoughtworks.go.server.domain.support.toggle.FeatureToggle;
 import com.thoughtworks.go.server.domain.support.toggle.FeatureToggles;
-import com.thoughtworks.go.util.SystemEnvironment;
-import com.thoughtworks.go.util.TestFileUtil;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.After;

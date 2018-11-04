@@ -32,7 +32,6 @@ import com.thoughtworks.go.helper.HgTestRepo;
 import com.thoughtworks.go.helper.MaterialsMother;
 import com.thoughtworks.go.helper.ModificationsMother;
 import com.thoughtworks.go.helper.TestRepo;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.utils.SvnRepoFixture;
 import org.hamcrest.Matchers;
 import org.junit.After;

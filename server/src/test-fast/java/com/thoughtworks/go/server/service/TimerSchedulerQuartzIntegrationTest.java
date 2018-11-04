@@ -20,9 +20,8 @@ import static java.util.Arrays.asList;
 import java.util.List;
 
 import static com.thoughtworks.go.helper.PipelineConfigMother.pipelineConfigWithTimer;
-import com.thoughtworks.go.server.scheduling.BuildCauseProducerService;
+
 import com.thoughtworks.go.server.service.result.ServerHealthStateOperationResult;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

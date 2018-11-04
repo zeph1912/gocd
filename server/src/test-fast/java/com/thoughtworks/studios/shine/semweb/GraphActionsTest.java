@@ -19,7 +19,6 @@ package com.thoughtworks.studios.shine.semweb;
 import static org.junit.Assert.assertEquals;
 
 import com.thoughtworks.studios.shine.cruise.GoOntology;
-import com.thoughtworks.studios.shine.semweb.sesame.InMemoryTempGraphFactory;
 import org.junit.Test;
 
 public class GraphActionsTest {

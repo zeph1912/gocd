@@ -20,7 +20,6 @@ import com.thoughtworks.go.config.CaseInsensitiveString;
 import com.thoughtworks.go.config.StageState;
 import com.thoughtworks.go.plugin.access.notification.NotificationExtension;
 import com.thoughtworks.go.plugin.access.notification.NotificationPluginRegistry;
-import com.thoughtworks.go.server.dao.PipelineSqlMapDao;
 import com.thoughtworks.go.server.service.GoConfigService;
 import org.junit.Before;
 import org.junit.Test;

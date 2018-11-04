@@ -20,7 +20,6 @@ import com.thoughtworks.go.security.X509CertificateGenerator;
 import com.thoughtworks.go.server.Jetty9Server;
 import com.thoughtworks.go.server.config.GoSSLConfig;
 import com.thoughtworks.go.util.ExceptionUtils;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.eclipse.jetty.http.HttpVersion;

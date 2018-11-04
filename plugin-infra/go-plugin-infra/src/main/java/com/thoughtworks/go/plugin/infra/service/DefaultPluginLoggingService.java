@@ -22,7 +22,6 @@ import ch.qos.logback.core.FileAppender;
 import ch.qos.logback.core.rolling.RollingFileAppender;
 import com.thoughtworks.go.logging.LogHelper;
 import com.thoughtworks.go.plugin.internal.api.LoggingService;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

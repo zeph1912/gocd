@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server;
 
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.eclipse.jetty.http.HttpFields;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.webapp.WebAppContext;

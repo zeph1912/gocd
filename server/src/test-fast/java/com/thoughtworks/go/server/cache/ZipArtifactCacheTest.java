@@ -17,8 +17,6 @@
 package com.thoughtworks.go.server.cache;
 
 import com.thoughtworks.go.server.service.ArtifactsDirHolder;
-import com.thoughtworks.go.server.web.ArtifactFolder;
-import com.thoughtworks.go.util.TestFileUtil;
 import com.thoughtworks.go.util.ZipUtil;
 import org.apache.commons.io.FileUtils;
 import org.hamcrest.Description;

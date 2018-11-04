@@ -21,7 +21,6 @@ import com.thoughtworks.go.config.JobResult;
 import com.thoughtworks.go.config.JobState;
 import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.server.messaging.scheduling.WorkAssignments;
-import com.thoughtworks.go.server.perf.WorkAssignmentPerformanceLogger;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
 import org.junit.Before;
 import org.junit.Test;

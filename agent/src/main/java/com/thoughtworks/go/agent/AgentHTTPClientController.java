@@ -36,7 +36,6 @@ import com.thoughtworks.go.remote.work.AgentWorkContext;
 import com.thoughtworks.go.remote.work.NoWork;
 import com.thoughtworks.go.remote.work.Work;
 import com.thoughtworks.go.util.SubprocessLogger;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -28,7 +28,6 @@ import com.thoughtworks.go.server.service.WebpackAssetsService;
 import com.thoughtworks.go.server.service.plugins.builder.DefaultPluginInfoFinder;
 import com.thoughtworks.go.server.service.support.toggle.FeatureToggleService;
 import com.thoughtworks.go.server.service.support.toggle.Toggles;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.context.Context;
 import org.eclipse.jetty.server.Request;

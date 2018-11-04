@@ -17,7 +17,7 @@
 package com.thoughtworks.go.spark.spa.spring
 
 import com.thoughtworks.go.CurrentGoCDVersion
-import com.thoughtworks.go.server.newsecurity.utils.SessionUtils
+
 import com.thoughtworks.go.server.security.userdetail.GoUserPrinciple
 import com.thoughtworks.go.server.service.RailsAssetsService
 import com.thoughtworks.go.server.service.SecurityService

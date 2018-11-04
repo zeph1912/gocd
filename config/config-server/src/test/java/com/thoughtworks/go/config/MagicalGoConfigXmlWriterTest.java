@@ -36,7 +36,6 @@ import com.thoughtworks.go.security.GoCipher;
 import com.thoughtworks.go.security.ResetCipher;
 import com.thoughtworks.go.util.ConfigElementImplementationRegistryMother;
 import com.thoughtworks.go.util.ReflectionUtil;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.util.XsdValidationException;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;

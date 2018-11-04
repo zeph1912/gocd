@@ -7,6 +7,7 @@ module util.main {
     requires jdom2;
     requires httpcore;
     requires httpclient;
+    requires joda.time;
     exports com.thoughtworks.go.util.command;
     exports com.thoughtworks.go.util;
     exports com.thoughtworks.go.util.json;

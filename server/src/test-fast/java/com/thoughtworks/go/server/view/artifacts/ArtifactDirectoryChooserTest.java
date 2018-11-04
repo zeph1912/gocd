@@ -18,7 +18,6 @@ package com.thoughtworks.go.server.view.artifacts;
 
 import com.thoughtworks.go.config.exception.IllegalArtifactLocationException;
 import com.thoughtworks.go.helper.JobIdentifierMother;
-import com.thoughtworks.go.util.TestFileUtil;
 import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Before;

@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.service.datasharing;
 
 import com.thoughtworks.go.server.cache.CacheKeyGenerator;
-import com.thoughtworks.go.server.dao.UsageStatisticsReportingSqlMapDao;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import org.junit.After;
 import org.junit.Before;

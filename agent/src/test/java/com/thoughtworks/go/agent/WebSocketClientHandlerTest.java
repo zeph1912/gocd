@@ -29,7 +29,6 @@ import com.thoughtworks.go.publishers.GoArtifactsManipulator;
 import com.thoughtworks.go.remote.BuildRepositoryRemote;
 import com.thoughtworks.go.util.HttpService;
 import com.thoughtworks.go.util.SubprocessLogger;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.util.URLService;
 import org.eclipse.jetty.websocket.api.Session;
 import org.eclipse.jetty.websocket.client.ClientUpgradeRequest;

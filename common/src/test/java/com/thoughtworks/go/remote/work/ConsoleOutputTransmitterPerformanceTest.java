@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.remote.work;
 
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

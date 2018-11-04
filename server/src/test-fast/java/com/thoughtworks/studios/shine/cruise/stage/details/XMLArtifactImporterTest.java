@@ -16,9 +16,7 @@
 
 package com.thoughtworks.studios.shine.cruise.stage.details;
 
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.studios.shine.semweb.*;
-import com.thoughtworks.studios.shine.semweb.sesame.InMemoryTempGraphFactory;
 import org.dom4j.Document;
 import org.junit.Before;
 import org.junit.Test;

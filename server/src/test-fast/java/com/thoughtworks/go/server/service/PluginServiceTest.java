@@ -37,8 +37,6 @@ import com.thoughtworks.go.plugin.domain.notification.NotificationPluginInfo;
 import com.thoughtworks.go.plugin.domain.scm.SCMPluginInfo;
 import com.thoughtworks.go.plugin.infra.PluginManager;
 import com.thoughtworks.go.plugin.infra.plugininfo.GoPluginDescriptor;
-import com.thoughtworks.go.server.dao.PluginSqlMapDao;
-import com.thoughtworks.go.server.domain.PluginSettings;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.plugins.builder.DefaultPluginInfoFinder;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;

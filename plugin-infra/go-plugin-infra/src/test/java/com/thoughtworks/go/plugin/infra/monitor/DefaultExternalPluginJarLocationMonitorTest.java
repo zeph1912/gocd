@@ -20,7 +20,6 @@ import com.googlecode.junit.ext.JunitExtRunner;
 import com.googlecode.junit.ext.RunIf;
 import com.googlecode.junit.ext.checkers.OSChecker;
 import com.thoughtworks.go.junitext.EnhancedOSChecker;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Before;

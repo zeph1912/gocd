@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.plugin.infra.monitor;
 
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.collections4.Closure;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.IterableUtils;

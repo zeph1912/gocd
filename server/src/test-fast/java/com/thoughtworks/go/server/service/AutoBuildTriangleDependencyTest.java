@@ -23,7 +23,6 @@ import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.server.domain.PipelineConfigDependencyGraph;
 import com.thoughtworks.go.server.materials.MaterialChecker;
 import com.thoughtworks.go.serverhealth.ServerHealthService;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.invocation.InvocationOnMock;

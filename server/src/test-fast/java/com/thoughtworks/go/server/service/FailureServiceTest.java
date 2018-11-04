@@ -19,7 +19,6 @@ package com.thoughtworks.go.server.service;
 import com.thoughtworks.go.config.CaseInsensitiveString;
 import com.thoughtworks.go.domain.StageFinder;
 import com.thoughtworks.go.config.testinfo.FailureDetails;
-import com.thoughtworks.go.server.dao.sparql.ShineDao;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import org.junit.After;
@@ -32,7 +31,6 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.verifyNoMoreInteractions;
 import static org.mockito.Mockito.when;
 
 public class FailureServiceTest {

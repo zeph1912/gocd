@@ -18,7 +18,6 @@ package com.thoughtworks.go.buildsession;
 import com.thoughtworks.go.domain.BuildCommand;
 import com.thoughtworks.go.domain.ChecksumFileHandler;
 import com.thoughtworks.go.domain.DirHandler;
-import com.thoughtworks.go.util.TempFiles;
 import com.thoughtworks.go.util.URLService;
 
 import java.io.File;

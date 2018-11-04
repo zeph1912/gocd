@@ -18,7 +18,6 @@ package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.server.cronjob.GoDiskSpaceMonitor;
-import com.thoughtworks.go.server.scheduling.TriggerMonitor;
 import com.thoughtworks.go.server.service.result.OperationResult;
 import com.thoughtworks.go.serverhealth.HealthStateScope;
 import com.thoughtworks.go.serverhealth.HealthStateType;

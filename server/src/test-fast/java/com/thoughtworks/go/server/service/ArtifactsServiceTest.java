@@ -24,8 +24,6 @@ import com.thoughtworks.go.config.exception.IllegalArtifactLocationException;
 import com.thoughtworks.go.helper.JobIdentifierMother;
 import com.thoughtworks.go.helper.StageMother;
 import com.thoughtworks.go.junitext.EnhancedOSChecker;
-import com.thoughtworks.go.server.dao.StageDao;
-import com.thoughtworks.go.server.view.artifacts.ArtifactDirectoryChooser;
 import com.thoughtworks.go.util.ReflectionUtil;
 import com.thoughtworks.go.util.ZipUtil;
 import org.apache.commons.io.FileUtils;

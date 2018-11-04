@@ -17,7 +17,6 @@
 package com.thoughtworks.go.fixture;
 
 import com.thoughtworks.go.util.GoConstants;
-import com.thoughtworks.go.util.SystemEnvironment;
 
 public class DatabaseDiskIsFull implements PreCondition {
     public void onSetUp() throws Exception {

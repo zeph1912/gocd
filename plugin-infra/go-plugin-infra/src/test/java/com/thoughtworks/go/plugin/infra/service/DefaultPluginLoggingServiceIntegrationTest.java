@@ -19,7 +19,6 @@ package com.thoughtworks.go.plugin.infra.service;
 import ch.qos.logback.classic.Level;
 import ch.qos.logback.core.FileAppender;
 import com.googlecode.junit.ext.checkers.OSChecker;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Before;

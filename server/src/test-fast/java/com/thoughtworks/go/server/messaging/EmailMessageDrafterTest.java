@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.messaging;
 
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.util.SystemUtil;
 import static org.hamcrest.core.Is.is;
 import org.junit.After;

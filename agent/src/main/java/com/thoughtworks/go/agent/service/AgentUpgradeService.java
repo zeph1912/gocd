@@ -17,7 +17,6 @@
 package com.thoughtworks.go.agent.service;
 
 import com.thoughtworks.go.agent.common.ssl.GoAgentServerHttpClient;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.util.URLService;
 import org.apache.http.Header;
 import org.apache.http.client.methods.CloseableHttpResponse;

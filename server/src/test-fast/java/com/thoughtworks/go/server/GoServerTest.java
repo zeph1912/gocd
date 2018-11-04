@@ -17,8 +17,6 @@
 package com.thoughtworks.go.server;
 
 import com.thoughtworks.go.util.SubprocessLogger;
-import com.thoughtworks.go.util.SystemEnvironment;
-import com.thoughtworks.go.util.TestFileUtil;
 import com.thoughtworks.go.util.validators.Validation;
 import org.hamcrest.CoreMatchers;
 import org.junit.After;

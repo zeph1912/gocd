@@ -19,7 +19,7 @@ package com.thoughtworks.go.apiv1.admin.backups
 import com.thoughtworks.go.api.SecurityTestTrait
 import com.thoughtworks.go.api.spring.ApiAuthenticationHelper
 import com.thoughtworks.go.apiv1.admin.backups.representers.BackupRepresenter
-import com.thoughtworks.go.server.domain.ServerBackup
+
 import com.thoughtworks.go.server.service.BackupService
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult
 import com.thoughtworks.go.spark.AdminUserSecurity

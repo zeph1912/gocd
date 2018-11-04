@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.server.initializers;
 
-import com.thoughtworks.go.util.SystemEnvironment;
-import com.thoughtworks.go.util.TestFileUtil;
 import com.thoughtworks.go.util.ZipUtil;
 import org.apache.commons.io.FileUtils;
 import org.junit.Before;

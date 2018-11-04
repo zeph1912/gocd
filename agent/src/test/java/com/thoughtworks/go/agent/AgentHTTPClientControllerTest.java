@@ -34,7 +34,6 @@ import com.thoughtworks.go.remote.work.AgentWorkContext;
 import com.thoughtworks.go.remote.work.Work;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
 import com.thoughtworks.go.util.SubprocessLogger;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;

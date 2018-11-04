@@ -16,14 +16,12 @@
 
 package com.thoughtworks.go.server.service.materials;
 
-import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.packagerepository.PackageRepositories;
 import com.thoughtworks.go.config.packagerepository.PackageRepository;
 import com.thoughtworks.go.i18n.LocalizedMessage;
 import com.thoughtworks.go.plugin.infra.PluginManager;
 import com.thoughtworks.go.plugin.infra.plugininfo.GoPluginDescriptor;
 import com.thoughtworks.go.presentation.TriStateSelection;
-import com.thoughtworks.go.server.dao.PluginSqlMapDao;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.service.GoConfigService;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;

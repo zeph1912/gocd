@@ -23,7 +23,6 @@ import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.remote.work.BuildRepositoryRemoteStub;
 import com.thoughtworks.go.remote.work.GoArtifactsManipulatorStub;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
-import com.thoughtworks.go.util.CachedDigestUtils;
 import com.thoughtworks.go.util.HttpService;
 import com.thoughtworks.go.util.ReflectionUtil;
 import com.thoughtworks.go.work.DefaultGoPublisher;

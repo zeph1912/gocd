@@ -19,7 +19,6 @@ package com.thoughtworks.go.server;
 import com.thoughtworks.go.server.config.GoSSLConfig;
 import com.thoughtworks.go.server.util.GoPlainSocketConnector;
 import com.thoughtworks.go.server.util.GoSslSocketConnector;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.eclipse.jetty.deploy.App;

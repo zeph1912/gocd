@@ -34,7 +34,6 @@ import com.thoughtworks.go.server.service.AgentBuildingInfo;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
 import com.thoughtworks.go.util.HttpService;
 import com.thoughtworks.go.util.SubprocessLogger;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.websocket.*;
 import com.thoughtworks.go.work.SleepWork;
 import org.apache.http.HttpVersion;

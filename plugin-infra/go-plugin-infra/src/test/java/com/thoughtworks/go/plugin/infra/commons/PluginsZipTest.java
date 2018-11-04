@@ -18,7 +18,6 @@ package com.thoughtworks.go.plugin.infra.commons;
 
 import com.thoughtworks.go.plugin.infra.PluginManager;
 import com.thoughtworks.go.plugin.infra.plugininfo.GoPluginDescriptor;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Before;

@@ -15,7 +15,6 @@
  */
 package com.thoughtworks.go.server.security;
 
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Test;
 import org.springframework.mock.web.MockHttpServletRequest;
 

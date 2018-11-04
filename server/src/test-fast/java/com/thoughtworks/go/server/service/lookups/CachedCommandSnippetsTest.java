@@ -23,7 +23,6 @@ import java.util.List;
 
 import com.thoughtworks.go.config.ServerConfig;
 import com.thoughtworks.go.server.service.GoConfigService;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;

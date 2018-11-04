@@ -18,8 +18,6 @@ package com.thoughtworks.go.serverhealth;
 
 import java.util.Date;
 
-import com.thoughtworks.go.util.SystemTimeClock;
-import com.thoughtworks.go.util.TestingClock;
 import com.thoughtworks.go.utils.Timeout;
 import org.junit.After;
 import org.junit.Before;

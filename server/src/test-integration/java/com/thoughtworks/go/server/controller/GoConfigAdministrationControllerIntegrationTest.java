@@ -18,7 +18,6 @@ package com.thoughtworks.go.server.controller;
 
 import com.thoughtworks.go.ClearSingleton;
 import com.thoughtworks.go.config.ConfigCache;
-import com.thoughtworks.go.server.controller.actions.XmlAction;
 import com.thoughtworks.go.util.ConfigElementImplementationRegistryMother;
 import com.thoughtworks.go.util.GoConfigFileHelper;
 import org.junit.After;

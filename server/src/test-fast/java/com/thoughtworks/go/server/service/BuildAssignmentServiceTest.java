@@ -26,7 +26,6 @@ import com.thoughtworks.go.server.domain.ElasticAgentMetadata;
 import com.thoughtworks.go.server.service.builders.BuilderFactory;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import com.thoughtworks.go.server.websocket.AgentRemoteHandler;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.ArgumentMatchers;

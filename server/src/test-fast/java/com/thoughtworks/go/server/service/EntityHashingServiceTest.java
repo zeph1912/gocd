@@ -17,7 +17,6 @@ package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.ConfigCache;
 import com.thoughtworks.go.helper.PipelineConfigMother;
-import com.thoughtworks.go.util.CachedDigestUtils;
 import com.thoughtworks.go.util.ConfigElementImplementationRegistryMother;
 import org.junit.Before;
 import org.junit.Rule;

@@ -27,7 +27,6 @@ import com.thoughtworks.go.config.mercurial.HgMaterial;
 import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.helper.PipelineMother;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
-import com.thoughtworks.go.server.domain.PipelineTimeline;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;

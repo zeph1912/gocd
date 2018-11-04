@@ -18,7 +18,6 @@ package com.thoughtworks.go.server.cache;
 
 import com.thoughtworks.go.domain.User;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
-import com.thoughtworks.go.server.dao.UserSqlMapDao;
 import com.thoughtworks.go.server.transaction.TransactionSynchronizationManager;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import com.thoughtworks.go.util.GoConfigFileHelper;

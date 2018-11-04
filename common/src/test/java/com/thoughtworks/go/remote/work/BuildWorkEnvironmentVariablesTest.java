@@ -40,7 +40,6 @@ import com.thoughtworks.go.plugin.access.pluggabletask.TaskExtension;
 import com.thoughtworks.go.plugin.access.scm.SCMExtension;
 import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.utils.SvnRepoFixture;
 import org.apache.commons.io.FileUtils;
 import org.hamcrest.Matcher;

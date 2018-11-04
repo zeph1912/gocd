@@ -17,7 +17,6 @@
 package com.thoughtworks.go.junitext;
 
 import com.googlecode.junit.ext.checkers.Checker;
-import com.thoughtworks.go.util.SystemEnvironment;
 
 public class DatabaseChecker implements Checker {
     public static final String H2 = "H2Database";

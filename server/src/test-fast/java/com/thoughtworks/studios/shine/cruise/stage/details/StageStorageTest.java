@@ -20,7 +20,6 @@ import com.thoughtworks.studios.shine.ShineRuntimeException;
 import com.thoughtworks.studios.shine.cruise.GoOntology;
 import com.thoughtworks.studios.shine.semweb.Graph;
 import com.thoughtworks.studios.shine.semweb.TempGraphFactory;
-import com.thoughtworks.studios.shine.semweb.sesame.InMemoryTempGraphFactory;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

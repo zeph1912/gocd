@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.server.dao.DbMetadataDao;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

@@ -20,7 +20,6 @@ import com.thoughtworks.go.plugin.infra.GoPluginOSGiFramework;
 import com.thoughtworks.go.plugin.infra.monitor.PluginFileDetails;
 import com.thoughtworks.go.plugin.infra.monitor.PluginJarChangeListener;
 import com.thoughtworks.go.plugin.infra.plugininfo.*;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.util.ZipUtil;
 import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;

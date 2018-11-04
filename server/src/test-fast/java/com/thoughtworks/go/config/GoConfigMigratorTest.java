@@ -18,7 +18,6 @@ package com.thoughtworks.go.config;
 
 import com.thoughtworks.go.config.update.FullConfigUpdateCommand;
 import com.thoughtworks.go.serverhealth.ServerHealthService;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;

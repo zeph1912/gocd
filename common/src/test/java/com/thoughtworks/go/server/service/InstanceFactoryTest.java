@@ -18,9 +18,7 @@ package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.materials.MaterialConfigs;
 import com.thoughtworks.go.config.buildcause.BuildCause;
-import com.thoughtworks.go.helper.*;
 import com.thoughtworks.go.server.domain.Username;
-import com.thoughtworks.go.util.Clock;
 import com.thoughtworks.go.util.GoConstants;
 import com.thoughtworks.go.utils.Timeout;
 import org.hamcrest.CoreMatchers;

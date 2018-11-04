@@ -22,7 +22,6 @@ import javax.sql.DataSource;
 
 import com.thoughtworks.go.database.Database;
 import com.thoughtworks.go.database.QueryExtensions;
-import com.thoughtworks.go.util.SystemEnvironment;
 
 public class DummyDbProvider implements Database {
     public boolean startDatabase;

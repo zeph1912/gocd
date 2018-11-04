@@ -17,7 +17,6 @@
 
 package com.thoughtworks.go.server;
 
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.handler.AbstractHandler;
 import org.eclipse.jetty.server.handler.ContextHandler;

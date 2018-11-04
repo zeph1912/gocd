@@ -21,7 +21,6 @@ import com.thoughtworks.go.api.base.OutputListWriter;
 import com.thoughtworks.go.api.base.OutputWriter;
 import com.thoughtworks.go.domain.PipelinePauseInfo;
 import com.thoughtworks.go.presentation.pipelinehistory.EmptyPipelineInstanceModel;
-import com.thoughtworks.go.server.dashboard.GoDashboardPipeline;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.spark.Routes;
 import org.apache.commons.lang3.StringUtils;

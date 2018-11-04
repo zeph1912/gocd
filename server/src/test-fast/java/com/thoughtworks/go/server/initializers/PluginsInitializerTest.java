@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.initializers;
 
 import com.thoughtworks.go.plugin.infra.PluginManager;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.util.ZipUtil;
 import org.apache.commons.io.FileUtils;
 import org.junit.Before;
@@ -25,7 +24,6 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 import org.mockito.InOrder;
-import org.mockito.ArgumentMatchers;
 
 import java.io.File;
 import java.io.IOException;

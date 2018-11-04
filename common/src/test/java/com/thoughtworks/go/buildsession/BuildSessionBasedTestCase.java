@@ -22,7 +22,6 @@ import com.thoughtworks.go.domain.JobResult;
 import com.thoughtworks.go.helper.TestStreamConsumer;
 import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.remote.work.HttpServiceStub;
-import com.thoughtworks.go.util.TestingClock;
 import org.apache.commons.lang3.SystemUtils;
 import org.apache.commons.lang3.text.StrLookup;
 import org.junit.Before;

@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.domain;
 
-import com.thoughtworks.go.util.CachedDigestUtils;
 import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Before;

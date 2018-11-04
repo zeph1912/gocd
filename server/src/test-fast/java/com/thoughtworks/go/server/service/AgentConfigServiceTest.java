@@ -23,7 +23,6 @@ import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.util.ReflectionUtil;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;

@@ -18,7 +18,6 @@ package com.thoughtworks.go.agent;
 import com.thoughtworks.go.buildsession.ArtifactsRepository;
 import com.thoughtworks.go.domain.Property;
 import com.thoughtworks.go.helper.TestStreamConsumer;
-import com.thoughtworks.go.util.CachedDigestUtils;
 import com.thoughtworks.go.util.HttpService;
 import com.thoughtworks.go.util.ZipUtil;
 import org.apache.commons.io.FileUtils;

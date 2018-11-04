@@ -16,14 +16,11 @@
 
 package com.thoughtworks.go.server.controller;
 
-import com.thoughtworks.go.server.dao.JobInstanceDao;
 import com.thoughtworks.go.server.service.ArtifactsService;
 import com.thoughtworks.go.server.service.ConsoleActivityMonitor;
 import com.thoughtworks.go.server.service.ConsoleService;
 import com.thoughtworks.go.server.service.RestfulService;
-import com.thoughtworks.go.server.web.ArtifactFolderViewFactory;
 import com.thoughtworks.go.server.web.ResponseCodeView;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.mock.web.MockHttpServletRequest;

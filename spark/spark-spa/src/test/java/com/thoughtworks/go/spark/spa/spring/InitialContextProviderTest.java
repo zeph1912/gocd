@@ -21,7 +21,6 @@ import com.thoughtworks.go.plugin.domain.analytics.Capabilities;
 import com.thoughtworks.go.plugin.domain.common.CombinedPluginInfo;
 import com.thoughtworks.go.plugin.domain.common.PluginConstants;
 import com.thoughtworks.go.config.Username;
-import com.thoughtworks.go.server.newsecurity.utils.SessionUtils;
 import com.thoughtworks.go.server.security.userdetail.GoUserPrinciple;
 import com.thoughtworks.go.server.service.RailsAssetsService;
 import com.thoughtworks.go.server.service.SecurityService;

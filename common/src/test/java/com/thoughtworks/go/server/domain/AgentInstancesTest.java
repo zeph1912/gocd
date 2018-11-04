@@ -25,7 +25,6 @@ import com.thoughtworks.go.config.exception.MaxPendingAgentsLimitReachedExceptio
 import com.thoughtworks.go.helper.AgentInstanceMother;
 import com.thoughtworks.go.listener.AgentStatusChangeListener;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

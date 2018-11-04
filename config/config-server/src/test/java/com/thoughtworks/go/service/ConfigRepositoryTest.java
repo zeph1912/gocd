@@ -20,7 +20,6 @@ import com.thoughtworks.go.GoConfigRevisions;
 import com.thoughtworks.go.config.exceptions.ConfigFileHasChangedException;
 import com.thoughtworks.go.config.exceptions.ConfigMergeException;
 import com.thoughtworks.go.helper.ConfigFileFixture;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.eclipse.jgit.api.ListBranchCommand;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.lib.Ref;

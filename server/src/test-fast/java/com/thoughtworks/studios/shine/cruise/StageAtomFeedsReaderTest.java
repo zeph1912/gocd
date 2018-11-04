@@ -24,7 +24,6 @@ import java.util.List;
 import com.thoughtworks.go.config.StageResult;
 import com.thoughtworks.go.config.feed.stage.StageFeedEntry;
 import com.thoughtworks.go.server.dao.FeedModifier;
-import com.thoughtworks.go.server.dao.StageDao;
 import com.thoughtworks.go.server.service.PipelineInstanceLoader;
 import com.thoughtworks.studios.shine.cruise.stage.feeds.StageAtomFeedsReader;
 import com.thoughtworks.studios.shine.cruise.stage.feeds.StageFeedHandler;

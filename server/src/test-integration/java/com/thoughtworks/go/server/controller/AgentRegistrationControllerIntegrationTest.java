@@ -25,7 +25,6 @@ import com.thoughtworks.go.server.service.AgentConfigService;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
 import com.thoughtworks.go.server.service.AgentService;
 import com.thoughtworks.go.server.service.GoConfigService;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Before;

@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.util;
 
 import com.thoughtworks.go.server.Jetty9Server;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.eclipse.jetty.server.*;
 import org.junit.Before;
 import org.junit.Test;

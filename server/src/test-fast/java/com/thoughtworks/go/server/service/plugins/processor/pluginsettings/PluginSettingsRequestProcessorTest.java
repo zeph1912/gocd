@@ -25,7 +25,6 @@ import com.thoughtworks.go.plugin.api.response.GoApiResponse;
 import com.thoughtworks.go.plugin.domain.common.PluginInfo;
 import com.thoughtworks.go.plugin.infra.PluginRequestProcessorRegistry;
 import com.thoughtworks.go.plugin.infra.plugininfo.GoPluginDescriptor;
-import com.thoughtworks.go.server.dao.PluginSqlMapDao;
 import com.thoughtworks.go.util.json.JsonHelper;
 import org.junit.Before;
 import org.junit.Test;

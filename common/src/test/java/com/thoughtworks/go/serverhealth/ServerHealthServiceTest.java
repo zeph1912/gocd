@@ -18,7 +18,6 @@ package com.thoughtworks.go.serverhealth;
 
 
 import com.google.common.collect.Sets;
-import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.materials.MaterialConfigs;
 import com.thoughtworks.go.config.mercurial.HgMaterial;
 import com.thoughtworks.go.config.svn.SvnMaterialConfig;
@@ -26,8 +25,6 @@ import com.thoughtworks.go.helper.GoConfigMother;
 import com.thoughtworks.go.helper.MaterialConfigsMother;
 import com.thoughtworks.go.helper.MaterialsMother;
 import com.thoughtworks.go.helper.PipelineConfigMother;
-import com.thoughtworks.go.util.SystemTimeClock;
-import com.thoughtworks.go.util.TestingClock;
 import com.thoughtworks.go.utils.Timeout;
 import org.joda.time.DateTime;
 import org.junit.After;

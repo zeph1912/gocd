@@ -18,10 +18,7 @@ package com.thoughtworks.go.server.newsecurity.filterchains;
 
 import com.thoughtworks.go.http.mocks.MockHttpServletRequest;
 import com.thoughtworks.go.http.mocks.MockHttpServletResponse;
-import com.thoughtworks.go.server.newsecurity.filters.AgentSessionReduceIdleTimeoutFilter;
 import com.thoughtworks.go.server.newsecurity.filters.AlwaysCreateSessionFilter;
-import com.thoughtworks.go.server.newsecurity.filters.ApiSessionReduceIdleTimeoutFilter;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

@@ -29,7 +29,6 @@ import com.thoughtworks.go.config.svn.SvnMaterial;
 import com.thoughtworks.go.config.materials.Material;
 import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.config.materials.dependency.DependencyMaterialRevision;
-import com.thoughtworks.go.server.dao.PipelineSqlMapDao;
 import com.thoughtworks.go.server.domain.PipelineConfigDependencyGraph;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 

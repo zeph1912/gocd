@@ -19,7 +19,6 @@ package com.thoughtworks.go.server.valuestreammap;
 import com.thoughtworks.go.config.CaseInsensitiveString;
 import com.thoughtworks.go.config.Stages;
 import com.thoughtworks.go.helper.StageMother;
-import com.thoughtworks.go.server.dao.StageDao;
 import org.junit.Before;
 import org.junit.Test;
 

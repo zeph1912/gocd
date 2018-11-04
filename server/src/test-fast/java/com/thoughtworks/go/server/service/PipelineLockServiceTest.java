@@ -21,7 +21,6 @@ import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.helper.PipelineMother;
 import com.thoughtworks.go.listener.ConfigChangedListener;
 import com.thoughtworks.go.listener.EntityConfigChangedListener;
-import com.thoughtworks.go.server.dao.PipelineStateDao;
 import com.thoughtworks.go.server.domain.PipelineLockStatusChangeListener;
 import com.thoughtworks.go.server.domain.PipelineLockStatusChangeListener.Event;
 import com.thoughtworks.go.server.transaction.AfterCompletionCallback;

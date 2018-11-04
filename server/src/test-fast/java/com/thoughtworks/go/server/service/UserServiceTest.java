@@ -22,7 +22,6 @@ import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.presentation.UserModel;
 import com.thoughtworks.go.presentation.UserSearchModel;
 import com.thoughtworks.go.presentation.UserSourceType;
-import com.thoughtworks.go.server.dao.UserDao;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.exceptions.UserEnabledException;
 import com.thoughtworks.go.server.exceptions.UserNotFoundException;

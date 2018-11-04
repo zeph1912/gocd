@@ -20,7 +20,6 @@ import com.thoughtworks.go.helper.AgentInstanceMother;
 import com.thoughtworks.go.helper.JobInstanceMother;
 import com.thoughtworks.go.server.domain.Agent;
 import com.thoughtworks.go.server.domain.JobDurationStrategy;
-import com.thoughtworks.go.util.TestingClock;
 import org.joda.time.Duration;
 import org.junit.Test;
 

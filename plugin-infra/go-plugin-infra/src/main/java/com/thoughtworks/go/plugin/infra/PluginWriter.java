@@ -18,7 +18,6 @@ package com.thoughtworks.go.plugin.infra;
 
 import com.thoughtworks.go.plugin.infra.commons.GoFileSystem;
 import com.thoughtworks.go.plugin.infra.commons.PluginUploadResponse;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.http.HttpStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

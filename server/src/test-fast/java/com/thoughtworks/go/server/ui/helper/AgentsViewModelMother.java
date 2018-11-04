@@ -20,7 +20,6 @@ import java.util.HashSet;
 
 import com.thoughtworks.go.domain.AgentInstance;
 import com.thoughtworks.go.helper.AgentInstanceMother;
-import com.thoughtworks.go.server.ui.AgentViewModel;
 import com.thoughtworks.go.server.ui.AgentsViewModel;
 
 public class AgentsViewModelMother {

@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.database;
 
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Before;
 import org.junit.Test;
 

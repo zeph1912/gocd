@@ -28,7 +28,7 @@ import com.thoughtworks.go.spark.AdminUserSecurity
 import com.thoughtworks.go.spark.ControllerTrait
 import com.thoughtworks.go.spark.NormalUserSecurity
 import com.thoughtworks.go.spark.SecurityServiceTrait
-import com.thoughtworks.go.util.SystemEnvironment
+
 import net.javacrumbs.jsonunit.fluent.JsonFluentAssert
 import org.apache.commons.io.FileUtils
 import org.junit.jupiter.api.BeforeEach

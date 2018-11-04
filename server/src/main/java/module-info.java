@@ -33,5 +33,11 @@ module server.main {
     requires rdf4j.rio.rdfxml;
     requires guava;
     requires org.apache.commons.codec;
+    requires httpcore;
+    requires mybatis;
+    requires java.sql;
+    requires spring.security.web;
+    requires spring.security.core;
+    requires java.xml.ws.annotation;
 
 }

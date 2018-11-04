@@ -22,7 +22,6 @@ import com.thoughtworks.go.config.git.GitMaterialConfig;
 import com.thoughtworks.go.config.svn.SvnMaterial;
 import com.thoughtworks.go.helper.PartialConfigMother;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
-import com.thoughtworks.go.server.dao.PipelineSqlMapDao;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import com.thoughtworks.go.util.GoConfigFileHelper;

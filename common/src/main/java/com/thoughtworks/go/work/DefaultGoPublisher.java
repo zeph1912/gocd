@@ -27,7 +27,6 @@ import com.thoughtworks.go.remote.BuildRepositoryRemote;
 import com.thoughtworks.go.remote.work.ConsoleOutputTransmitter;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
 import com.thoughtworks.go.util.GoConstants;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.util.SystemUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

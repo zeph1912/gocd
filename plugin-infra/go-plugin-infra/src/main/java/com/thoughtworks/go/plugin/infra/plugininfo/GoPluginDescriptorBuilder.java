@@ -17,7 +17,6 @@
 package com.thoughtworks.go.plugin.infra.plugininfo;
 
 import com.thoughtworks.go.util.FileUtil;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

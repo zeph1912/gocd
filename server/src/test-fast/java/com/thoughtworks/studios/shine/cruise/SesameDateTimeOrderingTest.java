@@ -20,7 +20,6 @@ import java.util.List;
 
 import com.thoughtworks.studios.shine.semweb.BoundVariables;
 import com.thoughtworks.studios.shine.semweb.Graph;
-import com.thoughtworks.studios.shine.semweb.sesame.InMemoryTempGraphFactory;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

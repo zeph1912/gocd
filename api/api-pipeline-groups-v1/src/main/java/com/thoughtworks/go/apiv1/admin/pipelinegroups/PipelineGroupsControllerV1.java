@@ -30,7 +30,6 @@ import com.thoughtworks.go.apiv1.admin.pipelinegroups.representers.PipelineGroup
 import com.thoughtworks.go.config.InvalidPluginTypeException;
 import com.thoughtworks.go.config.exceptions.RecordNotFoundException;
 import com.thoughtworks.go.i18n.LocalizedMessage;
-import com.thoughtworks.go.server.newsecurity.utils.SessionUtils;
 import com.thoughtworks.go.server.service.EntityHashingService;
 import com.thoughtworks.go.server.service.PipelineConfigsService;
 import com.thoughtworks.go.server.service.SecurityService;

@@ -25,7 +25,6 @@ import com.thoughtworks.go.server.transaction.SqlMapClientTemplate;
 import com.thoughtworks.go.server.transaction.TestTransactionSynchronizationManager;
 import com.thoughtworks.go.server.transaction.TransactionSynchronizationManager;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;

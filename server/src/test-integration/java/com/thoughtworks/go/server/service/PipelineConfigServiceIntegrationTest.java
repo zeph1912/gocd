@@ -25,7 +25,6 @@ import com.thoughtworks.go.config.dependency.DependencyMaterialConfig;
 import com.thoughtworks.go.config.git.GitMaterialConfig;
 import com.thoughtworks.go.config.parts.XmlPartialConfigProvider;
 import com.thoughtworks.go.config.scm.SCM;
-import com.thoughtworks.go.helper.*;
 import com.thoughtworks.go.i18n.LocalizedMessage;
 import com.thoughtworks.go.listener.EntityConfigChangedListener;
 import com.thoughtworks.go.presentation.TriStateSelection;
@@ -36,10 +35,8 @@ import com.thoughtworks.go.server.service.result.DefaultLocalizedOperationResult
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import com.thoughtworks.go.serverhealth.HealthStateScope;
 import com.thoughtworks.go.serverhealth.ServerHealthService;
-import com.thoughtworks.go.util.CachedDigestUtils;
 import com.thoughtworks.go.util.GoConfigFileHelper;
 import com.thoughtworks.go.util.GoConstants;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.junit.After;
 import org.junit.Before;

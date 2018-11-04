@@ -23,7 +23,6 @@ import com.thoughtworks.go.server.service.support.toggle.Toggles;
 import com.thoughtworks.go.server.util.HttpTestUtil;
 import com.thoughtworks.go.server.util.ServletHelper;
 import com.thoughtworks.go.util.SslVerificationMode;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.client.methods.*;
 import org.apache.http.impl.client.CloseableHttpClient;

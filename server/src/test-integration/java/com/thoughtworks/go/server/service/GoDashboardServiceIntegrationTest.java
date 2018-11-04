@@ -22,8 +22,6 @@ import com.thoughtworks.go.config.dependency.DependencyMaterial;
 import com.thoughtworks.go.config.git.GitMaterial;
 import com.thoughtworks.go.helper.GoConfigMother;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
-import com.thoughtworks.go.server.dao.StageSqlMapDao;
-import com.thoughtworks.go.server.dashboard.*;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.domain.user.Filters;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
@@ -31,7 +29,6 @@ import com.thoughtworks.go.server.service.result.DefaultLocalizedOperationResult
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import com.thoughtworks.go.util.GoConfigFileHelper;
 import com.thoughtworks.go.util.GoConstants;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Before;

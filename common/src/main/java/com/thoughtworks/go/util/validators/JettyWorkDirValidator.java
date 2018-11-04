@@ -21,7 +21,6 @@ import java.io.IOException;
 
 import static java.text.MessageFormat.format;
 
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 

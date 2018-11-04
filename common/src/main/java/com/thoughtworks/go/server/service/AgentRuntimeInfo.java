@@ -22,7 +22,6 @@ import com.thoughtworks.go.domain.AgentRuntimeStatus;
 import com.thoughtworks.go.domain.AgentStatus;
 import com.thoughtworks.go.domain.DiskSpace;
 import com.thoughtworks.go.remote.AgentIdentifier;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.util.SystemUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.ToStringBuilder;

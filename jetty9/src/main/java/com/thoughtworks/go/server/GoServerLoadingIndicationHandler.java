@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server;
 
 import com.thoughtworks.go.util.GoConstants;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.io.IOUtils;
 import org.eclipse.jetty.http.HttpHeader;
 import org.eclipse.jetty.http.MimeTypes;

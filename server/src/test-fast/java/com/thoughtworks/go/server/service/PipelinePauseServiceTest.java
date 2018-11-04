@@ -20,7 +20,6 @@ import ch.qos.logback.classic.Level;
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.domain.PipelinePauseInfo;
 import com.thoughtworks.go.helper.PipelineConfigMother;
-import com.thoughtworks.go.server.dao.PipelineSqlMapDao;
 import com.thoughtworks.go.server.domain.PipelinePauseChangeListener;
 import com.thoughtworks.go.server.domain.PipelinePauseChangeListener.Event;
 import com.thoughtworks.go.config.Username;

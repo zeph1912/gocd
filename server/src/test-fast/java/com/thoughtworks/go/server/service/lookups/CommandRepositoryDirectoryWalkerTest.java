@@ -23,13 +23,11 @@ import com.thoughtworks.go.junitext.EnhancedOSChecker;
 import com.thoughtworks.go.serverhealth.HealthStateLevel;
 import com.thoughtworks.go.serverhealth.ServerHealthService;
 import com.thoughtworks.go.serverhealth.ServerHealthState;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.io.FileUtils;
 import org.junit.*;
 import org.junit.rules.TemporaryFolder;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentMatcher;
-import org.mockito.ArgumentMatchers;
 
 import java.io.File;
 import java.io.IOException;

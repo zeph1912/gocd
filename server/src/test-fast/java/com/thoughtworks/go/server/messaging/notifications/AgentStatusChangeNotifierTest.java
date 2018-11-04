@@ -23,7 +23,6 @@ import com.thoughtworks.go.listener.AgentStatusChangeListener;
 import com.thoughtworks.go.plugin.access.notification.NotificationPluginRegistry;
 import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.server.service.ElasticAgentRuntimeInfo;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;

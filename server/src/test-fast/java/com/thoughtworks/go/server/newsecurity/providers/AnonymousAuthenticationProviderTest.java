@@ -17,11 +17,8 @@
 package com.thoughtworks.go.server.newsecurity.providers;
 
 import com.thoughtworks.go.server.newsecurity.models.AnonymousCredential;
-import com.thoughtworks.go.server.newsecurity.models.AuthenticationToken;
-import com.thoughtworks.go.server.security.AuthorityGranter;
 import com.thoughtworks.go.server.security.GoAuthority;
 import com.thoughtworks.go.server.service.SecurityService;
-import com.thoughtworks.go.util.TestingClock;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;

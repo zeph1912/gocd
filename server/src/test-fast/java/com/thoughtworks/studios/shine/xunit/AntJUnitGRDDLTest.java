@@ -19,7 +19,6 @@ package com.thoughtworks.studios.shine.xunit;
 import com.thoughtworks.studios.shine.semweb.Graph;
 import com.thoughtworks.studios.shine.semweb.grddl.GRDDLTransformer;
 import com.thoughtworks.studios.shine.semweb.grddl.XSLTTransformerRegistry;
-import com.thoughtworks.studios.shine.semweb.sesame.InMemoryTempGraphFactory;
 import org.junit.Before;
 import org.junit.Test;
 

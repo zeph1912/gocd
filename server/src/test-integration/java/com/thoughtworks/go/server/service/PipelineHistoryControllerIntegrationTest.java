@@ -20,7 +20,6 @@ import com.thoughtworks.go.ClearSingleton;
 import com.thoughtworks.go.server.newsecurity.SessionUtilsHelper;
 import com.thoughtworks.go.config.CaseInsensitiveString;
 import com.thoughtworks.go.fixture.PipelineWithMultipleStages;
-import com.thoughtworks.go.server.controller.PipelineHistoryController;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.persistence.MaterialRepository;

@@ -27,7 +27,6 @@ import com.thoughtworks.go.config.Stages;
 import com.thoughtworks.go.config.materials.Material;
 import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
-import com.thoughtworks.go.server.dao.DependencyMaterialSourceDao;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.service.MaterialExpansionService;
 import com.thoughtworks.go.server.service.MaterialService;

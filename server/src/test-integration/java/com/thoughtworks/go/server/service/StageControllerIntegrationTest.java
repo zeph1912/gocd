@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.fixture.PipelineWithMultipleStages;
-import com.thoughtworks.go.server.controller.StageController;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;

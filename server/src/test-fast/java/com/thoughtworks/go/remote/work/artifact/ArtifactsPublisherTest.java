@@ -16,12 +16,10 @@
 
 package com.thoughtworks.go.remote.work.artifact;
 
-import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.domain.*;
 import com.thoughtworks.go.plugin.access.artifact.ArtifactExtension;
 import com.thoughtworks.go.plugin.access.artifact.model.PublishArtifactResponse;
 import com.thoughtworks.go.plugin.infra.PluginRequestProcessorRegistry;
-import com.thoughtworks.go.util.TestFileUtil;
 import com.thoughtworks.go.work.GoPublisher;
 import org.apache.commons.io.FileUtils;
 import org.junit.After;

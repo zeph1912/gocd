@@ -18,7 +18,6 @@ package com.thoughtworks.go.server;
 
 import com.thoughtworks.go.logging.LogConfigurator;
 import com.thoughtworks.go.util.GoConstants;
-import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;

@@ -25,7 +25,6 @@ import com.thoughtworks.go.remote.work.GoArtifactsManipulatorStub;
 import com.thoughtworks.go.server.service.AgentRuntimeInfo;
 import com.thoughtworks.go.server.service.UpstreamPipelineResolver;
 import com.thoughtworks.go.util.GoConstants;
-import com.thoughtworks.go.util.SystemEnvironment;
 import com.thoughtworks.go.work.FakeWork;
 import org.junit.After;
 import org.junit.Before;

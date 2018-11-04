@@ -16,10 +16,8 @@
 
 package com.thoughtworks.go.server.presentation.models;
 
-import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.helper.StageMother;
 import com.thoughtworks.go.server.service.ArtifactsService;
-import com.thoughtworks.go.util.TestFileUtil;
 import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Before;

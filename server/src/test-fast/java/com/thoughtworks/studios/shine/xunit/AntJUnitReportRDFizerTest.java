@@ -22,7 +22,6 @@ import static com.thoughtworks.studios.shine.AssertUtils.assertAskIsTrue;
 import com.thoughtworks.studios.shine.cruise.GoOntology;
 import com.thoughtworks.studios.shine.semweb.Graph;
 import com.thoughtworks.studios.shine.semweb.grddl.XSLTTransformerRegistry;
-import com.thoughtworks.studios.shine.semweb.sesame.InMemoryTempGraphFactory;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.io.SAXReader;

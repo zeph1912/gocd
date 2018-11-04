@@ -23,7 +23,6 @@ import com.thoughtworks.go.config.materials.svn.Subversion;
 import com.thoughtworks.go.helper.*;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.materials.MaterialDatabaseUpdater;
-import com.thoughtworks.go.server.scheduling.BuildCauseProducerService;
 import com.thoughtworks.go.server.service.result.ServerHealthStateOperationResult;
 import com.thoughtworks.go.util.GoConfigFileHelper;
 import org.apache.commons.io.FileUtils;

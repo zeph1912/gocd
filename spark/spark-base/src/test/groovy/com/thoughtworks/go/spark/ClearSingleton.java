@@ -30,7 +30,6 @@ import com.thoughtworks.go.plugin.access.pluggabletask.PluggableTaskConfigStore;
 import com.thoughtworks.go.plugin.access.pluggabletask.PluggableTaskMetadataStore;
 import com.thoughtworks.go.plugin.access.scm.NewSCMMetadataStore;
 import com.thoughtworks.go.plugin.access.scm.SCMMetadataStore;
-import com.thoughtworks.go.server.newsecurity.utils.SessionUtils;
 import com.thoughtworks.go.server.newsecurity.x509.CachingSubjectDnX509PrincipalExtractor;
 
 public class ClearSingleton {

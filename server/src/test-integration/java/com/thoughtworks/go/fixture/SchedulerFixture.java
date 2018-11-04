@@ -17,7 +17,6 @@
 package com.thoughtworks.go.fixture;
 
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
-import com.thoughtworks.go.server.dao.StageDao;
 import com.thoughtworks.go.server.service.ScheduleService;
 
 public class SchedulerFixture {

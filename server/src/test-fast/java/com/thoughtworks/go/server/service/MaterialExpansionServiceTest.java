@@ -16,14 +16,12 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.materials.MaterialConfigs;
 import com.thoughtworks.go.config.git.GitMaterial;
 import com.thoughtworks.go.config.mercurial.HgMaterialConfig;
 import com.thoughtworks.go.config.svn.SvnMaterial;
 import com.thoughtworks.go.config.svn.SvnMaterialConfig;
 import com.thoughtworks.go.helper.*;
-import com.thoughtworks.go.server.cache.GoCache;
 import org.assertj.core.api.Assertions;
 import org.junit.*;
 import org.junit.rules.TemporaryFolder;

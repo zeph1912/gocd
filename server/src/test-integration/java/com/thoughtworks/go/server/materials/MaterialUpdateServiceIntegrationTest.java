@@ -22,7 +22,6 @@ import com.thoughtworks.go.config.svn.SvnMaterialConfig;
 import com.thoughtworks.go.helper.GoConfigMother;
 import com.thoughtworks.go.server.perf.MDUPerformanceLogger;
 import com.thoughtworks.go.server.service.GoConfigService;
-import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.serverhealth.HealthStateScope;
 import com.thoughtworks.go.serverhealth.HealthStateType;
 import com.thoughtworks.go.serverhealth.ServerHealthMatcher;

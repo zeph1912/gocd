@@ -17,8 +17,6 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.ClearSingleton;
-import com.thoughtworks.go.InstanceFactory;
-import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.materials.*;
 import com.thoughtworks.go.config.git.GitMaterial;
@@ -39,7 +37,6 @@ import com.thoughtworks.go.plugin.access.scm.SCMConfigurations;
 import com.thoughtworks.go.plugin.access.scm.SCMMetadataStore;
 import com.thoughtworks.go.plugin.access.scm.SCMProperty;
 import com.thoughtworks.go.plugin.access.scm.SCMPropertyConfiguration;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.materials.StaleMaterialsOnBuildCause;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;

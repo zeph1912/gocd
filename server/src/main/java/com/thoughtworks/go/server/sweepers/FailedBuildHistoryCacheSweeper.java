@@ -19,8 +19,6 @@ package com.thoughtworks.go.server.sweepers;
 import java.util.TreeSet;
 
 import com.thoughtworks.go.domain.PipelineTimelineEntry;
-import com.thoughtworks.go.listener.TimelineUpdateListener;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.ui.ViewCacheKey;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

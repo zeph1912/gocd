@@ -19,7 +19,6 @@ package com.thoughtworks.go.server.service;
 import java.util.Date;
 import java.util.HashMap;
 
-import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.CaseInsensitiveString;
 import com.thoughtworks.go.config.dependency.DependencyMaterialConfig;
 import com.thoughtworks.go.config.mercurial.HgMaterial;
@@ -28,7 +27,6 @@ import com.thoughtworks.go.config.activity.JobStatusCache;
 import com.thoughtworks.go.config.activity.StageStatusCache;
 import com.thoughtworks.go.config.materials.Material;
 import com.thoughtworks.go.config.materials.Modification;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.JobInstanceDao;
 import com.thoughtworks.go.server.dao.PipelineDao;
 import com.thoughtworks.go.server.dao.PipelineSqlMapDao;

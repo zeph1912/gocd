@@ -20,7 +20,6 @@ import com.thoughtworks.go.config.mercurial.HgMaterial;
 import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.config.materials.ModifiedAction;
 import com.thoughtworks.go.config.materials.ModifiedFile;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.util.GoConfigFileHelper;
 import com.thoughtworks.go.util.ReflectionUtil;

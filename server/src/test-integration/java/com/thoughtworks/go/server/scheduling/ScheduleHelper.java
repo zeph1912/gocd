@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.server.scheduling;
 
-import com.thoughtworks.go.InstanceFactory;
-import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.CaseInsensitiveString;
 import com.thoughtworks.go.config.materials.Material;
 import com.thoughtworks.go.helper.ScheduleCheckMatcher;

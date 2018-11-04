@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.CaseInsensitiveString;
 import com.thoughtworks.go.config.svn.SvnMaterial;
 import com.thoughtworks.go.helper.PipelineConfigMother;

@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.service;
 
 import com.thoughtworks.go.config.GoVersion;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.VersionInfoDao;
 import com.thoughtworks.go.util.Clock;
 import com.thoughtworks.go.util.SystemEnvironment;

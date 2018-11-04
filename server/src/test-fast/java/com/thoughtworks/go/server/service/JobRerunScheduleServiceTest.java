@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.service;
 
 import ch.qos.logback.classic.Level;
-import com.thoughtworks.go.InstanceFactory;
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.activity.AgentAssignment;
 import com.thoughtworks.go.helper.PipelineConfigMother;

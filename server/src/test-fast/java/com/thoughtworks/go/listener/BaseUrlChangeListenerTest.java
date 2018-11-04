@@ -20,7 +20,6 @@ import java.io.IOException;
 
 import com.thoughtworks.go.config.ServerConfig;
 import com.thoughtworks.go.config.ServerSiteUrlConfig;
-import com.thoughtworks.go.server.cache.GoCache;
 import org.junit.Test;
 
 import static org.mockito.Mockito.*;

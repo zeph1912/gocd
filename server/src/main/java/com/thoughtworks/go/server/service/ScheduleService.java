@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.InstanceFactory;
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.activity.AgentAssignment;
 import com.thoughtworks.go.remote.AgentIdentifier;
@@ -29,7 +28,6 @@ import com.thoughtworks.go.server.domain.AgentInstances;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.newsecurity.utils.SessionUtils;
 import com.thoughtworks.go.server.perf.SchedulingPerformanceLogger;
-import com.thoughtworks.go.server.service.result.*;
 import com.thoughtworks.go.server.transaction.TransactionSynchronizationManager;
 import com.thoughtworks.go.server.transaction.TransactionTemplate;
 import com.thoughtworks.go.serverhealth.HealthStateScope;

@@ -16,14 +16,12 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.dependency.DependencyMaterial;
 import com.thoughtworks.go.config.materials.Material;
 import com.thoughtworks.go.config.materials.MaterialConfig;
 import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.config.materials.dependency.DependencyMaterialRevision;
-import com.thoughtworks.go.config.valuestreammap.*;
 import com.thoughtworks.go.i18n.LocalizedMessage;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.persistence.MaterialRepository;

@@ -19,7 +19,6 @@ package com.thoughtworks.go.server.dao;
 import com.rits.cloning.Cloner;
 import com.thoughtworks.go.database.Database;
 import com.thoughtworks.go.server.cache.CacheKeyGenerator;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.domain.StageStatusListener;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.transaction.AfterCompletionCallback;

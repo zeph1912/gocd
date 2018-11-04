@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.InstanceFactory;
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.materials.svn.Subversion;
 import com.thoughtworks.go.config.materials.svn.SvnCommand;
@@ -24,7 +23,6 @@ import com.thoughtworks.go.helper.AgentMother;
 import com.thoughtworks.go.helper.SvnTestRepo;
 import com.thoughtworks.go.helper.TestRepo;
 import com.thoughtworks.go.listener.AgentStatusChangeListener;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.dao.JobInstanceDao;
 import com.thoughtworks.go.server.dao.PipelineDao;

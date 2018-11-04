@@ -22,7 +22,6 @@ import java.util.Collections;
 import java.util.List;
 
 import com.thoughtworks.go.config.ServerConfig;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.service.GoConfigService;
 import com.thoughtworks.go.util.SystemEnvironment;
 import org.junit.Before;

@@ -23,7 +23,6 @@ import com.thoughtworks.go.config.update.AgentsEntityConfigUpdateCommand;
 import com.thoughtworks.go.config.update.AgentsUpdateCommand;
 import com.thoughtworks.go.config.update.ModifyEnvironmentCommand;
 import com.thoughtworks.go.domain.AgentInstance;
-import com.thoughtworks.go.listener.AgentChangeListener;
 import com.thoughtworks.go.presentation.TriStateSelection;
 import com.thoughtworks.go.server.domain.AgentInstances;
 import com.thoughtworks.go.config.Username;

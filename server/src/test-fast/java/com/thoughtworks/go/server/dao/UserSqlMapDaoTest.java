@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.dao;
 
 import com.thoughtworks.go.domain.User;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.service.StubGoCache;
 import com.thoughtworks.go.server.transaction.TestTransactionSynchronizationManager;
 import com.thoughtworks.go.server.transaction.TransactionSynchronizationManager;

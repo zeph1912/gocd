@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.activity.JobStatusCache;
 import com.thoughtworks.go.config.activity.StageStatusCache;
 import com.thoughtworks.go.config.materials.Modification;
@@ -24,7 +23,6 @@ import com.thoughtworks.go.helper.PipelineConfigMother;
 import com.thoughtworks.go.helper.PipelineMother;
 import com.thoughtworks.go.helper.StageMother;
 import com.thoughtworks.go.plugin.infra.PluginManager;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.JobInstanceDao;
 import com.thoughtworks.go.server.dao.PipelineDao;
 import com.thoughtworks.go.server.dao.PipelineSqlMapDao;

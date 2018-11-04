@@ -28,7 +28,6 @@ import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModel;
 import com.thoughtworks.go.server.dao.PipelineDao;
 import com.thoughtworks.go.server.domain.PipelineTimeline;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
-import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.server.service.NoCompatibleUpstreamRevisionsException;
 import com.thoughtworks.go.server.service.NoModificationsPresentForDependentMaterialException;
 import com.thoughtworks.go.util.Pair;

@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.transaction;
 
-import com.thoughtworks.go.server.cache.GoCache;
 import org.springframework.transaction.TransactionStatus;
 
 import static org.hamcrest.CoreMatchers.nullValue;

@@ -20,7 +20,6 @@ import com.thoughtworks.go.config.CaseInsensitiveString;
 import com.thoughtworks.go.config.git.GitMaterial;
 import com.thoughtworks.go.config.StageState;
 import com.thoughtworks.go.config.valuestreammap.*;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.materials.DependencyMaterialUpdateNotifier;

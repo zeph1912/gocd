@@ -18,7 +18,6 @@ package com.thoughtworks.go.server.transaction;
 
 import java.io.Serializable;
 
-import com.thoughtworks.go.server.cache.GoCache;
 import org.hibernate.EmptyInterceptor;
 import org.hibernate.type.Type;
 

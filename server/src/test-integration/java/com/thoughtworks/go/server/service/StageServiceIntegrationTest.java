@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.InstanceFactory;
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.materials.MaterialConfigs;
 import com.thoughtworks.go.config.dependency.DependencyMaterial;
@@ -31,11 +30,9 @@ import com.thoughtworks.go.config.materials.Material;
 import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.dto.DurationBean;
 import com.thoughtworks.go.fixture.PipelineWithMultipleStages;
-import com.thoughtworks.go.helper.*;
 import com.thoughtworks.go.presentation.pipelinehistory.StageHistoryEntry;
 import com.thoughtworks.go.presentation.pipelinehistory.StageHistoryPage;
 import com.thoughtworks.go.remote.AgentIdentifier;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.dao.JobInstanceDao;
 import com.thoughtworks.go.server.dao.PipelineSqlMapDao;

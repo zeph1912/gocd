@@ -23,7 +23,6 @@ import com.thoughtworks.go.helper.MaterialsMother;
 import com.thoughtworks.go.helpers.GraphGenerator;
 import com.thoughtworks.go.junitext.DatabaseChecker;
 import com.thoughtworks.go.junitext.GoJUnitExtSpringRunner;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.domain.PipelineTimeline;
 import com.thoughtworks.go.server.persistence.MaterialRepository;

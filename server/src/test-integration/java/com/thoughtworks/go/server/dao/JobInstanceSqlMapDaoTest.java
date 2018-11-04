@@ -22,8 +22,6 @@ import com.thoughtworks.go.config.elastic.ElasticProfile;
 import com.thoughtworks.go.helper.BuildPlanMother;
 import com.thoughtworks.go.helper.JobInstanceMother;
 import com.thoughtworks.go.helper.PipelineMother;
-import com.thoughtworks.go.server.cache.GoCache;
-import com.thoughtworks.go.InstanceFactory;
 import com.thoughtworks.go.server.service.JobInstanceService;
 import com.thoughtworks.go.server.service.ScheduleService;
 import com.thoughtworks.go.server.transaction.SqlMapClientTemplate;

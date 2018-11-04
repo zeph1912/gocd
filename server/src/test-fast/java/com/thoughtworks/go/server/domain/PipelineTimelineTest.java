@@ -20,7 +20,6 @@ import java.util.*;
 
 import com.thoughtworks.go.config.CaseInsensitiveString;
 import com.thoughtworks.go.domain.PipelineTimelineEntry;
-import com.thoughtworks.go.listener.TimelineUpdateListener;
 import com.thoughtworks.go.server.persistence.PipelineRepository;
 import com.thoughtworks.go.helper.PipelineMaterialModificationMother;
 import com.thoughtworks.go.server.transaction.TransactionSynchronizationManager;
@@ -46,7 +45,6 @@ import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.verifyNoMoreInteractions;
 import static org.mockito.Mockito.when;
 
 public class PipelineTimelineTest {

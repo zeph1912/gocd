@@ -20,7 +20,6 @@ import com.thoughtworks.go.config.JobResult;
 import com.thoughtworks.go.config.JobState;
 import com.thoughtworks.go.remote.AgentInstruction;
 import com.thoughtworks.go.remote.BuildRepositoryRemote;
-import com.thoughtworks.go.remote.BuildRepositoryRemoteImpl;
 import com.thoughtworks.go.remote.AgentIdentifier;
 import com.thoughtworks.go.remote.work.Work;
 import com.thoughtworks.go.server.messaging.scheduling.WorkAssignments;

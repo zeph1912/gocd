@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.InstanceFactory;
 import com.thoughtworks.go.config.CaseInsensitiveString;
 import com.thoughtworks.go.helper.PipelineMother;
 import com.thoughtworks.go.config.Username;

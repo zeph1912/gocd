@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.InstanceFactory;
-import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.exception.StageAlreadyBuildingException;
 import com.thoughtworks.go.config.materials.Material;
@@ -28,7 +26,6 @@ import com.thoughtworks.go.helper.ModificationsMother;
 import com.thoughtworks.go.helper.PipelineMother;
 import com.thoughtworks.go.helper.SvnTestRepo;
 import com.thoughtworks.go.helper.TestRepo;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.dao.JobInstanceDao;
 import com.thoughtworks.go.server.dao.PipelineDao;

@@ -20,7 +20,6 @@ package com.thoughtworks.go.server.persistence;
 import com.thoughtworks.go.config.CaseInsensitiveString;
 import com.thoughtworks.go.database.QueryExtensions;
 import com.thoughtworks.go.domain.PipelineTimelineEntry;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.database.DatabaseStrategy;
 import com.thoughtworks.go.server.domain.PipelineTimeline;
 import com.thoughtworks.go.server.domain.user.Filters;

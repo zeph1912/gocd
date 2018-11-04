@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.service;
 
 import com.rits.cloning.Cloner;
-import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.CaseInsensitiveString;
 import com.thoughtworks.go.config.materials.Filter;
 import com.thoughtworks.go.config.materials.IgnoredFiles;
@@ -27,7 +26,6 @@ import com.thoughtworks.go.config.svn.SvnMaterial;
 import com.thoughtworks.go.config.materials.Material;
 import com.thoughtworks.go.config.materials.ModifiedAction;
 import com.thoughtworks.go.helper.StageConfigMother;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.domain.PipelineConfigDependencyGraph;
 import com.thoughtworks.go.server.domain.PipelineTimeline;

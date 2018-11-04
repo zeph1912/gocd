@@ -16,12 +16,9 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.InstanceFactory;
-import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.activity.AgentAssignment;
 import com.thoughtworks.go.config.materials.MaterialConfig;
-import com.thoughtworks.go.helper.*;
 import com.thoughtworks.go.server.dao.JobInstanceDao;
 import com.thoughtworks.go.server.dao.PipelineDao;
 import com.thoughtworks.go.server.dao.StageDao;

@@ -31,7 +31,6 @@ import com.thoughtworks.go.server.materials.postcommit.PostCommitHookMaterialTyp
 import com.thoughtworks.go.server.materials.postcommit.PostCommitHookMaterialTypeResolver;
 import com.thoughtworks.go.server.perf.MDUPerformanceLogger;
 import com.thoughtworks.go.server.service.GoConfigService;
-import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.server.service.result.HttpLocalizedOperationResult;
 import com.thoughtworks.go.serverhealth.*;
 import com.thoughtworks.go.util.ProcessManager;

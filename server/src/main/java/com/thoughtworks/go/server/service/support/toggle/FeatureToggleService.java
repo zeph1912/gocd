@@ -18,7 +18,6 @@ package com.thoughtworks.go.server.service.support.toggle;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.domain.support.toggle.FeatureToggle;
 import com.thoughtworks.go.server.domain.support.toggle.FeatureToggles;
 import org.springframework.beans.factory.annotation.Autowired;

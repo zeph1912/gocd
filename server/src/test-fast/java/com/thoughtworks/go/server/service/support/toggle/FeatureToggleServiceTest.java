@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.service.support.toggle;
 
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.domain.support.toggle.FeatureToggle;
 import com.thoughtworks.go.server.domain.support.toggle.FeatureToggles;
 import com.thoughtworks.go.server.service.StubGoCache;

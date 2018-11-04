@@ -16,14 +16,12 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.materials.MaterialConfigs;
 import com.thoughtworks.go.config.svn.SvnMaterialConfig;
 import com.thoughtworks.go.config.materials.svn.Subversion;
 import com.thoughtworks.go.config.materials.svn.SvnCommand;
 import com.thoughtworks.go.helper.SvnTestRepoWithExternal;
 import com.thoughtworks.go.helper.TestRepo;
-import com.thoughtworks.go.server.cache.GoCache;
 import org.junit.*;
 import org.junit.rules.TemporaryFolder;
 import org.junit.runner.RunWith;

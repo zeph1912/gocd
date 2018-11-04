@@ -27,7 +27,6 @@ import com.thoughtworks.go.config.materials.Material;
 import com.thoughtworks.go.config.materials.MaterialConfig;
 import com.thoughtworks.go.config.materials.ValidationBean;
 import com.thoughtworks.go.security.GoCipher;
-import com.thoughtworks.go.MaterialConfigConverter;
 import org.junit.Before;
 import org.junit.experimental.theories.DataPoint;
 import org.junit.experimental.theories.Theories;

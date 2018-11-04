@@ -24,7 +24,6 @@ import com.thoughtworks.go.config.dependency.DependencyMaterial;
 import com.thoughtworks.go.config.materials.MaterialConfig;
 import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.server.service.GoConfigService;
-import com.thoughtworks.go.MaterialConfigConverter;
 import org.junit.Before;
 import org.junit.Test;
 

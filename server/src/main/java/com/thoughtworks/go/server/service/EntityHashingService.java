@@ -25,7 +25,6 @@ import com.thoughtworks.go.config.packagerepository.PackageRepository;
 import com.thoughtworks.go.config.scm.SCM;
 import com.thoughtworks.go.listener.ConfigChangedListener;
 import com.thoughtworks.go.listener.EntityConfigChangedListener;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.domain.PluginSettings;
 import com.thoughtworks.go.server.initializers.Initializer;
 import com.thoughtworks.go.util.CachedDigestUtils;

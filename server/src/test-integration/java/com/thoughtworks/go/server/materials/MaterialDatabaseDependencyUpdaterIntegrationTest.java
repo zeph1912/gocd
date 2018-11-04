@@ -20,7 +20,6 @@ import com.thoughtworks.go.config.CaseInsensitiveString;
 import com.thoughtworks.go.config.dependency.DependencyMaterial;
 import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.helper.PipelineConfigMother;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.service.GoConfigService;

@@ -25,7 +25,6 @@ import com.thoughtworks.go.helper.TestRepo;
 import com.thoughtworks.go.remote.work.BuildAssignment;
 import com.thoughtworks.go.remote.work.BuildWork;
 import com.thoughtworks.go.remote.work.Work;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.persistence.MaterialRepository;
 import com.thoughtworks.go.server.service.*;

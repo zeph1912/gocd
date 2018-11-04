@@ -16,14 +16,12 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.InstanceFactory;
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.mercurial.HgMaterial;
 import com.thoughtworks.go.config.materials.Material;
 import com.thoughtworks.go.config.materials.ModifiedAction;
 import com.thoughtworks.go.config.materials.dependency.DependencyMaterialRevision;
 import com.thoughtworks.go.helper.PipelineMother;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.dao.PipelineDao;
 import com.thoughtworks.go.server.dao.PipelineSqlMapDao;

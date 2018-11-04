@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.service.lookups;
 
 import com.thoughtworks.go.config.ServerConfig;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.service.GoConfigService;
 import com.thoughtworks.go.util.SystemEnvironment;
 import org.slf4j.Logger;

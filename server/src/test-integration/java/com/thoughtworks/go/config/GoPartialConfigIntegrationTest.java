@@ -19,7 +19,6 @@ package com.thoughtworks.go.config;
 import com.thoughtworks.go.config.dependency.DependencyMaterialConfig;
 import com.thoughtworks.go.config.git.GitMaterialConfig;
 import com.thoughtworks.go.helper.PartialConfigMother;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.serverhealth.HealthStateLevel;
 import com.thoughtworks.go.serverhealth.HealthStateScope;
 import com.thoughtworks.go.serverhealth.ServerHealthService;

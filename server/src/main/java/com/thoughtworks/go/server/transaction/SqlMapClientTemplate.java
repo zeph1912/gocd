@@ -17,7 +17,6 @@
 package com.thoughtworks.go.server.transaction;
 
 import com.thoughtworks.go.database.Database;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.util.SystemEnvironment;
 import org.apache.ibatis.mapping.MappedStatement;
 import org.apache.ibatis.session.SqlSessionFactory;

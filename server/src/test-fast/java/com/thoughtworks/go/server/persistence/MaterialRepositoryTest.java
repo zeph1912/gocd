@@ -22,9 +22,7 @@ import java.util.UUID;
 
 import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.config.materials.git.GitMaterialInstance;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.database.DatabaseStrategy;
-import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.server.service.MaterialExpansionService;
 import com.thoughtworks.go.server.transaction.TransactionSynchronizationManager;
 import org.hibernate.Query;

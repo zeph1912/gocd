@@ -21,7 +21,6 @@ import com.rits.cloning.Cloner;
 import com.thoughtworks.go.helper.StageMother;
 import com.thoughtworks.go.presentation.pipelinehistory.StageHistoryEntry;
 import com.thoughtworks.go.presentation.pipelinehistory.StageHistoryPage;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.domain.StageIdentity;
 import com.thoughtworks.go.server.service.StubGoCache;
 import com.thoughtworks.go.server.transaction.SqlMapClientTemplate;

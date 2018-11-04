@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.dependency.DependencyMaterial;
 import com.thoughtworks.go.config.git.GitMaterial;
 import com.thoughtworks.go.config.git.GitMaterialConfig;

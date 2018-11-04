@@ -29,7 +29,6 @@ import com.thoughtworks.go.config.tfs.TfsMaterial;
 import com.thoughtworks.go.config.materials.Material;
 import com.thoughtworks.go.config.materials.MaterialConfig;
 import com.thoughtworks.go.config.materials.ValidationBean;
-import com.thoughtworks.go.MaterialConfigConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

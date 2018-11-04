@@ -22,7 +22,6 @@ import com.thoughtworks.go.config.CaseInsensitiveString;
 import com.thoughtworks.go.config.git.GitMaterial;
 import com.thoughtworks.go.config.materials.Modification;
 import com.thoughtworks.go.config.valuestreammap.Revision;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.dao.PipelineDao;
 import com.thoughtworks.go.server.materials.DependencyMaterialUpdateNotifier;

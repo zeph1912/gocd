@@ -20,7 +20,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.thoughtworks.go.server.view.artifacts.PreparingArtifactFile;
-import com.thoughtworks.go.server.cache.ZipArtifactCache;
 import org.springframework.web.servlet.ModelAndView;
 
 public class ZipArtifactFolderViewFactory implements ArtifactFolderViewFactory {

@@ -23,7 +23,6 @@ import com.thoughtworks.go.helper.MaterialsMother;
 import com.thoughtworks.go.helper.StageMother;
 import com.thoughtworks.go.listener.EntityConfigChangedListener;
 import com.thoughtworks.go.server.service.GoConfigService;
-import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.serverhealth.ServerHealthService;
 import org.junit.Before;
 import org.junit.Test;

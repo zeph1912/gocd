@@ -25,7 +25,6 @@ import com.thoughtworks.go.apiv1.configrepooperations.representers.PartialConfig
 import com.thoughtworks.go.config.materials.MaterialConfig;
 import com.thoughtworks.go.server.materials.MaterialUpdateService;
 import com.thoughtworks.go.server.service.ConfigRepoService;
-import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.spark.Routes.ConfigRepos;
 import com.thoughtworks.go.spark.spring.SparkSpringController;
 import org.springframework.beans.factory.annotation.Autowired;

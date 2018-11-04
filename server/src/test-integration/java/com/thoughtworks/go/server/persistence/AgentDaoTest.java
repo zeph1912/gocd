@@ -19,7 +19,6 @@ package com.thoughtworks.go.server.persistence;
 import java.sql.SQLException;
 
 import com.thoughtworks.go.remote.AgentIdentifier;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.domain.Agent;
 import org.hibernate.HibernateException;

@@ -25,8 +25,6 @@ import com.thoughtworks.go.config.materials.dependency.DependencyMaterialRevisio
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModel;
 import com.thoughtworks.go.presentation.pipelinehistory.PipelineInstanceModels;
 import com.thoughtworks.go.server.cache.CacheKeyGenerator;
-import com.thoughtworks.go.server.cache.GoCache;
-import com.thoughtworks.go.server.cache.LazyCache;
 import com.thoughtworks.go.server.domain.StageStatusListener;
 import com.thoughtworks.go.server.initializers.Initializer;
 import com.thoughtworks.go.server.persistence.MaterialRepository;

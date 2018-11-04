@@ -18,7 +18,6 @@ package com.thoughtworks.go.server.messaging;
 
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.remote.AgentIdentifier;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.scheduling.ScheduleHelper;
 import com.thoughtworks.go.server.service.StageService;

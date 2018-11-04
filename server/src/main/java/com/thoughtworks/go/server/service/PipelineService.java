@@ -19,7 +19,6 @@ package com.thoughtworks.go.server.service;
 import com.google.gson.ExclusionStrategy;
 import com.google.gson.FieldAttributes;
 import com.google.gson.GsonBuilder;
-import com.thoughtworks.go.MaterialConfigConverter;
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.dependency.DependencyMaterial;
 import com.thoughtworks.go.config.materials.Material;

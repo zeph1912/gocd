@@ -16,7 +16,6 @@
 
 package com.thoughtworks.go.server.service;
 
-import com.thoughtworks.go.InstanceFactory;
 import com.thoughtworks.go.config.*;
 import com.thoughtworks.go.config.commands.EntityConfigUpdateCommand;
 import com.thoughtworks.go.config.elastic.ElasticConfig;
@@ -32,11 +31,9 @@ import com.thoughtworks.go.config.packagerepository.PackageRepositories;
 import com.thoughtworks.go.config.packagerepository.PackageRepository;
 import com.thoughtworks.go.config.scm.SCM;
 import com.thoughtworks.go.i18n.LocalizedMessage;
-import com.thoughtworks.go.listener.BaseUrlChangeListener;
 import com.thoughtworks.go.listener.ConfigChangedListener;
 import com.thoughtworks.go.presentation.ConfigForEdit;
 import com.thoughtworks.go.presentation.TriStateSelection;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.domain.PipelineConfigDependencyGraph;
 import com.thoughtworks.go.config.Username;
 import com.thoughtworks.go.server.initializers.Initializer;

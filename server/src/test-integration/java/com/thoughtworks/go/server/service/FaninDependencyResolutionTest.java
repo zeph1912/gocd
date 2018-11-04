@@ -23,7 +23,6 @@ import com.thoughtworks.go.config.git.GitMaterial;
 import com.thoughtworks.go.config.mercurial.HgMaterial;
 import com.thoughtworks.go.config.svn.SvnMaterial;
 import com.thoughtworks.go.helper.MaterialsMother;
-import com.thoughtworks.go.server.cache.GoCache;
 import com.thoughtworks.go.server.dao.DatabaseAccessHelper;
 import com.thoughtworks.go.server.domain.PipelineTimeline;
 import com.thoughtworks.go.server.materials.DependencyMaterialUpdateNotifier;

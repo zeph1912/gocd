@@ -16,8 +16,6 @@
 
 package com.thoughtworks.go.rackhack;
 
-import com.thoughtworks.go.server.util.ServletHelper;
-
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
@@ -29,7 +27,6 @@ import java.io.IOException;
 
 public class DelegatingServlet extends HttpServlet {
     private HttpServlet rackServlet;
-    private ServletHelper servletHelper;
 
     public DelegatingServlet() {
     }
@@ -38,13 +35,11 @@ public class DelegatingServlet extends HttpServlet {
     public void init(ServletConfig config) throws ServletException {
         rackServlet = (HttpServlet) config.getServletContext().getAttribute(DelegatingListener.DELEGATE_SERVLET);
         rackServlet.init(config);
-        servletHelper = ServletHelper.getInstance();
     }
 
     @Override
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String url = request.getRequestURI().replaceAll("^/go/rails/", "/go/");
-        servletHelper.getRequest(request).setRequestURI(url);
         rackServlet.service(request, response);
     }
 

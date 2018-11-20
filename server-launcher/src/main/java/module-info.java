@@ -3,4 +3,5 @@ module server.launcher.main {
     requires java.logging;
     requires java.desktop;
     requires AppleJavaExtensions;
+//    requires server.main;
 }

@@ -33,6 +33,7 @@ module server.main {
     opens com.thoughtworks.go.server.security;
     requires transitive config.server.main;
     requires transitive util.main;
+    requires rack.hack.main;
     requires spring.context;
     requires spring.beans;
     requires slf4j.api;
